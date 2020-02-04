@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 from babel.dates import format_datetime, format_date
 
 from odoo import models, api, _, fields
-from odoo.osv import expression
 from odoo.release import version
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF, safe_eval
 from odoo.tools.misc import formatLang
@@ -170,7 +169,7 @@ class account_journal(models.Model):
                            LEFT JOIN account_move move ON aml.move_id = move.id
                            WHERE aml.account_id in %%s
                            AND move.date <= %%s AND move.state = 'posted';""" % (amount_field,)
-                self.env.cr.execute(query, (account_ids, fields.Date.context_today(self),))
+                self.env.cr.execute(query, (account_ids, fields.Date.today(),))
                 query_results = self.env.cr.dictfetchall()
                 if query_results and query_results[0].get('sum') != None:
                     account_sum = query_results[0].get('sum')
@@ -344,16 +343,10 @@ class account_journal(models.Model):
                 action_name = 'action_view_bank_statement_tree'
             elif self.type == 'sale':
                 action_name = 'action_invoice_tree1'
-                use_domain = expression.AND(
-                    [self.env.context.get('use_domain', []), [('journal_id', '=', self.id)]]
-                )
-                self = self.with_context(use_domain=use_domain)
+                self = self.with_context(use_domain=[('type', 'in', ['out_invoice', 'out_refund'])])
             elif self.type == 'purchase':
                 action_name = 'action_vendor_bill_template'
-                use_domain = expression.AND(
-                    [self.env.context.get('use_domain', []), [('journal_id', '=', self.id)]]
-                )
-                self = self.with_context(use_domain=use_domain)
+                self = self.with_context(use_domain=[('type', 'in', ['in_invoice', 'in_refund'])])
             else:
                 action_name = 'action_move_journal_line'
 
@@ -433,7 +426,7 @@ class account_journal(models.Model):
         [action] = self.env[model].browse(action_id).read()
         action['context'] = ctx
         if ctx.get('use_domain', False):
-            action['domain'] = isinstance(ctx['use_domain'], list) and ctx['use_domain'] or ['|', ('journal_id', '=', self.id), ('journal_id', '=', False)]
+            action['domain'] = ['|', ('journal_id', '=', self.id), ('journal_id', '=', False)]
             action['name'] += ' for journal ' + self.name
         return action
 

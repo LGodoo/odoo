@@ -6,7 +6,8 @@ from odoo.addons.portal.controllers.portal import CustomerPortal, pager as porta
 from odoo.addons.payment.controllers.portal import PaymentProcessing
 from odoo.exceptions import AccessError, MissingError
 from odoo.http import request
-
+import logging
+_logger = logging.getLogger(__name__)
 
 class PortalAccount(CustomerPortal):
 
@@ -15,6 +16,8 @@ class PortalAccount(CustomerPortal):
         invoice_count = request.env['account.invoice'].search_count([])
         values['invoice_count'] = invoice_count
         return values
+
+
 
     # ------------------------------------------------------------
     # My Invoices
@@ -74,6 +77,25 @@ class PortalAccount(CustomerPortal):
             'sortby': sortby,
         })
         return request.render("account.portal_my_invoices", values)
+
+    @http.route(['/my/statements'], type='http', auth="user", website=True)
+    def portal_my_statements(self, page=1, date_begin=None, date_end=None, sortby=None, **kw):
+
+        if request.env.user:
+            partner = request.env.user.partner_id
+            att = request.env['ir.attachment'].sudo().search([
+                ('res_id', '=', partner.id),
+                ('res_model', '=', 'res.partner'),
+                ('res_field', '=', 1), #test tomo
+                ('type', '=', 'binary')])
+            values = {
+                'attachment_details': att,
+            }
+
+
+            return request.render("account.portal_my_statements", values)
+        else:
+            return request.render("account.portal_my_statements", {})
 
     @http.route(['/my/invoices/<int:invoice_id>'], type='http', auth="public", website=True)
     def portal_my_invoice_detail(self, invoice_id, access_token=None, report_type=None, download=False, **kw):

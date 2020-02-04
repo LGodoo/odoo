@@ -12,6 +12,7 @@
             <field name="partner_to">${object.partner_id.id}</field>
             <field name="subject">${object.company_id.name} Invoice (Ref ${object.number or 'n/a'})</field>
             <field name="body_html" type="html">
+
 <div style="margin: 0px; padding: 0px;">
     <p style="margin: 0px; padding: 0px; font-size: 13px;">
         Dear ${object.partner_id.name}
