@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_bank_statement_form" model="ir.ui.view">
+    <field name="name">update.bank.statement.form</field>
+    <field name="model">account.bank.statement</field>
+    <field name="inherit_id" ref="account.view_bank_statement_form"/>
+    <field name="arch" type="xml">
+        <button name="check_confirm_bank" position="after">
+            <button name="update_statement_lines" string="Update statement BoC API"
+                type="object" states="open"
+                help="Import bank statement based on currently used Account ID" />
+        </button>
+
+
+    </field>
+    </record>
+
+    </odoo>
