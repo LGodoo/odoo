@@ -3,32 +3,23 @@
 # * base_automation
 # 
 # Translators:
-# 966ff43e6966712895a590e7320ca288, 2018
-# Gabriel Umana <gabriel.umana@delfixcr.com>, 2019
+# e2f_EPV Translator <e2f_EPV@outlook.com>, 2018
 # Martin Trigaux, 2019
-# Rick Hunter <rick.hunter.ec@gmail.com>, 2019
-# Rick Hunter <rick_hunter_ec@yahoo.com>, 2019
-# Jon Perez <jop@odoo.com>, 2019
-# Pedro M. Baeza <pedro.baeza@gmail.com>, 2019
+# Gabriel Umana <gabriel.umana@delfixcr.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:16+0000\n"
-"Last-Translator: Pedro M. Baeza <pedro.baeza@gmail.com>, 2019\n"
+"Last-Translator: Gabriel Umana <gabriel.umana@delfixcr.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. module: base_automation
-#: model:mail.template,body_html:base_automation.test_mail_template_automation
-msgid "<div>Email automation</div>"
-msgstr "<div>Automatización de correo electrónico</div>"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__help
@@ -64,7 +55,7 @@ msgstr "Actividad"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_type
 msgid "Activity User Type"
-msgstr "Tipo de actividad de usuario"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__channel_ids
@@ -159,12 +150,6 @@ msgstr ""
 "contexto"
 
 #. module: base_automation
-#: model:base.automation,name:base_automation.test_rule_on_write_recompute_send_email
-#: model:ir.actions.server,name:base_automation.test_rule_on_write_recompute_send_email_ir_actions_server
-msgid "Base Automation: test send an email"
-msgstr ""
-
-#. module: base_automation
 #: selection:base.automation,trigger:0
 msgid "Based on Form Modification"
 msgstr "En base a modificación de formulario"
@@ -200,8 +185,6 @@ msgid ""
 "Check this box if this contact is a customer. It can be selected in sales "
 "orders."
 msgstr ""
-"Marque esta casilla si este contacto es un cliente. Puede ser seleccionado "
-"en órdenes de venta. "
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__child_ids
@@ -292,12 +275,12 @@ msgstr "Nombre mostrado"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_date_deadline_range
 msgid "Due Date In"
-msgstr "Fecha de vencimiento en"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_date_deadline_range_type
 msgid "Due type"
-msgstr "Tipo de vencimiento"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__template_id
@@ -406,6 +389,11 @@ msgid "Model"
 msgstr "Modelo"
 
 #. module: base_automation
+#: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
+msgid "Model Description"
+msgstr "Descripción del modelo"
+
+#. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__model_name
 msgid "Model Name"
 msgstr "Nombre del modelo"
@@ -508,6 +496,16 @@ msgid "Python Code"
 msgstr "Código Python"
 
 #. module: base_automation
+#: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_form
+msgid "Remove Action"
+msgstr "Eliminar acción"
+
+#. module: base_automation
+#: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_form
+msgid "Remove the contextual action related to this server action"
+msgstr "Eliminar la acción contextual relacionada con esta acción de servidor"
+
+#. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_id
 #: model:ir.model.fields,field_description:base_automation.field_base_automation_lead_test__user_id
 msgid "Responsible"
@@ -564,14 +562,9 @@ msgid "Summary"
 msgstr "Resumen"
 
 #. module: base_automation
-#: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
-msgid "Target Model"
-msgstr "Modelo de objetivo"
-
-#. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__activity_user_field_name
 msgid "Technical name of the user on the record"
-msgstr "Nombre técnico del usuario en el registro"
+msgstr ""
 
 #. module: base_automation
 #: code:addons/base_automation/models/base_automation.py:87
@@ -596,21 +589,19 @@ msgstr "Fecha activación"
 msgid ""
 "Type of server action. The following values are available:\n"
 "- 'Execute Python Code': a block of python code that will be executed\n"
-"- 'Create': create a new record with new values\n"
-"- 'Update a Record': update the values of a record\n"
+"- 'Create or Copy a new Record': create a new record with new values, or copy an existing record in your database\n"
+"- 'Write on a Record': update the values of a record\n"
 "- 'Execute several actions': define an action that triggers several other server actions\n"
-"- 'Send Email': automatically send an email (Discuss)\n"
-"- 'Add Followers': add followers to a record (Discuss)\n"
-"- 'Create Next Activity': create an activity (Discuss)"
+"- 'Add Followers': add followers to a record (available in Discuss)\n"
+"- 'Send Email': automatically send an email (available in email_template)"
 msgstr ""
 "Tipo de acción de servidor. Están disponibles los siguientes valores:\n"
 "- 'Ejecutar código Python': un bloque de código Python que será ejecutado\n"
 "- 'Crear o duplicar un nuevo registro': crea un nuevo registro con nuevos valores, o duplica uno existente en la base de datos\n"
-"- 'Actualizar un registro': actualiza los valores de un registro\n"
+"- 'Escribir en un registro': actualiza los valores de un registro\n"
 "- 'Ejecutar varias acciones': define una acción que lanza varias otras acciones de servidor\n"
-"- 'Enviar un correo electrónico': envía automáticamente un correo electrónico (Conversaciones)\n"
-"- 'Añadir seguidores': añade seguidores a un registro (Conversaciones)\n"
-"- 'Crear próxima actividad': crea una actividad (Conversaciones)"
+"- 'Añadir seguidores': añade seguidores a un registro (disponible en Discuss)\n"
+"- 'Enviar un correo electrónico': envía automáticamente un correo electrónico (disponible en email_template)"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__usage
@@ -625,9 +616,6 @@ msgid ""
 " 'Generic User From Record' to specify the field name of the user to choose "
 "on the record."
 msgstr ""
-"Use 'Usuario específico' para asignar siempre el mismo usuario en la "
-"siguiente actividad. Use 'Usuario genérico del registro' para especificar el"
-" nombre del campo del usuario para elegir en el registro."
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__trg_date_calendar_id
@@ -652,7 +640,7 @@ msgstr "Usuario"
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_field_name
 msgid "User field name"
-msgstr "Nombre del campo de usuario"
+msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__fields_lines

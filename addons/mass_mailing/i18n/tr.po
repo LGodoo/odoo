@@ -9,6 +9,7 @@
 # Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2018
 # Saban Yildiz <sabany@projetgrup.com>, 2018
 # Mehmet Demirel <mdemirell@gmail.com>, 2018
+# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2018
 # İlknur Püskül <ilknurpuskull@gmail.com>, 2018
 # Metin Akın <aknmetin@gmail.com>, 2018
 # Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2018
@@ -16,15 +17,13 @@
 # Murat Kaplan <muratk@projetgrup.com>, 2018
 # Buket Şeker <buket_skr@hotmail.com>, 2018
 # Ediz Duman <neps1192@gmail.com>, 2019
-# Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2019
-# Abdullah Onur Uğur <aonurugur@outlook.com>, 2019
 # Umur Akın <umura@projetgrup.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:35+0000\n"
+"POT-Creation-Date: 2019-01-15 10:48+0000\n"
 "PO-Revision-Date: 2018-08-24 09:20+0000\n"
 "Last-Translator: Umur Akın <umura@projetgrup.com>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
@@ -845,11 +844,6 @@ msgid "Email Statistics"
 msgstr "E-posta İstatistiği"
 
 #. module: mass_mailing
-#: model:ir.model,name:mass_mailing.model_mail_template
-msgid "Email Templates"
-msgstr "Eposta Şablonları"
-
-#. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_thread
 msgid "Email Thread"
 msgstr "E-Posta İşlemleri"
@@ -1042,7 +1036,7 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_contact__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "İşaretliyse,bazı mesajlar gönderi hatası içermektedir."
+msgstr ""
 
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mail_mass_mailing_contact__is_blacklisted
@@ -1051,8 +1045,6 @@ msgid ""
 "If the email address is on the blacklist, the contact won't receive mass "
 "mailing anymore, from any list"
 msgstr ""
-"Eğer email adresi kara listede ise, bağlantı, toplu eposta gönderiminde, "
-"herhangi bir listeden mail almayacaktır.  "
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mail_statistics__ignored
@@ -1917,14 +1909,6 @@ msgid "Scheduled date"
 msgstr "Planlanan tarih"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:255
-#, python-format
-msgid ""
-"Search opt out cannot be executed without a unique and valid active mailing "
-"list context."
-msgstr ""
-
-#. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Select a template"
 msgstr "Şablon Seç "
@@ -2310,14 +2294,9 @@ msgid "Unsubscription Date"
 msgstr "Abonelikten Çıkma Tarihi"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:880
+#: code:addons/mass_mailing/models/mass_mailing.py:806
 #, python-format
-msgid "Unsupported mass mailing model %s"
-msgstr ""
-
-#. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
-msgid "Update my subscriptions"
+msgid "Unsupported mass mailing model %r"
 msgstr ""
 
 #. module: mass_mailing
@@ -2461,9 +2440,9 @@ msgstr "E-Posta listelerimizden herhangi birine üye değilsiniz."
 
 #. module: mass_mailing
 #. openerp-web
-#: code:addons/mass_mailing/static/src/js/unsubscribe.js:50
+#: code:addons/mass_mailing/static/src/js/unsubscribe.js:49
 #, python-format
-msgid "You have been <strong>successfully unsubscribed from %s</strong>."
+msgid "You have been <strong>successfully unsubscribed from </strong>."
 msgstr ""
 
 #. module: mass_mailing

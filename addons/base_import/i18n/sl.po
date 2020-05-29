@@ -4,12 +4,10 @@
 # 
 # Translators:
 # Martin Trigaux, 2019
-# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2019
 # Vida Potočnik <vida.potocnik@mentis.si>, 2019
 # laznikd <laznik@mentis.si>, 2019
 # matjaz k <matjaz@mentis.si>, 2019
-# Jasmina Macur <jasmina@hbs.si>, 2019
-# Tadej Lupšina <tadej@hbs.si>, 2019
 # 
 msgid ""
 msgstr ""
@@ -17,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:05+0000\n"
 "PO-Revision-Date: 2018-08-24 09:16+0000\n"
-"Last-Translator: Tadej Lupšina <tadej@hbs.si>, 2019\n"
+"Last-Translator: matjaz k <matjaz@mentis.si>, 2019\n"
 "Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +28,7 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:612
 #, python-format
 msgid "%d records were successfully imported"
-msgstr "%d zapisov je bilo uspešno uvoženih"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -69,7 +67,7 @@ msgstr "Osnova"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_import
 msgid "Base Import"
-msgstr "Osnovni uvoz"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_mapping
@@ -98,7 +96,7 @@ msgstr ""
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__column_name
 msgid "Column Name"
-msgstr "Naziv stolpca"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -121,7 +119,7 @@ msgstr ""
 #: code:addons/base_import/static/src/xml/base_import.xml:108
 #, python-format
 msgid "Create if doesn't exist"
-msgstr "Ustvari, če ne obstaja"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__create_uid
@@ -193,7 +191,7 @@ msgstr "Database ID"
 #: code:addons/base_import/static/src/js/import_action.js:83
 #, python-format
 msgid "Date Format:"
-msgstr "Oblika datuma:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -294,7 +292,7 @@ msgstr "Vse zgleda veljavno."
 #: code:addons/base_import/static/src/xml/base_import.xml:82
 #, python-format
 msgid "Excel files are recommended as fields formatting is automatic."
-msgstr "Priporočamo Excel datoteko, ker je oblikovanje polj samodejno."
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:169
@@ -441,7 +439,7 @@ msgstr "Uvozi"
 #: code:addons/base_import/static/src/xml/base_import.xml:91
 #, python-format
 msgid "Import FAQ"
-msgstr "Uvozi pogosta vprašanja"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -542,14 +540,14 @@ msgstr "Zadnjič posodobljeno"
 #: code:addons/base_import/static/src/xml/base_import.xml:101
 #, python-format
 msgid "Load File"
-msgstr "Naloži datoteko"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:364
 #, python-format
 msgid "Load New File"
-msgstr "Naloži novo datoteko"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -573,14 +571,14 @@ msgstr "Naziv"
 #: code:addons/base_import/static/src/xml/base_import.xml:85
 #, python-format
 msgid "Need Help?"
-msgstr "Potrebujete pomoč?"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:231
 #, python-format
 msgid "No Separator"
-msgstr "Brez ločila"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -611,7 +609,7 @@ msgstr "Relacijska polja"
 #: code:addons/base_import/static/src/xml/base_import.xml:100
 #, python-format
 msgid "Reload File"
-msgstr "Ponovno naloži datoteko"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
@@ -623,7 +621,7 @@ msgstr ""
 #: code:addons/base_import/static/src/xml/base_import.xml:79
 #, python-format
 msgid "Select a CSV or Excel file to import."
-msgstr "Izberite datoteko CSV ali Excel, ki jo želite uvoziti."
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -670,7 +668,7 @@ msgstr "Tab"
 #: code:addons/base_import/static/src/xml/base_import.xml:99
 #, python-format
 msgid "Test Import"
-msgstr "Testni uvoz"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_preview
@@ -817,7 +815,7 @@ msgstr "Vrednost"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__value2
 msgid "Value2"
-msgstr "Vrednost2"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:760

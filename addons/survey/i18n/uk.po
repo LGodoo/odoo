@@ -5,17 +5,17 @@
 # Translators:
 # Yaroslav Molochko <onorua@gmail.com>, 2018
 # Taras Kovaliuk <tratatuta123@gmail.com>, 2018
+# ТАрас <tratatuta@i.ua>, 2018
 # Martin Trigaux, 2018
-# trolka <trolka.olug@gmail.com>, 2018
-# Bohdan Lisnenko, 2019
-# ТАрас <tratatuta@i.ua>, 2019
+# Bohdan Lisnenko, 2018
+# Olga Lugova <trolka.olug@gmail.com>, 2018
 # Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-29 10:10+0000\n"
+"POT-Creation-Date: 2019-01-09 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 09:25+0000\n"
 "Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
@@ -457,7 +457,7 @@ msgstr "Підрахунок прикріплення"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__attachment_ids
 msgid "Attachments"
-msgstr "Прикріплення"
+msgstr "Долучення"
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_mail_compose_message__attachment_ids
@@ -740,7 +740,6 @@ msgid "Delete sent emails (mass mailing only)"
 msgstr "Видалити відправлені електронні листи (лише для масової розсилки)"
 
 #. module: survey
-#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__description
 #: model:ir.model.fields,field_description:survey.field_survey_page__description
 #: model:ir.model.fields,field_description:survey.field_survey_question__description
 #: model:ir.model.fields,field_description:survey.field_survey_survey__description
@@ -1334,11 +1333,6 @@ msgid "Message Record Name"
 msgstr "Назва запису повідомлення"
 
 #. module: survey
-#: model:ir.model.fields,help:survey.field_survey_mail_compose_message__description
-msgid "Message description: either the subject, or the beginning of the body"
-msgstr "Опис повідомлення: тема або початок тіла листа"
-
-#. module: survey
 #: model:ir.model.fields,help:survey.field_survey_mail_compose_message__message_type
 msgid ""
 "Message type: email for email message, notification for system message, "
@@ -1757,11 +1751,6 @@ msgid "Public url"
 msgstr "Публічна url-адреса"
 
 #. module: survey
-#: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__website_published
-msgid "Published"
-msgstr "Опубліковано"
-
-#. module: survey
 #: model:survey.label,value:survey.choice_1_2_2
 msgid "Purchases Management"
 msgstr "Керування закупівлями"
@@ -2114,7 +2103,7 @@ msgstr "Тема..."
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.page
 msgid "Submit survey"
-msgstr "Завершити опитування"
+msgstr "Додати опитування"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__subtype_id
@@ -2422,8 +2411,8 @@ msgid ""
 "Emails must be separated by commas, semicolons or newline."
 msgstr ""
 "Цей список електронних листів одержувачів не буде перетворений в контакти. "
-"Електронні листи повинні бути розділені комами, комами-крапками або новим "
-"рядком."
+"Електронні листи повинні бути розділені комами, комами-крапками або новою "
+"лінією."
 
 #. module: survey
 #: model:ir.model.fields,help:survey.field_survey_survey__thank_you_message
@@ -2569,7 +2558,7 @@ msgstr "Майбутні види діяльності"
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__use_active_domain
 msgid "Use active domain"
-msgstr "Використовуйте активний домен"
+msgstr "Використовувати активний домкен"
 
 #. module: survey
 #: model:ir.model.fields,field_description:survey.field_survey_mail_compose_message__template_id
@@ -2660,11 +2649,6 @@ msgstr "Перегляньте результати"
 #: model_terms:ir.ui.view,arch_db:survey.survey_form
 msgid "View results"
 msgstr "Перегляньте результати"
-
-#. module: survey
-#: model:ir.model.fields,help:survey.field_survey_mail_compose_message__website_published
-msgid "Visible on the website as a comment"
-msgstr "Показано на сайті як коментар"
 
 #. module: survey
 #: model_terms:ir.ui.view,arch_db:survey.result_choice

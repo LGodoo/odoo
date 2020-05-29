@@ -238,13 +238,8 @@ var FormViewDialog = ViewDialog.extend({
      * @override
      */
     _focusOnClose: function() {
-        var isFocusSet = false;
-        this.trigger_up('form_dialog_discarded', {
-            callback: function (isFocused) {
-                isFocusSet = isFocused;
-            },
-        });
-        return isFocusSet;
+        this.trigger_up('form_dialog_discarded');
+        return true;
     },
 
     /**
@@ -378,7 +373,7 @@ var SelectCreateDialog = ViewDialog.extend({
         var searchview = new SearchView(this, this.dataset, fields_views.search, options);
         searchview.prependTo($header).done(function () {
             var d = searchview.build_search_data();
-            if (self.initial_ids && !searchview.hasFavorites) {
+            if (self.initial_ids) {
                 d.domains.push([["id", "in", self.initial_ids]]);
                 self.initial_ids = undefined;
             }
@@ -471,13 +466,8 @@ var SelectCreateDialog = ViewDialog.extend({
      * @override
      */
     _focusOnClose: function() {
-        var isFocusSet = false;
-        this.trigger_up('form_dialog_discarded', {
-            callback: function (isFocused) {
-                isFocusSet = isFocused;
-            },
-        });
-        return isFocusSet;
+        this.trigger_up('form_dialog_discarded');
+        return true;
     },
     //--------------------------------------------------------------------------
     // Handlers

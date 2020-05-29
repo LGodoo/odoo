@@ -4,9 +4,8 @@
 # 
 # Translators:
 # Martin Trigaux, 2019
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2019
 # Dejan Sraka <dejan.sraka@picolabs.si>, 2019
-# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
-# Jasmina Macur <jasmina@hbs.si>, 2020
 # 
 msgid ""
 msgstr ""
@@ -14,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:22+0000\n"
-"Last-Translator: Jasmina Macur <jasmina@hbs.si>, 2020\n"
+"Last-Translator: Dejan Sraka <dejan.sraka@picolabs.si>, 2019\n"
 "Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,22 +31,22 @@ msgstr "; več najdenih naročil"
 #: code:addons/payment_buckaroo/models/payment.py:139
 #, python-format
 msgid "; no order found"
-msgstr "; nobenega naročila ni bilo najdenega"
+msgstr ""
 
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Adyen"
-msgstr "Adyen"
+msgstr ""
 
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Authorize.Net"
-msgstr "Authorize.Net"
+msgstr ""
 
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Buckaroo"
-msgstr "Buckaroo"
+msgstr ""
 
 #. module: payment_buckaroo
 #: code:addons/payment_buckaroo/models/payment.py:148
@@ -97,7 +96,7 @@ msgstr "Plačilna transakcija"
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Paypal"
-msgstr "Paypal"
+msgstr ""
 
 #. module: payment_buckaroo
 #: model:ir.model.fields,field_description:payment_buckaroo.field_payment_acquirer__provider
@@ -117,7 +116,7 @@ msgstr ""
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Stripe"
-msgstr "Stripe"
+msgstr ""
 
 #. module: payment_buckaroo
 #: model:ir.model.fields,field_description:payment_buckaroo.field_payment_acquirer__brq_websitekey
@@ -127,4 +126,4 @@ msgstr "Ključ spletne strani"
 #. module: payment_buckaroo
 #: selection:payment.acquirer,provider:0
 msgid "Wire Transfer"
-msgstr "Bančno nakazilo"
+msgstr "Transakcija iz TR"

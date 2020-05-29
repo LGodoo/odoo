@@ -46,10 +46,9 @@ class AccountInvoice(models.Model):
     def _onchange_delivery_address(self):
         addr = self.partner_id.address_get(['delivery'])
         self.partner_shipping_id = addr and addr.get('delivery')
-        inv_type = self.type or self.env.context.get('type', 'out_invoice')
-        if inv_type == 'out_invoice':
+        if self.env.context.get('type', 'out_invoice') == 'out_invoice':
             company = self.company_id or self.env.user.company_id
-            self.comment = company.with_context(lang=self.partner_id.lang).sale_note or (self._origin.company_id == company and self.comment)
+            self.comment = company.with_context(lang=self.partner_id.lang).sale_note
 
     @api.multi
     def action_invoice_open(self):

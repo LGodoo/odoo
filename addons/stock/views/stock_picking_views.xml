@@ -240,19 +240,6 @@
                             class="oe_stat_button" icon="fa-cubes"
                             attrs="{'invisible': [('has_packages', '=', False)]}"/>
                         <button name="%(action_stock_report)d" icon="fa-arrow-up" class="oe_stat_button" string="Traceability Report" type="action" attrs="{'invisible': ['|', ('state', '!=', 'done'), ('has_tracking', '=', False)]}" groups="stock.group_production_lot"/>
-                        <!-- Use the following button to avoid onchange on one2many -->
-                        <button name="action_picking_move_tree"
-                            class="oe_stat_button"
-                            icon="fa-arrows-v"
-                            type="object"
-                            help="List view of operations"
-                            groups="base.group_no_one"
-                            attrs="{'invisible': ['|', '&amp;', ('show_operations', '=', True), '|', ('is_locked', '=', True), ('state', '=', 'done'), '&amp;', ('state', '=', 'done'), ('is_locked', '=', True)]}"
-                            context="{'picking_type_code': picking_type_code, 'default_picking_id': id, 'form_view_ref':'stock.view_move_picking_form', 'address_in_id': partner_id, 'default_picking_type_id': picking_type_id, 'default_location_id': location_id, 'default_location_dest_id': location_dest_id}">
-                            <div class="o_form_field o_stat_info">
-                                <span class="o_stat_text">Operations</span>
-                            </div>
-                        </button>
                     </div>
                     <h1 class="d-none d-md-block">
                         <field name="name" attrs="{'invisible': [('name','=','/')]}" readonly="1"/>
@@ -373,9 +360,9 @@
                     <filter name="done" string="Done" domain="[('state','=','done')]" help="Pickings already processed"/>
                     <filter name="cancel" string="Cancelled" domain="[('state','=', 'cancel')]" help="Cancelled Moves"/>
                     <separator/>
-                    <filter name="late" string="Late" domain="[('scheduled_date','&lt;', time.strftime('%%Y-%%m-%%d %%H:%%M:%%S')), ('state', 'in', ('assigned', 'waiting', 'confirmed'))]" help="Pickings that are late on scheduled time"/>
+                    <filter name="late" string="Late" domain="[('scheduled_date','&lt;', time.strftime('%%Y-%%m-%%d %%H:%%M:%%S'))]" help="Pickings that are late on scheduled time"/>
                     <separator/>
-                    <filter name="backorder" string="Backorders" domain="[('backorder_id','!=', False), ('state', 'in', ('assigned', 'waiting', 'confirmed'))]" help="Remaining parts of picking partially processed"/>
+                    <filter name="backorder" string="Backorders" domain="[('backorder_id','!=', False)]" help="Remaining parts of picking partially processed"/>
                     <separator/>
                     <filter string="My Activities" name="activities_my"
                         domain="[('activity_ids.user_id', '=', uid)]"/>
@@ -546,6 +533,7 @@
                     'default_picking_type_id': active_id,
                     'contact_display': 'partner_address',
                     'search_default_late': 1,
+                    'search_default_confirmed': 1,
             }
             </field>
             <field name="search_view_id" ref="view_picking_internal_search"/>
@@ -568,6 +556,7 @@
                     'default_picking_type_id': active_id,
                     'contact_display': 'partner_address',
                     'search_default_backorder': 1,
+                    'search_default_confirmed': 1,
             }
             </field>
             <field name="search_view_id" ref="view_picking_internal_search"/>
@@ -638,7 +627,7 @@
             <field name="arch" type="xml">
                 <kanban class="oe_background_grey o_kanban_dashboard o_emphasize_colors o_stock_kanban" create="0">
                     <field name="color"/>
-                    <field name="code" readonly="1"/>
+                    <field name="code"/>
                     <field name="count_picking_ready"/>
                     <field name="count_picking_draft"/>
                     <field name="count_picking_waiting"/>
@@ -655,7 +644,7 @@
                                                     <field name="name"/>
                                                 </a>
                                             </div>
-                                            <div class="o_secondary"><field class="o_secondary"  name="warehouse_id" readonly="1"/></div>
+                                            <div class="o_secondary"><field class="o_secondary"  name="warehouse_id"/></div>
                                         </div>
                                         <div class="o_kanban_manage_button_section">
                                             <a class="o_kanban_manage_toggle_button" href="#"><i class="fa fa-ellipsis-v" role="img" aria-label="Manage" title="Manage"/></a>

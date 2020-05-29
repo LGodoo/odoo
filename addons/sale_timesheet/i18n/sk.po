@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2018-10-08 06:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:25+0000\n"
 "Last-Translator: Jan Prokop, 2019\n"
 "Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
@@ -89,8 +89,6 @@ msgid ""
 "A billable project should be linked to a Sales Order Item that does not come"
 " from an expense or a vendor bill."
 msgstr ""
-"Fakturovateľný projekt by mal byť prepojený s položkou zákazky odberateľa, "
-"ktorá nepochádza z výdavkov alebo z faktúry dodávateľa."
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_sale_order_line__qty_delivered_method
@@ -297,12 +295,12 @@ msgstr "Vytvoriť faktúru z projektu"
 #. module: sale_timesheet
 #: model:ir.model,name:sale_timesheet.model_project_create_sale_order_line
 msgid "Create SO Line from project"
-msgstr "Vytvoriť položku zákazky z projektu"
+msgstr ""
 
 #. module: sale_timesheet
 #: model:ir.model,name:sale_timesheet.model_project_create_sale_order
 msgid "Create SO from project"
-msgstr "Vytvoriť zákazku z projektu"
+msgstr ""
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/project.py:102
@@ -432,11 +430,6 @@ msgstr "Pevný"
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_view_search
 msgid "Fixed Price Projects"
 msgstr "Projekt s pevnou cenou"
-
-#. module: sale_timesheet
-#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
-msgid "Fixed price services"
-msgstr ""
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__project_id
@@ -582,7 +575,6 @@ msgid "Manually set quantities on order"
 msgstr "Manuálne nastaviť množstvá na objednávke"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,help:sale_timesheet.field_product_product__service_type
 #: model:ir.model.fields,help:sale_timesheet.field_product_template__service_type
 msgid ""
 "Manually set quantities on order: Invoice based on the manually entered quantity, without creating an analytic account.\n"
@@ -597,11 +589,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_timesheet.field_sale_order_line__qty_delivered_method
 msgid "Method to update delivered qty"
 msgstr "Metóda úpravy dodaného množstva"
-
-#. module: sale_timesheet
-#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
-msgid "Milestone services"
-msgstr ""
 
 #. module: sale_timesheet
 #: selection:product.template,service_policy:0
@@ -683,14 +670,11 @@ msgid "Number of timesheets"
 msgstr "Počet časových rozvrhov"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,help:sale_timesheet.field_product_product__service_tracking
 #: model:ir.model.fields,help:sale_timesheet.field_product_template__service_tracking
 msgid ""
 "On Sales order confirmation, this product can generate a project and/or "
 "task. From those, you can track the service you are selling."
 msgstr ""
-"V potvrdení zákazky odberateľa môže tento produkt vygenerovať projekt a / "
-"alebo úlohu. Z nich môžete sledovať službu, ktorú predávate."
 
 #. module: sale_timesheet
 #: selection:product.template,service_policy:0
@@ -716,7 +700,6 @@ msgid "Overview"
 msgstr "Prehľad"
 
 #. module: sale_timesheet
-#: model:ir.model,name:sale_timesheet.model_product_product
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_profitability_report__product_id
 msgid "Product"
 msgstr "Produkt"
@@ -738,8 +721,6 @@ msgid ""
 "Product of the sales order item. Must be a service invoiced based on "
 "timesheets on tasks."
 msgstr ""
-"Produkt položky zákazky odberateľa. Musí to byť služba fakturovaná na "
-"základe časového rozvrhu úloh."
 
 #. module: sale_timesheet
 #: model:ir.actions.act_window,name:sale_timesheet.product_template_action_fixed
@@ -764,7 +745,6 @@ msgstr "Analýza ziskovosti"
 #: code:addons/sale_timesheet/controllers/main.py:373
 #: code:addons/sale_timesheet/controllers/main.py:424
 #: model:ir.model,name:sale_timesheet.model_project_project
-#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__project_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_product_template__project_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_create_invoice__project_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order__project_id
@@ -808,7 +788,6 @@ msgid "Project Sales line, employee mapping"
 msgstr ""
 
 #. module: sale_timesheet
-#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__project_template_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_product_template__project_template_id
 msgid "Project Template"
 msgstr "Šablóna projektu"
@@ -821,7 +800,7 @@ msgstr "Projekt pre ktorý tvoríme objednávku"
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_sale_order_line__project_id
 msgid "Project generated by the sales order item"
-msgstr "Projekt vygenerovaný položkou zákazky odberateľa"
+msgstr ""
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_project_create_invoice__project_id
@@ -893,18 +872,16 @@ msgid ""
 "Sale order line from which the project has been created. Used for "
 "tracability."
 msgstr ""
-"Položka zákazky odberateľa, z ktorej bol projekt vytvorený. Používa sa na "
-"sledovateľnosť."
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_project_task_assign_sale__sale_line_id
 msgid "Sale order line to link to selected tasks"
-msgstr "Položka pzákazky na prepojenie s vybranými úlohami"
+msgstr ""
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_project__sale_order_id
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_task__sale_order_id
-#: model_terms:ir.ui.view,arch_db:sale_timesheet.project_task_view_form_sale_order
+#: model_terms:ir.ui.view,arch_db:sale_timesheet.view_sale_service_inherit_form2
 msgid "Sales Order"
 msgstr "Objednávka predaja"
 
@@ -932,8 +909,6 @@ msgid ""
 "Sales Order item should generate a task and/or a project, depending on the "
 "product settings."
 msgstr ""
-"Položka zákazky by mala generovať úlohu a / alebo projekt v závislosti od "
-"nastavení produktu."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/controllers/main.py:395
@@ -942,25 +917,18 @@ msgid "Sales Orders"
 msgstr "Objednávky predaja"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,help:sale_timesheet.field_product_product__project_id
 #: model:ir.model.fields,help:sale_timesheet.field_product_template__project_id
 msgid ""
 "Select a non billable project on which tasks can be created. This setting "
 "must be set for each company."
 msgstr ""
-"Vyberte neúčtovateľný projekt, na ktorom môžu byť vytvorené úlohy. Toto "
-"nastavenie musí byť nastavené pre každú spoločnosť."
 
 #. module: sale_timesheet
-#: model:ir.model.fields,help:sale_timesheet.field_product_product__project_template_id
 #: model:ir.model.fields,help:sale_timesheet.field_product_template__project_template_id
 msgid ""
 "Select a non billable project to be the skeleton of the new created project "
 "when selling the current product. Its stages and tasks will be duplicated."
 msgstr ""
-"Vyberte neúčtovateľný projekt, ktorý bude kostrou nového vytvoreného "
-"projektu pri predaji aktuálneho produktu. Jeho etapy a úlohy budú "
-"duplikované."
 
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_project_task_assign_sale__task_ids
@@ -968,8 +936,6 @@ msgid ""
 "Select the tasks to assign to the Sale Order Items. You can only choose task"
 " (no sub tasks)."
 msgstr ""
-"Vyberte úlohy, ktoré chcete priradiť položkám objednávky predaja. Môžete si "
-"vybrať len úlohu (žiadne čiastkové úlohy)."
 
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
@@ -978,9 +944,6 @@ msgid ""
 "Timesheets app and invoice them based on a fixed price (ordered quantity) or"
 " on the time spent (delivered quantity)"
 msgstr ""
-"Predávajte služby (napr. Projekt, údržba), zaznamenávajte čas strávený "
-"používaním aplikácie Časové rozvrhy a fakturujte ich na základe pevnej ceny "
-"(objednané množstvo) alebo času stráveného (dodané množstvo)"
 
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.res_config_settings_view_form
@@ -1000,13 +963,11 @@ msgid "Service"
 msgstr "Služba"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_policy
 #: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_policy
 msgid "Service Invoicing Policy"
 msgstr "Postup fakturácie služieb"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_tracking
 #: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_tracking
 msgid "Service Tracking"
 msgstr "Sledovanie služby"
@@ -1059,7 +1020,7 @@ msgstr ""
 #. module: sale_timesheet
 #: model:ir.model.fields,help:sale_timesheet.field_sale_order_line__task_id
 msgid "Task generated by the sales order item"
-msgstr "Úloha vygenerovaná položkou zákazky odberateľa"
+msgstr ""
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/controllers/main.py:385
@@ -1082,8 +1043,6 @@ msgstr "Úlohy spojené s týmto predajom"
 msgid ""
 "The Project should be linked to a Sale Order to select an Sale Order Items."
 msgstr ""
-"Projekt by mal byť prepojený s objednávkou predaja, aby sa vybrali položky "
-"objednávky predaja."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:67
@@ -1092,8 +1051,6 @@ msgid ""
 "The Sales Order cannot be created because you did not enter some employees that entered timesheets on this project. Please list all the relevant employees before creating the Sales Order.\n"
 "Missing employee(s): %s"
 msgstr ""
-"Zákazku odberateľa nie je možné vytvoriť, pretože ste nevložili niektorých zamestnancov, ktorí na tento projekt zadali pracovné listy. Pred vytvorením zákazky odberateľa uveďte prosím všetkých relevantných zamestnancov.\n"
-"Chýbajúci zamestnanec: %s"
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/product.py:68
@@ -1102,7 +1059,6 @@ msgid ""
 "The product %s should not have a global project since it will generate a "
 "project."
 msgstr ""
-"Produkt %s by nemal mať globálny projekt, pretože bude generovať projekt."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/product.py:64
@@ -1111,8 +1067,6 @@ msgid ""
 "The product %s should not have a project nor a project template since it "
 "will not generate project."
 msgstr ""
-"Produkt %s by nemal mať projekt ani šablónu projektu, pretože nebude "
-"generovať projekt."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/product.py:66
@@ -1121,8 +1075,6 @@ msgid ""
 "The product %s should not have a project template since it will generate a "
 "task in a global project."
 msgstr ""
-"Produkt %s by nemal mať šablónu projektu, pretože vygeneruje úlohu v "
-"globálnom projekte."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:25
@@ -1134,7 +1086,7 @@ msgstr "Projekt je už účtovateľný."
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:55
 #, python-format
 msgid "The project is already linked to a sales order item."
-msgstr "Projekt je už prepojený s položkou zákazky odberateľa."
+msgstr ""
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:72
@@ -1143,14 +1095,12 @@ msgid ""
 "The sales order cannot be created because some timesheets of this project "
 "are already linked to another sales order."
 msgstr ""
-"Zákazku odberateľa nie je možné vytvoriť, pretože niektoré časové plány "
-"tohto projektu sú už prepojené s inou zákazkou odberateľa."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_invoice.py:51
 #, python-format
 msgid "The selected Sales Order should contain something to invoice."
-msgstr "Vybraná zákazka odberateľa by mala obsahovať niečo na fakturáciu."
+msgstr ""
 
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_plan
@@ -1164,9 +1114,6 @@ msgid ""
 "compare the amount to invoice, the ones already invoiced and the project "
 "cost (via timesheet cost of your employees)."
 msgstr ""
-"Táto správa vám umožňuje analyzovať ziskovosť vašich projektov: porovnať "
-"sumu na faktúru, tie, ktoré už boli fakturované, a náklady na projekt "
-"(prostredníctvom nákladov na časovo obmedzené náklady vašich zamestnancov)."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/sale_order.py:270
@@ -1186,9 +1133,6 @@ msgid ""
 " the task, nor on the project. Please define one to save your timesheet "
 "line."
 msgstr ""
-"Tento riadok časového rozvrhu nie je možné fakturovať: na úlohe, ani na "
-"projekte nie je definovaná žiadna položka objednávky. Definujte jednu, aby "
-"ste uložili riadok časového rozvrhu."
 
 #. module: sale_timesheet
 #: model_terms:ir.ui.view,arch_db:sale_timesheet.timesheet_plan
@@ -1196,13 +1140,8 @@ msgid "Time by people"
 msgstr "Čas podľa ľudí"
 
 #. module: sale_timesheet
-#: model_terms:ir.ui.view,arch_db:sale_timesheet.product_template_view_search_sale_timesheet
-msgid "Time-based services"
-msgstr ""
-
-#. module: sale_timesheet
 #. openerp-web
-#: code:addons/sale_timesheet/static/src/js/timesheet_plan.js:177
+#: code:addons/sale_timesheet/static/src/js/timesheet_plan.js:171
 #: model:ir.actions.act_window,name:sale_timesheet.action_timesheet_from_invoice
 #: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_from_plan
 #: model:ir.actions.act_window,name:sale_timesheet.timesheet_action_plan_pivot
@@ -1276,11 +1215,8 @@ msgid ""
 "Total amount to invoice on the sales order, including all items (services, "
 "storables, expenses, ...)"
 msgstr ""
-"Celková suma faktúry na zákazke odberateľa vrátane všetkých položiek "
-"(služby, tovar, náklady, ...)"
 
 #. module: sale_timesheet
-#: model:ir.model.fields,field_description:sale_timesheet.field_product_product__service_type
 #: model:ir.model.fields,field_description:sale_timesheet.field_product_template__service_type
 msgid "Track Service"
 msgstr "Sledovať službu"
@@ -1331,8 +1267,6 @@ msgid ""
 "What is still to deliver based on sold hours and hours already done. Equals "
 "to sold hours - done hours."
 msgstr ""
-"Čo je ešte potrebné dodať na základe predaných hodín a hodín, ktoré už boli "
-"vykonané. Zodpovedá predaným hodinám - vykonaným hodinám."
 
 #. module: sale_timesheet
 #: model:ir.model.fields,field_description:sale_timesheet.field_project_create_sale_order_line__wizard_id
@@ -1352,15 +1286,13 @@ msgid ""
 "You can not modify already invoiced timesheets (linked to a Sales order "
 "items invoiced on Time and material)."
 msgstr ""
-"Nemôžete upravovať už fakturované časové rozvrhy (prepojené s položkami "
-"zákazky odberateľa fakturované v položke čas a materiál)."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/wizard/project_create_invoice.py:18
 #: code:addons/sale_timesheet/wizard/project_create_sale_order.py:19
 #, python-format
 msgid "You can only apply this action from a project."
-msgstr "Túto akciu môžete použiť iba z projektu."
+msgstr ""
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/project.py:208
@@ -1369,15 +1301,13 @@ msgid ""
 "You cannot link the order item %s - %s to this task because it is a re-"
 "invoiced expense."
 msgstr ""
-"Položku objednávky %s- %s s nie je možné prepojiť s touto úlohou, pretože "
-"ide o fakturované výdavky."
 
 #. module: sale_timesheet
 #: code:addons/sale_timesheet/models/project.py:221
 #, python-format
 msgid ""
 "You have to unlink the task from the sale order item in order to delete it."
-msgstr "Ak chcete úlohu zmazať, musíte ju odstrániť z objednávky."
+msgstr ""
 
 #. module: sale_timesheet
 #: model:product.product,weight_uom_name:sale_timesheet.product_service_deliver_manual

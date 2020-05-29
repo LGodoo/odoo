@@ -95,7 +95,7 @@ class ResPartner(models.Model):
         })
         try:
             return jsonrpc(url=url, params=params, timeout=timeout), False
-        except (ConnectionError, HTTPError, exceptions.AccessError, exceptions.UserError) as exception:
+        except (ConnectionError, HTTPError, exceptions.AccessError) as exception:
             _logger.error('Autocomplete API error: %s' % str(exception))
             return False, str(exception)
         except InsufficientCreditError as exception:
@@ -110,7 +110,7 @@ class ResPartner(models.Model):
         if suggestions:
             results = []
             for suggestion in suggestions:
-                results.append(self._format_data_company(suggestion))
+                results.append(suggestion)
             return results
         else:
             return []

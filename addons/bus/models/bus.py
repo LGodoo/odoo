@@ -141,7 +141,7 @@ class ImDispatch(object):
 
             event = self.Event()
             for channel in channels:
-                self.channels.setdefault(hashable(channel), set()).add(event)
+                self.channels.setdefault(hashable(channel), []).append(event)
             try:
                 event.wait(timeout=timeout)
                 with registry.cursor() as cr:
@@ -150,12 +150,6 @@ class ImDispatch(object):
             except Exception:
                 # timeout
                 pass
-            finally:
-                # gc pointers to event
-                for channel in channels:
-                    channel_events = self.channels.get(hashable(channel))
-                    if channel_events and event in channel_events:
-                        channel_events.remove(event)
         return notifications
 
     def loop(self):
@@ -176,7 +170,7 @@ class ImDispatch(object):
                     # dispatch to local threads/greenlets
                     events = set()
                     for channel in channels:
-                        events.update(self.channels.pop(hashable(channel), set()))
+                        events.update(self.channels.pop(hashable(channel), []))
                     for event in events:
                         event.set()
 

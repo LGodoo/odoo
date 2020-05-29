@@ -30,7 +30,16 @@ tour.register('sale_product_configurator_tour', {
     run: 'click'
 }, {
     trigger: '.configurator_container span:contains("Steel")',
-    run: function () {},
+    run: function () {
+        $('input.product_id').change(function () {
+            var request_count = 0;
+            if ($('.o_sale_product_configurator_add').attr('request_count')) {
+                request_count = parseInt($('.o_sale_product_configurator_add').attr('request_count'));
+            }
+            request_count++;
+            $('.o_sale_product_configurator_add').attr('request_count', request_count);
+        });
+    }
 }, {
     trigger: '.configurator_container span:contains("Aluminium")',
     run: 'click'
@@ -40,9 +49,10 @@ tour.register('sale_product_configurator_tour', {
 }, {
     trigger: 'input[data-value_name="Black"]'
 }, {
-    trigger: '.o_sale_product_configurator_add.disabled'
-}, {
     trigger: 'input[data-value_name="White"]'
+}, {
+    trigger: '.o_sale_product_configurator_add[request_count="3"]',
+    run: function (){} // used to sync with "get_combination_info" completion
 }, {
     trigger: '.o_sale_product_configurator_add:not(.disabled)'
 }, {

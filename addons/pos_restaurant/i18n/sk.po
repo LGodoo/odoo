@@ -27,22 +27,22 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 3.12"
-msgstr "$ 3.12"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.40"
-msgstr "$ 4.40"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.50"
-msgstr "$ 4.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 8.50"
-msgstr "$ 8.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
@@ -54,32 +54,32 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_amount\">$ 0.86</span>"
-msgstr "<span class=\"pos-change_amount\">$ 0.86</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_title\">Change</span>"
-msgstr "<span class=\"pos-change_title\">Zmena</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"total-amount-formatting\">TOTAL</span>"
-msgstr "<span class=\"total-amount-formatting\">CELKOM</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
-msgstr "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>$ 470.00</span>"
-msgstr "<span>$ 470.00</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>Cash (USD):</span>"
-msgstr "<span>Hotovosť (USD):</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
@@ -312,7 +312,7 @@ msgstr "Zmazať"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Desk Organizer"
-msgstr "Stolový organizér"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -455,7 +455,7 @@ msgstr "Ak false, stôl je je deaktivovaný a nebude dostupný v mieste predaja"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__module_pos_restaurant
 msgid "Is a Bar/Restaurant"
-msgstr "Je to bar/reštaurácia"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
@@ -481,7 +481,7 @@ msgstr "Naposledy upravované"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Led Lamp"
-msgstr "Lampa LED"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -512,7 +512,7 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Monitor Stand"
-msgstr "Stojan k monitoru"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -547,7 +547,7 @@ msgstr "Počet miest ?"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Odoo Logo"
-msgstr "Logo Odoo"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -612,7 +612,7 @@ msgstr "Platba"
 #. module: pos_restaurant
 #: model:product.category,name:pos_restaurant.product_category_pos
 msgid "PoS"
-msgstr "PoS"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__pos_config_id
@@ -917,7 +917,7 @@ msgstr "Toto podlažie nemá žiadne stoly, použite"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "This product is used as reference on customer receipts."
-msgstr "Tento produkt je použitý ako referenčný pre zákaznícke účtenky."
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -980,7 +980,7 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Whiteboard Pen"
-msgstr "Pero k bielej tabuli"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__width

@@ -122,8 +122,6 @@ var utils = {
             // formatterCallback seems useless here.
             return number + 'e' + numberMagnitude;
         }
-        var sign = Math.sign(number);
-        number = Math.abs(number);
         for (var i = val.length; i > 0 ; i--) {
             var s = Math.pow(10, i * 3);
             if (s <= number / Math.pow(10, minDigits - 1)) {
@@ -132,7 +130,6 @@ var utils = {
                 break;
             }
         }
-        number = sign * number;
         return formatterCallback('' + number) + symbol;
     },
     /**
@@ -312,7 +309,7 @@ var utils = {
         }
         var normalized_value = value / precision;
         var epsilon_magnitude = Math.log(Math.abs(normalized_value))/Math.log(2);
-        var epsilon = Math.pow(2, epsilon_magnitude - 52);
+        var epsilon = Math.pow(2, epsilon_magnitude - 53);
         normalized_value += normalized_value >= 0 ? epsilon : -epsilon;
 
         /**

@@ -64,10 +64,7 @@
       luhn: true
     }, {
       type: 'mastercard',
-      // ODOO FIX STARTS
-      // pattern: /^5[1-5]/,
-      pattern: /^(5[1-5]|2[2-7])/,
-      // ODOO FIX ENDS
+      pattern: /^5[1-5]/,
       format: defaultFormat,
       length: [16],
       cvcLength: [3],

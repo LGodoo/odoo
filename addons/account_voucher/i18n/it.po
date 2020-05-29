@@ -3,24 +3,28 @@
 # * account_voucher
 # 
 # Translators:
+# Sergio Zanchetta <primes2h@gmail.com>, 2018
 # Francesco Garganese <francesco.garganese@aeromnia.aero>, 2018
 # Martin Trigaux, 2018
+# Luigi Di Naro <gigidn@gmail.com>, 2018
+# Simone Bernini <simone@aperturelabs.it>, 2018
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
-# SebastianoPistore <SebastianoPistore.info@protonmail.ch>, 2018
+# Sebastiano Pistore <SebastianoPistore.info@protonmail.ch>, 2018
 # Christian <chris@effeci.info>, 2018
+# Massimo Bianchi <bianchi.massimo@gmail.com>, 2018
+# Paolo Valier, 2018
+# Alessandro Camilli <alessandrocamilli@openforce.it>, 2018
 # Paolo Caruccio <paolo.caruccio66@gmail.com>, 2018
 # David Minneci <david@numeko.it>, 2018
 # Léonie Bouchat <lbo@odoo.com>, 2019
-# Paolo Valier, 2019
-# Sergio Zanchetta <primes2h@gmail.com>, 2020
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2018-09-21 13:17+0000\n"
 "PO-Revision-Date: 2018-08-24 09:15+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2020\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,10 +40,10 @@ msgid ""
 " * The 'Posted' status is used when user create voucher,a voucher number is generated and voucher entries are created in account.\n"
 " * The 'Cancelled' status is used when user cancel voucher."
 msgstr ""
-" * Lo stato «Bozza» viene usato in presenza di una nuova ricevuta non ancora confermata.\n"
-" * Lo stato «Pro-forma» è usato quando non è presente un numero associato alla ricevuta.\n"
-" * Lo stato «Registrata» si usa quando alla ricevuta creata viene assegnato un numero e vengono generate le registrazioni contabili.\n"
-" * Lo stato «Annullata» viene usato dopo l'annullamento della ricevuta."
+" * Lo stato 'Bozza' è usato quando un utente sta inserendo un Voucher nuovo e non confermato.                         \n"
+"* Lo stato 'Proforma' quando il voucher è in stato proforma, il voucher non ha un numero assegnato.                         \n"
+"* Lo stato 'Pubblicato' è usato quanto l'utente crea un voucher, un numero di voucher è generato e la registrazione contabile è creata                         \n"
+"* Lo stato 'Annullato' è usato quando l'utente annulla il voucher."
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__account_id
@@ -55,22 +59,22 @@ msgstr "Data contabile"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__account_date
 msgid "Accounting Date"
-msgstr "Data registrazione"
+msgstr "Data Registrazione"
 
 #. module: account_voucher
 #: model:ir.model,name:account_voucher.model_account_voucher
 msgid "Accounting Voucher"
-msgstr "Ricevuta contabile"
+msgstr "Voucher contabile"
 
 #. module: account_voucher
 #: model:ir.model,name:account_voucher.model_account_voucher_line
 msgid "Accounting Voucher Line"
-msgstr "Riga ricevuta contabile"
+msgstr ""
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_needaction
 msgid "Action Needed"
-msgstr "Azione richiesta"
+msgstr "Azione Necessaria"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__price_subtotal
@@ -85,35 +89,35 @@ msgstr "Conto analitico"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__analytic_tag_ids
 msgid "Analytic Tags"
-msgstr "Etichette analitiche"
+msgstr "Tag Analitici"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Are you sure you want to cancel this receipt?"
-msgstr "Annullare veramente questa ricevuta?"
+msgstr "Sei sicuro di annullare questa ricevuta?"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_attachment_count
 msgid "Attachment Count"
-msgstr "Numero allegati"
+msgstr "Numero di allegati"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__date
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Bill Date"
-msgstr "Data ricevuta"
+msgstr "Data di fatturazione"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Bill Information"
-msgstr "Informazioni ricevuta"
+msgstr "Informazioni importo"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__reference
 msgid "Bill Reference"
-msgstr "Riferimento ricevuta"
+msgstr "Numero di Fattura"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
@@ -123,18 +127,18 @@ msgstr "Annulla"
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Cancel Receipt"
-msgstr "Annulla ricevuta"
+msgstr "Annulla Ricevuta"
 
 #. module: account_voucher
 #: selection:account.voucher,state:0
 msgid "Cancelled"
-msgstr "Annullata"
+msgstr "Annullato"
 
 #. module: account_voucher
 #: code:addons/account_voucher/models/account_voucher.py:172
 #, python-format
 msgid "Cannot delete voucher(s) which are already opened or paid."
-msgstr "Impossibile eliminare ricevute che sono già aperte o pagate."
+msgstr "Non è possibile eliminare voucher(s) che sono già aperti o pagati."
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__company_id
@@ -146,24 +150,24 @@ msgstr "Azienda"
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__company_id
 #: model:ir.model.fields,help:account_voucher.field_account_voucher_line__company_id
 msgid "Company related to this journal"
-msgstr "Azienda collegata a questo registro"
+msgstr "Società collegata a questo giornale"
 
 #. module: account_voucher
 #: model_terms:ir.actions.act_window,help:account_voucher.action_sale_receipt
 msgid "Create a new sale receipt"
-msgstr "Crea una nuova ricevuta di vendita"
+msgstr "Creare una nuova ricevuta di vendita"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__create_uid
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__create_uid
 msgid "Created by"
-msgstr "Creata da"
+msgstr "Creato da"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__create_date
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__create_date
 msgid "Created on"
-msgstr "Creata il"
+msgstr "Creato il"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__currency_id
@@ -207,17 +211,17 @@ msgstr "Bozza"
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Draft Vouchers"
-msgstr "Ricevute in bozza"
+msgstr "Voucher bozza"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__date_due
 msgid "Due Date"
-msgstr "Data scadenza"
+msgstr "Data Scadenza"
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__account_date
 msgid "Effective date for accounting entries"
-msgstr "Data effettiva delle registrazioni contabili"
+msgstr "Data effettiva per le registrazioni contabili"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_follower_ids
@@ -237,8 +241,7 @@ msgstr "Followers (Partner)"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher_line__sequence
 msgid "Gives the sequence of this line when displaying the voucher."
-msgstr ""
-"Fornisce la sequenza di questa riga quando viene visualizzata la ricevuta."
+msgstr "Assegna la sequenza di questa linea quando visualizzi il voucher."
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
@@ -256,25 +259,25 @@ msgstr "ID"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__message_unread
 msgid "If checked new messages require your attention."
-msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionato, nuovi messaggi richiedono la tua attenzione"
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+msgstr "Se selezionato, nuovi messaggi richiedono la tua attenzione"
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Se selezionato, alcuni messaggi presentano un errore di consegna."
+msgstr "Se attivo, alcuni messaggi presentano un errore di consegna. "
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__tax_correction
 msgid ""
 "In case we have a rounding problem in the tax, use this field to correct it"
 msgstr ""
-"In caso di problemi di arrotondamento nell'imposta, usare questo campo per "
-"correggerli"
+"Nel caso abbiamo un problema di arrotondamento sulle tasse, usa questo campo"
+" per correggerlo"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
@@ -298,31 +301,31 @@ msgstr "Registro"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__move_id
 msgid "Journal Entry"
-msgstr "Registrazione contabile"
+msgstr "Registrazione sezionale"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Journal Items"
-msgstr "Movimenti contabili"
+msgstr "Voci sezionale"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher____last_update
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line____last_update
 msgid "Last Modified on"
-msgstr "Ultima modifica il"
+msgstr "Data di ultima modifica"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__write_uid
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__write_uid
 msgid "Last Updated by"
-msgstr "Ultimo aggiornamento di"
+msgstr "Ultima modifica di"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__write_date
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__write_date
 msgid "Last Updated on"
-msgstr "Ultimo aggiornamento il"
+msgstr "Ultima modifica il"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_main_attachment_id
@@ -332,7 +335,7 @@ msgstr "Allegato principale"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_has_error
 msgid "Message Delivery error"
-msgstr "Errore di consegna messaggio"
+msgstr "Errore nell'invio del messaggio"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_ids
@@ -364,7 +367,7 @@ msgstr "Numero"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_needaction_counter
 msgid "Number of Actions"
-msgstr "Numero di azioni"
+msgstr "Numero di Azioni"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_has_error_counter
@@ -379,7 +382,7 @@ msgstr "Numero di messaggi che richiedono un'azione"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Numero di messaggi con errore di consegna"
+msgstr "Numero di messaggio con errori di invio"
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__message_unread_counter
@@ -389,12 +392,12 @@ msgstr "Numero di messaggi non letti"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher_line__tax_ids
 msgid "Only for tax excluded from price"
-msgstr "Solo per imposta esclusa dal prezzo"
+msgstr "Solo per imposte escluse dal prezzo"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__paid
 msgid "Paid"
-msgstr "Pagata"
+msgstr "Pagato"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__partner_id
@@ -405,12 +408,12 @@ msgstr "Partner"
 #. module: account_voucher
 #: selection:account.voucher,pay_now:0
 msgid "Pay Directly"
-msgstr "Pagamento immediato"
+msgstr "Paga direttamente"
 
 #. module: account_voucher
 #: selection:account.voucher,pay_now:0
 msgid "Pay Later"
-msgstr "Pagamento successivo"
+msgstr "Paga successivamente"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__pay_now
@@ -420,7 +423,7 @@ msgstr "Pagamento"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__name
 msgid "Payment Memo"
-msgstr "Promemoria pagamento"
+msgstr ""
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__payment_journal_id
@@ -428,21 +431,16 @@ msgid "Payment Method"
 msgstr "Metodo di pagamento"
 
 #. module: account_voucher
-#: model:ir.model,name:account_voucher.model_account_payment
-msgid "Payments"
-msgstr "Pagamenti"
-
-#. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:226
+#: code:addons/account_voucher/models/account_voucher.py:208
 #, python-format
 msgid "Please activate the sequence of selected journal !"
-msgstr "Attivare la sequenza del registro selezionato."
+msgstr "Si prega di attivare la sequenza del sezionale selezionato!"
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:229
+#: code:addons/account_voucher/models/account_voucher.py:211
 #, python-format
 msgid "Please define a sequence on the journal."
-msgstr "Definire una sequenza per il registro."
+msgstr "È necessario definire una sequenza per il sezionale."
 
 #. module: account_voucher
 #: selection:account.voucher,state:0
@@ -450,14 +448,14 @@ msgstr "Definire una sequenza per il registro."
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Posted"
-msgstr "Registrata"
+msgstr "Registrato"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Posted Vouchers"
-msgstr "Ricevute registrate"
+msgstr "Vouchers Pubblicati"
 
 #. module: account_voucher
 #: selection:account.voucher,state:0
@@ -472,17 +470,17 @@ msgstr "Prodotto"
 #. module: account_voucher
 #: selection:account.voucher,voucher_type:0
 msgid "Purchase"
-msgstr "Acquisto"
+msgstr "Acquisti"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Purchase Receipt"
-msgstr "Ricevuta di acquisto"
+msgstr "Ricevuta d'Acquisto"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Purchase Voucher"
-msgstr "Ricevuta di acquisto"
+msgstr "Voucher acquisto"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__quantity
@@ -495,12 +493,12 @@ msgstr "Quantità"
 #: model:ir.ui.menu,name:account_voucher.menu_action_purchase_receipt
 #: model:ir.ui.menu,name:account_voucher.menu_action_sale_receipt
 msgid "Receipts"
-msgstr "Ricevute"
+msgstr "Spedizioni in Entrata"
 
 #. module: account_voucher
 #: model_terms:ir.actions.act_window,help:account_voucher.action_purchase_receipt
 msgid "Register a new purchase receipt"
-msgstr "Registra una nuova ricevuta di acquisto"
+msgstr "Registrare una nuova ricevuta d'acquisto"
 
 #. module: account_voucher
 #: selection:account.voucher,voucher_type:0
@@ -510,19 +508,19 @@ msgstr "Vendita"
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Sales Information"
-msgstr "Informazioni vendita"
+msgstr "Informazioni vendite"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Sales Receipt"
-msgstr "Ricevuta di vendita"
+msgstr "Ricevuta di Vendita"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Search Vouchers"
-msgstr "Ricerca ricevute"
+msgstr "Cerca Voucher"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__sequence
@@ -533,7 +531,7 @@ msgstr "Sequenza"
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Set to Draft"
-msgstr "Imposta a bozza"
+msgstr "Imposta a Bozza"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__state
@@ -551,7 +549,7 @@ msgstr "Cambio di stato"
 #. module: account_voucher
 #: model:mail.message.subtype,description:account_voucher.mt_voucher_state_change
 msgid "Status changed"
-msgstr "Cambio di stato"
+msgstr "Stato cambiato"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__tax_ids
@@ -571,22 +569,22 @@ msgstr "Correzione imposta"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__paid
 msgid "The Voucher has been totally paid."
-msgstr "La ricevuta è stata interamente pagata."
+msgstr "Il voucher è stato pagato interamente"
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher_line__account_id
 msgid "The income or expense account related to the selected product."
-msgstr "Il conto ricavi o costi relativo al prodotto selezionato."
+msgstr "Il conto di ricavo o di costo riguardante il prodotto selezionato."
 
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__reference
 msgid "The partner reference of this document."
-msgstr "Il referente del partner per questo documento."
+msgstr "Il riferimento del partner per questo documento."
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 msgid "To Review"
-msgstr "Da esaminare"
+msgstr "Da rivedere"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__amount
@@ -597,12 +595,12 @@ msgstr "Totale"
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree_purchase
 msgid "Total Amount"
-msgstr "Importo totale"
+msgstr "Totale importo"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__voucher_type
 msgid "Type"
-msgstr "Tipologia"
+msgstr "Tipo"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__price_unit
@@ -612,12 +610,12 @@ msgstr "Prezzo unitario"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_unread
 msgid "Unread Messages"
-msgstr "Messaggi non letti"
+msgstr "Messaggi Non Letti"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr "Contatore messaggi non letti"
+msgstr "Contatore di messaggi non letti"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
@@ -635,7 +633,7 @@ msgstr "Fornitore"
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Vendor Voucher"
-msgstr "Ricevuta fornitore"
+msgstr "Fornitore Voucher"
 
 #. module: account_voucher
 #: code:addons/account_voucher/models/account_voucher.py:116
@@ -645,14 +643,14 @@ msgstr "Ricevuta fornitore"
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 #, python-format
 msgid "Voucher"
-msgstr "Ricevuta"
+msgstr "Voucher"
 
 #. module: account_voucher
 #: model:ir.actions.act_window,name:account_voucher.act_journal_voucher_open
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree_purchase
 msgid "Voucher Entries"
-msgstr "Registrazioni ricevuta"
+msgstr "Registrazioni Voucher"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__line_ids
@@ -661,17 +659,17 @@ msgstr "Registrazioni ricevuta"
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_line_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_line_tree
 msgid "Voucher Lines"
-msgstr "Righe ricevuta"
+msgstr "Righe voucher"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.account_cash_statement_graph
 msgid "Voucher Statistics"
-msgstr "Statistiche ricevuta"
+msgstr "Statistiche Voucher"
 
 #. module: account_voucher
 #: model:ir.actions.act_window,name:account_voucher.action_review_voucher_list
 msgid "Vouchers Entries"
-msgstr "Registrazioni ricevute"
+msgstr "Registrazioni Voucher"
 
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__website_message_ids
@@ -681,7 +679,7 @@ msgstr "Messaggi sito web"
 #. module: account_voucher
 #: model:ir.model.fields,help:account_voucher.field_account_voucher__website_message_ids
 msgid "Website communication history"
-msgstr "Cronologia comunicazioni sito web"
+msgstr "Storico comunicazione sito"
 
 #. module: account_voucher
 #: model_terms:ir.actions.act_window,help:account_voucher.action_purchase_receipt
@@ -689,8 +687,8 @@ msgid ""
 "When the purchase receipt is confirmed, you can record the\n"
 "                vendor payment related to this purchase receipt."
 msgstr ""
-"Quando la ricevuta di acquisto viene confermata, è possibile\n"
-"                registrare il relativo pagamento fornitore."
+"Quando il destinatario della vendita è confermato, puoi registrare il "
+"pagamento relativo a questo destinatario."
 
 #. module: account_voucher
 #: model_terms:ir.actions.act_window,help:account_voucher.action_sale_receipt
@@ -698,11 +696,11 @@ msgid ""
 "When the sale receipt is confirmed, you can record the customer\n"
 "                payment related to this sales receipt."
 msgstr ""
-"Quando la ricevuta di vendita viene confermata, è possibile\n"
-"                registrare il relativo pagamento cliente."
+"Quando un destinatario della vendita è confermato, puoi registrare il "
+"pagamento relativo alla vendita."
 
 #. module: account_voucher
 #: code:addons/account_voucher/models/account_voucher.py:457
 #, python-format
 msgid "You must first select a partner."
-msgstr "Selezionare prima un partner."
+msgstr "Devi prima selezionare un partner."

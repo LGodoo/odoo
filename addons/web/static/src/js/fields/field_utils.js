@@ -252,7 +252,7 @@ function formatInteger(value, field, options) {
  * return an empty string.  Note that it accepts two types of input parameters:
  * an array, in that case we assume that the many2one value is of the form
  * [id, nameget], and we return the nameget, or it can be an object, and in that
- * case, we assume that it is a record datapoint from a BasicModel.
+ * case, we assume that it is a record from a BasicModel.
  *
  * @param {Array|Object|false} value
  * @param {Object} [field]
@@ -262,18 +262,7 @@ function formatInteger(value, field, options) {
  * @returns {string}
  */
 function formatMany2one(value, field, options) {
-    if (!value) {
-        value = '';
-    } else if (_.isArray(value)) {
-        // value is a pair [id, nameget]
-        value = value[1];
-    } else {
-        // value is a datapoint, so we read its display_name field, which
-        // may in turn be a datapoint (if the name field is a many2one)
-        while (value.data) {
-            value = value.data.display_name || '';
-        }
-    }
+    value = value && (_.isArray(value) ? value[1] : value.data.display_name) || '';
     if (options && options.escape) {
         value = _.escape(value);
     }
@@ -426,7 +415,7 @@ function parseDate(value, field, options) {
     if (options && options.isUTC) {
         date = moment.utc(value);
     } else {
-        date = moment.utc(value, [datePattern, datePatternWoZero, moment.ISO_8601]);
+        date = moment.utc(value, [datePattern, datePatternWoZero, moment.ISO_8601], true);
     }
     if (date.isValid()) {
         if (date.year() === 0) {
@@ -470,7 +459,7 @@ function parseDateTime(value, field, options) {
         // phatomjs crash if we don't use this format
         datetime = moment.utc(value.replace(' ', 'T') + 'Z');
     } else {
-        datetime = moment.utc(value, [pattern1, pattern2, moment.ISO_8601]);
+        datetime = moment.utc(value, [pattern1, pattern2, moment.ISO_8601], true);
         if (options && options.timezone) {
             datetime.add(-session.getTZOffset(datetime), 'minutes');
         }

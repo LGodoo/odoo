@@ -42,23 +42,6 @@ def sitemap_qs2dom(qs, route, field='name'):
     return dom
 
 
-def get_request_website():
-    """ Return the website set on `request` if called in a frontend context
-    (website=True on route).
-    This method can typically be used to check if we are in the frontend.
-
-    This method is easy to mock during python tests to simulate frontend
-    context, rather than mocking every method accessing request.website.
-
-    Don't import directly the method or it won't be mocked during tests, do:
-    ```
-    from odoo.addons.website.models import ir_http
-    my_var = ir_http.get_request_website()
-    ```
-    """
-    return request and getattr(request, 'website', False) or False
-
-
 class Http(models.AbstractModel):
     _inherit = 'ir.http'
 
@@ -244,20 +227,6 @@ class Http(models.AbstractModel):
 
             if not request.uid:
                 cls._auth_method_public()
-
-            # We rollback the current transaction before initializing a new
-            # cursor to avoid potential deadlocks.
-
-            # If the current (failed) transaction was holding a lock, the new
-            # cursor might have to wait for this lock to be released further
-            # down the line. However, this will only happen after the
-            # request is done (and in fact it won't happen). As a result, the
-            # current thread/worker is frozen until its timeout is reached.
-
-            # So rolling back the transaction will release any potential lock
-            # and, since we are in a case where an exception was raised, the
-            # transaction shouldn't be committed in the first place.
-            request.env.cr.rollback()
 
             with registry(request.env.cr.dbname).cursor() as cr:
                 env = api.Environment(cr, request.uid, request.env.context)

@@ -3,6 +3,7 @@
 # * im_livechat
 # 
 # Translators:
+# Robert Kirschner <robertkirschner@yahoo.com>, 2018
 # Martin Trigaux, 2018
 # Matus Krnac <matus.krnac@gmail.com>, 2018
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2018
@@ -317,7 +318,7 @@ msgstr "Odpovedali sme správne na vašu otázku?"
 
 #. module: im_livechat
 #: model:ir.model,name:im_livechat.model_mail_channel
-msgid "Discussion Channel"
+msgid "Discussion channel"
 msgstr "Diskusný kanál"
 
 #. module: im_livechat

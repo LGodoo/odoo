@@ -13,12 +13,8 @@ var core = require('web.core');
 var SupportBusService =  BusService.extend({
     LOCAL_STORAGE_PREFIX: 'im_support',
     POLL_ROUTE: '/longpolling/support_poll',
-
-    /**
-     * @override _makePoll to force the remote session
-     */
-    _makePoll: function(data) {
-        return supportSession.rpc(this.POLL_ROUTE, data, {shadow : true, timeout: 60000});
+    getSession: function () {
+        return supportSession;
     },
 });
 

@@ -42,16 +42,10 @@ var DiscountButton = screens.ActionButtonWidget.extend({
         }
 
         // Add discount
-        // We add the price as manually set to avoid recomputation when changing customer.
         var discount = - pc / 100.0 * order.get_total_with_tax();
 
         if( discount < 0 ){
-            order.add_product(product, {
-                price: discount,
-                extras: {
-                    price_manually_set: true,
-                },
-            });
+            order.add_product(product, { price: discount });
         }
     },
 });

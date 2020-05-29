@@ -33,8 +33,8 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
         this._super(parent, context);
 
         this.date_range = 'week';  // possible values : 'week', 'month', year'
-        this.date_from = moment.utc().subtract(1, 'week');
-        this.date_to = moment.utc();
+        this.date_from = moment().subtract(1, 'week');
+        this.date_to = moment();
 
         this.dashboards_templates = ['website.dashboard_header', 'website.dashboard_content'];
         this.graphs = [];
@@ -108,12 +108,6 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
                 },
             ],
         }).open();
-    },
-
-    on_go_to_website: function (ev) {
-        ev.preventDefault();
-        var website = _.findWhere(this.websites, {selected: true});
-        window.location.href = $.param.querystring(website.domain + '/', {'fw': website.id});
     },
 
     on_save_ga_client_id: function(ga_client_id, ga_analytics_key) {
@@ -236,13 +230,13 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
     on_date_range_button: function(date_range) {
         if (date_range === 'week') {
             this.date_range = 'week';
-            this.date_from = moment.utc().subtract(1, 'weeks');
+            this.date_from = moment().subtract(1, 'weeks');
         } else if (date_range === 'month') {
             this.date_range = 'month';
-            this.date_from = moment.utc().subtract(1, 'months');
+            this.date_from = moment().subtract(1, 'months');
         } else if (date_range === 'year') {
             this.date_range = 'year';
-            this.date_from = moment.utc().subtract(1, 'years');
+            this.date_from = moment().subtract(1, 'years');
         } else {
             console.log('Unknown date range. Choose between [week, month, year]');
             return;
@@ -326,14 +320,10 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
                 self.on_website_button($(ev.target).data('website-id'));
             });
         }
-
-        var $buttons = $(QWeb.render("website.GoToButtons"));
-        $buttons.on('click', this.on_go_to_website.bind(this));
-
         this.update_control_panel({
             cp_content: {
                 $searchview: this.$searchview,
-                $buttons: $buttons,
+                $buttons: QWeb.render("website.GoToButtons"),
             },
         });
     },
@@ -408,8 +398,7 @@ var Dashboard = AbstractAction.extend(ControlPanelMixin, {
                 container: $analytics_chart_2[0],
                 options: {
                     title: 'All',
-                    width: '100%',
-                    tooltip: {isHtml: true},
+                    width: '100%'
                 }
             }
         });

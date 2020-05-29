@@ -895,12 +895,7 @@ class Escpos:
 
 
     def cashdraw(self, pin):
-        """ Send pulse to kick the cash drawer
-
-        For some reason, with some printers (ex: Epson TM-m30), the cash drawer
-        only opens 50% of the time if you just send the pulse. But if you read
-        the status afterwards, it opens all the time.
-        """
+        """ Send pulse to kick the cash drawer """
         if pin == 2:
             self._raw(CD_KICK_2)
         elif pin == 5:
@@ -908,7 +903,6 @@ class Escpos:
         else:
             raise CashDrawerError()
 
-        self.get_printer_status()
 
     def hw(self, hw):
         """ Hardware operations """

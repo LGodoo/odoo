@@ -5,7 +5,6 @@
 # Translators:
 # Martin Trigaux, 2018
 # Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
-# Minj P <pminj322@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -13,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 08:21+0000\n"
 "PO-Revision-Date: 2018-08-24 09:24+0000\n"
-"Last-Translator: Minj P <pminj322@gmail.com>, 2019\n"
+"Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019\n"
 "Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -84,29 +83,29 @@ msgstr "Үйлдэл шаардагдсан"
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition__date_end
 msgid "Agreement Deadline"
-msgstr "Гэрээний дуусах огноо"
+msgstr "Шалгаруулалт дуусах огноо"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition__name
 msgid "Agreement Reference"
-msgstr "Гэрээний код"
+msgstr "Шалгаруулалтын код"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type__exclusive
 msgid "Agreement Selection Type"
-msgstr "Гэрээний шалгаруулалтын төрөл"
+msgstr "Сонгон шалгаруулалтын төрөл"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition__type_id
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_type__name
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_form
 msgid "Agreement Type"
-msgstr "Гэрээний төрөл"
+msgstr "Шалгаруулалтын төрөл"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.res_config_settings_view_form
 msgid "Agreement Types"
-msgstr "Гэрээний төрөл"
+msgstr "Шалгаруулалтын төрөл"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line__account_analytic_id
@@ -287,8 +286,8 @@ msgstr "Дуусах огноо"
 msgid ""
 "Example of purchase agreements include call for tenders and blanket orders."
 msgstr ""
-"Худалдан авалтын гэрээний жишээ нь тендерийн шалгаруулалт болон багцын "
-"захиалгыг агуулдаг."
+"Худалдан авалтын шалгаруулалтын жишээ нь тендерийн шалгаруулалт болон багцын"
+" захиалгыг агуулдаг."
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition__message_follower_ids
@@ -421,12 +420,12 @@ msgstr "Олон сонгон шалгаруулалт"
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "My Agreements"
-msgstr "Миний гэрээ"
+msgstr "Миний сонгон шалгаруулалт"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "New Agreements"
-msgstr "Шинэ гэрээ"
+msgstr "Шинэ сонгон шалгаруулалт"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
@@ -531,7 +530,7 @@ msgstr "Тендерийн сонгон шалгаруулалт санал бо
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_order__requisition_id
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition_line__requisition_id
 msgid "Purchase Agreement"
-msgstr "Худалдан авалтын гэрээ"
+msgstr "Худалдан авалтын шалгаруулалт"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.tender_type_action
@@ -539,7 +538,7 @@ msgstr "Худалдан авалтын гэрээ"
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_form
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_type_tree
 msgid "Purchase Agreement Types"
-msgstr "Худалдан авалтын гэрээний төрөл"
+msgstr "Худалдан авалтын шалгаруулалтын төрөл"
 
 #. module: purchase_requisition
 #: model:ir.actions.act_window,name:purchase_requisition.action_purchase_requisition
@@ -548,7 +547,7 @@ msgstr "Худалдан авалтын гэрээний төрөл"
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_tree
 msgid "Purchase Agreements"
-msgstr "Худалдан авалтын гэрээ"
+msgstr "Худалдан авалтын шалгаруулалт"
 
 #. module: purchase_requisition
 #: model:ir.model,name:purchase_requisition.model_purchase_order
@@ -662,7 +661,7 @@ msgstr "Товлосон огноо"
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_filter
 msgid "Search Purchase Agreements"
-msgstr "Худалдан авалтын гэрээ хайх"
+msgstr "Худалдан авалтын шалгаруулалт хайх"
 
 #. module: purchase_requisition
 #: selection:purchase.requisition.type,exclusive:0
@@ -708,7 +707,7 @@ msgstr "Эх Баримт"
 #. module: purchase_requisition
 #: model_terms:ir.actions.act_window,help:purchase_requisition.action_purchase_requisition
 msgid "Start a new purchase agreement"
-msgstr "Шинэ гэрээ эхлүүлэх"
+msgstr "Шинэ сонгон шалгаруулалт эхлүүлэх"
 
 #. module: purchase_requisition
 #: model:ir.model.fields,field_description:purchase_requisition.field_purchase_requisition__state_blanket_order
@@ -791,12 +790,12 @@ msgstr "Уншаагүй зурвасын тоолуур"
 #. module: purchase_requisition
 #: selection:purchase.requisition.type,line_copy:0
 msgid "Use lines of agreement"
-msgstr "Гэрээний мөрүүдийг хэрэглэх"
+msgstr "Шалгаруулалтын мөрүүдийг хэрэглэх"
 
 #. module: purchase_requisition
 #: selection:purchase.requisition.type,quantity_copy:0
 msgid "Use quantities of agreement"
-msgstr "Гэрээний тоог хэрэглэх"
+msgstr "Шалгаруулалтын тоог хэрэглэх"
 
 #. module: purchase_requisition
 #: model_terms:ir.ui.view,arch_db:purchase_requisition.view_purchase_requisition_form
@@ -839,7 +838,8 @@ msgstr "Та зөвхөн ноорог шалгаруулалтыг устгах
 #: code:addons/purchase_requisition/models/purchase_requisition.py:123
 #, python-format
 msgid "You cannot confirm agreement '%s' because there is no product line."
-msgstr "Та '%s' гэрээг батлах боломжгүй. Учир нь ямар ч барааны мөр алга."
+msgstr ""
+"Та '%s' шалгаруулалтыг батлах боломжгүй. Учир нь ямар ч барааны мөр алга."
 
 #. module: purchase_requisition
 #: code:addons/purchase_requisition/models/purchase_requisition.py:127

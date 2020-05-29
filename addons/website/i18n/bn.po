@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:33+0000\n"
 "Last-Translator: Abu Zafar <azmikbal@gmail.com>, 2019\n"
 "Language-Team: Bengali (https://www.transifex.com/odoo/teams/41243/bn/)\n"
@@ -75,11 +75,6 @@ msgstr "&বার;"
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "' did not match any pages."
 msgstr "'কোনো পৃষ্ঠা সঙ্গের মিলেনি।"
-
-#. module: website
-#: model_terms:ir.ui.view,arch_db:website.500
-msgid "(!!! This view will be removed )"
-msgstr ""
 
 #. module: website
 #. openerp-web
@@ -1168,19 +1163,13 @@ msgstr "সিডিএন ফিল্টার"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/backend/dashboard.js:106
-#: code:addons/website/static/src/js/menu/new_content.js:286
+#: code:addons/website/static/src/js/backend/dashboard.js:103
+#: code:addons/website/static/src/js/menu/new_content.js:271
 #: code:addons/website/static/src/xml/website.xml:27
 #: model_terms:ir.ui.view,arch_db:website.500
 #, python-format
 msgid "Cancel"
 msgstr "বাতিল"
-
-#. module: website
-#: code:addons/website/models/res_lang.py:15
-#, python-format
-msgid "Cannot deactivate a language that is currently used on a website."
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -2623,7 +2612,6 @@ msgid "Keywords"
 msgstr "কীওয়ার্ডস"
 
 #. module: website
-#: model:ir.model,name:website.model_res_lang
 #: model:ir.model.fields,field_description:website.field_res_config_settings__language_ids
 #: model:ir.model.fields,field_description:website.field_website__language_ids
 msgid "Languages"
@@ -4508,7 +4496,7 @@ msgstr ""
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_page__inherit_children_ids
 msgid "Views which inherit from this one"
-msgstr "এই এক থেকে উত্তরাধিকারী দর্শন"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.one_page_line
@@ -4574,7 +4562,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:website.view_server_action_search_website
 msgid "Website"
-msgstr "ওয়েবসাইট"
+msgstr ""
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__website_company_id
@@ -4985,7 +4973,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.500
 msgid "yes"
-msgstr "হাঁ"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs

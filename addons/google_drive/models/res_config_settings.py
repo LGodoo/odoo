@@ -21,9 +21,7 @@ class ResConfigSettings(models.TransientModel):
         authorization_code_before = params.get_param('google_drive_authorization_code')
         super(ResConfigSettings, self).set_values()
         authorization_code = self.google_drive_authorization_code
-        if authorization_code != authorization_code_before:
-            refresh_token = (
-                self.env['google.service'].generate_refresh_token('drive', authorization_code)
-                if authorization_code else False
-            )
-            params.set_param('google_drive_refresh_token', refresh_token)
+        refresh_token = False
+        if authorization_code and authorization_code != authorization_code_before:
+            refresh_token = self.env['google.service'].generate_refresh_token('drive', authorization_code)
+        params.set_param('google_drive_refresh_token', refresh_token)

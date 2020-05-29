@@ -3,8 +3,8 @@
 # * contacts
 # 
 # Translators:
-# Arnis Putniņš <arnis@allegro.lv>, 2019
-# Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019
+# Ieva Putnina <ievai.putninai@gmail.com>, 2019
+# Arnis Putniņš <arnis.putnins@its1.lv>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:17+0000\n"
-"Last-Translator: Konstantins Zabogonskis <inculin4ik@gmail.com>, 2019\n"
+"Last-Translator: Arnis Putniņš <arnis.putnins@its1.lv>, 2019\n"
 "Language-Team: Latvian (https://www.transifex.com/odoo/teams/41243/lv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: model:ir.ui.menu,name:contacts.menu_action_res_partner_bank_form
 #: model:ir.ui.menu,name:contacts.menu_config_bank_accounts
 msgid "Bank Accounts"
-msgstr "Bankas konti"
+msgstr "Bankas Konts"
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_action_res_bank_form
@@ -34,17 +34,17 @@ msgstr "Bankas"
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.res_partner_menu_config
 msgid "Configuration"
-msgstr "Uzstādījumi"
+msgstr "Konfigurācija"
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_partner_category_form
 msgid "Contact Tags"
-msgstr "Kontakta Atslēgas Vārdi"
+msgstr "Kontaktu birkas"
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_partner_title_contact
 msgid "Contact Titles"
-msgstr "Kontakta Nosaukums"
+msgstr "Uzrunas"
 
 #. module: contacts
 #: model:ir.actions.act_window,name:contacts.action_contacts
@@ -62,18 +62,18 @@ msgstr "Valstis"
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_country_group
 msgid "Country Group"
-msgstr "Valstu grupa"
+msgstr "Valstu grupas"
 
 #. module: contacts
 #: model_terms:ir.actions.act_window,help:contacts.action_contacts
 #: model_terms:ir.actions.act_window,help:contacts.action_contacts_summary
 msgid "Create a contact in your address book"
-msgstr "Izveidojiet kontaktu savā adrešu grāmatā"
+msgstr ""
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_country_state_partner
 msgid "Fed. States"
-msgstr "Federālie Štati"
+msgstr "Novadi"
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.menu_localisation
@@ -85,12 +85,11 @@ msgstr "Lokalizācija"
 #: model_terms:ir.actions.act_window,help:contacts.action_contacts_summary
 msgid "Odoo helps you to easily track all activities related to a customer."
 msgstr ""
-"Odoo palīdz jums viegli izsekot visām darbībām, kas saistītas ar klientu."
 
 #. module: contacts
 #: model:ir.ui.menu,name:contacts.res_partner_industry_menu
 msgid "Sectors of Activity"
-msgstr "Darbības Nozares"
+msgstr ""
 
 #. module: contacts
 #: model:ir.model,name:contacts.model_res_users

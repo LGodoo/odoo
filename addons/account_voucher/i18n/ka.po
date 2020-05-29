@@ -3,31 +3,23 @@
 # * account_voucher
 # 
 # Translators:
-# Saba Khmaladze <skhmaladze@uglt.org>, 2019
-# Martin Trigaux, 2019
-# Temur, 2019
-# Nika Chikhradze <nika@globaltravel.ge>, 2019
-# Giorgi Melitauri <gmelitauri@live.com>, 2019
-# Gizo Kobakhidze <040168@gmail.com>, 2019
-# Vasil Grigalashvili <info@clouddesk.info>, 2019
-# Gvantsa Gvinianidze <gvantsa@live.com>, 2019
-# 
+# Martin Trigaux <mat@odoo.com>, 2017
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server 10.saas~18\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
-"PO-Revision-Date: 2018-08-24 09:15+0000\n"
-"Last-Translator: Gvantsa Gvinianidze <gvantsa@live.com>, 2019\n"
+"POT-Creation-Date: 2017-09-20 09:52+0000\n"
+"PO-Revision-Date: 2017-09-20 09:52+0000\n"
+"Last-Translator: Martin Trigaux <mat@odoo.com>, 2017\n"
 "Language-Team: Georgian (https://www.transifex.com/odoo/teams/41243/ka/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Language: ka\n"
-"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__state
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_state
 msgid ""
 " * The 'Draft' status is used when a user is encoding a new and unconfirmed Voucher.\n"
 " * The 'Pro-forma' status is used when the voucher does not have a voucher number.\n"
@@ -36,10 +28,10 @@ msgid ""
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__account_id
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__account_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_account_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_account_id
 msgid "Account"
-msgstr "ანგარიში"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
@@ -47,9 +39,9 @@ msgid "Account Date"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__account_date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_account_date
 msgid "Accounting Date"
-msgstr "საბუღალტრო ჩანაწერი"
+msgstr ""
 
 #. module: account_voucher
 #: model:ir.model,name:account_voucher.model_account_voucher
@@ -57,28 +49,13 @@ msgid "Accounting Voucher"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model,name:account_voucher.model_account_voucher_line
-msgid "Accounting Voucher Line"
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_price_subtotal
+msgid "Amount"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_needaction
-msgid "Action Needed"
-msgstr "საჭიროა ქმედება"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__price_subtotal
-msgid "Amount"
-msgstr "სულ"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__account_analytic_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_account_analytic_id
 msgid "Analytic Account"
-msgstr "ანალიტიკური ანგარიში"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__analytic_tag_ids
-msgid "Analytic Tags"
 msgstr ""
 
 #. module: account_voucher
@@ -88,12 +65,7 @@ msgid "Are you sure you want to cancel this receipt?"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_attachment_count
-msgid "Attachment Count"
-msgstr "დანართების რაოდენობა"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_date
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Bill Date"
@@ -105,14 +77,14 @@ msgid "Bill Information"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__reference
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_reference
 msgid "Bill Reference"
 msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Cancel"
-msgstr "გაუქმება"
+msgstr "შეწყვეტა"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
@@ -125,43 +97,48 @@ msgid "Cancelled"
 msgstr "გაუქმებულია"
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:172
+#: code:addons/account_voucher/models/account_voucher.py:159
 #, python-format
 msgid "Cannot delete voucher(s) which are already opened or paid."
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__company_id
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__company_id
+#: model_terms:ir.actions.act_window,help:account_voucher.action_sale_receipt
+msgid "Click to create a sale receipt."
+msgstr ""
+
+#. module: account_voucher
+#: model_terms:ir.actions.act_window,help:account_voucher.action_purchase_receipt
+msgid "Click to register a purchase receipt."
+msgstr ""
+
+#. module: account_voucher
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_company_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_company_id
 msgid "Company"
 msgstr "კომპანია"
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__company_id
-#: model:ir.model.fields,help:account_voucher.field_account_voucher_line__company_id
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_company_id
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_line_company_id
 msgid "Company related to this journal"
 msgstr ""
 
 #. module: account_voucher
-#: model_terms:ir.actions.act_window,help:account_voucher.action_sale_receipt
-msgid "Create a new sale receipt"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__create_uid
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__create_uid
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_create_uid
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_create_uid
 msgid "Created by"
 msgstr "შემქმნელი"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__create_date
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__create_date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_create_date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_create_date
 msgid "Created on"
 msgstr "შექმნის თარიღი"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__currency_id
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__currency_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_currency_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_currency_id
 msgid "Currency"
 msgstr "ვალუტა"
 
@@ -175,16 +152,16 @@ msgstr "კლიენტი"
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 msgid "Date"
-msgstr "თარიღ"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__name
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_name
 msgid "Description"
-msgstr "აღწერა"
+msgstr "აღწერილობა"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__display_name
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__display_name
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_display_name
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_display_name
 msgid "Display Name"
 msgstr "სახელი"
 
@@ -204,32 +181,17 @@ msgid "Draft Vouchers"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__date_due
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_date_due
 msgid "Due Date"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__account_date
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_account_date
 msgid "Effective date for accounting entries"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_follower_ids
-msgid "Followers"
-msgstr "მიმდევრები"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_channel_ids
-msgid "Followers (Channels)"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_partner_ids
-msgid "Followers (Partners)"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher_line__sequence
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_line_sequence
 msgid "Gives the sequence of this line when displaying the voucher."
 msgstr ""
 
@@ -241,28 +203,13 @@ msgid "Group By"
 msgstr "დაჯგუფება"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__id
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_id
 msgid "ID"
 msgstr "იდენტიფიკატორი"
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_unread
-msgid "If checked new messages require your attention."
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_needaction
-msgid "If checked, new messages require your attention."
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_has_error
-msgid "If checked, some messages have a delivery error."
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__tax_correction
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_tax_correction
 msgid ""
 "In case we have a rounding problem in the tax, use this field to correct it"
 msgstr ""
@@ -271,23 +218,18 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Internal Notes"
-msgstr "შიდა ჩანაწერები"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_is_follower
-msgid "Is Follower"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__journal_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_journal_id
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Journal"
-msgstr "ჟურნალი"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__move_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_move_id
 msgid "Journal Entry"
 msgstr ""
 
@@ -298,97 +240,45 @@ msgid "Journal Items"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher____last_update
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line____last_update
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher___last_update
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line___last_update
 msgid "Last Modified on"
-msgstr "ბოლოს შეიცვალა"
+msgstr "ბოლოს განახლებულია"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__write_uid
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__write_uid
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_write_uid
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_write_uid
 msgid "Last Updated by"
 msgstr "ბოლოს განაახლა"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__write_date
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__write_date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_write_date
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_write_date
 msgid "Last Updated on"
-msgstr "ბოლოს განახლდა"
+msgstr "ბოლოს განახლებულია"
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_main_attachment_id
-msgid "Main Attachment"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_has_error
-msgid "Message Delivery error"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_ids
-msgid "Messages"
-msgstr "მესიჯები"
-
-#. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:109
-#, python-format
-msgid "Missing Company"
-msgstr ""
-
-#. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:111
-#, python-format
-msgid "Missing Currency"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__narration
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_narration
 msgid "Notes"
-msgstr "ჩანაწერები"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__number
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_number
 msgid "Number"
-msgstr "ციფრი"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_needaction_counter
-msgid "Number of Actions"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_has_error_counter
-msgid "Number of error"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_needaction_counter
-msgid "Number of messages which requires an action"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_has_error_counter
-msgid "Number of messages with delivery error"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__message_unread_counter
-msgid "Number of unread messages"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher_line__tax_ids
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_line_tax_ids
 msgid "Only for tax excluded from price"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__paid
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_paid
 msgid "Paid"
-msgstr "გადახდილია"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__partner_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_partner_id
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 msgid "Partner"
 msgstr "პარტნიორი"
@@ -404,33 +294,23 @@ msgid "Pay Later"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__pay_now
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_pay_now
 msgid "Payment"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__name
-msgid "Payment Memo"
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_name
+msgid "Payment Reference"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__payment_journal_id
-msgid "Payment Method"
-msgstr ""
-
-#. module: account_voucher
-#: model:ir.model,name:account_voucher.model_account_payment
-msgid "Payments"
-msgstr ""
-
-#. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:226
+#: code:addons/account_voucher/models/account_voucher.py:195
 #, python-format
 msgid "Please activate the sequence of selected journal !"
 msgstr ""
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:229
+#: code:addons/account_voucher/models/account_voucher.py:198
 #, python-format
 msgid "Please define a sequence on the journal."
 msgstr ""
@@ -441,7 +321,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Posted"
-msgstr "გატარებულია"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
@@ -456,18 +336,24 @@ msgid "Pro-forma"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__product_id
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_product_id
 msgid "Product"
 msgstr "პროდუქტი"
 
 #. module: account_voucher
 #: selection:account.voucher,voucher_type:0
 msgid "Purchase"
-msgstr "შესყიდვა"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 msgid "Purchase Receipt"
+msgstr ""
+
+#. module: account_voucher
+#: model:ir.actions.act_window,name:account_voucher.action_purchase_receipt
+#: model:ir.ui.menu,name:account_voucher.menu_action_purchase_receipt
+msgid "Purchase Receipts"
 msgstr ""
 
 #. module: account_voucher
@@ -476,27 +362,14 @@ msgid "Purchase Voucher"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__quantity
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_quantity
 msgid "Quantity"
 msgstr "რაოდენობა"
 
 #. module: account_voucher
-#: model:ir.actions.act_window,name:account_voucher.action_purchase_receipt
-#: model:ir.actions.act_window,name:account_voucher.action_sale_receipt
-#: model:ir.ui.menu,name:account_voucher.menu_action_purchase_receipt
-#: model:ir.ui.menu,name:account_voucher.menu_action_sale_receipt
-msgid "Receipts"
-msgstr ""
-
-#. module: account_voucher
-#: model_terms:ir.actions.act_window,help:account_voucher.action_purchase_receipt
-msgid "Register a new purchase receipt"
-msgstr ""
-
-#. module: account_voucher
 #: selection:account.voucher,voucher_type:0
 msgid "Sale"
-msgstr "გაყიდვა"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
@@ -509,6 +382,12 @@ msgid "Sales Receipt"
 msgstr ""
 
 #. module: account_voucher
+#: model:ir.actions.act_window,name:account_voucher.action_sale_receipt
+#: model:ir.ui.menu,name:account_voucher.menu_action_sale_receipt
+msgid "Sales Receipts"
+msgstr ""
+
+#. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
@@ -516,7 +395,7 @@ msgid "Search Vouchers"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__sequence
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_sequence
 msgid "Sequence"
 msgstr "მიმდევრობა"
 
@@ -527,12 +406,12 @@ msgid "Set to Draft"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__state
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_state
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 msgid "Status"
-msgstr "მდგომარეობა"
+msgstr "სტატუსი"
 
 #. module: account_voucher
 #: model:mail.message.subtype,name:account_voucher.mt_voucher_state_change
@@ -545,32 +424,32 @@ msgid "Status changed"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__tax_ids
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_tax_ids
 msgid "Tax"
-msgstr "გადასახადი"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__tax_amount
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_tax_amount
 msgid "Tax Amount"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__tax_correction
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_tax_correction
 msgid "Tax Correction"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__paid
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_paid
 msgid "The Voucher has been totally paid."
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher_line__account_id
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_line_account_id
 msgid "The income or expense account related to the selected product."
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__reference
+#: model:ir.model.fields,help:account_voucher.field_account_voucher_reference
 msgid "The partner reference of this document."
 msgstr ""
 
@@ -580,9 +459,9 @@ msgid "To Review"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__amount
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_amount
 msgid "Total"
-msgstr "ჯამი"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree
@@ -591,37 +470,27 @@ msgid "Total Amount"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__voucher_type
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_voucher_type
 msgid "Type"
-msgstr "ტიპი"
+msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__price_unit
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_price_unit
 msgid "Unit Price"
-msgstr "ერთეულის ფასი"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_unread
-msgid "Unread Messages"
-msgstr "წაუკითხავი შეტყობინებები"
-
-#. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__message_unread_counter
-msgid "Unread Messages Counter"
 msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Validate"
-msgstr "დაადასტურე"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_tree_purchase
 msgid "Vendor"
-msgstr "მომწოდებელი"
+msgstr ""
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
@@ -629,8 +498,8 @@ msgid "Vendor Voucher"
 msgstr ""
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:116
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line__voucher_id
+#: code:addons/account_voucher/models/account_voucher.py:97
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_voucher_id
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_sale
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_filter_vendor
@@ -646,7 +515,8 @@ msgid "Voucher Entries"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__line_ids
+#: model:ir.model,name:account_voucher.model_account_voucher_line
+#: model:ir.model.fields,field_description:account_voucher.field_account_voucher_line_ids
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_purchase_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_voucher_line_form
@@ -665,16 +535,6 @@ msgid "Vouchers Entries"
 msgstr ""
 
 #. module: account_voucher
-#: model:ir.model.fields,field_description:account_voucher.field_account_voucher__website_message_ids
-msgid "Website Messages"
-msgstr "ვებ-გვერდის შეტყობინებები"
-
-#. module: account_voucher
-#: model:ir.model.fields,help:account_voucher.field_account_voucher__website_message_ids
-msgid "Website communication history"
-msgstr "ვებ-გვერდის კომუნიკაციის ისტორია"
-
-#. module: account_voucher
 #: model_terms:ir.actions.act_window,help:account_voucher.action_purchase_receipt
 msgid ""
 "When the purchase receipt is confirmed, you can record the\n"
@@ -689,7 +549,7 @@ msgid ""
 msgstr ""
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:457
+#: code:addons/account_voucher/models/account_voucher.py:377
 #, python-format
-msgid "You must first select a partner."
-msgstr "ჯერ უნდა აირჩიოთ პარტნიორი."
+msgid "You must first select a partner!"
+msgstr ""

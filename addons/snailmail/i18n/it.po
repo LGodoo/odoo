@@ -8,8 +8,8 @@
 # Giacomo Grasso <giacomo.grasso.82@gmail.com>, 2018
 # David Minneci <david@numeko.it>, 2018
 # Paolo Valier, 2018
-# Luigia Cimmino Caserta <lcc@odoo.com>, 2019
-# Sergio Zanchetta <primes2h@gmail.com>, 2020
+# Sergio Zanchetta <primes2h@gmail.com>, 2019
+# Léonie Bouchat <lbo@odoo.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 09:25+0000\n"
-"Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2020\n"
+"Last-Translator: Léonie Bouchat <lbo@odoo.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,22 +31,20 @@ msgid ""
 "<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
 "specific.\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-building-o\" title=\"I valori impostati qui sono "
-"specifici per azienda.\"/>"
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:249
 #, python-format
 msgid "An error occured when sending the document by post.<br>Error: %s"
 msgstr ""
-"Si è verificato un errore durante l'invio del documento per "
-"posta.<br>Errore: %s"
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:215
 #, python-format
 msgid "An unknown error happened. Please contact the support."
-msgstr "Si è verificato un errore sconosciuto. Contattare il supporto."
+msgstr ""
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__attachment_id
@@ -56,12 +54,12 @@ msgstr "Allegato"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__duplex
 msgid "Both side"
-msgstr "Entrambi i lati"
+msgstr ""
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_company__snailmail_duplex
 msgid "Both sides"
-msgstr "Entrambi i lati"
+msgstr ""
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_form
@@ -102,7 +100,7 @@ msgstr "Azienda"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_res_config_settings
 msgid "Config Settings"
-msgstr "Impostazioni di configurazione"
+msgstr "Impostazioni configurazione"
 
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_res_partner
@@ -162,12 +160,12 @@ msgstr "Ultima modifica il"
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__write_uid
 msgid "Last Updated by"
-msgstr "Ultimo aggiornamento di"
+msgstr "Ultima modifica di"
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__write_date
 msgid "Last Updated on"
-msgstr "Ultimo aggiornamento il"
+msgstr "Ultima modifica il"
 
 #. module: snailmail
 #: model:ir.actions.act_window,name:snailmail.action_mail_letters
@@ -185,7 +183,7 @@ msgstr "Modello"
 #: code:addons/snailmail/models/snailmail_letter.py:211
 #, python-format
 msgid "One or more required fields are empty."
-msgstr "Uno o più campi obbligatori sono vuoti."
+msgstr "Uno o più campi richiesti sono vuoti."
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__report_template
@@ -206,7 +204,7 @@ msgstr ""
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_duplex
 msgid "Print Both sides"
-msgstr "Stampa Fronte/Retro"
+msgstr ""
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_res_config_settings__snailmail_color
@@ -216,7 +214,7 @@ msgstr "Stampa a colori"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_ir_qweb_field_contact
 msgid "Qweb Field Contact"
-msgstr "Campo QWeb contatto"
+msgstr ""
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__partner_id
@@ -226,7 +224,7 @@ msgstr "Destinatario"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_ir_actions_report
 msgid "Report Action"
-msgstr "Azione resoconto"
+msgstr "Azione rendiconto"
 
 #. module: snailmail
 #: model_terms:ir.ui.view,arch_db:snailmail.snailmail_letter_form
@@ -241,14 +239,14 @@ msgstr "Inviata"
 #. module: snailmail
 #: model:ir.model,name:snailmail.model_snailmail_letter
 msgid "Snailmail Letter"
-msgstr "Lettera Snailmail"
+msgstr ""
 
 #. module: snailmail
 #: model:ir.actions.server,name:snailmail.snailmail_print_ir_actions_server
 #: model:ir.cron,cron_name:snailmail.snailmail_print
 #: model:ir.cron,name:snailmail.snailmail_print
 msgid "Snailmail: process letters queue"
-msgstr "Snailmail: elaborazione coda delle lettere"
+msgstr ""
 
 #. module: snailmail
 #: model:ir.model.fields,field_description:snailmail.field_snailmail_letter__state
@@ -262,14 +260,12 @@ msgid ""
 "The attachment of the letter could not be sent. Please check its content and"
 " contact the support if the problem persists."
 msgstr ""
-"Impossibile inviare l'allegato della lettera. Verificare il contenuto e se "
-"il problema persiste contattare il supporto."
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:209
 #, python-format
 msgid "The country of the partner is not covered by Snailmail."
-msgstr "La nazione del partner non è coperta da Snailmail."
+msgstr ""
 
 #. module: snailmail
 #: code:addons/snailmail/models/snailmail_letter.py:242

@@ -84,7 +84,7 @@
             </div>
             <!-- Draft transactions -->
             <div t-if="tx_draft.length > 0">
-                <h1>Waiting for payment</h1>
+                <h1>Something went wrong</h1>
                 <ul class="list-group">
                     <t t-foreach="tx_draft" t-as="tx">
                         <li class="list-group-item">
@@ -97,8 +97,14 @@
                                     <t t-raw="tx['message_to_display']"/>
                                 </t>
                                 <t t-else="">
-                                    We are waiting for the payment acquirer to confirm the payment.
+                                   Transaction Failed. Common reasons include: <br/><br/>
+
+                                    -Your balance has insufficient funds.<br/>
+                                    -Incorrect card details.<br/>
+                                    -Your card is not within the accepted cards<br/>
+
                                 </t>
+
                             </small>
                         </li>
                     </t>

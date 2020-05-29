@@ -6,7 +6,6 @@
 # Sengtha Chay <sengtha@gmail.com>, 2018
 # Chan Nath <channath@gmail.com>, 2018
 # Samkhann Seang <seangsamkhann@gmail.com>, 2018
-# Lux Sok <sok.lux@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:23+0000\n"
-"Last-Translator: Lux Sok <sok.lux@gmail.com>, 2019\n"
+"Last-Translator: Samkhann Seang <seangsamkhann@gmail.com>, 2018\n"
 "Language-Team: Khmer (https://www.transifex.com/odoo/teams/41243/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,22 +24,22 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 3.12"
-msgstr "$ 3.12"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.40"
-msgstr "$ 4.40"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.50"
-msgstr "$ 4.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 8.50"
-msgstr "$ 8.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
@@ -48,48 +47,46 @@ msgid ""
 "<span class=\"fa fa-lg fa-cutlery\" title=\"For bars and restaurants\" "
 "role=\"img\" aria-label=\"For bars and restaurants\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-cutlery\" title=\"For bars and restaurants\" "
-"role=\"img\" aria-label=\"For bars and restaurants\"/>"
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_amount\">$ 0.86</span>"
-msgstr "<span class=\"pos-change_amount\">$ 0.86</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_title\">Change</span>"
-msgstr "<span class=\"pos-change_title\">ផ្លាស់ប្តូរ</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"total-amount-formatting\">TOTAL</span>"
-msgstr "<span class=\"total-amount-formatting\">សរុប</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
-msgstr "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>$ 470.00</span>"
-msgstr "<span>$ 470.00</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>Cash (USD):</span>"
-msgstr "<span>សាច់ប្រាក់ (USD):</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Floor Name: </strong>"
-msgstr "<strong>ឈ្មោះជាន់: </strong>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Point of Sale: </strong>"
-msgstr "<strong>ចំនុច​នៃ​ការ​លក់: </strong>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__background_image
@@ -97,7 +94,6 @@ msgid ""
 "A background image used to display a floor layout in the point of sale "
 "interface"
 msgstr ""
-"រូបភាពផ្ទៃខាងក្រោយត្រូវបានប្រើដើម្បីបង្ហាញប្លង់ជាន់នៅចំណុចចំណុចប្រទាក់នៃការលក់"
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
@@ -105,14 +101,11 @@ msgid ""
 "A restaurant floor represents the place where customers are served, this is where you can\n"
 "                define and position the tables."
 msgstr ""
-"ជាន់ភោជនីយដ្ឋានតំណាងឱ្យកន្លែងដែលអតិថិជនត្រូវបានបម្រើនេះគឺជាកន្លែងដែលអ្នកអាចធ្វើបាន\n"
-"                កំណត់និងដាក់តារាង។"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Accept customer tips or convert their change to a tip"
 msgstr ""
-"ការទទួលបានការធ្វើដំណើររបស់អតិថិជន ឬធ្វើការផ្លាស់ប្តូរទៅលើដំណើរការរបស់ពួកគេ"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__active
@@ -131,71 +124,71 @@ msgstr "បន្ថែម"
 #: code:addons/pos_restaurant/static/src/js/notes.js:54
 #, python-format
 msgid "Add Note"
-msgstr "បន្ថែម​កំណត់ចំណាំ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
 msgid "Add a new restaurant floor"
-msgstr "ការបន្ថែមជាន់ភោជនីយដ្ឋាន​"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_printer_form
 msgid "Add a new restaurant order printer"
-msgstr "បន្ថែមម៉ាស៊ីនបោះពុម្ពលំដាប់ភោជនីយដ្ឋានថ្មី"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:107
 #, python-format
 msgid "Add button"
-msgstr "បន្ថែមប៊ូតុង"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Add notes to orderlines"
-msgstr "បន្ថែមកំណត់ត្រាទៅជួរបញ្ជាទិញ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_orderline_notes
 msgid "Allow custom notes on Orderlines."
-msgstr "អនុញ្ញាតឱ្យកំណត់ចំណាំផ្ទាល់ខ្លួននៅលើជួរបញ្ជាទិញ។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Allow to print bill before payment"
-msgstr "អនុញ្ញាតឱ្យបោះពុម្ពវិក័យប័ត្រមុនពេលទូទាត់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_printbill
 msgid "Allows to print the Bill before payment."
-msgstr "អនុញ្ញាតឱ្យបោះពុម្ពវិក័យប័ត្រមុនពេលទូទាត់។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__name
 msgid "An internal identification of a table"
-msgstr "ការកំណត់អត្តសញ្ញាណផ្ទៃក្នុងនៃតារាង"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__name
 msgid "An internal identification of the printer"
-msgstr "ការកំណត់អត្តសញ្ញាណផ្ទៃក្នុងរបស់ព្រីនធ័រ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__name
 msgid "An internal identification of the restaurant floor"
-msgstr "ការកំណត់អត្តសញ្ញាណផ្ទៃក្នុងនៃជាន់ភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_table_form
 msgid "Appearance"
-msgstr "រូបរាង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/js/floors.js:562
 #, python-format
 msgid "Are you sure ?"
-msgstr "តើ​អ្នក​ប្រាកដ​ឬ​ទេ ?"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -203,31 +196,31 @@ msgstr "តើ​អ្នក​ប្រាកដ​ឬ​ទេ ?"
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:61
 #, python-format
 msgid "Back"
-msgstr "ថយក្រោយ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:82
 #, python-format
 msgid "Back to floor"
-msgstr "ត្រលប់ទៅជាន់វិញ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__background_color
 msgid "Background Color"
-msgstr "ពណ៌ផ្ទៃខាងក្រោយ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__background_image
 msgid "Background Image"
-msgstr "រូបភាព​ផ្ទៃ​ខាង​ក្រោយ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:31
 #, python-format
 msgid "Bill"
-msgstr "វិក័យបត្រ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -235,7 +228,7 @@ msgstr "វិក័យបត្រ"
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_printbill
 #, python-format
 msgid "Bill Printing"
-msgstr "ព្រីនព្រីនធីង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -243,7 +236,7 @@ msgstr "ព្រីនព្រីនធីង"
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_splitbill
 #, python-format
 msgid "Bill Splitting"
-msgstr "ការបំបែកវិក័យប័ត្រ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -251,14 +244,14 @@ msgstr "ការបំបែកវិក័យប័ត្រ"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:150
 #, python-format
 msgid "Blue"
-msgstr "ខៀវ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/multiprint.xml:39
 #, python-format
 msgid "CANCELLED"
-msgstr "CANCELLED"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -267,7 +260,7 @@ msgstr "CANCELLED"
 #: code:addons/pos_restaurant/static/src/js/floors.js:425
 #, python-format
 msgid "Changes could not be saved"
-msgstr "ការផ្លាស់ប្តូរមិនអាចត្រូវបានរក្សាទុកទេ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -281,12 +274,12 @@ msgstr "បិទ"
 #: model:product.product,name:pos_restaurant.coke
 #: model:product.template,name:pos_restaurant.coke_product_template
 msgid "Coca-Cola"
-msgstr "កូកាកូឡា"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__color
 msgid "Color"
-msgstr "ព័ណ៍"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__create_uid
@@ -307,26 +300,26 @@ msgstr "បង្កើតនៅ"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:160
 #, python-format
 msgid "Delete"
-msgstr "លុប"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Desk Organizer"
-msgstr "អ្នករៀបចំតុ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:91
 #, python-format
 msgid "Discount:"
-msgstr "ការបញ្ចុះតម្លៃ៖"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:140
 #, python-format
 msgid "Discounts"
-msgstr "ការបញ្ចុះតម្លៃ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__display_name
@@ -338,14 +331,14 @@ msgstr "ឈ្មោះសំរាប់បង្ហាញ"
 #. module: pos_restaurant
 #: model:pos.category,name:pos_restaurant.drinks
 msgid "Drinks"
-msgstr "ភេសជ្ជៈ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:116
 #, python-format
 msgid "Duplicate"
-msgstr "ត្រួត"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_printer_form
@@ -355,44 +348,39 @@ msgid ""
 "                An Order Printer will only print updates for products belonging to one of\n"
 "                its categories."
 msgstr ""
-"ម៉ាស៊ីនបោះពុម្ពបញ្ជាទិញនីមួយៗមានអាសយដ្ឋាន IP ដែលកំណត់ប្រអប់ / "
-"ផ្នែករឹងអាយកូធី                 "
-"ប្រូកស៊ីដែលអាចរកឃើញម៉ាស៊ីនបោះពុម្ពនិងបញ្ជីប្រភេទផលិតផល។                 "
-"ម៉ាស៊ីនបោះពុម្ពបញ្ជាទិញនឹងបោះពុម្ពតែការធ្វើបច្ចុប្បន្នភាពសម្រាប់ផលិតផលដែលជាកម្មសិទ្ធិរបស់មួយប៉ុណ្ណោះ"
-"                 ប្រភេទរបស់វា។"
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:110
 #, python-format
 msgid "Edit"
-msgstr "កែសម្រួល"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_splitbill
 msgid "Enables Bill Splitting in the Point of Sale."
-msgstr "អនុញ្ញាតឱ្យមានការបែងចែកវិក័យប័ត្រនៅក្នុងចំណុចនៃការលក់។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__floor_id
 msgid "Floor"
-msgstr "ជាន់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__name
 msgid "Floor Name"
-msgstr "ឈ្មោះជាន់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.actions.act_window,name:pos_restaurant.action_restaurant_floor_form
 #: model:ir.ui.menu,name:pos_restaurant.menu_restaurant_floor_all
 msgid "Floor Plans"
-msgstr "ផែនការជាន់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Floors"
-msgstr "ជាន់"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -400,7 +388,7 @@ msgstr "ជាន់"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:149
 #, python-format
 msgid "Green"
-msgstr "បៃតង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -408,7 +396,7 @@ msgstr "បៃតង"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:154
 #, python-format
 msgid "Grey"
-msgstr "ពណ៌ប្រផេះ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -416,14 +404,14 @@ msgstr "ពណ៌ប្រផេះ"
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__customer_count
 #, python-format
 msgid "Guests"
-msgstr "ភ្ញៀវ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/js/floors.js:946
 #, python-format
 msgid "Guests ?"
-msgstr "ភ្ញៀវ?"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -431,17 +419,17 @@ msgstr "ភ្ញៀវ?"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:21
 #, python-format
 msgid "Guests:"
-msgstr "ភ្ញៀវៈ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__height
 msgid "Height"
-msgstr "តំលៃខ្ពស់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__position_h
 msgid "Horizontal Position"
-msgstr "ផ្នែកផ្ដេក"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__id
@@ -456,12 +444,11 @@ msgid ""
 "If false, the table is deactivated and will not be available in the point of"
 " sale"
 msgstr ""
-"ប្រសិនបើមិនពិតតារាងត្រូវបានធ្វើឱ្យអសកម្មហើយនឹងមិនមាននៅក្នុងកន្លែងលក់ទេ"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__module_pos_restaurant
 msgid "Is a Bar/Restaurant"
-msgstr "គឺជាបារ / ភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
@@ -487,7 +474,7 @@ msgstr "ផ្លាស់ប្តូរចុងក្រោយ"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Led Lamp"
-msgstr "Led Lamp"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -495,37 +482,37 @@ msgstr "Led Lamp"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:155
 #, python-format
 msgid "Light grey"
-msgstr "ពណ៌ប្រផេះស្រាល"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:39
 #, python-format
 msgid "Logo"
-msgstr "រូបសញ្ញា"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Manage table orders"
-msgstr "គ្រប់គ្រងការបញ្ជាទិញតុ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,name:pos_restaurant.minute_maid
 #: model:product.template,name:pos_restaurant.minute_maid_product_template
 msgid "Minute Maid"
-msgstr "នាទីអ្នកបំរើ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Monitor Stand"
-msgstr "ម៉ូនីទ័រឈរ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/multiprint.xml:62
 #, python-format
 msgid "NEW"
-msgstr "ថ្មី"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -533,7 +520,7 @@ msgstr "ថ្មី"
 #: code:addons/pos_restaurant/static/src/xml/multiprint.xml:73
 #, python-format
 msgid "NOTE"
-msgstr "ចំណាំ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -548,12 +535,12 @@ msgstr "កំណត់សំគាល់"
 #: code:addons/pos_restaurant/static/src/js/floors.js:495
 #, python-format
 msgid "Number of Seats ?"
-msgstr "ចំនួនកន្លែងអង្គុយ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Odoo Logo"
-msgstr "Odoo និមិត្តសញ្ញា"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -568,26 +555,26 @@ msgstr "យលព្រម"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:151
 #, python-format
 msgid "Orange"
-msgstr "ក្រូច"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/multiprint.xml:6
 #, python-format
 msgid "Order"
-msgstr "បញ្ជាទិញ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__is_order_printer
 msgid "Order Printer"
-msgstr "ការទិញម៉ាស៊ីនព្រីន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.actions.act_window,name:pos_restaurant.action_restaurant_printer_form
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__printer_ids
 #: model:ir.ui.menu,name:pos_restaurant.menu_restaurant_printer_all
 msgid "Order Printers"
-msgstr "បញ្ជាទិញម៉ាស៊ីនបោះពុម្ព"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_printer_form
@@ -595,83 +582,80 @@ msgid ""
 "Order Printers are used by restaurants and bars to print the\n"
 "                order updates in the kitchen/bar when the waiter updates the order."
 msgstr ""
-"ម៉ាស៊ីនព្រីនធ័រត្រូវបានប្រើប្រាស់ដោយភោជនីយដ្ឋាននិងបារដើម្បីបោះពុម្ពឯកសារ"
-"                 បញ្ជាទិញបច្ចុប្បន្នភាពនៅក្នុងផ្ទះបាយ / "
-"រង្គសាលនៅពេលដែលអ្នករត់តុធ្វើបច្ចុប្បន្នភាពការបញ្ជាទិញ។"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_orderline_notes
 msgid "Orderline Notes"
-msgstr "កំណត់លំដាប់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer_form
 msgid "POS Printer"
-msgstr "POSម៉ាស៊ីនព្រីន"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:78
 #, python-format
 msgid "Payment"
-msgstr "ការចំណាយ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.category,name:pos_restaurant.product_category_pos
 msgid "PoS"
-msgstr "PoS"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__pos_config_id
 msgid "Point of Sale"
-msgstr "ចំនុច​នៃ​ការ​លក់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_config
 msgid "Point of Sale Configuration"
-msgstr "ចំណុចនៃការកំណត់រចនាសម្ព័ន្ធលក់ "
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_order
 msgid "Point of Sale Orders"
-msgstr "ចំណុចនៃការបញ្ជាទិញការលក់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Price"
-msgstr "តម្លៃ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:20
 #, python-format
 msgid "Print"
-msgstr "បោះពុម្ព"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Print orders at the kitchen, at the bar, etc."
-msgstr "បោះពុម្ពការបញ្ជាទិញនៅផ្ទះបាយនៅបារ។ ល។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__product_categories_ids
 msgid "Printed Product Categories"
-msgstr "ប្រភេទផលិតផលដែលបានបោះពុម្ព"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__name
 msgid "Printer Name"
-msgstr "ឈ្មោះម៉ាស៊ីនបោះពុម្ព"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Printers"
-msgstr "អ្នកបោះពុម្ព"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__proxy_ip
 msgid "Proxy IP Address"
-msgstr "អាស័យដ្ឋាន IP ប្រូកស៊ី"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -679,7 +663,7 @@ msgstr "អាស័យដ្ឋាន IP ប្រូកស៊ី"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:153
 #, python-format
 msgid "Purple"
-msgstr "ពណ៌ស្វាយ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
@@ -692,61 +676,61 @@ msgstr "ចំនួន"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:148
 #, python-format
 msgid "Red"
-msgstr "ក្រហម"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/js/floors.js:563
 #, python-format
 msgid "Removing a table cannot be undone"
-msgstr "ការលុបតារាងមិនអាចត្រូវបានធ្វើវិញទេ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:119
 #, python-format
 msgid "Rename"
-msgstr "ប្តូរឈ្មោះ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_floor
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Restaurant Floor"
-msgstr "ជាន់ភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__floor_ids
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_tree
 msgid "Restaurant Floors"
-msgstr "ជាន់ភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer
 msgid "Restaurant Order Printers"
-msgstr "ម៉ាស៊ីនបោះពុម្ពលំដាប់ភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_printer
 msgid "Restaurant Printer"
-msgstr "ព្រីនធឺភោជនីយដ្ឋាន "
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_table
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_table_form
 msgid "Restaurant Table"
-msgstr "តុភោជនីយដ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #: selection:restaurant.table,shape:0
 msgid "Round"
-msgstr "វិលជុំ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:126
 #, python-format
 msgid "Round Shape"
-msgstr "រាងមូល"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -754,7 +738,7 @@ msgstr "រាងមូល"
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__seats
 #, python-format
 msgid "Seats"
-msgstr "កន្លែងអង្គុយ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__sequence
@@ -766,189 +750,187 @@ msgstr "លំដាប់"
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:71
 #, python-format
 msgid "Served by"
-msgstr "ដោយអ្នកបំរើ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__shape
 msgid "Shape"
-msgstr "សណ្ឋាន"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:6
 #, python-format
 msgid "Split"
-msgstr "បែងចែក"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Split total or order lines"
-msgstr "បំបែកបន្ទាត់សរុបឬបញ្ជាទិញ"
+msgstr ""
 
 #. module: pos_restaurant
 #: selection:restaurant.table,shape:0
 msgid "Square"
-msgstr "ការេ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:125
 #, python-format
 msgid "Square Shape"
-msgstr "រាងការេ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:118
 #, python-format
 msgid "Subtotal"
-msgstr "សរុប"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:131
 #, python-format
 msgid "TOTAL"
-msgstr "សរុប"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_order__table_id
 msgid "Table"
-msgstr "តារាង"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__is_table_management
 msgid "Table Management"
-msgstr "ការគ្រប់គ្រងតារាង"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__name
 msgid "Table Name"
-msgstr "ឈ្មោះតារាង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/js/floors.js:483
 #, python-format
 msgid "Table Name ?"
-msgstr "ឈ្មោះតារាង​ ?"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__table_ids
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Tables"
-msgstr "តារាង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:54
 #, python-format
 msgid "Tel:"
-msgstr "លេខទូរស័ព្ទ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__proxy_ip
 msgid "The IP Address or hostname of the Printer's hardware proxy"
-msgstr "អាសយដ្ឋាន IP ឬឈ្មោះម៉ាស៊ីននៃប្រូកស៊ីផ្នែករឹងរបស់ព្រីន"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__customer_count
 msgid "The amount of customers that have been served by this order."
-msgstr "ចំនួនអតិថិជនដែលត្រូវបានបម្រើដោយការបញ្ជាទិញនេះ។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__background_color
 msgid ""
 "The background color of the floor layout, (must be specified in a html-"
 "compatible format)"
-msgstr "ពណ៌ផ្ទៃខាងក្រោយនៃប្លង់ជាន់ (ត្រូវតែបញ្ជាក់ជាទម្រង់ឆបគ្នាជាមួយ html)"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__seats
 msgid "The default number of customer served at this table."
-msgstr "ចំនួនអតិថិជនលំនាំដើមដែលបម្រើនៅតុនេះ។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__table_ids
 msgid "The list of tables in this floor"
-msgstr "បញ្ជីតារាងនៅក្នុងជាន់នេះ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__floor_ids
 msgid "The restaurant floors served by this point of sale."
-msgstr "ជាន់ភោជនីយដ្ឋានដែលបម្រើដោយចំណុចនៃការលក់នេះ។"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__table_id
 msgid "The table where this order was served"
-msgstr "តារាងដែលការបញ្ជាទិញនេះត្រូវបានបម្រើ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__color
 msgid ""
 "The table's color, expressed as a valid 'background' CSS property value"
 msgstr ""
-"ពណ៌តារាងត្រូវបានបញ្ជាក់ជាតម្លៃលក្ខណសម្បត្តិ CSS \"ផ្ទៃខាងក្រោយ\" "
-"ដែលមានសុពលភាព"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__height
 msgid "The table's height in pixels"
-msgstr "កម្ពស់តារាងគិតជាភីកសែល"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__position_h
 msgid ""
 "The table's horizontal position from the left side to the table's center, in"
 " pixels"
-msgstr "ទីតាំងផ្ដេករបស់តុពីជ្រុងខាងឆ្វេងទៅកណ្តាលតារាងគិតជាភីកសែល"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__position_v
 msgid ""
 "The table's vertical position from the top to the table's center, in pixels"
-msgstr "ទីតាំងបញ្ឈររបស់តុពីកំពូលទៅកណ្តាលតារាងគិតជាភីកសែល"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__width
 msgid "The table's width in pixels"
-msgstr "ទទឹងតារាងគិតជាភីកសែល"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:106
 #, python-format
 msgid "This floor has no tables yet, use the"
-msgstr "ជាន់នេះមិនទាន់មានតុប្រើនៅឡើយទេ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "This product is used as reference on customer receipts."
-msgstr "ផលិតផលនេះត្រូវបានប្រើជាឯកសារយោងលើវិក័យប័ត្ររបស់អតិថិជន។"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:129
 #, python-format
 msgid "Tint"
-msgstr "Tint"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Tip Product"
-msgstr "ផលិតផលទិព្វ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Tips"
-msgstr "ទិព្វ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:37
 #, python-format
 msgid "Transfer"
-msgstr "ផ្ទេរ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -956,7 +938,7 @@ msgstr "ផ្ទេរ"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:156
 #, python-format
 msgid "Turquoise"
-msgstr "រមៀត"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,uom_name:pos_restaurant.coke
@@ -966,40 +948,40 @@ msgstr "រមៀត"
 #: model:product.template,uom_name:pos_restaurant.minute_maid_product_template
 #: model:product.template,uom_name:pos_restaurant.water_product_template
 msgid "Unit(s)"
-msgstr "កំរិត(s)"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__sequence
 msgid "Used to sort Floors"
-msgstr "ប្រើដើម្បីតម្រៀបជាន់"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__position_v
 msgid "Vertical Position"
-msgstr "ផ្នែកបញ្ឈរ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,name:pos_restaurant.water
 #: model:product.template,name:pos_restaurant.water_product_template
 msgid "Water"
-msgstr "ទឹក"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Whiteboard Pen"
-msgstr "Whiteboard Pen"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__width
 msgid "Width"
-msgstr "ទទឹង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:44
 #, python-format
 msgid "With a"
-msgstr "ជាមួយ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -1007,7 +989,7 @@ msgstr "ជាមួយ"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:152
 #, python-format
 msgid "Yellow"
-msgstr "ពណ៌លឿង"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -1016,14 +998,14 @@ msgstr "ពណ៌លឿង"
 #: code:addons/pos_restaurant/static/src/js/floors.js:426
 #, python-format
 msgid "You must be connected to the internet to save your changes."
-msgstr "អ្នកត្រូវតែភ្ជាប់ទៅអ៊ីនធឺណិតដើម្បីរក្សាទុកការផ្លាស់ប្តូររបស់អ្នក។"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:36
 #, python-format
 msgid "at"
-msgstr "នៅ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -1031,21 +1013,21 @@ msgstr "នៅ"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:17
 #, python-format
 msgid "at table"
-msgstr "នៅលើតុ"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:107
 #, python-format
 msgid "button in the editing toolbar to create new tables."
-msgstr "នៅក្នុងរបារឧបករណ៍កែសម្រួលដើម្បីបង្កើតតារាងថ្មី។"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:46
 #, python-format
 msgid "discount"
-msgstr "បញ្ចុះតំលៃ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,weight_uom_name:pos_restaurant.coke
@@ -1055,4 +1037,4 @@ msgstr "បញ្ចុះតំលៃ"
 #: model:product.template,weight_uom_name:pos_restaurant.minute_maid_product_template
 #: model:product.template,weight_uom_name:pos_restaurant.water_product_template
 msgid "kg"
-msgstr "គីឡូ"
+msgstr ""

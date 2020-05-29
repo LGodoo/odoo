@@ -15,7 +15,6 @@ from odoo.tools import float_compare, pycompat
 _logger = logging.getLogger(__name__)
 
 
-
 class ProductCategory(models.Model):
     _name = "product.category"
     _description = "Product Category"
@@ -159,8 +158,7 @@ class ProductProduct(models.Model):
     ]
 
     def _get_invoice_policy(self):
-        # Consider we are in "delivery" mode for proper valuation
-        return "delivery"
+        return False
 
     def _compute_is_product_variant(self):
         for product in self:
@@ -288,7 +286,6 @@ class ProductProduct(models.Model):
         if self.product_tmpl_id.image and self.product_variant_count > 1:
             self.image_variant = image
         else:
-            self.image_variant = False
             self.product_tmpl_id.image = image
 
     @api.depends('product_tmpl_id', 'attribute_value_ids')
@@ -347,16 +344,6 @@ class ProductProduct(models.Model):
                 product._set_standard_price(vals.get('standard_price') or 0.0)
         # `_get_variant_id_for_combination` depends on existing variants
         self.clear_caches()
-        self.env['product.template'].invalidate_cache(
-            fnames=[
-                'valid_archived_variant_ids',
-                'valid_existing_variant_ids',
-                'product_variant_ids',
-                'product_variant_id',
-                'product_variant_count'
-            ],
-            ids=products.mapped('product_tmpl_id').ids
-        )
         return products
 
     @api.multi
@@ -372,8 +359,6 @@ class ProductProduct(models.Model):
             # prefetched o2m have to be reloaded (because of active_test)
             # (eg. product.template: product_variant_ids)
             self.invalidate_cache()
-            # `_get_first_possible_variant_id` depends on variants active state
-            self.clear_caches()
         return res
 
     @api.multi
@@ -569,10 +554,7 @@ class ProductProduct(models.Model):
         precision = self.env['decimal.precision'].precision_get('Product Unit of Measure')
 
         res = self.env['product.supplierinfo']
-        sellers = self._prepare_sellers(params)
-        if self.env.context.get('force_company'):
-            sellers = sellers.filtered(lambda s: not s.company_id or s.company_id.id == self.env.context['force_company'])
-        for seller in sellers:
+        for seller in self._prepare_sellers(params):
             # Set quantity in UoM of seller
             quantity_uom_seller = quantity
             if quantity_uom_seller and uom_id and uom_id != seller.product_uom:

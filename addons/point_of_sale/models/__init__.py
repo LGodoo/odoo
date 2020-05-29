@@ -3,7 +3,6 @@
 
 from . import account_bank_statement
 from . import account_journal
-from . import account_invoice
 from . import account_tax
 from . import barcode_rule
 from . import digest

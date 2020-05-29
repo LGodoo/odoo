@@ -3,7 +3,6 @@
 
 import json
 import logging
-from datetime import timedelta, time
 
 from odoo import api, fields, models, _
 from odoo.addons.base.models.res_partner import WARNING_MESSAGE, WARNING_HELP
@@ -51,18 +50,12 @@ class ProductTemplate(models.Model):
 
     @api.multi
     def action_view_sales(self):
-        date_from = fields.Datetime.to_string(fields.datetime.combine(fields.datetime.now() - timedelta(days=365), time.min))
-        done_states = self.env['sale.report']._get_done_states()
-
-        action = self.env.ref('sale.action_order_report_all').read()[0]
-        action['domain'] = [
-            ('state', 'in', done_states),
-            ('product_tmpl_id', 'in', self.ids),
-            ('date', '>=', date_from),
-        ]
+        action = self.env.ref('sale.report_all_channels_sales_action').read()[0]
+        action['domain'] = [('product_tmpl_id', 'in', self.ids)]
         action['context'] = {
             'search_default_last_year': 1,
-            'pivot_measures': ['product_uom_qty'],
+            'pivot_measures': ['product_qty'],
+            'search_default_team_id': 1
         }
         return action
 

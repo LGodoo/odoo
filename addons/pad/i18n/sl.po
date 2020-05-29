@@ -4,10 +4,8 @@
 # 
 # Translators:
 # Martin Trigaux, 2019
-# Matjaz Mozetic <m.mozetic@matmoz.si>, 2019
+# Matjaž Mozetič <m.mozetic@matmoz.si>, 2019
 # matjaz k <matjaz@mentis.si>, 2019
-# Boris Kodelja <boris@hbs.si>, 2019
-# Tadej Lupšina <tadej@hbs.si>, 2019
 # 
 msgid ""
 msgstr ""
@@ -15,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-22 11:12+0000\n"
 "PO-Revision-Date: 2018-08-24 09:21+0000\n"
-"Last-Translator: Tadej Lupšina <tadej@hbs.si>, 2019\n"
+"Last-Translator: matjaz k <matjaz@mentis.si>, 2019\n"
 "Language-Team: Slovenian (https://www.transifex.com/odoo/teams/41243/sl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +34,7 @@ msgstr "Družbe"
 #. module: pad
 #: model:ir.model,name:pad.model_res_config_settings
 msgid "Config Settings"
-msgstr "Uredi nastavitve"
+msgstr ""
 
 #. module: pad
 #: model:ir.model.fields,field_description:pad.field_pad_common__display_name
@@ -80,7 +78,7 @@ msgstr "Pad Api ključ"
 #. module: pad
 #: model:ir.model.fields,field_description:pad.field_res_config_settings__pad_key
 msgid "Pad Api Key *"
-msgstr "Pad Api ključ *"
+msgstr ""
 
 #. module: pad
 #: model:ir.model,name:pad.model_pad_common
@@ -95,7 +93,7 @@ msgstr "Pad strežnik"
 #. module: pad
 #: model:ir.model.fields,field_description:pad.field_res_config_settings__pad_server
 msgid "Pad Server *"
-msgstr "Pad strežnik *"
+msgstr ""
 
 #. module: pad
 #: code:addons/pad/models/pad.py:58

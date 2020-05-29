@@ -174,7 +174,7 @@ function getMatchedCSSRules(a) {
                 break;
             }
             $el = $el.parent();
-        } while ($el.length && !$el.is('html'));
+        } while (!$el.is('html'));
     }
 
     return style;

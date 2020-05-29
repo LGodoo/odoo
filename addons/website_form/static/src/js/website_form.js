@@ -33,7 +33,7 @@ odoo.define('website_form.animation', function (require) {
             var l10n = _t.database.parameters;
             var datepickers_options = {
                 minDate: moment({ y: 1900 }),
-                maxDate: moment({ y: 9999, M: 11, d: 31 }),
+                maxDate: moment().add(200, "y"),
                 calendarWeeks: true,
                 icons : {
                     time: 'fa fa-clock-o',
@@ -74,12 +74,12 @@ odoo.define('website_form.animation', function (require) {
 
             // Prepare form inputs
             this.form_fields = this.$target.serializeArray();
-            $.each(this.$target.find('input[type=file]'), function (outer_index, input) {
+            _.each(this.$target.find('input[type=file]'), function (input) {
                 $.each($(input).prop('files'), function (index, file) {
                     // Index field name as ajax won't accept arrays of files
                     // when aggregating multiple files into a single field value
                     self.form_fields.push({
-                        name: input.name + '[' + outer_index + '][' + index + ']',
+                        name: input.name + '[' + index + ']',
                         value: file
                     });
                 });

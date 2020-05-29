@@ -18,7 +18,7 @@ class ProductTemplate(models.Model):
         company_dependent=True, copy=True, default='manual_periodic',
         help="""Manual: The accounting entries to value the inventory are not posted automatically.
         Automated: An accounting entry is automatically created to value the inventory when a product enters or leaves the company.""")
-    valuation = fields.Char(compute='_compute_valuation_type', inverse='_set_valuation_type', search='_search_valuation')
+    valuation = fields.Char(compute='_compute_valuation_type', inverse='_set_valuation_type')
     property_cost_method = fields.Selection([
         ('standard', 'Standard Price'),
         ('fifo', 'First In First Out (FIFO)'),
@@ -47,16 +47,6 @@ class ProductTemplate(models.Model):
     @api.one
     def _set_valuation_type(self):
         return self.write({'property_valuation': self.valuation})
-
-    def _search_valuation(self, operator, value):
-        # The search is rather limited since 'property_valuation' is a Selection field, meaning that
-        # the user must search on the technical name of the field, in this case 'manual_periodic' or
-        # 'real_time'.
-        return [
-            '|',
-                '&', ('property_valuation', '!=', False), ('property_valuation', operator, value),
-                '&', ('property_valuation', '=', False), ('categ_id.property_valuation', operator, value)
-        ]
 
     @api.one
     @api.depends('property_cost_method', 'categ_id.property_cost_method')
@@ -132,11 +122,10 @@ class ProductProduct(models.Model):
 
         product_accounts = {product.id: product.product_tmpl_id.get_product_accounts() for product in self}
 
-        prec = self.env['decimal.precision'].precision_get('Product Price')
         for location in locations:
             for product in self.with_context(location=location.id, compute_child=False).filtered(lambda r: r.valuation == 'real_time'):
                 diff = product.standard_price - new_price
-                if float_is_zero(diff, precision_digits=prec):
+                if float_is_zero(diff, precision_rounding=product.currency_id.rounding):
                     raise UserError(_("No difference between the standard price and the new price."))
                 if not product_accounts[product.id].get('stock_valuation', False):
                     raise UserError(_('You don\'t have any stock valuation account defined on your product category. You must define one before processing this operation.'))
@@ -177,11 +166,8 @@ class ProductProduct(models.Model):
     def _get_fifo_candidates_in_move(self):
         """ Find IN moves that can be used to value OUT moves.
         """
-        return self._get_fifo_candidates_in_move_with_company()
-
-    def _get_fifo_candidates_in_move_with_company(self, move_company_id=False):
         self.ensure_one()
-        domain = [('product_id', '=', self.id), ('remaining_qty', '>', 0.0)] + self.env['stock.move']._get_in_base_domain(move_company_id)
+        domain = [('product_id', '=', self.id), ('remaining_qty', '>', 0.0)] + self.env['stock.move']._get_in_base_domain()
         candidates = self.env['stock.move'].search(domain, order='date, id')
         return candidates
 
@@ -223,30 +209,18 @@ class ProductProduct(models.Model):
             for row in res:
                 fifo_automated_values[(row[0], row[1])] = (row[2], row[3], list(row[4]))
 
-        product_values = {product.id: 0 for product in self}
-        product_move_ids = {product.id: [] for product in self}
-
+        product_values = {product: 0 for product in self}
+        product_move_ids = {product: [] for product in self}
         if to_date:
             domain = [('product_id', 'in', self.ids), ('date', '<=', to_date)] + StockMove._get_all_base_domain()
-            value_field_name = 'value'
+            for move in StockMove.search(domain).with_context(prefetch_fields=False):
+                product_values[move.product_id] += move.value
+                product_move_ids[move.product_id].append(move.id)
         else:
             domain = [('product_id', 'in', self.ids)] + StockMove._get_all_base_domain()
-            value_field_name = 'remaining_value'
-
-        StockMove.check_access_rights('read')
-        query = StockMove._where_calc(domain)
-        StockMove._apply_ir_rules(query, 'read')
-        from_clause, where_clause, params = query.get_sql()
-        query_str = """
-            SELECT stock_move.product_id, SUM(COALESCE(stock_move.{}, 0.0)), ARRAY_AGG(stock_move.id)
-            FROM {}
-            WHERE {}
-            GROUP BY stock_move.product_id
-        """.format(value_field_name, from_clause, where_clause)
-        self.env.cr.execute(query_str, params)
-        for product_id, value, move_ids in self.env.cr.fetchall():
-            product_values[product_id] = value
-            product_move_ids[product_id] = move_ids
+            for move in StockMove.search(domain).with_context(prefetch_fields=False):
+                product_values[move.product_id] += move.remaining_value
+                product_move_ids[move.product_id].append(move.id)
 
         for product in self:
             if product.cost_method in ['standard', 'average']:
@@ -262,9 +236,9 @@ class ProductProduct(models.Model):
             elif product.cost_method == 'fifo':
                 if to_date:
                     if product.product_tmpl_id.valuation == 'manual_periodic':
-                        product.stock_value = product_values[product.id]
+                        product.stock_value = product_values[product]
                         product.qty_at_date = product.with_context(company_owned=True, owner_id=False).qty_available
-                        product.stock_fifo_manual_move_ids = StockMove.browse(product_move_ids[product.id])
+                        product.stock_fifo_manual_move_ids = StockMove.browse(product_move_ids[product])
                     elif product.product_tmpl_id.valuation == 'real_time':
                         valuation_account_id = product.categ_id.property_stock_valuation_account_id.id
                         value, quantity, aml_ids = fifo_automated_values.get((product.id, valuation_account_id)) or (0, 0, [])
@@ -272,10 +246,10 @@ class ProductProduct(models.Model):
                         product.qty_at_date = quantity
                         product.stock_fifo_real_time_aml_ids = self.env['account.move.line'].browse(aml_ids)
                 else:
-                    product.stock_value = product_values[product.id]
+                    product.stock_value, moves = product_values[product], StockMove.browse(product_move_ids[product])
                     product.qty_at_date = product.with_context(company_owned=True, owner_id=False).qty_available
                     if product.product_tmpl_id.valuation == 'manual_periodic':
-                        product.stock_fifo_manual_move_ids = StockMove.browse(product_move_ids[product.id])
+                        product.stock_fifo_manual_move_ids = moves
                     elif product.product_tmpl_id.valuation == 'real_time':
                         valuation_account_id = product.categ_id.property_stock_valuation_account_id.id
                         value, quantity, aml_ids = fifo_automated_values.get((product.id, valuation_account_id)) or (0, 0, [])
@@ -333,7 +307,7 @@ class ProductProduct(models.Model):
         :param Model account_analytic: a account.account.analytic record from the line of the product being sold
         """
 
-        if (product.valuation == 'real_time' and (product.type == 'product' or (product.type == 'consu' and product._is_phantom_bom()))) :
+        if product.type == 'product' and product.valuation == 'real_time':
             accounts = product.product_tmpl_id.get_product_accounts(fiscal_pos=fiscal_position)
             # debit account dacc will be the output account
             dacc = accounts['stock_output'].id
@@ -352,6 +326,8 @@ class ProductProduct(models.Model):
                         'account_id': dacc,
                         'product_id': product.id,
                         'uom_id': uom.id,
+                        'account_analytic_id': account_analytic and account_analytic.id,
+                        'analytic_tag_ids': analytic_tags and analytic_tags.ids and [(6, 0, analytic_tags.ids)] or False,
                     },
 
                     {

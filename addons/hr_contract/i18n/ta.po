@@ -9,9 +9,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
 "Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
@@ -49,7 +49,7 @@ msgstr "நடவடிக்கைகள்"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_state
 msgid "Activity State"
-msgstr "செயல்பாட்டு மாநிலம்"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__advantages
@@ -192,7 +192,7 @@ msgstr ""
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
 msgid "Delete"
-msgstr "அழி"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__department_id
@@ -208,7 +208,7 @@ msgstr "காட்சி பெயர்"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
 msgid "Dropdown menu"
-msgstr "துளி மெனு"
+msgstr ""
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
@@ -216,12 +216,11 @@ msgid "Edit Contract"
 msgstr ""
 
 #. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_emp
 #: model:ir.model,name:hr_contract.model_hr_employee
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__employee_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "Employee"
-msgstr "பணியாளர்"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__type_id
@@ -357,7 +356,7 @@ msgstr ""
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__job_id
 msgid "Job Position"
-msgstr "வேலை நிலை"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract____last_update
@@ -425,17 +424,17 @@ msgstr "புதிய"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "அடுத்த செயல்பாட்டுக் காலக்கட்டம்"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_summary
 msgid "Next Activity Summary"
-msgstr "அடுத்த செயல்பாடு சுருக்கம்"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_type_id
 msgid "Next Activity Type"
-msgstr "அடுத்த செயல்பாடு வகை"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__notes
@@ -471,17 +470,17 @@ msgstr "படிக்காத செய்திகளின் எண்ண�
 #. module: hr_contract
 #: selection:hr.contract,activity_state:0
 msgid "Overdue"
-msgstr "தாமதம்"
+msgstr ""
 
 #. module: hr_contract
 #: selection:hr.contract,activity_state:0
 msgid "Planned"
-msgstr "திட்டமிட்ட"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__activity_user_id
 msgid "Responsible User"
-msgstr "பொறுப்பு பயனர்"
+msgstr ""
 
 #. module: hr_contract
 #: selection:hr.contract,state:0
@@ -542,19 +541,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"செயல்பாடுகள்\n"
-"காலதாமதம்: காரணமாக தேதி ஏற்கனவே கடந்துவிட்டது\n"
-"இன்று: செயல்பாடு தேதி இன்று\n"
-"திட்டமிடப்பட்டுள்ளது: எதிர்கால நடவடிக்கைகள்."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__state
 msgid "Status of the contract"
-msgstr ""
-
-#. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_sub
-msgid "Subcontractor"
 msgstr ""
 
 #. module: hr_contract
@@ -612,11 +602,6 @@ msgstr "வலைத்தள தகவல்தொடர்பு வரலா�
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__permit_no
 msgid "Work Permit No"
-msgstr ""
-
-#. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_wrkr
-msgid "Worker"
 msgstr ""
 
 #. module: hr_contract

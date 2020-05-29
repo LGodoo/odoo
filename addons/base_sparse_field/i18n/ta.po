@@ -24,18 +24,18 @@ msgstr ""
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__boolean
 msgid "Boolean"
-msgstr "பூலியன்"
+msgstr ""
 
 #. module: base_sparse_field
 #: code:addons/base_sparse_field/models/models.py:25
 #, python-format
 msgid "Changing the storing system for field \"%s\" is not allowed."
-msgstr "புலத்தில் \"% s\" சேமிப்பக அமைப்பை மாற்றுவதற்கு அனுமதி இல்லை."
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__char
 msgid "Char"
-msgstr "சார்"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__create_uid
@@ -50,7 +50,7 @@ msgstr "உருவாக்கப்பட்ட தேதி"
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__data
 msgid "Data"
-msgstr "தகவல்கள்"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__display_name
@@ -60,12 +60,12 @@ msgstr "காட்சி பெயர்"
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_ir_model_fields__ttype
 msgid "Field Type"
-msgstr "புலம் வகை"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model,name:base_sparse_field.model_ir_model_fields
 msgid "Fields"
-msgstr "புலங்கள்"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__float
@@ -84,14 +84,11 @@ msgid ""
 "serialization field, instead of having its own database column. This cannot "
 "be changed after creation."
 msgstr ""
-"அமைக்கப்பட்டிருந்தால், அதன் சொந்த தரவுத்தள நெடுவரிசை இருப்பதற்குப் பதிலாக, "
-"தொடர் பகுப்பாய்வின் சிதறு கட்டமைப்பில் இந்த புலம் சேமிக்கப்படும். "
-"படைப்புக்குப் பிறகு இது மாற்ற முடியாது."
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__integer
 msgid "Integer"
-msgstr "முழு"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test____last_update
@@ -111,7 +108,7 @@ msgstr "கடைசியாக புதுப்பிக்கப்பட�
 #. module: base_sparse_field
 #: selection:sparse_fields.test,selection:0
 msgid "One"
-msgstr "ஒரு"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__partner
@@ -122,112 +119,110 @@ msgstr "கூட்டாளி"
 #: code:addons/base_sparse_field/models/models.py:27
 #, python-format
 msgid "Renaming sparse field \"%s\" is not allowed"
-msgstr "சிதறிய புலத்தை மறுபெயரிடுவது \"% s\" அனுமதிக்கப்படவில்லை"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__selection
 msgid "Selection"
-msgstr "தேர்வு"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_ir_model_fields__serialization_field_id
 msgid "Serialization Field"
-msgstr "தொடரியல் புலம்"
+msgstr ""
 
 #. module: base_sparse_field
 #: code:addons/base_sparse_field/models/models.py:39
 #, python-format
 msgid "Serialization field `%s` not found for sparse field `%s`!"
 msgstr ""
-"% S` என்ற சிற்றளவு களத்திற்கு'% s` வரிசைப்படுத்தலைப் புலம் "
-"கண்டுபிடிக்கப்படவில்லை!"
 
 #. module: base_sparse_field
 #: model:ir.model,name:base_sparse_field.model_sparse_fields_test
 msgid "Sparse fields Test"
-msgstr "ஸ்பேஸ் புலங்கள் டெஸ்ட்"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:sparse_fields.test,selection:0
 msgid "Two"
-msgstr "இரண்டு"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "binary"
-msgstr "பைனரி"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "boolean"
-msgstr "பூலியன்"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "char"
-msgstr "எரிப்பதை"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "date"
-msgstr "தேதி"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "datetime"
-msgstr "தேதி நேரம்"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "float"
-msgstr "மிதவை"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "html"
-msgstr "HTML"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "integer"
-msgstr "முழு"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "many2many"
-msgstr "பலர் பல"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "many2one"
-msgstr "பலர் ஒன்று"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "monetary"
-msgstr "பண"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "one2many"
-msgstr "ஒரு  பல"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "reference"
-msgstr "குறிப்பு"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "selection"
-msgstr "தேர்வு"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "serialized"
-msgstr "தொடர்"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "text"
-msgstr "உரை"
+msgstr ""

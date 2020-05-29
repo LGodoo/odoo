@@ -16,8 +16,7 @@
 # Mateus Lopes <mateus1@gmail.com>, 2018
 # grazziano <gra.negocia@gmail.com>, 2018
 # Fernando Alencar <fernando@fernandoalencar.com.br>, 2018
-# Marcel Savegnago <marcel.savegnago@gmail.com>, 2019
-# Ramiro Pereira de Magalhães <ramiro.p.magalhaes@gmail.com>, 2019
+# Marcel Savegnago <marcel.savegnago@gmail.com>, 2018
 # 
 msgid ""
 msgstr ""
@@ -25,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:17+0000\n"
-"Last-Translator: Ramiro Pereira de Magalhães <ramiro.p.magalhaes@gmail.com>, 2019\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@gmail.com>, 2018\n"
 "Language-Team: Portuguese (Brazil) (https://www.transifex.com/odoo/teams/41243/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -780,7 +779,7 @@ msgstr "Design"
 #. module: crm
 #: model:ir.model,name:crm.model_digest_digest
 msgid "Digest"
-msgstr "Resumo"
+msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.view_create_opportunity_simplified
@@ -817,7 +816,7 @@ msgstr "Não associe a um cliente"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_kanban_view_leads
 msgid "Dropdown menu"
-msgstr "Menu dropdown"
+msgstr ""
 
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_kanban_view_leads
@@ -2688,8 +2687,8 @@ msgstr "por exemplo, Preço do Produto"
 #. module: crm
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_form_view_leads
 #: model_terms:ir.ui.view,arch_db:crm.crm_case_form_view_oppor
-msgid "e.g. https://www.odoo.com"
-msgstr ""
+msgid "e.g. www.odoo.com"
+msgstr "e.g. www.odoo.com"
 
 #. module: crm
 #: code:addons/crm/models/crm_lead.py:946

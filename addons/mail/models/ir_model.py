@@ -25,23 +25,13 @@ class IrModel(models.Model):
         query = "DELETE FROM mail_message WHERE model in %s"
         self.env.cr.execute(query, [models])
 
-        # Get files attached solely by the models
         query = """
-            SELECT DISTINCT store_fname
-            FROM ir_attachment
-            WHERE res_model IN %s
-            EXCEPT
-            SELECT store_fname
-            FROM ir_attachment
-            WHERE res_model not IN %s;
+            DELETE FROM ir_attachment
+            WHERE res_model in %s
+            RETURNING store_fname
         """
-        self.env.cr.execute(query, [models, models])
-        fnames = self.env.cr.fetchall()
-
-        query = """DELETE FROM ir_attachment WHERE res_model in %s"""
         self.env.cr.execute(query, [models])
-
-        for (fname,) in fnames:
+        for (fname,) in self.env.cr.fetchall():
             self.env['ir.attachment']._file_delete(fname)
 
         return super(IrModel, self).unlink()

@@ -6,7 +6,6 @@
 # Sengtha Chay <sengtha@gmail.com>, 2018
 # Chan Nath <channath@gmail.com>, 2018
 # Samkhann Seang <seangsamkhann@gmail.com>, 2018
-# Lux Sok <sok.lux@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -14,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
-"Last-Translator: Lux Sok <sok.lux@gmail.com>, 2019\n"
+"Last-Translator: Samkhann Seang <seangsamkhann@gmail.com>, 2018\n"
 "Language-Team: Khmer (https://www.transifex.com/odoo/teams/41243/km/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,19 +25,19 @@ msgstr ""
 #: code:addons/hr_attendance/models/hr_attendance.py:52
 #, python-format
 msgid "\"Check Out\" time cannot be earlier than \"Check In\" time."
-msgstr "ពេលវេលា \"ពិនិត្យចេញ\" មិនអាចលឿនជាងពេលវេលា \"ពិនិត្យចូល\" ទេ។"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:27
 #, python-format
 msgid "%(empl_name)s from %(check_in)s"
-msgstr "%(empl_name)s មកពី %(check_in)s"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:32
 #, python-format
 msgid "%(empl_name)s from %(check_in)s to %(check_out)s"
-msgstr "%(empl_name)sមកពី %(check_in)sទៅ %(check_out)s"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -48,23 +47,21 @@ msgid ""
 "<b>Warning! Last check in was over 12 hours ago.</b><br/>If this isn't "
 "right, please contact Human Resource staff"
 msgstr ""
-"<b>ការព្រមាន! ការត្រួតពិនិត្យចុងក្រោយគឺជាង 12 "
-"ម៉ោងមុន។</b><br/>ប្រសិនបើវាមិនត្រឹមត្រូវសូមទាក់ទងបុគ្គលិកធនធានមនុស្ស។"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_kanban
 msgid "<i class=\"fa fa-calendar\" aria-label=\"Period\" role=\"img\" title=\"Period\"/>"
-msgstr "<i class=\"fa fa-calendar\" aria-label=\"Period\" role=\"img\" title=\"Period\"/>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Employee PIN</span>"
-msgstr "<span class=\"o_form_label\">លេខសម្ងាត់របស់និយោជិក</span>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 msgid "<span class=\"o_stat_text\">Attendance</span>"
-msgstr "<span class=\"o_stat_text\">ការចូលរួម</span>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_employees_view_kanban
@@ -74,9 +71,6 @@ msgid ""
 "oe_hr_attendance_status_green\" role=\"img\" aria-label=\"Available\" "
 "title=\"Available\"/>"
 msgstr ""
-"<span id=\"oe_hr_attendance_status\" class=\"fa fa-circle "
-"oe_hr_attendance_status_green\" role=\"img\" aria-label=\"Available\" "
-"title=\"Available\"/>"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_employees_view_kanban
@@ -86,9 +80,6 @@ msgid ""
 "oe_hr_attendance_status_red\" role=\"img\" aria-label=\"Not available\" "
 "title=\"Not available\"/>"
 msgstr ""
-"<span id=\"oe_hr_attendance_status\" class=\"fa fa-circle "
-"oe_hr_attendance_status_red\" role=\"img\" aria-label=\"Not available\" "
-"title=\"Not available\"/>"
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_employee_attendance_action_kanban
@@ -96,22 +87,20 @@ msgid ""
 "Add a few employees to be able to select an employee here and perform his check in / check out.\n"
 "                To create employees go to the Employees menu."
 msgstr ""
-"បន្ថែមនិយោជិកពីរបីនាក់ដើម្បីអាចជ្រើសរើសនិយោជិកម្នាក់នៅទីនេះហើយធ្វើការឆែក / ចូល។\n"
-"                ដើម្បីបង្កើតនិយោជិកសូមចូលទៅកាន់ម៉ឺនុយនិយោជិក។"
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:140
 #, python-format
 msgid "An apple a day keeps the doctor away"
-msgstr "ផ្លែប៉ោមមួយផ្លែក្នុងមួយថ្ងៃធ្វើឱ្យគ្រូពេទ្យនៅឆ្ងាយ។"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:129
 #, python-format
 msgid "Another good day's work! See you soon!"
-msgstr "ការងារថ្ងៃល្អមួយទៀត! ជួបគ្នាឆាប់ៗ!"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.client,name:hr_attendance.hr_attendance_action_my_attendances
@@ -121,18 +110,18 @@ msgstr "ការងារថ្ងៃល្អមួយទៀត! ជួបគ�
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_pivot
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 msgid "Attendance"
-msgstr "វត្តមាន"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action_graph
 #: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action_graph_filtered
 msgid "Attendance Analysis"
-msgstr "ការវិភាគការចូលរួម"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__attendance_state
 msgid "Attendance Status"
-msgstr "ស្ថានភាពចូលរួម"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action
@@ -143,7 +132,7 @@ msgstr "ស្ថានភាពចូលរួម"
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_department_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Attendances"
-msgstr "វត្តមាន"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -151,12 +140,12 @@ msgstr "វត្តមាន"
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 #, python-format
 msgid "Available"
-msgstr "ដែលទំនេរ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__barcode
 msgid "Badge ID"
-msgstr "លេខសម្គាល់ផ្លាកសញ្ញា"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:82
@@ -165,8 +154,6 @@ msgid ""
 "Cannot create new attendance record for %(empl_name)s, the employee hasn't "
 "checked out since %(datetime)s"
 msgstr ""
-"Cannot create new attendance record for %(empl_name)s, the employee hasn't "
-"checked out since %(datetime)s"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:69
@@ -176,14 +163,12 @@ msgid ""
 "Cannot create new attendance record for %(empl_name)s, the employee was "
 "already checked in on %(datetime)s"
 msgstr ""
-"Cannot create new attendance record for %(empl_name)s, the employee was "
-"already checked in on %(datetime)s"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:109
 #, python-format
 msgid "Cannot perform check in or check out on multiple employees."
-msgstr "មិនអាចធ្វើការឆែករឺឆែកមើលបុគ្គលិកច្រើននាក់បានទេ។"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:123
@@ -193,62 +178,60 @@ msgid ""
 "check in. Your attendances have probably been modified manually by human "
 "resources."
 msgstr ""
-"មិនអាចអនុវត្តការឆែកមើលបានទេ %(empl_name)s, "
-"ការចូលរួមរបស់អ្នកប្រហែលត្រូវបានកែប្រែដោយធនធានមនុស្ស។"
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_in
 msgid "Check In"
-msgstr "ការកក់ទុកមុន"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_my_attendances
 msgid "Check In / Check Out"
-msgstr "ការកក់ទុកមុន​/ការចាក់ចេញ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "Check In Date"
-msgstr "ពិនិត្យកាលបរិច្ឆេទ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_out
 msgid "Check Out"
-msgstr "ការចាកចេញ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "Check Out Date"
-msgstr "ពិនិត្យកាលបរិច្ឆេទ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Check-In/Out"
-msgstr "ពិនិត្យចូល / ចេញ។"
+msgstr ""
 
 #. module: hr_attendance
 #: selection:hr.employee,attendance_state:0
 msgid "Checked in"
-msgstr "ចុះឈ្មោះ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:124
 #, python-format
 msgid "Checked in at"
-msgstr "ចូលនៅ"
+msgstr ""
 
 #. module: hr_attendance
 #: selection:hr.employee,attendance_state:0
 msgid "Checked out"
-msgstr "ពិនិត្យចេញ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:115
 #, python-format
 msgid "Checked out at"
-msgstr "បានពិនិត្យនៅ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -256,7 +239,7 @@ msgstr "បានពិនិត្យនៅ"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:75
 #, python-format
 msgid "Click to"
-msgstr "ចុចទៅ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -264,12 +247,12 @@ msgstr "ចុចទៅ"
 #: model_terms:ir.ui.view,arch_db:hr_attendance.print_employee_badge
 #, python-format
 msgid "Company Logo"
-msgstr "រូបសញ្ញាក្រុមហ៊ុន"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_res_config_settings
 msgid "Config Settings"
-msgstr "កំណត់រចនាសម្ព័ន្ធ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_settings
@@ -279,7 +262,7 @@ msgstr "កំណត់ផ្លាស់ប្តូរ"
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_employee_attendance_action_kanban
 msgid "Create a new employee"
-msgstr "បង្កើតបុគ្គលិកថ្មី"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__create_uid
@@ -307,7 +290,6 @@ msgstr "ឈ្មោះសំរាប់បង្ហាញ"
 #, python-format
 msgid "Early to bed and early to rise, makes a man healthy, wealthy and wise"
 msgstr ""
-"ឆាប់គេងនិងក្រោកពីព្រលឹមធ្វើឱ្យបុរសមានសុខភាពល្អទ្រព្យសម្បត្តិនិងប្រាជ្ញា"
 
 #. module: hr_attendance
 #. openerp-web
@@ -315,7 +297,6 @@ msgstr ""
 #, python-format
 msgid "Eat breakfast as a king, lunch as a merchant and supper as a beggar"
 msgstr ""
-"បរិភោគអាហារពេលព្រឹកជាស្តេចអាហារថ្ងៃត្រង់ក្នុងនាមជាអ្នកជំនួញនិងជាអ្នកឧបត្ថម្ភជាអ្នកសុំទាន។"
 
 #. module: hr_attendance
 #: model:ir.model,name:hr_attendance.model_hr_employee
@@ -328,55 +309,55 @@ msgstr "បុគ្គលិក"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.print_employee_badge
 msgid "Employee Image"
-msgstr "រូបភាពនិយោជិក។"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_res_config_settings__group_attendance_use_pin
 msgid "Employee PIN"
-msgstr "លេខសម្ងាត់របស់និយោជិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_form
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_attendance_tree
 msgid "Employee attendances"
-msgstr "ការចូលរួមរបស់និយោជិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_kanban_inherit_hr_attendance
 msgid "Employee's Name"
-msgstr "ឈ្មោះរបស់បុគ្គលិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.hr_employee_attendance_action_kanban
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_view_employees_kanban
 msgid "Employees"
-msgstr "និយោជិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance_use_pin
 msgid "Enable PIN use"
-msgstr "បើកការប្រើកូដ PIN "
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:96
 #, python-format
 msgid "Error: could not find corresponding employee."
-msgstr "កំហុស៖ មិនអាចរកឃើញបុគ្គលិកដែលត្រូវគ្នាទេ។"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:93
 #, python-format
 msgid "First come, first served"
-msgstr "មកមុនបានមុនបម្រើ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:108
 #, python-format
 msgid "Glad to have you back, it's been a while!"
-msgstr "រីករាយដែលមានអ្នកត្រឡប់មកវិញវាបានមួយរយៈហើយ!"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -385,28 +366,28 @@ msgstr "រីករាយដែលមានអ្នកត្រឡប់មក
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:137
 #, python-format
 msgid "Go back"
-msgstr "ត្រឡប់ទៅវិញ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:99
 #, python-format
 msgid "Good afternoon"
-msgstr "ពេលរសៀល"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:101
 #, python-format
 msgid "Good evening"
-msgstr "ពេលល្ងាច"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:96
 #, python-format
 msgid "Good morning"
-msgstr "ពេលព្រឹក"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -414,7 +395,7 @@ msgstr "ពេលព្រឹក"
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:103
 #, python-format
 msgid "Good night"
-msgstr "រាត្រីសួស្តី"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -422,7 +403,7 @@ msgstr "រាត្រីសួស្តី"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:131
 #, python-format
 msgid "Goodbye"
-msgstr "លាសិនហើយ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
@@ -434,33 +415,33 @@ msgstr "ជា​ក្រុម​តាម"
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:143
 #, python-format
 msgid "Have a good afternoon"
-msgstr "មានពេលរសៀលល្អ។"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:134
 #, python-format
 msgid "Have a good day!"
-msgstr "សូមឱ្យមានថ្ងៃល្អ!"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:148
 #, python-format
 msgid "Have a good evening"
-msgstr "សូមឱ្យមានល្ងាចល្អ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:136
 #, python-format
 msgid "Have a nice lunch!"
-msgstr "មានអាហារថ្ងៃត្រង់ឆ្ងាញ់"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "Hr Attendance Search"
-msgstr "រូបភាពនិយោជិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__id
@@ -470,31 +451,31 @@ msgstr "ID"
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_employee__barcode
 msgid "ID used for employee identification."
-msgstr "លេខសម្គាល់ត្រូវបានប្រើសម្រាប់ការកំណត់អត្តសញ្ញាណបុគ្គលិក"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:111
 #, python-format
 msgid "If a job is worth doing, it is worth doing well!"
-msgstr "បើការងារមួយសមនឹងធ្វើវាសមនឹងធ្វើបានល្អ!"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:136
 #, python-format
 msgid "Invalid request, please return to the main menu."
-msgstr "ការស្នើសុំមិនត្រឹមត្រូវសូមត្រឡប់ទៅម៉ឺនុយមេវិញ។"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_kiosk_mode
 msgid "Kiosk Mode"
-msgstr "ម៉ូដគីកូស"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__last_attendance_id
 msgid "Last Attendance"
-msgstr "ការចូលរួមចុងក្រោយ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance____last_update
@@ -514,128 +495,124 @@ msgstr "ផ្លាស់ប្តូរចុងក្រោយ"
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_manage_attendances
 msgid "Manage Attendances"
-msgstr "គ្រប់គ្រងការចូលរួម។"
+msgstr ""
 
 #. module: hr_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance_manager
 msgid "Manager"
-msgstr "អ្នកគ្រប់គ្រង"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__manual_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance
 msgid "Manual Attendance"
-msgstr "ការចូលរួមដោយដៃ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.client,name:hr_attendance.hr_attendance_action_greeting_message
 msgid "Message"
-msgstr "សារ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "My Attendances"
-msgstr "ការចូលរួមរបស់ខ្ញុំ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "No Check Out"
-msgstr "មិនចាំបាច់ពិនិត្យទេ។"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action
 msgid "No attendance records found"
-msgstr "រកមិនឃើញកំណត់ត្រាចូលរួម។"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action_employee
 msgid "No attendance records to display"
-msgstr "គ្មានកំណត់ត្រាការចូលរួមដើម្បីបង្ហាញ"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:73
 #, python-format
 msgid "No employee corresponding to barcode %(barcode)s"
-msgstr "គ្មាននិយោជិកណាត្រូវគ្នានឹងបាកូដ %(barcode)s"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 msgid "Not available"
-msgstr "មិនអាច"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:132
 #, python-format
 msgid "OK"
-msgstr "យល់ព្រម"
+msgstr ""
 
 #. module: hr_attendance
 #: model:res.groups,name:hr_attendance.group_hr_attendance_user
 msgid "Officer"
-msgstr "មន្រ្តី"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__pin
 msgid "PIN"
-msgstr "PIN"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_employee__pin
 msgid "PIN used to Check In/Out in Kiosk Mode (if enabled in Configuration)."
 msgstr ""
-"លេខសម្ងាត់ធ្លាប់ប្រើដើម្បីពិនិត្យចូល / ចេញនៅក្នុងរបៀបគីកូស "
-"(ប្រសិនបើបានបើកដំណើរការនៅក្នុងការកំណត់រចនាសម្ព័ន្ធ) ។"
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "Please enter your PIN to"
-msgstr "សូមបញ្ចូលលេខសម្ងាត់របស់អ្នកទៅ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:96
 #, python-format
 msgid "Please return to the main menu."
-msgstr "សូមបញ្ចូលលេខសម្ងាត់របស់អ្នកទៅ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.report,name:hr_attendance.hr_employee_print_badge
 msgid "Print Badge"
-msgstr "បោះពុម្ពផ្លាកសញ្ញា"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.ui.menu,name:hr_attendance.menu_hr_attendance_report
 msgid "Reporting"
-msgstr "របាយការណ៌"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:18
 #, python-format
 msgid "Scan your badge"
-msgstr "ស្កេនផ្លាកសញ្ញារបស់អ្នក"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:25
 #, python-format
 msgid "Select Employee"
-msgstr "ជ្រើសរើសនិយោជិក"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Set PIN codes in the employee detail form (in HR Settings tab)."
 msgstr ""
-"កំណត់កូដ PIN នៅក្នុងសំណុំបែបបទលម្អិតរបស់និយោជិក "
-"(នៅក្នុងផ្ទាំងការកំណត់ធនធានមនុស្ស) ។"
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.action_hr_attendance_settings
 msgid "Settings"
-msgstr "ការកំណត់"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -643,7 +620,7 @@ msgstr "ការកំណត់"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:74
 #, python-format
 msgid "Sign in"
-msgstr "ចូល"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -652,23 +629,17 @@ msgstr "ចូល"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:98
 #, python-format
 msgid "Sign out"
-msgstr "ការចាកចេញ"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_filter_inherit_hr_attendance
 msgid "Signed In"
-msgstr "ចុះឈ្មោះចូល"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_filter_inherit_hr_attendance
 msgid "Signed Out"
-msgstr "ហត្ថលេខាចេញ"
-
-#. module: hr_attendance
-#: code:addons/hr_attendance/models/hr_employee.py:155
-#, python-format
-msgid "Such grouping is not allowed."
-msgstr "ការដាក់ជាក្រុមបែបនេះមិនត្រូវបានអនុញ្ញាតទេ។ "
+msgstr ""
 
 #. module: hr_attendance
 #: sql_constraint:hr.employee:0
@@ -676,26 +647,25 @@ msgid ""
 "The Badge ID must be unique, this one is already assigned to another "
 "employee."
 msgstr ""
-"ផ្លាកសម្គាល់ត្រូវតែមានតែមួយគត់ដែលមួយនេះត្រូវបានចាត់ឱ្យទៅបុគ្គលិកផ្សេងទៀតរួចហើយ។"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:64
 #, python-format
 msgid "The PIN must be a sequence of digits."
-msgstr "កូដ PIN ត្រូវតែជាលេខខ្ទង់។"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action_employee
 msgid "The attendance records of your employees will be displayed here."
-msgstr "កំណត់ត្រាការចូលរួមរបស់និយោជិករបស់អ្នកនឹងត្រូវបានបង្ហាញនៅទីនេះ។"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/js/greeting_message.js:91
 #, python-format
 msgid "The early bird catches the worm"
-msgstr "បក្សីដំបូងចាប់ដង្កូវ។"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_employee__manual_attendance
@@ -703,8 +673,6 @@ msgid ""
 "The employee will have access to the \"My Attendances\" menu to check in and"
 " out from his session"
 msgstr ""
-"និយោជិកនឹងមានសិទ្ធិចូលទៅកាន់មីនុយ“ ការចូលរួមរបស់ខ្ញុំ” "
-"ដើម្បីឆែកចូលនិងចេញពីវេនរបស់គាត់។"
 
 #. module: hr_attendance
 #: model:res.groups,comment:hr_attendance.group_hr_attendance
@@ -712,7 +680,6 @@ msgid ""
 "The user will gain access to the human resources attendance menu, enabling "
 "him to manage his own attendance."
 msgstr ""
-"អ្នកប្រើប្រាស់នឹងទទួលបាននូវបញ្ជីវត្តមានធនធានមនុស្សដែលអាចឱ្យគាត់អាចគ្រប់គ្រងវត្តមានរបស់គាត់បាន។"
 
 #. module: hr_attendance
 #: model:res.groups,comment:hr_attendance.group_hr_attendance_use_pin
@@ -720,12 +687,11 @@ msgid ""
 "The user will have to enter his PIN to check in and out manually at the "
 "company screen."
 msgstr ""
-"អ្នកប្រើប្រាស់នឹងត្រូវបញ្ចូលលេខសម្ងាត់របស់ខ្លួនដើម្បីឆែកចូលនិងចេញដោយដៃនៅអេក្រង់ក្រុមហ៊ុន។"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "Use PIN codes to check in in Kiosk Mode"
-msgstr "ប្រើលេខកូដសម្ងាត់ដើម្បីពិនិត្យនៅក្នុងរបៀបគីកូស។"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -733,7 +699,7 @@ msgstr "ប្រើលេខកូដសម្ងាត់ដើម្បីព
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:71
 #, python-format
 msgid "Want to check out?"
-msgstr "ចង់ពិនិត្យមើលទេ?"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -743,22 +709,20 @@ msgid ""
 "Warning : Your user should be linked to an employee to use attendance. "
 "Please contact your administrator."
 msgstr ""
-"ការព្រមាន៖ អ្នកប្រើប្រាស់របស់អ្នកគួរតែភ្ជាប់ទៅនឹងនិយោជិកដើម្បីប្រើការចូលរួម។"
-" សូមទាក់ទងអ្នកគ្រប់គ្រងរបស់អ្នក។"
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:122
 #, python-format
 msgid "Welcome"
-msgstr "សូមស្វាគមន៍"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:13
 #, python-format
 msgid "Welcome to"
-msgstr "សូមសា្វគមន៍"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -766,29 +730,29 @@ msgstr "សូមសា្វគមន៍"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:71
 #, python-format
 msgid "Welcome!"
-msgstr "សូមស្វាគមន៍"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__worked_hours
 msgid "Worked Hours"
-msgstr "ម៉ោងធ្វើការ"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:80
 #, python-format
 msgid "Wrong PIN"
-msgstr "ខុស​ PIN"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:103
 #, python-format
 msgid "You cannot duplicate an attendance."
-msgstr "អ្នកមិនអាចចម្លងការចូលរួមបានទេ។"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.print_employee_badge
 msgid "barcode"
-msgstr "បាកូដ"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -797,7 +761,7 @@ msgstr "បាកូដ"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "check in"
-msgstr "ការកក់មុន"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -806,12 +770,12 @@ msgstr "ការកក់មុន"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "check out"
-msgstr "ការចាកចេញ"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_employee__attendance_ids
 msgid "list of attendances for the employee"
-msgstr "បញ្ជីវត្តមានសម្រាប់បុគ្គលិក"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web

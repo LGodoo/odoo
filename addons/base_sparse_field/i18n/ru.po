@@ -4,15 +4,13 @@
 # 
 # Translators:
 # Martin Trigaux, 2018
-# Ivan Yelizariev <yelizariev@it-projects.info>, 2020
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 13:17+0000\n"
-"PO-Revision-Date: 2018-08-24 09:16+0000\n"
-"Last-Translator: Ivan Yelizariev <yelizariev@it-projects.info>, 2020\n"
+"PO-Revision-Date: 2018-09-21 13:17+0000\n"
+"Last-Translator: Martin Trigaux, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -110,7 +108,7 @@ msgstr "Последнее обновление"
 #. module: base_sparse_field
 #: selection:sparse_fields.test,selection:0
 msgid "One"
-msgstr "один"
+msgstr ""
 
 #. module: base_sparse_field
 #: model:ir.model.fields,field_description:base_sparse_field.field_sparse_fields_test__partner
@@ -137,94 +135,94 @@ msgstr "Поле сериализации"
 #: code:addons/base_sparse_field/models/models.py:39
 #, python-format
 msgid "Serialization field `%s` not found for sparse field `%s`!"
-msgstr "Поле сериализации ` %s ` не найдено для разреженного поля` %s `!"
+msgstr "Поле сериализации `%s` не найдено для разреженного поля`%s`!"
 
 #. module: base_sparse_field
 #: model:ir.model,name:base_sparse_field.model_sparse_fields_test
 msgid "Sparse fields Test"
-msgstr "Тест гибких полей"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:sparse_fields.test,selection:0
 msgid "Two"
-msgstr "два"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "binary"
-msgstr "двойной"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "boolean"
-msgstr "булевых"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "char"
-msgstr "символ"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "date"
-msgstr "дата"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "datetime"
-msgstr "дата время"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "float"
-msgstr "float"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "html"
-msgstr "html"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "integer"
-msgstr "integer"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "many2many"
-msgstr "many2many"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "many2one"
-msgstr "many2one"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "monetary"
-msgstr "monetary"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "one2many"
-msgstr "one2many"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "reference"
-msgstr "ссылки"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "selection"
-msgstr "выбор"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "serialized"
-msgstr "сериализация"
+msgstr ""
 
 #. module: base_sparse_field
 #: selection:ir.model.fields,ttype:0
 msgid "text"
-msgstr "текст"
+msgstr ""

@@ -4,8 +4,7 @@
 # 
 # Translators:
 # Eloïse Stilmant <est@odoo.com>, 2018
-# thomas quertinmont <tqu@odoo.com>, 2019
-# Martin Trigaux, 2019
+# Martin Trigaux, 2018
 # 
 msgid ""
 msgstr ""
@@ -13,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-19 08:20+0000\n"
 "PO-Revision-Date: 2018-08-24 09:17+0000\n"
-"Last-Translator: Martin Trigaux, 2019\n"
+"Last-Translator: Martin Trigaux, 2018\n"
 "Language-Team: French (https://www.transifex.com/odoo/teams/41243/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +28,7 @@ msgstr "Un utilisateur ne peut avoir qu'un statut de messagerie instantanée."
 #. module: bus
 #: model:ir.model,name:bus.model_ir_autovacuum
 msgid "Automatic Vacuum"
-msgstr "Aspiration automatique"
+msgstr ""
 
 #. module: bus
 #: selection:bus.presence,status:0
@@ -44,7 +43,7 @@ msgstr "Canal"
 #. module: bus
 #: model:ir.model,name:bus.model_bus_bus
 msgid "Communication Bus"
-msgstr "Bus de communication"
+msgstr ""
 
 #. module: bus
 #: model:ir.model,name:bus.model_res_partner

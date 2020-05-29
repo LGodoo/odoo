@@ -9,10 +9,9 @@
 # Jesper Carstensen <jc@danodoo.dk>, 2018
 # Ejner Sønniksen <ejner@vkdata.dk>, 2018
 # Martin Trigaux, 2018
-# Joe Hansen <joedalton2@yahoo.dk>, 2019
+# lhmflexerp <lhm@flexerp.dk>, 2018
+# Sanne Kristensen <sanne@vkdata.dk>, 2018
 # Pernille Kristensen <pernillekristensen1994@gmail.com>, 2019
-# lhmflexerp <lhm@flexerp.dk>, 2019
-# Sanne Kristensen <sanne@vkdata.dk>, 2019
 # 
 msgid ""
 msgstr ""
@@ -20,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:19+0000\n"
-"Last-Translator: Sanne Kristensen <sanne@vkdata.dk>, 2019\n"
+"Last-Translator: Pernille Kristensen <pernillekristensen1994@gmail.com>, 2019\n"
 "Language-Team: Danish (https://www.transifex.com/odoo/teams/41243/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,18 +34,6 @@ msgid ""
 "leaves;\tFixed by HR + allocation request: allocated by HR and users can "
 "request leaves and allocations;\tNo allocation: no allocation by default, "
 "users can freely request leaves;"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_type.py:265
-#, python-format
-msgid " days"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_type.py:265
-#, python-format
-msgid " hours"
 msgstr ""
 
 #. module: hr_holidays
@@ -87,21 +74,9 @@ msgid "%s : %.2f day(s)"
 msgstr "%s : %.2f dag(e)"
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:466
-#, python-format
-msgid "%s : %.2f hour(s)"
-msgstr ""
-
-#. module: hr_holidays
 #: code:addons/hr_holidays/models/hr_leave.py:440
 #, python-format
-msgid "%s on %s : %.2f day(s)"
-msgstr "%s på %s : %.2f dag(e)"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:481
-#, python-format
-msgid "%s on %s : %.2f hour(s)"
+msgid "%s on %s :%.2f day(s)"
 msgstr ""
 
 #. module: hr_holidays
@@ -389,8 +364,6 @@ msgid ""
 "<span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '=', 'hour')]}\">Days</span>\n"
 "                                <span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '!=', 'hour')]}\">Hours</span>"
 msgstr ""
-"<span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '=', 'hour')]}\">Dage</span>\n"
-"                                <span class=\"ml8\" attrs=\"{'invisible': [('type_request_unit', '!=', 'hour')]}\">Timer</span>"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_form
@@ -424,9 +397,6 @@ msgid ""
 "                                    To\n"
 "                                </span>"
 msgstr ""
-"<span class=\"oe_inline\" attrs=\"{'invisible': ['|', ('request_unit_half', '=', True), ('request_unit_hours', '=', True)]}\">\n"
-"                                    Til\n"
-"                                </span>"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_kanban
@@ -587,9 +557,9 @@ msgid "All Leaves"
 msgstr "Alle ferier"
 
 #. module: hr_holidays
-#: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__duration_display
-msgid "Allocated (Days/Hours)"
-msgstr ""
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_tree
+msgid "Allocated Days"
+msgstr "Tildelte dage"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
@@ -892,7 +862,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:hr_holidays.hr_leave_action_payroll
 #: model_terms:ir.actions.act_window,help:hr_holidays.open_company_allocation
 msgid "Create a new leave request"
-msgstr "Opret en ny forespørgsel"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_holidays_summary_dept__create_uid
@@ -1110,20 +1080,6 @@ msgstr "Slut dato"
 #: code:addons/hr_holidays/models/hr_leave_type.py:93
 #, python-format
 msgid "End of validity period should be greater than start of validity period"
-msgstr ""
-
-#. module: hr_holidays
-#: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__duration_display
-msgid ""
-"Field allowing to see the allocation duration in days or hours depending on "
-"the type_request_unit"
-msgstr ""
-
-#. module: hr_holidays
-#: model:ir.model.fields,help:hr_holidays.field_hr_leave__duration_display
-msgid ""
-"Field allowing to see the leave request duration in days or hours depending "
-"on the leave_type_request_unit"
 msgstr ""
 
 #. module: hr_holidays
@@ -1345,7 +1301,7 @@ msgstr "Elfenben"
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_type__time_type
 msgid "Kind of Leave"
-msgstr "Type ferie"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_holidays_summary_dept____last_update
@@ -1526,7 +1482,7 @@ msgstr ""
 #. module: hr_holidays
 #: model:mail.message.subtype,name:hr_holidays.mt_department_leave_approved
 msgid "Leaves Approved"
-msgstr "Godkendt ferie"
+msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_employee_form_leave_inherit
@@ -1771,7 +1727,7 @@ msgstr "Ny"
 #: model:ir.actions.act_window,name:hr_holidays.hr_leave_action_new_request
 #: model:ir.ui.menu,name:hr_holidays.hr_leave_menu_new_request
 msgid "New Request"
-msgstr "Ny forespørgsel"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__activity_date_deadline
@@ -1939,7 +1895,7 @@ msgstr "Forfalden"
 #. module: hr_holidays
 #: model:hr.leave.type,name:hr_holidays.hr_holiday_status_hl
 msgid "Overtime Compensation"
-msgstr "Kompensation for overarbejde"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.ui.menu,name:hr_holidays.menu_hr_holidays_dashboard
@@ -2078,11 +2034,6 @@ msgstr "Anmodning godkendt"
 #: model:mail.message.subtype,description:hr_holidays.mt_leave_refused
 msgid "Request refused"
 msgstr "Anmodning nægtet"
-
-#. module: hr_holidays
-#: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__duration_display
-msgid "Requested (Days/Hours)"
-msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_form_manager
@@ -2352,6 +2303,16 @@ msgid "Total Employee"
 msgstr "Totale medarbejdere"
 
 #. module: hr_holidays
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_tree
+msgid "Total allocated days"
+msgstr ""
+
+#. module: hr_holidays
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_tree
+msgid "Total leaves"
+msgstr ""
+
+#. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_employee__remaining_leaves
 msgid ""
 "Total number of legal leaves allocated to this employee, change this value "
@@ -2443,7 +2404,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_hr_holidays_filter
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_hr_leave_allocation_filter
 msgid "Validator"
-msgstr "Godkender"
+msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
@@ -2523,26 +2484,14 @@ msgid "You can not have 2 leaves that overlaps on the same day."
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:520
-#, python-format
-msgid "You can take %s from %s"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:515
+#: code:addons/hr_holidays/models/hr_leave.py:463
 #, python-format
 msgid "You can take %s only between %s and %s"
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:525
-#, python-format
-msgid "You can take %s until %s"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:576
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:379
+#: code:addons/hr_holidays/models/hr_leave.py:511
+#: code:addons/hr_holidays/models/hr_leave_allocation.py:354
 #, python-format
 msgid "You cannot delete a leave which is in %s state."
 msgstr "Du kan ikke slette en ferie der er i %s tilstand."
@@ -2561,19 +2510,10 @@ msgid "You must be either %s's manager or Leave manager to approve this leave"
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:392
-#, python-format
-msgid "day(s)"
-msgstr "dag(e)"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:222
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:330
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_report_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_employee_form_leave_inherit
-#, python-format
 msgid "days"
 msgstr "dage"
 
@@ -2581,19 +2521,6 @@ msgstr "dage"
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_form_manager
 msgid "e.g. Report to the next month..."
 msgstr "Fx husk deadline på rapporter næste måned"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:398
-#, python-format
-msgid "hour(s)"
-msgstr "time(r)"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:222
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:330
-#, python-format
-msgid "hours"
-msgstr "timer"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.report_holidayssummary

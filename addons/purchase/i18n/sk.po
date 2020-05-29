@@ -5,17 +5,17 @@
 # Translators:
 # Matus Krnac <matus.krnac@gmail.com>, 2018
 # Robert Kirschner <robertkirschner@yahoo.com>, 2018
+# Martin Trigaux, 2018
 # Pavol Krnáč <pavol.krnac@ekoenergo.sk>, 2018
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2018
 # gebri <gebri@inmail.sk>, 2018
-# Martin Trigaux, 2019
 # Jan Prokop, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:23+0000\n"
 "Last-Translator: Jan Prokop, 2019\n"
 "Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase.field_res_partner__supplier_invoice_count
 #: model:ir.model.fields,field_description:purchase.field_res_users__supplier_invoice_count
 msgid "# Vendor Bills"
-msgstr "# Dodávateľské faktúry"
+msgstr "# Účtov predajcu"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report__nbr_lines
@@ -75,25 +75,6 @@ msgid ""
 "    </p>\n"
 "</div>"
 msgstr ""
-"<div style=\"margin: 0px; padding: 0px;\">\n"
-"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
-"        Vážený/á ${object.partner_id.name}\n"
-"        % if object.partner_id.parent_id:\n"
-"            (${object.partner_id.parent_id.name})\n"
-"        % endif\n"
-"        <br/><br/>\n"
-"        Posielame v prílohe nákupnú objednávku <strong>${object.name}</strong>\n"
-"        % if object.partner_ref:\n"
-"            with reference: ${object.partner_ref}\n"
-"        % endif\n"
-"        v sume <strong>${format_amount(object.amount_total, object.currency_id)}</strong>\n"
-"        od ${object.company_id.name}.\n"
-"        <br/><br/>\n"
-"        V prípade akýchkoľvek otázok nás neváhajte kontaktovať.\n"
-"        <br/><br/>\n"
-"        S pozdravom,\n"
-"    </p>\n"
-"</div>"
 
 #. module: purchase
 #: model:mail.template,body_html:purchase.email_template_edi_purchase
@@ -115,26 +96,12 @@ msgid ""
 "        <br/><br/>\n"
 "        Best regards,\n"
 "    </p>\n"
-"</div>"
+"</div><p style=\"color:#888888;\">\n"
+"% if object.sudo().create_uid and object.sudo().create_uid.signature:\n"
+"    ${object.sudo().create_uid.signature | safe}\n"
+"% endif\n"
+"</p>\n"
 msgstr ""
-"<div style=\"margin: 0px; padding: 0px;\">\n"
-"    <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
-"        Vážený/á ${object.partner_id.name}\n"
-"        % if object.partner_id.parent_id:\n"
-"            (${object.partner_id.parent_id.name})\n"
-"        % endif\n"
-"        <br/><br/>\n"
-"       Posielame v prílohe požiadavku na ponuku <strong>${object.name}</strong>\n"
-"        % if object.partner_ref:\n"
-"            s referenciou: ${object.partner_ref}\n"
-"        % endif\n"
-"        od ${object.company_id.name}.\n"
-"        <br/><br/>\n"
-"       V prípade akýchkoľvek otázok nás neváhajte kontaktovať.\n"
-"        <br/><br/>\n"
-"        S pozdravom,\n"
-"    </p>\n"
-"</div>"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -184,11 +151,9 @@ msgstr ""
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid ""
-"<span class=\"o_form_label\" attrs=\"{'invisible': [('state','not in',('draft','sent'))]}\">Request for Quotation </span>\n"
-"                        <span class=\"o_form_label\" attrs=\"{'invisible': [('state','in',('draft','sent'))]}\">Purchase Order </span>"
+"<span class=\"o_form_label\" string=\"Request for Quotation \" attrs=\"{'invisible': [('state','not in',('draft','sent'))]}\"/>\n"
+"                        <span class=\"o_form_label\" string=\"Purchase Order \" attrs=\"{'invisible': [('state','in',('draft','sent'))]}\"/>"
 msgstr ""
-"<span class=\"o_form_label\" attrs=\"{'invisible': [('state','not in',('draft','sent'))]}\">Požiadavka na ponuku </span>\n"
-"                        <span class=\"o_form_label\" attrs=\"{'invisible': [('state','in',('draft','sent'))]}\">Nákupná objednávka </span>"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.product_normal_form_view_inherit_purchase
@@ -591,7 +556,7 @@ msgstr "Vytvoriť žiadosť o cenovú ponuku"
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.action_invoice_pending
 msgid "Create a vendor bill"
-msgstr "Vytvoriť dodaciu faktúru"
+msgstr "Vytvoriť dodávateľskú účtenku"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__create_uid
@@ -671,7 +636,7 @@ msgstr "Popis"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Description for Vendors"
-msgstr "Popis pre dodávateľov"
+msgstr "Popis pre predajcov"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_bill_union__display_name
@@ -800,8 +765,6 @@ msgid ""
 "If enabled, activates 3-way matching on vendor bills : the items must be "
 "received in order to pay the invoice."
 msgstr ""
-"Ak je povolené, aktivovuje 3-cestnú kontrolu dodacích faktúr: položky musia "
-"byť dodané aby bolo možné platiť faktúry"
 
 #. module: purchase
 #: code:addons/purchase/models/product.py:38
@@ -905,7 +868,7 @@ msgid ""
 "Load the vendor bill based on selected purchase order. Several PO can be "
 "selected."
 msgstr ""
-"Načítaj dodaciu faktúru pre zvolenú nákupnú objednávku. Možno zvoliť "
+"Načítaj dodávateľskú účtenku pre zvolenú nákupnú objednávku. Možno zvoliť "
 "niekoľko PO."
 
 #. module: purchase
@@ -939,7 +902,7 @@ msgstr "Uistite sa že platíte účty len za dodané tovary ktoré ste objednal
 #. module: purchase
 #: model:res.groups,name:purchase.group_manage_vendor_price
 msgid "Manage Vendor Price"
-msgstr "Spravovať cenu dodávateľa"
+msgstr "Spravovať cenu predajcu"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
@@ -969,9 +932,9 @@ msgid ""
 "Orders for procuring products, they will be scheduled that many days earlier"
 " to cope with unexpected vendor delays."
 msgstr ""
-"Odchýlka pre dodacie lehoty dodávateľov. Keď systém vygeneruje nákupnú "
+"Odchýlka pre dodacie lehoty predajcov. Keď systém vygeneruje nákupnú "
 "objednávku pre obstaranie výrobkov, budú naplánované o toľko dní skôr pre "
-"vysporiadanie sa s nečakaným oneskorením dodávky."
+"vysporiadanie sa s nečakaným oneskorením predajcov."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_config_settings__use_po_lead
@@ -980,9 +943,6 @@ msgid ""
 "Orders for reordering products,they will be scheduled that many days earlier"
 " to cope with unexpected vendor delays."
 msgstr ""
-"Odchýlka pre dodacie lehoty predajcov. Keď systém vygeneruje nákupnú "
-"objednávku pre obstaranie výrobkov, budú naplánované o toľko dní skôr pre "
-"vysporiadanie sa s nečakaným oneskorením dodavateľov."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__message_has_error
@@ -1233,7 +1193,7 @@ msgstr "Cenový rozdiel účtu"
 #. module: purchase
 #: model:ir.filters,name:purchase.filter_purchase_order_price_per_supplier
 msgid "Price Per Vendor"
-msgstr "Cena za dodávateľa"
+msgstr "Cena za predajcu"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -1340,7 +1300,7 @@ msgid ""
 msgstr ""
 "Nákupná anlýza vám umožňuje jednoducho skontrolovať a analyzovať históriu "
 "nákupov a výkon vašej spoločnosti. Z tohto menu môžete sledovať výkon vašých"
-" vyjednávaní, výkon dodávania vašich dodávateľov, atď"
+" vyjednávaní, výkon dodávania vašich predajcov, atď"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_company__po_lead
@@ -1472,7 +1432,7 @@ msgstr "Varovania nákupu"
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 msgid "Purchase orders that have been invoiced."
-msgstr "Fakturované nákupné objednávky."
+msgstr ""
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -1517,13 +1477,13 @@ msgid ""
 "Put an address if you want to deliver directly from the vendor to the "
 "customer. Otherwise, keep empty to deliver to your own company."
 msgstr ""
-"Poskytnite adresu ak chcete doručenie od dodávateľa priamo zákaznikovi. V "
+"Poskytnite adresu ak chcete doručenie od predajcu priamo zákaznikovi. V "
 "opačnom prípade, nechajte prázdne pre doručenie do vašej spoločnosti."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.res_config_settings_view_form_purchase
 msgid "Quantities billed by vendors"
-msgstr "Množstvá účtované dodávateľom"
+msgstr ""
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line__product_qty
@@ -1589,12 +1549,12 @@ msgstr "Prijaté množstvo:"
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.act_res_partner_2_supplier_invoices
 msgid "Record a new vendor bill"
-msgstr "Nahrať novú dodaciu faktúru"
+msgstr "Nahrať novú účtenku predajcu"
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.purchase_open_invoice
 msgid "Record a vendor bill related to this purchase"
-msgstr "Nahratie novej dodacej faktúry spojenej s týmto nákupom"
+msgstr "Nahratie novej účtenky predajcu spojenej s týmto nákupom"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_bill_union__name
@@ -1620,8 +1580,6 @@ msgid ""
 "Reference of the document that generated this purchase order request (e.g. a"
 " sales order)"
 msgstr ""
-"Odkaz na dokument, ktorý vytvoril túto požiadavku nákupnej objednávky (napr."
-" objednávka predaja)"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order__partner_ref
@@ -1632,7 +1590,7 @@ msgid ""
 msgstr ""
 "Odkaz na predajné objednávky alebo ponuky zaslanej dodávateľom. Používa sa "
 "na vytvorenie zhody keď dostanete produkty, keďže tento odkaz je zvyčajne "
-"napísaný na dodacej objednávke zaslanej vašim dodávateľom."
+"napísaný na dodacej objenávke zaslanej vašim predajcom."
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.purchase_report
@@ -1794,11 +1752,6 @@ msgid "Supplier Currency"
 msgstr "Mena dodávateľa"
 
 #. module: purchase
-#: model:ir.model,name:purchase.model_product_supplierinfo
-msgid "Supplier Pricelist"
-msgstr "Cenník dodávateľa"
-
-#. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line__price_tax
 msgid "Tax"
 msgstr "Daň"
@@ -1826,8 +1779,6 @@ msgid ""
 "The quotation contains the history of the discussion\n"
 "                you had with your vendor."
 msgstr ""
-"Cenová ponuka obsahuje históriu diskusie\n"
-"ktoré ste mali s dodávateľom. "
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
@@ -1838,7 +1789,7 @@ msgid ""
 msgstr ""
 "Žiadosť o cenovú ponuku je prvý krok toku nákupov. Akonáhle\n"
 "prekonvertované na nákupnú objednávku, budete môcť kontrolovať príjem\n"
-"produktov a dodacie faktúry."
+"produktov a účetnku predajcu."
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_product_product__property_account_creditor_price_difference
@@ -1886,25 +1837,24 @@ msgstr ""
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "This note will show up on purchase orders."
-msgstr "Poznámka sa zobrazí na nákupných objednávkach."
+msgstr ""
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:156
 #, python-format
 msgid "This vendor bill has been created from: %s"
-msgstr "Dodacia faktúra vytvorená: %s"
+msgstr ""
 
 #. module: purchase
 #: code:addons/purchase/models/account_invoice.py:170
 #, python-format
 msgid "This vendor bill has been modified from: %s"
-msgstr "Dodacia faktúra zmenená: %s"
+msgstr ""
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.act_res_partner_2_purchase_order
 msgid "This vendor has no purchase order. Create a new RfQ"
 msgstr ""
-"Dodávateľ nemá žiadnu nákupnú objedávku. Kliknite pre vytvorenie novej RFQ."
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -1958,8 +1908,6 @@ msgid ""
 "Unable to cancel this purchase order. You must first cancel the related "
 "vendor bills."
 msgstr ""
-"Nemožno zrušiť túto nákupnú objednávku. Najskôr musíte zrušiť pridružené "
-"účtenky predajcu."
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line__price_unit
@@ -2014,10 +1962,6 @@ msgid ""
 "            and Odoo will fill the bill automatically according to ordered\n"
 "            or received quantities."
 msgstr ""
-"Použite toto menu na kontrolu faktúr ktoré obdržíte od vášho \n"
-"dodávateľa. keď registrujete novú účtenku, nastavte nákupnú objednávku \n"
-"a Odoo vyplní účtenku automaticky podľa objednaného\n"
-"alebo obdržaného množstva."
 
 #. module: purchase
 #: model:res.groups,name:purchase.group_purchase_user
@@ -2038,12 +1982,12 @@ msgstr "Úžitkové pole na vyjadrenie meny sumy"
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_filter
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Vendor"
-msgstr "Dodávateľ"
+msgstr "Predajca"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_bill_union__vendor_bill_id
 msgid "Vendor Bill"
-msgstr "Dodacia faktúra"
+msgstr "Účet predajcu"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.act_res_partner_2_supplier_invoices
@@ -2054,29 +1998,29 @@ msgstr "Dodacia faktúra"
 #: model_terms:ir.ui.view,arch_db:purchase.res_partner_view_purchase_account_buttons
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_bill_union_filter
 msgid "Vendor Bills"
-msgstr "Dodacie faktúry"
+msgstr "Účtenky predajcu"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.view_purchase_order_search
 msgid "Vendor Country"
-msgstr "Krajina dodávateľa"
+msgstr "Krajina predajcu"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_res_config_settings__group_manage_vendor_price
 #: model:ir.ui.menu,name:purchase.menu_product_pricelist_action2_purchase
 msgid "Vendor Pricelists"
-msgstr "Cenník dodávateľa"
+msgstr "Cenník predajcu"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order__partner_ref
 msgid "Vendor Reference"
-msgstr "Referencia dodávateľa"
+msgstr "Referencia predajcu"
 
 #. module: purchase
 #: model:ir.ui.menu,name:purchase.menu_procurement_management_supplier_name
 #: model_terms:ir.ui.view,arch_db:purchase.view_product_supplier_inherit
 msgid "Vendors"
-msgstr "Dodávatelia"
+msgstr "Predajcovia"
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.act_res_partner_2_supplier_invoices
@@ -2086,9 +2030,9 @@ msgid ""
 "                    you receive from your vendor according to the draft\n"
 "                    document in Odoo."
 msgstr ""
-"Dodacie faktúry môžu byť predvytvorené, na základe nákupných\n"
-"objednávok alebo príjmov. Toto vám umožňuje kontrolovať faktúry\n"
-"ktoré obdržíte od vášho dodávateľa, na základe konceptu \n"
+"Účtenky predajcu môžu byť predvytvorené, na základe nákupných\n"
+"objednávok alebo príjmov. Toto vám umožňuje kontrolovať účtenky\n"
+"ktoré obdržíte od vášho predajcu, na základe konceptu \n"
 "dokumentu v Odoo."
 
 #. module: purchase
@@ -2146,7 +2090,7 @@ msgid ""
 "You can control the invoice from your vendor according to\n"
 "            what you purchased (services) or received (products)."
 msgstr ""
-"Môžete kontrolovať faktúru od svojho dodávateľa podľa\n"
+"Môžete kontrolovať faktúru od svojho predajcu podľa\n"
 "toho, čo ste si zakúpili (služby) alebo dostali (produkty)."
 
 #. module: purchase
@@ -2154,7 +2098,6 @@ msgstr ""
 #: model:ir.model.fields,help:purchase.field_purchase_order_line__partner_id
 msgid "You can find a vendor by its Name, TIN, Email or Internal Reference."
 msgstr ""
-"Môžete nájsť dodávateľa podľa mena, TIN, mailu alebo vnútornej referencie"
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.product_product_action
@@ -2171,5 +2114,3 @@ msgid ""
 "You must define a product for everything you purchase,\n"
 "            whether it's a physical product, a consumable or services."
 msgstr ""
-"Musíte definovať produkt pre všetko čo nakupujete,\n"
-" či je to fyzický produkt, spotrebný tovar alebo služba."

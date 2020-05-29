@@ -11,10 +11,9 @@
 # Adam Damara <lorenzrenz@gmail.com>, 2019
 # Bonny Useful <bonny.useful@gmail.com>, 2019
 # Febrasari Almania <febrasari.almania@gmail.com>, 2019
-# oon arfiandwi <oon.arfiandwi@gmail.com>, 2019
-# Ryanto The <ry.the77@gmail.com>, 2019
 # Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2019
-# PAS IRVANUS <ipankbiz@gmail.com>, 2019
+# oon arfiandwi (OonID) <oon.arfiandwi@gmail.com>, 2019
+# Ryanto The <ry.the77@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -22,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:19+0000\n"
-"Last-Translator: PAS IRVANUS <ipankbiz@gmail.com>, 2019\n"
+"Last-Translator: Ryanto The <ry.the77@gmail.com>, 2019\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,18 +36,6 @@ msgid ""
 "leaves;\tFixed by HR + allocation request: allocated by HR and users can "
 "request leaves and allocations;\tNo allocation: no allocation by default, "
 "users can freely request leaves;"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_type.py:265
-#, python-format
-msgid " days"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_type.py:265
-#, python-format
-msgid " hours"
 msgstr ""
 
 #. module: hr_holidays
@@ -89,21 +76,9 @@ msgid "%s : %.2f day(s)"
 msgstr "%s : %.2f hari"
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:466
-#, python-format
-msgid "%s : %.2f hour(s)"
-msgstr ""
-
-#. module: hr_holidays
 #: code:addons/hr_holidays/models/hr_leave.py:440
 #, python-format
-msgid "%s on %s : %.2f day(s)"
-msgstr "%s pada %s : %.2f hari"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:481
-#, python-format
-msgid "%s on %s : %.2f hour(s)"
+msgid "%s on %s :%.2f day(s)"
 msgstr ""
 
 #. module: hr_holidays
@@ -583,9 +558,9 @@ msgid "All Leaves"
 msgstr "Semua Cuti"
 
 #. module: hr_holidays
-#: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__duration_display
-msgid "Allocated (Days/Hours)"
-msgstr ""
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_tree
+msgid "Allocated Days"
+msgstr "Mengalokasikan Hari"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.edit_holiday_status_form
@@ -721,7 +696,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__message_attachment_count
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__accrual_limit
@@ -1109,20 +1084,6 @@ msgid "End of validity period should be greater than start of validity period"
 msgstr ""
 
 #. module: hr_holidays
-#: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__duration_display
-msgid ""
-"Field allowing to see the allocation duration in days or hours depending on "
-"the type_request_unit"
-msgstr ""
-
-#. module: hr_holidays
-#: model:ir.model.fields,help:hr_holidays.field_hr_leave__duration_display
-msgid ""
-"Field allowing to see the leave request duration in days or hours depending "
-"on the leave_type_request_unit"
-msgstr ""
-
-#. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_hr_leave_allocation_filter
 msgid ""
 "Filters only on allocations that belong to an leave type that is 'active' "
@@ -1295,7 +1256,7 @@ msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave__message_has_error
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_form_manager
@@ -1640,7 +1601,7 @@ msgstr "Magenta"
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__message_main_attachment_id
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Main Attachment"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__manager_id
@@ -1696,7 +1657,7 @@ msgstr "Jenis Rapat"
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__message_has_error
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__message_ids
@@ -1845,7 +1806,7 @@ msgstr "Jumlah pesan yang butuh tindakan"
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave__message_has_error_counter
 #: model:ir.model.fields,help:hr_holidays.field_hr_leave_allocation__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr ""
 
 #. module: hr_holidays
 #: model:ir.model.fields,field_description:hr_holidays.field_hr_leave_allocation__interval_number
@@ -1944,7 +1905,7 @@ msgstr ""
 #. module: hr_holidays
 #: model:ir.ui.menu,name:hr_holidays.menu_hr_holidays_dashboard
 msgid "Overview"
-msgstr "Overview"
+msgstr ""
 
 #. module: hr_holidays
 #: model:hr.leave.type,name:hr_holidays.holiday_status_cla
@@ -2078,11 +2039,6 @@ msgstr "Permohonan Disetujui"
 #: model:mail.message.subtype,description:hr_holidays.mt_leave_refused
 msgid "Request refused"
 msgstr "Permohonan ditolak"
-
-#. module: hr_holidays
-#: model:ir.model.fields,field_description:hr_holidays.field_hr_leave__duration_display
-msgid "Requested (Days/Hours)"
-msgstr ""
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_form_manager
@@ -2359,6 +2315,16 @@ msgid "Total Employee"
 msgstr "Total Karyawan"
 
 #. module: hr_holidays
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_tree
+msgid "Total allocated days"
+msgstr ""
+
+#. module: hr_holidays
+#: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_tree
+msgid "Total leaves"
+msgstr ""
+
+#. module: hr_holidays
 #: model:ir.model.fields,help:hr_holidays.field_hr_employee__remaining_leaves
 msgid ""
 "Total number of legal leaves allocated to this employee, change this value "
@@ -2535,26 +2501,14 @@ msgid "You can not have 2 leaves that overlaps on the same day."
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:520
-#, python-format
-msgid "You can take %s from %s"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:515
+#: code:addons/hr_holidays/models/hr_leave.py:463
 #, python-format
 msgid "You can take %s only between %s and %s"
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:525
-#, python-format
-msgid "You can take %s until %s"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:576
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:379
+#: code:addons/hr_holidays/models/hr_leave.py:511
+#: code:addons/hr_holidays/models/hr_leave_allocation.py:354
 #, python-format
 msgid "You cannot delete a leave which is in %s state."
 msgstr "Anda tidak dapat menghapus cuti yang dalam keadaan %s."
@@ -2573,19 +2527,10 @@ msgid "You must be either %s's manager or Leave manager to approve this leave"
 msgstr ""
 
 #. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:392
-#, python-format
-msgid "day(s)"
-msgstr ""
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:222
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:330
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_allocation_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_report_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_holidays.view_employee_form_leave_inherit
-#, python-format
 msgid "days"
 msgstr "hari"
 
@@ -2593,19 +2538,6 @@ msgstr "hari"
 #: model_terms:ir.ui.view,arch_db:hr_holidays.hr_leave_view_form_manager
 msgid "e.g. Report to the next month..."
 msgstr "mis. Laporkan pada bulan berikutnya..."
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave.py:398
-#, python-format
-msgid "hour(s)"
-msgstr "jam"
-
-#. module: hr_holidays
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:222
-#: code:addons/hr_holidays/models/hr_leave_allocation.py:330
-#, python-format
-msgid "hours"
-msgstr "jam"
 
 #. module: hr_holidays
 #: model_terms:ir.ui.view,arch_db:hr_holidays.report_holidayssummary

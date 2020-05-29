@@ -36,13 +36,13 @@ var CalendarNotification = Notification.extend({
             },
 
             'click .link2recall': function() {
-                this.close();
+                this.destroy(true);
             },
 
             'click .link2showed': function() {
                 var self = this;
                 this._rpc({route: '/calendar/notify_ack'}).always(function() {
-                    self.close();
+                    self.destroy();
                 });
             },
         });
@@ -57,25 +57,22 @@ WebClient.include({
         // Clear previously set timeouts and destroy currently displayed calendar notifications
         clearTimeout(this.get_next_calendar_notif_timeout);
         _.each(this.calendar_notif_timeouts, clearTimeout);
+        _.each(this.calendar_notif, function (notificationID) {
+            self.call('notification', 'close', notificationID, true);
+        });
         this.calendar_notif_timeouts = {};
+        this.calendar_notif = {};
 
         // For each notification, set a timeout to display it
         _.each(notifications, function(notif) {
-            var key = notif.event_id + ',' + notif.alarm_id;
-            if (key in self.calendar_notif) {
-                return;
-            }
-            self.calendar_notif_timeouts[key] = setTimeout(function () {
+            self.calendar_notif_timeouts[notif.event_id] = setTimeout(function() {
                 var notificationID = self.call('notification', 'notify', {
                     Notification: CalendarNotification,
                     title: notif.title,
                     message: notif.message,
                     eventID: notif.event_id,
-                    onClose: function () {
-                        delete self.calendar_notif[key];
-                    },
                 });
-                self.calendar_notif[key] = notificationID;
+                self.calendar_notif[notif.event_id] = notificationID;
             }, notif.timer * 1000);
             last_notif_timer = Math.max(last_notif_timer, notif.timer);
         });

@@ -9,8 +9,6 @@
 # Quim - eccit <quim@eccit.com>, 2018
 # Sandra Franch <sandra.franch@upc.edu>, 2018
 # Manel Fernandez <manelfera@outlook.com>, 2018
-# M Palau <mpalau@tda.ad>, 2019
-# Arnau Ros, 2019
 # 
 msgid ""
 msgstr ""
@@ -18,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:21+0000\n"
-"Last-Translator: Arnau Ros, 2019\n"
+"Last-Translator: Manel Fernandez <manelfera@outlook.com>, 2018\n"
 "Language-Team: Catalan (https://www.transifex.com/odoo/teams/41243/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,12 +32,12 @@ msgstr "Facturat"
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__num_paid
 msgid "# Paid"
-msgstr "# Pagat"
+msgstr "Núm. pagat"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__num_waiting
 msgid "# Waiting"
-msgstr "# En espera"
+msgstr "Núm. esperant"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_kanban
@@ -47,18 +45,16 @@ msgid ""
 "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Period\" "
 "title=\"Period\"/><strong> From: </strong>"
 msgstr ""
-"<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Period\" "
-"title=\"Period\"/><strong> De: </strong>"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_kanban
 msgid "<i class=\"fa fa-money\" role=\"img\" aria-label=\"Price\" title=\"Price\"/>"
-msgstr "<i class=\"fa fa-money\" role=\"img\" aria-label=\"Price\" title=\"Price\"/>"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_kanban
 msgid "<strong> To:</strong>"
-msgstr "<strong> A:</strong>"
+msgstr ""
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_res_partner__associate_member
@@ -83,7 +79,7 @@ msgstr "Afegir una descripció..."
 #. module: membership
 #: model_terms:ir.actions.act_window,help:membership.action_membership_members
 msgid "Add a new member"
-msgstr "Afegir un nou membre"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
@@ -93,7 +89,7 @@ msgstr "Tots els socis"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "All non Members"
-msgstr "Tots els no socis"
+msgstr "Tots no socis"
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_membership_membership_line__member_price
@@ -116,23 +112,23 @@ msgstr "Empresa associada"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_partner_form
 msgid "Buy Membership"
-msgstr "Comprar una subscripció"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
 msgid "Cancel"
-msgstr "Cancel·lar"
+msgstr "Cancel·la"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_cancel
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_cancel
 msgid "Cancel Membership Date"
-msgstr "Cancel·lar les dades d'afiliació"
+msgstr "Cancel·lar Data d'Afiliació"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date_cancel
 msgid "Cancel date"
-msgstr "Data de cancel·lació"
+msgstr "Data cancel·lació"
 
 #. module: membership
 #: selection:membership.membership_line,state:0
@@ -196,7 +192,7 @@ msgstr "Estat actual soci"
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_state
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_state
 msgid "Current Membership Status"
-msgstr "Estat actual de l'afiliació"
+msgstr "Estat actual de l'Afiliació"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
@@ -220,7 +216,7 @@ msgstr "Data en la qual el membre s'ha convertit en soci."
 #: model:ir.model.fields,help:membership.field_res_partner__membership_cancel
 #: model:ir.model.fields,help:membership.field_res_users__membership_cancel
 msgid "Date on which membership has been cancelled"
-msgstr "Data en la qual s'ha cancel·lat la subscripció."
+msgstr "Data en la qual el soci ha estat cancel·lat."
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_product_product__membership_date_to
@@ -228,14 +224,14 @@ msgstr "Data en la qual s'ha cancel·lat la subscripció."
 #: model:ir.model.fields,help:membership.field_res_partner__membership_stop
 #: model:ir.model.fields,help:membership.field_res_users__membership_stop
 msgid "Date until which membership remains active."
-msgstr "Data fins a la qual el soci romandrà actiu."
+msgstr "Data fins a la qual el soci roman actiu."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_invoice__display_name
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__display_name
 #: model:ir.model.fields,field_description:membership.field_report_membership__display_name
 msgid "Display Name"
-msgstr "Mostrar nom"
+msgstr "Mostrar Nom"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__tot_earned
@@ -251,23 +247,22 @@ msgstr "Data final"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "End Membership Date"
-msgstr "Data de finalització de la subscripció"
+msgstr "Data de finalització com a soci"
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_report_membership__date_to
 msgid "End membership date"
-msgstr "Data de finalització de la subscripció"
+msgstr "Data de finalització com a soci"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Ending Date Of Membership"
-msgstr "Data finalització de la membresía"
+msgstr ""
 
 #. module: membership
 #: sql_constraint:product.template:0
 msgid "Error ! Ending Date cannot be set before Beginning Date."
 msgstr ""
-"Error! La data de finalització no pot establir-se abans de la data d'inici"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
@@ -281,7 +276,7 @@ msgstr "Previsió"
 #: selection:report.membership,membership_state:0
 #: selection:res.partner,membership_state:0
 msgid "Free Member"
-msgstr "Membre gratuït"
+msgstr "Soci gratis"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date_from
@@ -297,7 +292,7 @@ msgstr "Agrupar per"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_product_search_form_view
 msgid "Group by..."
-msgstr "Agrupar per..."
+msgstr "Agrupa per..."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_invoice__id
@@ -326,7 +321,7 @@ msgstr "Línia de factura"
 #: model:ir.actions.act_window,name:membership.action_membership_invoice_view
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
 msgid "Invoice Membership"
-msgstr "Factura de subscripció"
+msgstr "Factura a soci"
 
 #. module: membership
 #: selection:membership.membership_line,state:0
@@ -338,7 +333,7 @@ msgstr "Soci facturat"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Invoiced/Paid/Free"
-msgstr "Facturat/Pagat/Gratuït"
+msgstr ""
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_res_partner__membership_state
@@ -353,12 +348,12 @@ msgid ""
 "-Paying member: A member who has paid the membership fee."
 msgstr ""
 "Indica l'estat de l'afiliació.\n"
-"- No membre: empresa que no ha sol·licitat cap afiliació.\n"
-"- Membre cancel·lat: membre que ha cancel·lat la seva afiliació.\n"
-"- Antic membre: membre amb l'afiliació expirada.\n"
-"- Membre en espera: membre que ha sol·licitat l'afiliació i està a l'espera de la creació de la factura corresponent.\n"
-"- Membre facturat: membre amb factura creada.\n"
-"- Membre pagat: membre que ha pagat la quota d'afiliació."
+"- No membre: Una empresa que no ha sol·licitat cap afiliació.\n"
+"- Membre cancel·lat: Un membre que ha cancel·lat la seva afiliació.\n"
+"- Antic membre: Un membre que la seva afiliació ha expirat.\n"
+"- Membre en espera: Un membre que ha sol·licitat l'afiliació i que la seva factura va crear-se.\n"
+"- Membre facturat: Un membre que se li ha creat la seva factura.\n"
+"- Membre pagat: Un membre que ha pagat la seva quota d'afiliació."
 
 #. module: membership
 #: model:ir.model.fields,help:membership.field_membership_membership_line__state
@@ -371,13 +366,6 @@ msgid ""
 "-Invoiced Member: A member whose invoice has been created.\n"
 "-Paid Member: A member who has paid the membership amount."
 msgstr ""
-"Indica l'estat de l'afiliació.\n"
-"- No membre: membre que no ha sol·licitat cap afiliació.\n"
-"- Membre cancel·lat: membre que ha cancel·lat la seva afiliació.\n"
-"- Antic membre: membre amb l'afiliació expirada.\n"
-"- Membre en espera: membre que ha sol·licitat l'afiliació i està a l'espera de la creació de la factura corresponent.\n"
-"- Membre facturat: membre amb factura creada.\n"
-"- Membre pagat: membre que ha pagat la quota d'afiliació."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date
@@ -454,7 +442,7 @@ msgstr "Anàlisi dels socis"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
 msgid "Membership Duration"
-msgstr "Duració de l'afiliació"
+msgstr ""
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_product_product__membership_date_to
@@ -462,7 +450,7 @@ msgstr "Duració de l'afiliació"
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_stop
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_stop
 msgid "Membership End Date"
-msgstr "Data final d'afiliació"
+msgstr "Data final d'Afiliació"
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__member_price
@@ -475,17 +463,17 @@ msgstr "Quota de soci"
 #: model:ir.model,name:membership.model_membership_invoice
 #: model_terms:ir.ui.view,arch_db:membership.view_membership_invoice_view
 msgid "Membership Invoice"
-msgstr "Factura de soci"
+msgstr "Factura soci"
 
 #. module: membership
 #: model:ir.model,name:membership.model_membership_membership_line
 msgid "Membership Line"
-msgstr "Línia d'afiliació"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Membership Partners"
-msgstr "Socis membres"
+msgstr ""
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__membership_id
@@ -506,7 +494,7 @@ msgstr "Productes per socis"
 #: model:ir.model.fields,field_description:membership.field_res_partner__membership_start
 #: model:ir.model.fields,field_description:membership.field_res_users__membership_start
 msgid "Membership Start Date"
-msgstr "Data d'inici d'afiliació"
+msgstr "Data d'inici d'Afiliació"
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
@@ -516,7 +504,7 @@ msgstr "Estat soci"
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__state
 msgid "Membership Status"
-msgstr "Estat de l'afiliació"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
@@ -529,7 +517,7 @@ msgstr "Productes per socis"
 #: model:ir.cron,cron_name:membership.ir_cron_update_membership
 #: model:ir.cron,name:membership.ir_cron_update_membership
 msgid "Membership: update memberships"
-msgstr "Subscripció: actualitzar les subscripcions"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_partner_form
@@ -551,7 +539,7 @@ msgstr "No soci"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "None/Canceled/Old/Waiting"
-msgstr "No/Cancel·lat/Antic/En espera"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.actions.act_window,help:membership.action_membership_members
@@ -559,8 +547,6 @@ msgid ""
 "Odoo helps you easily track all activities related to a member: \n"
 "                  Current Membership Status, Discussions and History of Membership, etc."
 msgstr ""
-"Odoo l'ajuda a rastrejar fàcilment totes les activitats relacionades amb un membre: \n"
-"                  Estat actual de l'afiliació, discussions i historial, etc."
 
 #. module: membership
 #: selection:membership.membership_line,state:0
@@ -585,7 +571,7 @@ msgstr "Empresa"
 #: code:addons/membership/models/partner.py:186
 #, python-format
 msgid "Partner doesn't have an address to make the invoice."
-msgstr "L'empresa no té una direcció per realitzar la factura."
+msgstr "L'empresa no té una direcció per a realitzar la factura."
 
 #. module: membership
 #: code:addons/membership/models/partner.py:184
@@ -629,7 +615,7 @@ msgstr "Comercial"
 #: model:ir.model.fields,help:membership.field_res_partner__free_member
 #: model:ir.model.fields,help:membership.field_res_users__free_member
 msgid "Select if you want to give free membership."
-msgstr "Seleccionar si voleu atorgar la subscripció gratuïta."
+msgstr "Seleccioneu si voleu donar lliure adhesió."
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_report_membership__start_date
@@ -641,7 +627,7 @@ msgstr "Data inicial"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
 msgid "Starting Date Of Membership"
-msgstr "Data d'inici de la subscripció"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
@@ -657,17 +643,17 @@ msgstr "El preu negociat per l'empresa"
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.membership_products_form
 msgid "This note will be displayed on quotations..."
-msgstr "Aquesta nota apareixerà en els pressupostos..."
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "This will display paid, old and total earned columns"
-msgstr "Es mostraran les columnes de pagat, antic i totals"
+msgstr ""
 
 #. module: membership
 #: model_terms:ir.ui.view,arch_db:membership.view_report_membership_search
 msgid "This will display waiting, invoiced and total pending columns"
-msgstr "Es mostraran les columnes de pendents, facturades i totals"
+msgstr ""
 
 #. module: membership
 #: model:ir.model.fields,field_description:membership.field_membership_membership_line__date_to
@@ -690,4 +676,4 @@ msgstr "Soci en espera"
 #: code:addons/membership/models/partner.py:162
 #, python-format
 msgid "You cannot create recursive associated members."
-msgstr "No es poden crear membres associats recursius."
+msgstr ""

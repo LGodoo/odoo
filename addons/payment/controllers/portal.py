@@ -2,7 +2,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 import logging
-import psycopg2
 
 from odoo import http, _
 from odoo.http import request
@@ -31,7 +30,7 @@ class PaymentProcessing(http.Controller):
         if not transactions:
             return False
         tx_ids_list = set(request.session.get("__payment_tx_ids__", [])) | set(transactions.ids)
-        request.session["__payment_tx_ids__"] = list(tx_ids_list)
+        request.session["__payment_tx_ids__"] = tx_ids_list
         return True
 
     @staticmethod
@@ -41,7 +40,7 @@ class PaymentProcessing(http.Controller):
         # I prefer to let the controller chose when to access to payment.transaction using sudo
         return request.session.get("__payment_tx_ids__", [])
 
-    @http.route(['/payment/process'], type="http", auth="public", website=True, sitemap=False)
+    @http.route(['/payment/process'], type="http", auth="public", website=True)
     def payment_status_page(self, **kwargs):
         # When the customer is redirect to this website page,
         # we retrieve the payment transaction list from his session
@@ -67,10 +66,6 @@ class PaymentProcessing(http.Controller):
                 'success': False,
                 'error': 'no_tx_found',
             }
-
-        processed_tx = payment_transaction_ids.filtered('is_processed')
-        self.remove_payment_transaction(processed_tx)
-
         # create the returned dictionnary
         result = {
             'success': True,
@@ -79,7 +74,7 @@ class PaymentProcessing(http.Controller):
         # populate the returned dictionnary with the transactions data
         for tx in payment_transaction_ids:
             message_to_display = tx.acquirer_id[tx.state + '_msg'] if tx.state in ['done', 'pending', 'cancel', 'error'] else None
-            tx_info = {
+            result['transactions'].append({
                 'reference': tx.reference,
                 'state': tx.state,
                 'return_url': tx.return_url,
@@ -89,22 +84,16 @@ class PaymentProcessing(http.Controller):
                 'amount': tx.amount,
                 'currency': tx.currency_id.name,
                 'acquirer_provider': tx.acquirer_id.provider,
-            }
-            tx_info.update(tx._get_processing_info())
-            result['transactions'].append(tx_info)
+            })
 
         tx_to_process = payment_transaction_ids.filtered(lambda x: x.state == 'done' and x.is_processed is False)
         try:
             tx_to_process._post_process_after_done()
-        except psycopg2.OperationalError as e:
-            request.env.cr.rollback()
-            result['success'] = False
-            result['error'] = "tx_process_retry"
         except Exception as e:
             request.env.cr.rollback()
             result['success'] = False
             result['error'] = str(e)
-            _logger.exception("Error while processing transaction(s) %s, exception \"%s\"", tx_to_process.ids, str(e))
+            _logger.error("Error while processing transaction(s) %s, exception \"%s\"", tx_to_process.ids, str(e))
 
         return result
 
@@ -129,7 +118,7 @@ class WebsitePayment(http.Controller):
         }
         return request.render("payment.pay_methods", values)
 
-    @http.route(['/website_payment/pay'], type='http', auth='public', website=True, sitemap=False)
+    @http.route(['/website_payment/pay'], type='http', auth='public', website=True)
     def pay(self, reference='', order_id=None, amount=False, currency_id=None, acquirer_id=None, **kw):
         env = request.env
         user = env.user.sudo()
@@ -260,17 +249,21 @@ class WebsitePayment(http.Controller):
 
         try:
             res = tx.s2s_do_transaction()
-            tx.return_url = return_url or '/website_payment/confirm?tx_id=%d' % tx.id
+            if tx.state == 'done':
+                tx.return_url = return_url or '/website_payment/confirm?tx_id=%d' % tx.id
+            valid_state = 'authorized' if tx.acquirer_id.capture_manually else 'done'
+            if not res or tx.state != valid_state:
+                tx.return_url = '/website_payment/pay?error_msg=%s' % _('Payment transaction failed.')
             return request.redirect('/payment/process')
         except Exception as e:
             return request.redirect('/payment/process')
 
-    @http.route(['/website_payment/confirm'], type='http', auth='public', website=True, sitemap=False)
+    @http.route(['/website_payment/confirm'], type='http', auth='public', website=True)
     def confirm(self, **kw):
         tx_id = int(kw.get('tx_id', 0))
         if tx_id:
             tx = request.env['payment.transaction'].browse(tx_id)
-            if tx.state in ['done', 'authorized']:
+            if tx.state == 'done':
                 status = 'success'
                 message = tx.acquirer_id.done_msg
             elif tx.state == 'pending':

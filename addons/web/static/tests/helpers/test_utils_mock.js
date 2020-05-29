@@ -11,7 +11,6 @@ odoo.define('web.test_utils_mock', function (require) {
  */
 
 var basic_fields = require('web.basic_fields');
-var BasicModel = require('web.BasicModel');
 var config = require('web.config');
 var core = require('web.core');
 var dom = require('web.dom');
@@ -192,11 +191,6 @@ function addMockEnvironment(widget, params) {
             return func;
         };
     }
-    // FORWARDPORT THIS UP TO 12.2, NOT FURTHER
-    var initialDisableBatchedRPCs = BasicModel.prototype.disableBatchedRPCs;
-    if (!params.enableBasicModelBachedRPCs) {
-        BasicModel.prototype.disableBatchedRPCs = true;
-    }
 
     var widgetDestroy = widget.destroy;
     widget.destroy = function () {
@@ -236,10 +230,6 @@ function addMockEnvironment(widget, params) {
                 delete core._t.database.parameters[key];
             }
             _.extend(core._t.database.parameters, initialParameters);
-        }
-        // FORWARDPORT THIS UP TO 12.2, NOT FURTHER
-        if (!params.enableBasicModelBachedRPCs) {
-            BasicModel.prototype.disableBatchedRPCs = initialDisableBatchedRPCs;
         }
 
         $('body').off('DOMNodeInserted.removeSRC');

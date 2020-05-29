@@ -121,8 +121,7 @@ class Channel(models.Model):
         if not value:
             operator = operator == "=" and '!=' or '='
 
-        # Won't impact sitemap, search() in converter is forced as public user
-        if self.env.user._is_admin():
+        if self._uid == SUPERUSER_ID:
             return [(1, '=', 1)]
 
         # Better perfs to split request and use inner join that left join
@@ -147,18 +146,12 @@ class Channel(models.Model):
         self.can_upload = self.can_see and (not self.upload_group_ids or bool(self.upload_group_ids & self.env.user.groups_id))
 
     @api.multi
-    def get_base_url(self):
-        self.ensure_one()
-        icp = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
-        return self.website_id and self.website_id._get_http_domain() or icp
-
-    @api.multi
-    @api.depends('name', 'website_id.domain')
+    @api.depends('name')
     def _compute_website_url(self):
         super(Channel, self)._compute_website_url()
+        base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         for channel in self:
             if channel.id:  # avoid to perform a slug on a not yet saved record in case of an onchange.
-                base_url = channel.get_base_url()
                 channel.website_url = '%s/slides/%s' % (base_url, slug(channel))
 
     @api.onchange('visibility')
@@ -378,12 +371,12 @@ class Slide(models.Model):
                 record.embed_code = False
 
     @api.multi
-    @api.depends('name', 'channel_id.website_id.domain')
+    @api.depends('name')
     def _compute_website_url(self):
         super(Slide, self)._compute_website_url()
+        base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         for slide in self:
             if slide.id:  # avoid to perform a slug on a not yet saved record in case of an onchange.
-                base_url = slide.channel_id.get_base_url()
                 # link_tracker is not in dependencies, so use it to shorten url only if installed.
                 if self.env.registry.get('link.tracker'):
                     url = self.env['link.tracker'].sudo().create({
@@ -522,7 +515,7 @@ class Slide(models.Model):
     def _fetch_data(self, base_url, data, content_type=False, extra_params=False):
         result = {'values': dict()}
         try:
-            response = requests.get(base_url, timeout=3, params=data)
+            response = requests.get(base_url, params=data)
             response.raise_for_status()
             if content_type == 'json':
                 result['values'] = response.json()
@@ -537,16 +530,11 @@ class Slide(models.Model):
         return result
 
     def _find_document_data_from_url(self, url):
-        url_obj = urls.url_parse(url)
-        if url_obj.ascii_host == 'youtu.be':
-            return ('youtube', url_obj.path[1:] if url_obj.path else False)
-        elif url_obj.ascii_host in ('youtube.com', 'www.youtube.com', 'm.youtube.com'):
-            v_query_value = url_obj.decode_query().get('v')
-            if v_query_value:
-                return ('youtube', v_query_value)
-            split_path = url_obj.path.split('/')
-            if len(split_path) >= 3 and split_path[1] in ('v', 'embed'):
-                return ('youtube', split_path[2])
+        expr = re.compile(r'^.*((youtu.be/)|(v/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*')
+        arg = expr.match(url)
+        document_id = arg and arg.group(7) or False
+        if document_id:
+            return ('youtube', document_id)
 
         expr = re.compile(r'(^https:\/\/docs.google.com|^https:\/\/drive.google.com).*\/d\/([^\/]*)')
         arg = expr.match(url)

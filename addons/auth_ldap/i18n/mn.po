@@ -26,8 +26,8 @@ msgid ""
 "Automatically create local user accounts for new users authenticating via "
 "LDAP"
 msgstr ""
-"LDAP ашиглан нэвтэрч орж буй шинэ хэрэглэгчдэд автоматаар хэрэглэгчийн "
-"бүртгэл үүсгэнэ."
+"LDAP -р баталгаажиж буй шинэ хэрэглэгчдэд автоматаар дотоод хэрэглэгчийн "
+"бүртгэл үүсгэх"
 
 #. module: auth_ldap
 #: model:ir.model,name:auth_ldap.model_res_company
@@ -42,7 +42,7 @@ msgstr "Компани"
 #. module: auth_ldap
 #: model:ir.model,name:auth_ldap.model_res_company_ldap
 msgid "Company LDAP configuration"
-msgstr "Компаны LDAP тохиргоо"
+msgstr ""
 
 #. module: auth_ldap
 #: model:ir.model,name:auth_ldap.model_res_config_settings
@@ -57,17 +57,17 @@ msgstr "Хэрэглэгч үүсэх"
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__create_uid
 msgid "Created by"
-msgstr "Үүсгэсэн этгээд"
+msgstr "Үүсгэгч"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__create_date
 msgid "Created on"
-msgstr "Үүсгэсэн огноо"
+msgstr "Үүсгэсэн"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__display_name
 msgid "Display Name"
-msgstr "Дэлгэрэнгүй нэр"
+msgstr "Дэлгэцийн Нэр"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__id
@@ -89,7 +89,7 @@ msgstr "LDAP параметрүүд"
 #. module: auth_ldap
 #: model_terms:ir.ui.view,arch_db:auth_ldap.res_config_settings_view_form
 msgid "LDAP Server"
-msgstr "LDAP сервер"
+msgstr ""
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__ldap_server
@@ -124,17 +124,17 @@ msgstr "LDAP нууц үг"
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap____last_update
 msgid "Last Modified on"
-msgstr "Сүүлд зассан огноо"
+msgstr "Сүүлийн засвар хийсэн огноо"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__write_uid
 msgid "Last Updated by"
-msgstr "Сүүлд зассан этгээд"
+msgstr "Сүүлийн засвар хийсэн"
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__write_date
 msgid "Last Updated on"
-msgstr "Сүүлд зассан огноо"
+msgstr "Сүүлийн засвар хийсэн огноо"
 
 #. module: auth_ldap
 #: model_terms:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
@@ -146,13 +146,11 @@ msgstr "Нэвтрэх мэдээлэл"
 #, python-format
 msgid "No local user found for LDAP login and not configured to create one"
 msgstr ""
-"LDAP нэвтрэх хандалтанд тохирох хэрэглэгч олдохгүй байгаа бөгөөд шинэ "
-"хэрэглэгч автоматаар үүсгэх тохиргоо хийгдээгүй байна"
 
 #. module: auth_ldap
 #: model_terms:ir.ui.view,arch_db:auth_ldap.view_ldap_installer_form
 msgid "Process Parameter"
-msgstr "Боловсруулах параметр"
+msgstr "Парамтерийг Боловсруулах"
 
 #. module: auth_ldap
 #: model:ir.model.fields,help:auth_ldap.field_res_company_ldap__ldap_tls
@@ -162,8 +160,8 @@ msgid ""
 " attempts will fail."
 msgstr ""
 "LDAP сервертэй холбогдоход TLS/SSL нууцлагдсан кодчлолыг ашиглана. Энэ "
-"сонголт нь STARTTLS зөвшөөрөгдсөн байхыг шаардах бөгөөд үгүй бол бүх нэвтрэх"
-" эрх шалгах ажиллагаа амжилтгүй болно."
+"сонголт нь STARTTLS зөвшөөрөгдсөн байхыг шаардах бөгөөд үгүй бол бүх эрх "
+"шалгах оролдлого бүтэлгүй болно."
 
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__sequence
@@ -183,7 +181,7 @@ msgstr "Өөрийн LDAP серверийг тохируулах"
 #. module: auth_ldap
 #: model:ir.model.fields,field_description:auth_ldap.field_res_company_ldap__user
 msgid "Template User"
-msgstr "Загвар хэрэглэгч"
+msgstr "Үлгэр Хэрэглэгч"
 
 #. module: auth_ldap
 #: model:ir.model.fields,help:auth_ldap.field_res_company_ldap__ldap_password

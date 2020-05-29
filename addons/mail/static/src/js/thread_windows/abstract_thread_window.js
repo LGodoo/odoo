@@ -79,7 +79,6 @@ var AbstractThreadWindow = Widget.extend({
         this.$header = this.$('.o_thread_window_header');
 
         this._threadWidget = new ThreadWidget(this, {
-            areMessageAttachmentsDeletable: false,
             displayMarkAsRead: false,
             displayStars: this.options.displayStars,
         });

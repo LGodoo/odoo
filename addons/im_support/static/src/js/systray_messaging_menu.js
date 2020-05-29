@@ -27,8 +27,7 @@ MessagingMenu.include({
         this._super.apply(this, arguments);
         this.supportChannel = {
             id: SUPPORT_CHANNEL_ID,
-            name: _t("Odoo Live Support"),
-            title: _t("Odoo Live Support"),
+            name: _t("Support"),
             imageSRC: '/mail/static/src/img/odoo_o.png',
         };
     },

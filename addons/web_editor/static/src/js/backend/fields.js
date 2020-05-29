@@ -400,6 +400,8 @@ var FieldTextHtml = AbstractField.extend({
             }
         }
 
+        // delete datarecord[this.name];
+        src += "&datarecord="+ encodeURIComponent(JSON.stringify(datarecord));
         return src;
     },
     old_initialize_content: function () {

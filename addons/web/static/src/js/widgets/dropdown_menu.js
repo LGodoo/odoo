@@ -5,7 +5,6 @@ var core = require('web.core');
 var Widget = require('web.Widget');
 
 var QWeb = core.qweb;
-var _t = core._t;
 
 
 
@@ -60,13 +59,7 @@ var DropdownMenu = Widget.extend({
      * override
      */
     start: function () {
-        var self = this;
         this.$menu = this.$('.o_dropdown_menu');
-        this.$dropdownReference = this.$('.o_dropdown_toggler_btn');
-
-        if (_t.database.parameters.direction === 'rtl') {
-            this.$menu.addClass('dropdown-menu-right');
-        }
     },
 
     //--------------------------------------------------------------------------

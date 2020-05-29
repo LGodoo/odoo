@@ -185,7 +185,7 @@ ListRenderer.include({
             currentWidget = this.allFieldWidgets[currentRowID][this.currentFieldIndex];
             if (currentWidget) {
                 focusedElement = currentWidget.getFocusableElement().get(0);
-                if (currentWidget.formatType !== 'boolean' && focusedElement) {
+                if (currentWidget.formatType !== 'boolean') {
                     selectionRange = dom.getSelectionRange(focusedElement);
                 }
             }
@@ -428,18 +428,6 @@ ListRenderer.include({
             });
         }
     },
-    /**
-     * @override
-     */
-    updateState: function (state, params) {
-        if (params.noRender) {
-            // the state changed, but we won't do a re-rendering right now, so
-            // remove computed modifiers data (as they are obsolete) to force
-            // them to be recomputed at next (sub-)rendering
-            this.allModifiersData = [];
-        }
-        return this._super.apply(this, arguments);
-    },
 
     //--------------------------------------------------------------------------
     // Private
@@ -490,8 +478,7 @@ ListRenderer.include({
      */
     _moveToPreviousLine: function () {
         if (this.currentRow > 0) {
-            // FORWARD-PORT THIS COMMIT UP TO SAAS-12.2
-            this._selectCell(this.currentRow - 1, this.columns.length - 1, {inc: -1});
+            this._selectCell(this.currentRow - 1, this.columns.length - 1);
         } else {
             this.unselectRow().then(this.trigger_up.bind(this, 'add_record'));
         }
@@ -638,48 +625,48 @@ ListRenderer.include({
     _resequence: function (event, ui) {
         var self = this;
         var movedRecordID = ui.item.data('id');
-        self.unselectRow().then(function () {
-            var rows = self.state.data;
-            var row = _.findWhere(rows, {id: movedRecordID});
-            var index0 = rows.indexOf(row);
-            var index1 = ui.item.index();
-            var lower = Math.min(index0, index1);
-            var upper = Math.max(index0, index1) + 1;
+        var rows = this.state.data;
+        var row = _.findWhere(rows, {id: movedRecordID});
+        var index0 = rows.indexOf(row);
+        var index1 = ui.item.index();
+        var lower = Math.min(index0, index1);
+        var upper = Math.max(index0, index1) + 1;
 
-            var order = _.findWhere(self.state.orderedBy, {name: self.handleField});
-            var asc = !order || order.asc;
-            var reorderAll = false;
-            var sequence = (asc ? -1 : 1) * Infinity;
+        var order = _.findWhere(self.state.orderedBy, {name: self.handleField});
+        var asc = !order || order.asc;
+        var reorderAll = false;
+        var sequence = (asc ? -1 : 1) * Infinity;
 
-            // determine if we need to reorder all lines
-            _.each(rows, function (row, index) {
-                if ((index < lower || index >= upper) &&
-                    ((asc && sequence >= row.data[self.handleField]) ||
-                     (!asc && sequence <= row.data[self.handleField]))) {
-                    reorderAll = true;
-                }
-                sequence = row.data[self.handleField];
-            });
+        // determine if we need to reorder all lines
+        _.each(rows, function (row, index) {
+            if ((index < lower || index >= upper) &&
+                ((asc && sequence >= row.data[self.handleField]) ||
+                 (!asc && sequence <= row.data[self.handleField]))) {
+                reorderAll = true;
+            }
+            sequence = row.data[self.handleField];
+        });
 
-            if (reorderAll) {
-                rows = _.without(rows, row);
-                rows.splice(index1, 0, row);
+        if (reorderAll) {
+            rows = _.without(rows, row);
+            rows.splice(index1, 0, row);
+        } else {
+            rows = rows.slice(lower, upper);
+            rows = _.without(rows, row);
+            if (index0 > index1) {
+                rows.unshift(row);
             } else {
-                rows = rows.slice(lower, upper);
-                rows = _.without(rows, row);
-                if (index0 > index1) {
-                    rows.unshift(row);
-                } else {
-                    rows.push(row);
-                }
+                rows.push(row);
             }
+        }
 
-            var sequences = _.pluck(_.pluck(rows, 'data'), self.handleField);
-            var rowIDs = _.pluck(rows, 'id');
+        var sequences = _.pluck(_.pluck(rows, 'data'), self.handleField);
+        var rowIDs = _.pluck(rows, 'id');
 
-            if (!asc) {
-                rowIDs.reverse();
-            }
+        if (!asc) {
+            rowIDs.reverse();
+        }
+        this.unselectRow().then(function () {
             self.trigger_up('resequence', {
                 rowIDs: rowIDs,
                 offset: _.min(sequences),
@@ -705,8 +692,6 @@ ListRenderer.include({
      * @param {boolean} [options.force=false] if true, force selecting the cell
      *   even if seems to be already the selected one (useful after a re-
      *   rendering, to reset the focus on the correct field)
-     * @param {integer} [options.inc=1] the increment to use when searching for
-     *   the "next" possible cell (if the cell to select can't be selected)
      * @return {Deferred} fails if no cell could be selected
      */
     _selectCell: function (rowIndex, fieldIndex, options) {
@@ -730,7 +715,7 @@ ListRenderer.include({
             var oldFieldIndex = self.currentFieldIndex;
             self.currentFieldIndex = fieldIndex;
             fieldIndex = self._activateFieldWidget(record, fieldIndex, {
-                inc: options.inc || 1,
+                inc: 1,
                 wrap: wrap,
                 event: options && options.event,
             });
@@ -883,7 +868,7 @@ ListRenderer.include({
         switch (ev.data.direction) {
             case 'previous':
                 if (this.currentFieldIndex > 0) {
-                    this._selectCell(this.currentRow, this.currentFieldIndex - 1, {inc: -1, wrap: false})
+                    this._selectCell(this.currentRow, this.currentFieldIndex - 1, {wrap: false})
                         .fail(this._moveToPreviousLine.bind(this));
                 } else {
                     this._moveToPreviousLine();

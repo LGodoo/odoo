@@ -21,23 +21,17 @@ MailManager.include({
 
     start: function () {
         this._super.apply(this, arguments);
-        this._documentThreadWindowStates = {};
-        this._tabId = this.call('bus_service', 'getTabId');
+
         // retrieve the open DocumentThreads from the localStorage
-        var localStorageLength = this.call('local_storage', 'length');
-        for (var i = 0; i < localStorageLength; i++) {
-            var key = this.call('local_storage', 'key', i);
-            if (key.indexOf(this.DOCUMENT_THREAD_STATE_KEY) === 0) {
-                // key format: DOCUMENT_THREAD_STATE_KEY + '/' + threadId
-                var documentThreadId = key.substring(this.DOCUMENT_THREAD_STATE_KEY.length+1);
-                this._documentThreadWindowStates[documentThreadId] =
-                    this.call('local_storage', 'getItem', key);
-            }
+        var state = this.call('local_storage', 'getItem', this.DOCUMENT_THREAD_STATE_KEY);
+        if (!state) {
+            this.call('local_storage', 'setItem', this.DOCUMENT_THREAD_STATE_KEY, {});
+        } else {
+            this.isReady().then(this._updateDocumentThreadWindows.bind(this, state));
         }
-        this.isReady().then(this._updateDocumentThreadWindows.bind(this, this._documentThreadWindowStates));
         // listen to localStorage changes to synchronize DocumentThread's
         // windows between tabs
-        this.call('local_storage', 'onStorage', this, this._onStorage);
+        window.addEventListener('storage', this._onStorage.bind(this));
     },
 
     //--------------------------------------------------------------------------
@@ -54,22 +48,26 @@ MailManager.include({
      *
      * @override
      * @param {Object} data
+     * @param {Array} [data.author_id] [int, string] where int is server ID of
+     *   the author, and string is the name of the author.
      * @param {integer} data.id server ID of the message
-     * @param {Object} [options]
-     * @param {boolean} [options.postedFromDocumentThread=false]
+     * @param {string} [data.model] the model name of the document that this
+     *   message is related to.
+     * @param {integer} [data.res_id] the ID of the document that this message
+     *   is related to.
+     *
      */
-    addMessage: function (data, options) {
+    addMessage: function (data) {
         var message = this.getMessage(data.id);
         if (
             !message &&
-            options &&
-            options.postedFromDocumentThread
+            data.res_id &&
+            data.model &&
+            data.author_id &&
+            data.author_id[0] === session.partner_id
         ) {
             var key = this.DOCUMENT_THREAD_MESSAGE_KEY;
-            this.call('local_storage', 'setItem', key, {
-                messageData: data,
-                tabId: this._tabId,
-            });
+            this.call('local_storage', 'setItem', key, data);
         }
         return this._super.apply(this, arguments);
     },
@@ -153,11 +151,12 @@ MailManager.include({
      * @param {string} state.windowState ('closed', 'folded' or 'open')
      */
     updateDocumentThreadState: function (threadID, state) {
-        this._documentThreadWindowStates[threadID] = state;
-        this.call('local_storage', 'setItem', this.DOCUMENT_THREAD_STATE_KEY + '/' + threadID, {
-            state: state,
-            tabId: this._tabId,
+        var states = this.call('local_storage', 'getItem', this.DOCUMENT_THREAD_STATE_KEY);
+        states = _.omit(states, function (state) {
+            return state.windowState === 'closed';
         });
+        states[threadID] = state;
+        this.call('local_storage', 'setItem', this.DOCUMENT_THREAD_STATE_KEY, states);
     },
 
     //--------------------------------------------------------------------------
@@ -202,17 +201,10 @@ MailManager.include({
                 resModel: info[0],
             });
             if (state.windowState === 'closed') {
-                documentThread.close({
-                    skipCrossTabSync: true,
-                });
+                documentThread.close();
             } else {
-                documentThread.fold(state.windowState === 'folded', {
-                    skipCrossTabSync: true,
-                });
-                self.openThreadWindow(documentThread.getID(), {
-                    keepFoldState: true,
-                    skipCrossTabSync: true,
-                });
+                documentThread.fold(state.windowState === 'folded');
+                self.openThreadWindow(documentThread.getID(), { keepFoldState: true });
             }
         });
     },
@@ -228,27 +220,13 @@ MailManager.include({
      * @param {StorageEvent} ev
      */
     _onStorage: function (ev) {
-        var value;
-        try {
-            value = JSON.parse(ev.newValue);
-        } catch (err) {
-            return;
-        }
-        if (ev.key.indexOf(this.DOCUMENT_THREAD_STATE_KEY) === 0) {
-            if (value.tabId === this._tabId) {
-                return;
-            }
-            // key format: DOCUMENT_THREAD_STATE_KEY + '/' + threadId
-            var documentThreadId = ev.key.substring(this.DOCUMENT_THREAD_STATE_KEY.length+1);
-            var param = {};
-            param[documentThreadId] = value.state;
-            this._updateDocumentThreadWindows(param);
+        if (ev.key === this.DOCUMENT_THREAD_STATE_KEY) {
+            var state = this.call('local_storage', 'getItem', this.DOCUMENT_THREAD_STATE_KEY);
+            this._updateDocumentThreadWindows(state);
         } else if (ev.key === this.DOCUMENT_THREAD_MESSAGE_KEY) {
-            if (value.tabId === this._tabId) {
-                return;
-            }
-            if (value.messageData) {
-                this.addMessage(value.messageData);
+            var message = this.call('local_storage', 'getItem', this.DOCUMENT_THREAD_MESSAGE_KEY);
+            if (message) {
+                this.addMessage(message);
             }
         }
     },

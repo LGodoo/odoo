@@ -39,7 +39,7 @@ var ReportWidget = Widget.extend({
         this.do_action({
             type: 'ir.actions.client',
             tag: 'stock_report_generic',
-            name: $el.data('lot_name') !== undefined && $el.data('lot_name').toString(),
+            name: $el.data('lot_name'),
             context: {
                 active_id : $el.data('lot_id'),
                 active_model : 'stock.production.lot',

@@ -4,7 +4,7 @@
         <report
             id="action_report_holidayssummary"
             string="Leaves Summary"
-            model="hr.holidays.summary.dept"
+            model="hr.leave"
             report_type="qweb-pdf"
             name="hr_holidays.report_holidayssummary"
             file="hr_holidays.report_holidayssummary"

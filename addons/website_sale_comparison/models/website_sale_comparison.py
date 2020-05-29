@@ -9,7 +9,7 @@ class ProductAttributeCategory(models.Model):
     _description = "Product Attribute Category"
     _order = 'sequence'
 
-    name = fields.Char("Category Name", required=True, translate=True)
+    name = fields.Char("Category Name", required=True)
     sequence = fields.Integer("Sequence", default=10)
 
 

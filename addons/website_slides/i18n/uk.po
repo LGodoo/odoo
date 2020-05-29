@@ -1332,7 +1332,7 @@ msgstr "Опубліковано"
 #. module: website_slides
 #: model:ir.model.fields,field_description:website_slides.field_slide_channel__publish_template_id
 msgid "Published Template"
-msgstr "Опублікований шаблон"
+msgstr "Шаблон опублікування"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_detail_view
@@ -1555,7 +1555,7 @@ msgstr "Мітки..."
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.home
 msgid "The"
-msgstr "Цей"
+msgstr "В"
 
 #. module: website_slides
 #: model:ir.model.fields,help:website_slides.field_slide_slide__slide_type
@@ -1850,7 +1850,7 @@ msgstr "Youtube або Google Document URL"
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.slide_social_email
 msgid "by email!"
-msgstr "електронною поштою!"
+msgstr "по ел. пошті!"
 
 #. module: website_slides
 #: model_terms:ir.ui.view,arch_db:website_slides.home

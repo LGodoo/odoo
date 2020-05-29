@@ -8,14 +8,14 @@
 # Paolo Valier, 2018
 # Cécile Collart <cco@odoo.com>, 2018
 # Pietro Della Notte <pdellanotte@gmail.com>, 2018
-# Lorenzo Battistini <lb@takobi.online>, 2018
+# Lorenzo Battistini <lorenzo.battistini@agilebg.com>, 2018
 # Sergio Zanchetta <primes2h@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2018-12-19 08:20+0000\n"
 "PO-Revision-Date: 2018-08-24 09:17+0000\n"
 "Last-Translator: Sergio Zanchetta <primes2h@gmail.com>, 2019\n"
 "Language-Team: Italian (https://www.transifex.com/odoo/teams/41243/it/)\n"
@@ -32,8 +32,7 @@ msgid ""
 "<table style=\"width: 100%; border-spacing: 0; font-family: Helvetica,Arial,Verdana,sans-serif;\">\n"
 "    <tr>\n"
 "        <td align=\"center\" valign=\"top\" style=\"border-collapse: collapse; padding: 0\">\n"
-"            % set user = ctx.get('user', user)\n"
-"            % set company = user.company_id\n"
+"            % set company, user = ctx['company'], ctx['user']\n"
 "            % set data = object.compute_kpis(company, user)\n"
 "            % set tips = object.compute_tips(company, user)\n"
 "            % set kpi_actions = object.compute_kpis_actions(company, user)\n"
@@ -138,7 +137,7 @@ msgid ""
 "                <table style=\"width: 100%; max-width: 600px; margin-top: 5px; border: 1px solid #e7e7e7;\">\n"
 "                    <tr>\n"
 "                        <td style=\"border-collapse: collapse; background-color: #ffffff; line-height: 21px; padding: 0px 20px;\"><br/>\n"
-"                            <div style=\"color: #3d466e; line-height: 23px;\">${tips | safe}</div>\n"
+"                            <div style=\"color: #3d466e; line-height: 23px;\">${ctx['tip_description']|safe}</div>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                </table>\n"
@@ -159,7 +158,7 @@ msgid ""
 "            <table style=\"margin-top: 5px; border: 1px solid #e7e7e7; font-size: 15px; width: 100%; max-width: 600px;\">\n"
 "                <tr>\n"
 "                    <td style=\"border-collapse: collapse; margin: 0; padding: 10px 20px;\">\n"
-"                        % if user.has_group('base.group_system'):\n"
+"                        % if ctx['user'].has_group('base.group_system'): \n"
 "                            <div style=\"margin-top: 20px;\"> \n"
 "                                Want to customize the email?\n"
 "                                <a href=\"/web#view_type=form&amp;model=digest.digest&amp;id=${object.id}\" target=\"_blank\" style=\"color: #875A7B;\">Choose the metrics you care about</a>\n"
@@ -184,7 +183,7 @@ msgstr ""
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_mail_0
 msgid "${', '.join(users.mapped('name'))} signed up. Say hello in the"
-msgstr "${', '.join(users.mapped('name'))} si sono iscritti. Salutali nel"
+msgstr "${', '.join(users.mapped('name'))} si sono registrati. Saluta nel"
 
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_mail_0
@@ -219,8 +218,8 @@ msgstr "Attivata"
 #: model_terms:ir.ui.view,arch_db:digest.res_config_settings_view_form
 msgid "Add new users as recipient of a periodic email with key metrics"
 msgstr ""
-"Aggiunta di nuovi utenti come destinatari di un'e-mail periodica con "
-"metriche chiave"
+"Aggiunta di nuovi utenti come destinatari di un'email periodica con metriche"
+" chiave"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_tip__group_id
@@ -240,12 +239,12 @@ msgstr "Azienda"
 #. module: digest
 #: model:ir.model,name:digest.model_res_config_settings
 msgid "Config Settings"
-msgstr "Impostazioni di configurazione"
+msgstr "Impostazioni configurazione"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.res_config_settings_view_form
 msgid "Configure Digest Emails"
-msgstr "Configura e-mail di riepilogo"
+msgstr "Configura email di riepilogo"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__kpi_res_users_connected
@@ -258,8 +257,8 @@ msgid ""
 "Create or edit the mail template: you may get computed KPI's value using "
 "these fields:"
 msgstr ""
-"Creare o modificare il modello e-mail. Con questi campi è possibile ottenere"
-" KPI calcolati:"
+"Creare o modificare il modello email. Con questi campi è possibile ottenere "
+"KPI calcolati:"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__create_uid
@@ -297,7 +296,7 @@ msgstr "Riepilogo"
 #: model:ir.model.fields,field_description:digest.field_res_config_settings__digest_id
 #: model_terms:ir.ui.view,arch_db:digest.res_config_settings_view_form
 msgid "Digest Email"
-msgstr "E-mail di riepilogo"
+msgstr "Email di riepilogo"
 
 #. module: digest
 #: model:ir.actions.act_window,name:digest.digest_digest_action
@@ -307,7 +306,7 @@ msgstr "E-mail di riepilogo"
 #: model:ir.model.fields,field_description:digest.field_res_config_settings__digest_emails
 #: model:ir.ui.menu,name:digest.digest_menu
 msgid "Digest Emails"
-msgstr "E-mail di riepilogo"
+msgstr "Email di riepilogo"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.portal_digest_unsubscribed
@@ -328,7 +327,7 @@ msgstr "Nome visualizzato"
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__template_id
 msgid "Email Template"
-msgstr "Modello e-mail"
+msgstr "Modello email"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -343,7 +342,7 @@ msgstr "Raggruppa per"
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
 msgid "How to customize your digest?"
-msgstr "Personalizzazione del riepilogo"
+msgstr "Come personalizzare il riepilogo?"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__id
@@ -422,7 +421,7 @@ msgid ""
 "email."
 msgstr ""
 "I nuovi utenti vengono aggiunti automaticamente come destinatari della "
-"seguente e-mail di riepilogo."
+"seguente email di riepilogo."
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__next_run_date
@@ -438,7 +437,7 @@ msgstr "Periodicità"
 #. module: digest
 #: selection:digest.digest,periodicity:0
 msgid "Quarterly"
-msgstr "Trimestrale"
+msgstr "Quadrimestrale"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_digest__user_ids
@@ -469,7 +468,7 @@ msgstr "Stato"
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
 msgid "Subscribe"
-msgstr "Iscriviti"
+msgstr "Sottoscrivi"
 
 #. module: digest
 #: model:ir.model.fields,field_description:digest.field_digest_tip__tip_description
@@ -479,13 +478,13 @@ msgstr "Descrizione suggerimento"
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
 msgid "Unsubscribe me"
-msgstr "Annulla iscrizione"
+msgstr "Rimuovi sottoscrizione"
 
 #. module: digest
 #: model:ir.model.fields,help:digest.field_digest_tip__sequence
 msgid "Used to display digest tip in email template base on order"
 msgstr ""
-"Usato per visualizzare suggerimenti di riepilogo nel modello e-mail basato "
+"Usato per visualizzare suggerimenti di riepilogo nel modello email basato "
 "sull'ordine"
 
 #. module: digest
@@ -529,7 +528,7 @@ msgstr ""
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.portal_digest_unsubscribed
 msgid "You have been successfully unsubscribed from"
-msgstr "Iscrizione annullata con successo da"
+msgstr "Sottoscrizione rimossa con successo da"
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form
@@ -539,7 +538,7 @@ msgstr "È possibile aggiungere nuovi campi calcolati con Odoo Studio:"
 #. module: digest
 #: model_terms:digest.tip,tip_description:digest.digest_tip_mail_0
 msgid "company's discussion channel."
-msgstr "canale di discussione dell'azienda."
+msgstr "il canale di discussione dell'azienda."
 
 #. module: digest
 #: model_terms:ir.ui.view,arch_db:digest.digest_digest_view_form

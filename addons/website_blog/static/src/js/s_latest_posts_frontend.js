@@ -22,10 +22,7 @@ sAnimation.registry.js_get_posts = sAnimation.Class.extend({
         this.$target.empty(); // Compatibility with db that saved content inside by mistake
         this.$target.attr('contenteditable', 'False'); // Prevent user edition
 
-        var domain = [
-            ['website_published', '=', true],
-            ['post_date', '<=', moment().utc().locale('en').format('YYYY-MM-DD HH:mm:ss')],
-        ];
+        var domain = [['website_published', '=', true]];
         if (blogID) {
             domain.push(['blog_id', '=', parseInt(blogID)]);
         }
@@ -112,7 +109,7 @@ sAnimation.registry.js_get_posts = sAnimation.Class.extend({
             $progress.appendTo($loadingContainer);
             $post.appendTo(self.$target);
 
-            var m = $thumb.css('background-image').match(/url\(["']?(.+?)["']?\)/);
+            var m = $thumb.css('background-image').match(/url\(["']?(.+)["']?\)/);
             var bg = m ? m[1] : 'none';
             var loaded = false;
 

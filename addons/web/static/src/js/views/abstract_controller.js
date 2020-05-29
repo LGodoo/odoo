@@ -19,8 +19,6 @@ var ControlPanelMixin = require('web.ControlPanelMixin');
 var core = require('web.core');
 var AbstractAction = require('web.AbstractAction');
 
-var session = require('web.session');
-
 var QWeb = core.qweb;
 
 var AbstractController = AbstractAction.extend(ControlPanelMixin, {
@@ -495,7 +493,6 @@ var AbstractController = AbstractAction.extend(ControlPanelMixin, {
             this.dp.add(this._rpc({
                 model: model,
                 method: method,
-                context: session.user_context,
             })).then(function (action) {
                 if (action !== undefined) {
                     self.do_action(action, options);

@@ -8,7 +8,7 @@ import time
 
 from collections import namedtuple
 from os import listdir
-from threading import Event, Lock, Thread
+from threading import Thread, Lock
 
 from odoo import http
 
@@ -134,7 +134,6 @@ class Scale(Thread):
         self.path_to_scale = ''
         self.protocol = None
         self.disabled = False
-        self.weight_request_event = Event()
 
     def lockedstart(self):
         with self.lock:
@@ -262,8 +261,8 @@ class Scale(Thread):
             return None
 
     def get_weight(self):
+        self.repeats = 5
         self.disabled = False
-        self.weight_request_event.set()
         self.lockedstart()
         return self.weight
 
@@ -362,13 +361,11 @@ class Scale(Thread):
                         self.device = self.get_device()
                     if not self.device:
                         # retry later to support "plug and play"
-                        self.weight_request_event.clear()
-                        self.weight_request_event.wait(10)
+                        time.sleep(10)
                     else: 
                         self.disabled = self.protocol.disable
             else:
-                self.weight_request_event.clear()
-                self.weight_request_event.wait(10)
+                time.sleep(10)
 
 
 scale_thread = None

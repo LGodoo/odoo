@@ -45,10 +45,6 @@ msgid ""
 "                    compete at this level due to the technology currently\n"
 "                    employed by most industry providers.\""
 msgstr ""
-"„Odoo nyní soutěží na mnoha frontách, bez skutečných\n"
-"konkurentů kteří by ho sesadily z první pozice.\n"
-"Se spuštěním jejich integrovaného CMS a elektronického obchodu, pouze zvyšuje svoji pozici jednoho z vedoucích průkopníků v revoluci open source. Bude to trvat nejméně 5 let, než bude schopen jiný poskytovatel ERP nebo CMS konkurovat na této úrovni současné technologie\n"
-"kterou nabízí většina komerčních poskytovatelů. “"
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_2
@@ -102,7 +98,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "10 posts"
-msgstr "10 příspěvků"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
@@ -112,7 +108,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "3 posts"
-msgstr "3 příspěvky"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
@@ -122,17 +118,17 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "5 posts"
-msgstr "5 příspěvků"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "6 posts"
-msgstr "6 příspěvků"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "7 posts"
-msgstr "7 příspěvků"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
@@ -149,7 +145,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:53
 #, python-format
 msgid "<b>Click on Save</b> to record your changes."
-msgstr "<b>Kliknutím na Uložit</b> zapište své změny."
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
@@ -157,8 +153,6 @@ msgstr "<b>Kliknutím na Uložit</b> zapište své změny."
 #, python-format
 msgid "<b>Publish your blog post</b> to make it visible to your visitors."
 msgstr ""
-"<b>Publikujte svůj blogový příspěvek</b>, aby byl viditelný pro vaše "
-"návštěvníky."
 
 #. module: website_blog
 #. openerp-web
@@ -168,8 +162,6 @@ msgid ""
 "<b>That's it, your blog post is published!</b> Discover more features "
 "through the <i>Customize</i> menu."
 msgstr ""
-"<b>To je vše, váš blogový příspěvek je zveřejněn!</b> Objevte další funkce "
-"prostřednictvím nabídky <i>Přizpůsobit</i>."
 
 #. module: website_blog
 #. openerp-web
@@ -180,16 +172,11 @@ msgid ""
 " image or table, set bold or italic, etc. Drag and drop building blocks for "
 "more graphical blogs."
 msgstr ""
-"<b>Sem napište svůj příběh.</b> Pomocí horního panelu nástrojů můžete styl "
-"textu upravit: přidat obrázek nebo tabulku, nastavit tučné písmo nebo "
-"kurzívu atd. Přetáhněte stavební bloky pro více grafických blogů."
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_view_kanban
 msgid "<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Post date\" title=\"Post date\"/>"
 msgstr ""
-"<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Post date\" "
-"title=\"Datum publikování\"/>"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.tag_category
@@ -215,7 +202,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.latest_blogs
 msgid "<span class=\"fa fa-folder-open\"/> In"
-msgstr "<span class=\"fa fa-folder-open\"/> v"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_complete
@@ -234,7 +221,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "A new post"
-msgstr "Nový příspěvek"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_about_us
@@ -310,7 +297,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "Atom Feed"
-msgstr "Atom Feed"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_attachment_count
@@ -346,7 +333,7 @@ msgstr "Blog"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__name
 msgid "Blog Name"
-msgstr "Název blogu"
+msgstr ""
 
 #. module: website_blog
 #: code:addons/website_blog/models/website.py:22
@@ -356,7 +343,7 @@ msgstr "Název blogu"
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_search
 #, python-format
 msgid "Blog Post"
-msgstr "Blogový příspěvek"
+msgstr ""
 
 #. module: website_blog
 #: code:addons/website_blog/models/website.py:53
@@ -384,7 +371,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_list
 #, python-format
 msgid "Blog Posts"
-msgstr "Příspěvky blogu"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__subtitle
@@ -405,7 +392,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_tags
 msgid "Blog Tags"
-msgstr "Blogové značky"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_blog_blog
@@ -440,12 +427,12 @@ msgstr "Kategorie"
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
 #, python-format
 msgid "Change Cover"
-msgstr "Změnit úvodní stranu"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "Choose a blog"
-msgstr "Vybrat blog"
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
@@ -459,7 +446,7 @@ msgstr "Vyberte obrázek z knihovny."
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:30
 #, python-format
 msgid "Click here to change your post cover."
-msgstr "Kliknutím zde změnit Úvodní stranu"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -472,7 +459,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website.tour.blog.js:40
 #, python-format
 msgid "Click on <b>Save</b> to set the picture as cover."
-msgstr "Kliknutím na tlačítko <b>Uložit</b> nastavíte obrázek jako úvodní."
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.latest_blogs
@@ -548,12 +535,12 @@ msgstr "Facebook"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Filter Color"
-msgstr "Barva filtru"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Filter Intensity"
-msgstr "intenzita filtru"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_1
@@ -586,7 +573,7 @@ msgstr "Sledující"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_channel_ids
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_channel_ids
 msgid "Followers (Channels)"
-msgstr "Sledující (Kanály)"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_partner_ids
@@ -752,7 +739,7 @@ msgstr "Naposled upraveno"
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_big_picture
 msgid "Latest Posts"
-msgstr "Poslední příspěvky"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_2
@@ -839,7 +826,7 @@ msgstr ""
 #: code:addons/website_blog/static/src/js/website_blog.editor.js:37
 #, python-format
 msgid "New Blog Post"
-msgstr "Nový příspěvek do blogu"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_2
@@ -849,7 +836,7 @@ msgstr "Nové funkce byly spuštěny"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_history
 msgid "Next year"
-msgstr "Další rok"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -862,8 +849,6 @@ msgstr ""
 #, python-format
 msgid "No blog post was found. Make sure your posts are published."
 msgstr ""
-"Nebyl nalezen žádný příspěvek na blog. Ujistěte se, že jsou vaše příspěvky "
-"publikovány."
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -873,7 +858,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__visits
 msgid "No of Views"
-msgstr "Počet zobrazení"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.latest_blogs
@@ -943,17 +928,17 @@ msgstr "Po přezkoumání obsahu v mobilu zavřete náhled."
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_tags
 msgid "Others"
-msgstr "Ostatní"
+msgstr ""
 
 #. module: website_blog
 #: model:blog.blog,name:website_blog.blog_blog_1
 msgid "Our Blog"
-msgstr "Blog"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_blogs
 msgid "Our Blogs"
-msgstr "Naše blogy"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
@@ -963,7 +948,7 @@ msgstr ""
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag__post_ids
 msgid "Posts"
-msgstr "Příspěvky"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_1
@@ -982,7 +967,7 @@ msgstr "Publikováno"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__published_date
 msgid "Published Date"
-msgstr "Datum publikování"
+msgstr ""
 
 #. module: website_blog
 #: model:mail.message.subtype,description:website_blog.mt_blog_blog_published
@@ -1003,7 +988,7 @@ msgstr "Datum vydání"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
 msgid "Purple"
-msgstr "Fialový"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
@@ -1110,7 +1095,7 @@ msgstr "Stav"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Stay updated :"
-msgstr "Zůstaňte připojeni:"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__subtitle
@@ -1121,7 +1106,7 @@ msgstr "Podtitulek"
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_complete
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_post_complete_read_next
 msgid "Subtitle"
-msgstr "Podtitulek"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.ui.menu,name:website_blog.menu_website_blog_tag_category_global
@@ -1137,7 +1122,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_category_form
 msgid "Tag Category Form"
-msgstr "Formulář kategorií značek"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_form
@@ -1147,7 +1132,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_tree
 msgid "Tag List"
-msgstr "Seznam značek"
+msgstr ""
 
 #. module: website_blog
 #: sql_constraint:blog.tag.category:0
@@ -1157,7 +1142,7 @@ msgstr ""
 #. module: website_blog
 #: sql_constraint:blog.tag:0
 msgid "Tag name already exists !"
-msgstr "Název značky již existuje!"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__tag_ids
@@ -1284,7 +1269,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_form
 msgid "Used in:"
-msgstr "Použitý v:"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_published
@@ -1359,9 +1344,6 @@ msgid ""
 "Write a small text here for when <b>new visitors</b> find your website\n"
 "            through your <b>blog entries</b>, referenced in Google."
 msgstr ""
-"Sem napište malý text, díky kterému <b>noví návštěvníci</b> najdou vaše "
-"webové stránky prostřednictvím vašich <b>příspěvků blogu</b>, na které "
-"odkazuje Google."
 
 #. module: website_blog
 #. openerp-web
@@ -1381,14 +1363,11 @@ msgid ""
 "You should <strong>add a banner on the top</strong> as it is a frequent landing page for new visitors.\n"
 "                   <span class=\"text-muted\">This box will not be visible to your visitors.</span>"
 msgstr ""
-"Měli byste přidat <strong>banner nahoru</strong>, protože tam je častá "
-"vstupní stránka pro nové návštěvníky. <span class=\"text-muted\">Toto pole "
-"nebude pro vaše návštěvníky viditelné.</span>"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Youtube"
-msgstr "Youtube"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
@@ -1421,7 +1400,7 @@ msgstr "funkční"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
 msgid "has been published on the"
-msgstr "byl publikován na "
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short

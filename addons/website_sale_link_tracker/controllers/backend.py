@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from datetime import datetime, time
-
 from odoo import http
 from odoo.addons.website_sale.controllers.backend import WebsiteSaleBackend
-from odoo.fields import Date
 from odoo.http import request
 
 
@@ -13,10 +10,8 @@ class WebsiteSaleLinkTrackerBackend(WebsiteSaleBackend):
 
     @http.route()
     def fetch_dashboard_data(self, website_id, date_from, date_to):
-        datetime_from = datetime.combine(Date.from_string(date_from), time.min)
-        datetime_to = datetime.combine(Date.from_string(date_to), time.max)
         results = super(WebsiteSaleLinkTrackerBackend, self).fetch_dashboard_data(website_id, date_from, date_to)
-        results['dashboards']['sales']['utm_graph'] = self.fetch_utm_data(datetime_from, datetime_to)
+        results['dashboards']['sales']['utm_graph'] = self.fetch_utm_data(date_from, date_to)
         return results
 
     def fetch_utm_data(self, date_from, date_to):

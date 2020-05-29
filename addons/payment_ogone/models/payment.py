@@ -15,7 +15,6 @@ from odoo import api, fields, models, _
 from odoo.addons.payment.models.payment_acquirer import ValidationError
 from odoo.addons.payment_ogone.controllers.main import OgoneController
 from odoo.addons.payment_ogone.data import ogone
-from odoo.http import request
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT, ustr
 from odoo.tools.float_utils import float_compare, float_repr, float_round
 
@@ -80,7 +79,7 @@ class PaymentAcquirerOgone(models.Model):
                 return True
             else:
                 # SHA-OUT keys
-                # source https://payment-services.ingenico.com/int/en/ogone/support/guides/integration guides/e-commerce/transaction-feedback
+                # source https://viveum.v-psp.com/Ncol/Viveum_e-Com-BAS_EN.pdf
                 keys = [
                     'AAVADDRESS',
                     'AAVCHECK',
@@ -97,11 +96,8 @@ class PaymentAcquirerOgone(models.Model):
                     'CARDNO',
                     'CCCTY',
                     'CN',
-                    'COLLECTOR_BIC',
-                    'COLLECTOR_IBAN',
                     'COMPLUS',
                     'CREATION_STATUS',
-                    'CREDITDEBIT',
                     'CURRENCY',
                     'CVCCHECK',
                     'DCC_COMMPERCENTAGE',
@@ -113,38 +109,35 @@ class PaymentAcquirerOgone(models.Model):
                     'DCC_INDICATOR',
                     'DCC_MARGINPERCENTAGE',
                     'DCC_VALIDHOURS',
-                    'DEVICEID',
                     'DIGESTCARDNO',
                     'ECI',
                     'ED',
-                    'EMAIL',
                     'ENCCARDNO',
                     'FXAMOUNT',
                     'FXCURRENCY',
+                    'IBAN',
                     'IP',
                     'IPCTY',
-                    'MANDATEID',
-                    'MOBILEMODE',
                     'NBREMAILUSAGE',
                     'NBRIPUSAGE',
                     'NBRIPUSAGE_ALLTX',
                     'NBRUSAGE',
                     'NCERROR',
+                    'NCERRORCARDNO',
+                    'NCERRORCN',
+                    'NCERRORCVC',
+                    'NCERRORED',
                     'ORDERID',
                     'PAYID',
                     'PAYIDSUB',
-                    'PAYMENT_REFERENCE',
                     'PM',
                     'SCO_CATEGORY',
                     'SCORING',
-                    'SEQUENCETYPE',
-                    'SIGNDATE',
                     'STATUS',
                     'SUBBRAND',
                     'SUBSCRIPTION_ID',
-                    'TICKET',
                     'TRXDATE',
-                    'VC',
+                    'VC'
                 ]
                 return key.upper() in keys
 
@@ -155,7 +148,7 @@ class PaymentAcquirerOgone(models.Model):
         return shasign
 
     def ogone_form_generate_values(self, values):
-        base_url = self.get_base_url()
+        base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         ogone_tx_values = dict(values)
         param_plus = {
             'return_url': ogone_tx_values.pop('return_url', False)
@@ -365,9 +358,6 @@ class PaymentTxOgone(models.Model):
             'RTIMEOUT': 30,
             'PARAMPLUS' : url_encode(param_plus)
         }
-
-        if request:
-            data['REMOTE_ADDR'] = request.httprequest.remote_addr
 
         if kwargs.get('3d_secure'):
             data.update({

@@ -41,8 +41,6 @@ var SnippetEditor = Widget.extend({
         this.$target = $(target);
         this.$target.data('snippet-editor', this);
         this.templateOptions = templateOptions;
-
-        this.__isStarted = $.Deferred();
     },
     /**
      * @override
@@ -82,16 +80,7 @@ var SnippetEditor = Widget.extend({
                     return $clone;
                 },
                 start: _.bind(self._onDragAndDropStart, self),
-                stop: function () {
-                    // Delay our stop handler so that some summernote handlers
-                    // which occur on mouseup (and are themself delayed) are
-                    // executed first (this prevents the library to crash
-                    // because our stop handler may change the DOM).
-                    var args = arguments;
-                    setTimeout(function () {
-                        self._onDragAndDropStop.apply(self, args);
-                    }, 0);
-                },
+                stop: _.bind(self._onDragAndDropStop, self)
             });
         }
 
@@ -105,9 +94,7 @@ var SnippetEditor = Widget.extend({
             }
         });
 
-        return $.when.apply($, defs).then(function () {
-            self.__isStarted.resolve(self);
-        });
+        return $.when.apply($, defs);
     },
     /**
      * @override
@@ -262,34 +249,6 @@ var SnippetEditor = Widget.extend({
             return false;
         }
     },
-    /**
-     * Clones the current snippet.
-     *
-     * @private
-     * @param {boolean} recordUndo
-     */
-    clone: function (recordUndo) {
-        this.trigger_up('snippet_will_be_cloned', {$target: this.$target});
-
-        var $clone = this.$target.clone(false);
-
-        if (recordUndo) {
-            this.trigger_up('request_history_undo_record', {$target: this.$target});
-        }
-
-        this.$target.after($clone);
-        this.trigger_up('call_for_each_child_snippet', {
-            $snippet: $clone,
-            callback: function (editor, $snippet) {
-                for (var i in editor.styles) {
-                    editor.styles[i].onClone({
-                        isCurrent: ($snippet.is($clone)),
-                    });
-                }
-            },
-        });
-        this.trigger_up('snippet_cloned', {$target: $clone, $origin: this.$target});
-    },
 
     //--------------------------------------------------------------------------
     // Private
@@ -341,14 +300,7 @@ var SnippetEditor = Widget.extend({
                 self.$el,
                 val.data
             );
-            var key = optionName || _.uniqueId('option');
-            if (self.styles[key]) {
-                // If two snippet options use the same option name (and so use
-                // the same JS option), store the subsequent ones with a unique
-                // ID (TODO improve)
-                key = _.uniqueId(key);
-            }
-            self.styles[key] = option;
+            self.styles[optionName || _.uniqueId('option')] = option;
             option.__order = i++;
             return option.attachTo($el);
         });
@@ -388,7 +340,22 @@ var SnippetEditor = Widget.extend({
      */
     _onCloneClick: function (ev) {
         ev.preventDefault();
-        this.clone(true);
+        var $clone = this.$target.clone(false);
+
+        this.trigger_up('request_history_undo_record', {$target: this.$target});
+
+        this.$target.after($clone);
+        this.trigger_up('call_for_each_child_snippet', {
+            $snippet: $clone,
+            callback: function (editor, $snippet) {
+                for (var i in editor.styles) {
+                    editor.styles[i].onClone({
+                        isCurrent: ($snippet.is($clone)),
+                    });
+                }
+            },
+        });
+        this.trigger_up('snippet_cloned', {$target: $clone});
     },
     /**
      * Called when the overlay dimensions/positions should be recomputed.
@@ -406,7 +373,6 @@ var SnippetEditor = Widget.extend({
      */
     _onDragAndDropStart: function () {
         var self = this;
-        this.dropped = false;
         self.size = {
             width: self.$target.width(),
             height: self.$target.height()
@@ -452,20 +418,9 @@ var SnippetEditor = Widget.extend({
      * 'move' button.
      *
      * @private
-     * @param {Event} ev
-     * @param {Object} ui
      */
-    _onDragAndDropStop: function (ev, ui) {
+    _onDragAndDropStop: function () {
         var self = this;
-
-        // TODO lot of this is duplicated code of the d&d feature of snippets
-        if (!this.dropped) {
-            var $el = $.nearest({x: ui.position.left, y: ui.position.top}, '.oe_drop_zone').first();
-            if ($el.length) {
-                $el.after(this.$target);
-                this.dropped = true;
-            }
-        }
 
         $('.oe_drop_zone').droppable('destroy').remove();
 
@@ -513,33 +468,26 @@ var SnippetEditor = Widget.extend({
      * @param {OdooEvent} ev
      */
     _onOptionUpdate: function (ev) {
-        var self = this;
         // If multiple option names are given, we suppose it should not be
         // propagated to parent editor
         if (ev.data.optionNames) {
             ev.stopPropagation();
+            var self = this;
             _.each(ev.data.optionNames, function (name) {
-                notifyForEachMatchedOption(name);
+                var option = self.styles[name];
+                if (option) {
+                    option.notify(ev.data.name, ev.data.data);
+                }
             });
         }
         // If one option name is given, we suppose it should be handle by the
         // first parent editor which can do it
         if (ev.data.optionName) {
-            if (notifyForEachMatchedOption(ev.data.optionName)) {
+            var option = this.styles[ev.data.optionName];
+            if (option) {
                 ev.stopPropagation();
+                option.notify(ev.data.name, ev.data.data);
             }
-        }
-
-        function notifyForEachMatchedOption(name) {
-            var regex = new RegExp('^' + name + '\\d+$');
-            var hasOption = false;
-            for (var key in self.styles) {
-                if (key === name || regex.test(key)) {
-                    self.styles[key].notify(ev.data.name, ev.data.data);
-                    hasOption = true;
-                }
-            }
-            return hasOption;
         }
     },
     /**
@@ -576,7 +524,6 @@ var SnippetsMenu = Widget.extend({
     custom_events: {
         activate_insertion_zones: '_onActivateInsertionZones',
         call_for_each_child_snippet: '_onCallForEachChildSnippet',
-        clone_snippet: '_onCloneSnippet',
         deactivate_snippet: '_onDeactivateSnippet',
         drag_and_drop_stop: '_onDragAndDropStop',
         go_to_parent: '_onGoToParent',
@@ -852,7 +799,7 @@ var SnippetsMenu = Widget.extend({
              && (float_next === 'left' || float_next === 'right')) {
                 zone.remove();
             } else if (disp_prev !== null && disp_next !== null
-             && disp_prev.indexOf('inline') >= 0 && disp_next.indexOf('inline') >= 0) {
+             && disp_prev !== 'block' && disp_next !== 'block') {
                 zone.remove();
             }
         });
@@ -903,7 +850,6 @@ var SnippetsMenu = Widget.extend({
         _.each(this.snippetEditors, function (snippetEditor) {
             snippetEditor.destroy();
         });
-        this.snippetEditors.splice(0);
     },
     /**
      * Updates the cover dimensions of the current snippet editor.
@@ -1197,7 +1143,7 @@ var SnippetsMenu = Widget.extend({
         var self = this;
         var snippetEditor = $snippet.data('snippet-editor');
         if (snippetEditor) {
-            return snippetEditor.__isStarted;
+            return $.when(snippetEditor);
         }
 
         var def;
@@ -1207,15 +1153,6 @@ var SnippetsMenu = Widget.extend({
         }
 
         return $.when(def).then(function (parentEditor) {
-            // When reaching this position, after the Promise resolution, the
-            // snippet editor instance might have been created by another call
-            // to _createSnippetEditor... the whole logic should be improved
-            // to avoid doing this here.
-            snippetEditor = $snippet.data('snippet-editor');
-            if (snippetEditor) {
-                return snippetEditor.__isStarted;
-            }
-
             snippetEditor = new SnippetEditor(parentEditor || self, $snippet, self.templateOptions);
             self.snippetEditors.push(snippetEditor);
             return snippetEditor.appendTo(self.$snippetEditorArea);
@@ -1441,19 +1378,6 @@ var SnippetsMenu = Widget.extend({
      */
     _onCleanForSaveDemand: function (ev) {
         this.cleanForSave();
-    },
-    /**
-     * Called when a child editor asks to clone a snippet, allows to correctly
-     * call the _onClone methods if the element's editor has one.
-     *
-     * @private
-     * @param {OdooEvent} ev
-     */
-    _onCloneSnippet: function (ev) {
-        ev.stopPropagation();
-        this._createSnippetEditor(ev.data.$snippet).then(function (editor) {
-            editor.clone();
-        });
     },
     /**
      * Called when a child editor asks to deactivate the current snippet

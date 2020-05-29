@@ -3,6 +3,7 @@
 
 import base64
 
+from email.utils import formataddr
 from unittest.mock import patch
 
 from odoo.addons.test_mail.tests.common import BaseFunctionalTest, MockEmails, TestRecipients
@@ -10,7 +11,7 @@ from odoo.addons.test_mail.tests.common import mail_new_test_user
 from odoo.addons.test_mail.data.test_mail_data import MAIL_TEMPLATE_PLAINTEXT
 from odoo.addons.test_mail.models.test_mail_models import MailTestSimple
 from odoo.exceptions import AccessError
-from odoo.tools import mute_logger, formataddr
+from odoo.tools import mute_logger
 
 
 class TestMessagePost(BaseFunctionalTest, MockEmails, TestRecipients):

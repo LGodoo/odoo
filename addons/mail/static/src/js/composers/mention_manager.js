@@ -53,7 +53,7 @@ var MentionManager = Widget.extend({
         var listener = _.findWhere(this._listeners, { delimiter: delimiter });
         if (listener) {
             var escapedVal = _.escape(this._composer.$input.val());
-            var inputMentions = escapedVal.match(new RegExp(delimiter+'[^ ]+(?= |&nbsp;|$)', 'g'));
+            var inputMentions = escapedVal.match(new RegExp(delimiter+'[^ ]+(?= |&nbsp;)', 'g'));
             return this._validateSelection(listener.selection, inputMentions);
         }
         return [];
@@ -166,8 +166,9 @@ var MentionManager = Widget.extend({
                                                       listener.model,
                                                       listener.delimiter,
                                                       matchName);
-                    substrings.push(s.substring(startIndex, match.index));
-                    substrings.push(processedText);
+                    var subtext = s.substring(startIndex, endIndex)
+                                   .replace(match[0], processedText);
+                    substrings.push(subtext);
                     startIndex = endIndex;
                 }
                 substrings.push(s.substring(startIndex, s.length));
@@ -257,7 +258,7 @@ var MentionManager = Widget.extend({
         // create the regex of all mention's names
         var names = _.pluck(listener.selection, 'name');
         var escapedNames = _.map(names, function (str) {
-            return "("+_.str.escapeRegExp(listener.delimiter+str)+")(?= |&nbsp;|$)";
+            return "("+_.str.escapeRegExp(listener.delimiter+str)+")";
         });
         var regexStr = escapedNames.join('|');
         // extract matches
@@ -313,10 +314,7 @@ var MentionManager = Widget.extend({
         }
         if (suggestions.length) {
             this.$el.html(QWeb.render(this._activeListener.suggestionTemplate, {
-                suggestions: _.map(suggestions, function (suggestion) {
-                    // mention manager stores escaped suggestion names
-                    return _.extend({}, suggestion, { name: _.unescape(suggestion.name) });
-                })
+                suggestions: suggestions,
             }));
             this.$el
                 .addClass('show')
@@ -385,9 +383,8 @@ var MentionManager = Widget.extend({
         if (!substitution) {
             // no substitution string given, so use the mention name instead
             // replace white spaces with non-breaking spaces to facilitate
-            // mentions detection in text.
-            // mention manager stores escaped suggestion names
-            selectedSuggestion.name = _.unescape(selectedSuggestion.name.replace(/ /g, NON_BREAKING_SPACE));
+            // mentions detection in text
+            selectedSuggestion.name = selectedSuggestion.name.replace(/ /g, NON_BREAKING_SPACE);
             substitution = this._activeListener.delimiter + selectedSuggestion.name;
         }
         var getMentionIndex = function (matches, cursorPosition) {

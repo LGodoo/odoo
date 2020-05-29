@@ -10,8 +10,8 @@
 # Güven YILMAZ <guvenyilmaz@outlook.com.tr>, 2018
 # Ertuğrul Güreş <ertugrulg@projetgrup.com>, 2018
 # İlknur Püskül <ilknurpuskull@gmail.com>, 2018
+# Umur Akın <umura@projetgrup.com>, 2018
 # Buket Şeker <buket_skr@hotmail.com>, 2018
-# Umur Akın <umura@projetgrup.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
-"Last-Translator: Umur Akın <umura@projetgrup.com>, 2019\n"
+"Last-Translator: Buket Şeker <buket_skr@hotmail.com>, 2018\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +37,7 @@ msgstr "\"Check Out\" zamanı \"Check In\" zamanından önce olamaz."
 #: code:addons/hr_attendance/models/hr_attendance.py:27
 #, python-format
 msgid "%(empl_name)s from %(check_in)s"
-msgstr "%(empl_name)s kimden %(check_in)s"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:32
@@ -53,23 +53,21 @@ msgid ""
 "<b>Warning! Last check in was over 12 hours ago.</b><br/>If this isn't "
 "right, please contact Human Resource staff"
 msgstr ""
-"<b>Uyarı! Son giriş üzerinden 12 saat önceydi.</b><br/>Eğer bu doğru "
-"değilse, lütfen İnsan Kaynakları personeli ile bağlantı kurun"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_hr_attendance_kanban
 msgid "<i class=\"fa fa-calendar\" aria-label=\"Period\" role=\"img\" title=\"Period\"/>"
-msgstr "<i class=\"fa fa-calendar\" aria-label=\"Period\" role=\"img\" title=\"Period\"/>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Employee PIN</span>"
-msgstr "<span class=\"o_form_label\">Personel PIN</span>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 msgid "<span class=\"o_stat_text\">Attendance</span>"
-msgstr "<span class=\"o_stat_text\">Katılım</span>"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_employees_view_kanban
@@ -79,9 +77,6 @@ msgid ""
 "oe_hr_attendance_status_green\" role=\"img\" aria-label=\"Available\" "
 "title=\"Available\"/>"
 msgstr ""
-"<span id=\"oe_hr_attendance_status\" class=\"fa fa-circle "
-"oe_hr_attendance_status_green\" role=\"img\" aria-label=\"Available\" "
-"title=\"Available\"/>"
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_employees_view_kanban
@@ -91,9 +86,6 @@ msgid ""
 "oe_hr_attendance_status_red\" role=\"img\" aria-label=\"Not available\" "
 "title=\"Not available\"/>"
 msgstr ""
-"<span id=\"oe_hr_attendance_status\" class=\"fa fa-circle "
-"oe_hr_attendance_status_red\" role=\"img\" aria-label=\"Not available\" "
-"title=\"Not available\"/>"
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_employee_attendance_action_kanban
@@ -101,8 +93,6 @@ msgid ""
 "Add a few employees to be able to select an employee here and perform his check in / check out.\n"
 "                To create employees go to the Employees menu."
 msgstr ""
-"Bir personel seçebilmek ve onun giriş/çıkış kaydını oluşturabilmek için bir kaç çalışan oluşturun.\n"
-"Personel oluşturmak için Personeller menüsüne gidin."
 
 #. module: hr_attendance
 #. openerp-web
@@ -137,7 +127,7 @@ msgstr "Devam Analizi"
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_employee__attendance_state
 msgid "Attendance Status"
-msgstr "Katılım Durumu"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.actions.act_window,name:hr_attendance.hr_attendance_action
@@ -170,8 +160,6 @@ msgid ""
 "Cannot create new attendance record for %(empl_name)s, the employee hasn't "
 "checked out since %(datetime)s"
 msgstr ""
-"Yeni kayıt kaydını %(empl_name)s için oluşturulamaz, "
-"personel%(datetime)starihinden beri çıkış yapmamış"
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_attendance.py:69
@@ -181,8 +169,6 @@ msgid ""
 "Cannot create new attendance record for %(empl_name)s, the employee was "
 "already checked in on %(datetime)s"
 msgstr ""
-"Yeni katılım kaydı %(empl_name)s için oluşturulamaz, personel "
-"%(datetime)starihinde çoktan giriş yapmış."
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:109
@@ -198,8 +184,6 @@ msgid ""
 "check in. Your attendances have probably been modified manually by human "
 "resources."
 msgstr ""
-"%(empl_name)s çıkışı yapılamıyor, karşılık gelen bir giriş bulunamadı. "
-"Katılımlarınız muhtemelen insan kaynakları tarafından el ile değiştirildi."
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_in
@@ -214,7 +198,7 @@ msgstr "Giriş/Çıkış"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "Check In Date"
-msgstr "Giriş Tarihi"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__check_out
@@ -224,7 +208,7 @@ msgstr "Çıkış"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.hr_attendance_view_filter
 msgid "Check Out Date"
-msgstr "Çıkış Tarihi"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.res_config_settings_view_form
@@ -261,7 +245,7 @@ msgstr "Çıkış kaydı yapıldı"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:75
 #, python-format
 msgid "Click to"
-msgstr "Tıklanacak"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -284,7 +268,7 @@ msgstr "Yapılandırma"
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_employee_attendance_action_kanban
 msgid "Create a new employee"
-msgstr "Yeni bir personel oluştur"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__create_uid
@@ -391,7 +375,7 @@ msgstr "Geri döndüğüne sevindim, uzun zaman olmuştu!"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:137
 #, python-format
 msgid "Go back"
-msgstr "Geri dön"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -551,23 +535,23 @@ msgstr "Çıkış kaydı yok"
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action
 msgid "No attendance records found"
-msgstr "Katılım kayıtları bulunamadı"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.actions.act_window,help:hr_attendance.hr_attendance_action_employee
 msgid "No attendance records to display"
-msgstr "Görüntülenecek katılım kayıtları mevcut değil"
+msgstr ""
 
 #. module: hr_attendance
 #: code:addons/hr_attendance/models/hr_employee.py:73
 #, python-format
 msgid "No employee corresponding to barcode %(barcode)s"
-msgstr "Bu barkoda karşılık gelen personel bulunamadı %(barcode)s"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_form_inherit_hr_attendance
 msgid "Not available"
-msgstr "Mevcut değil"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -597,7 +581,7 @@ msgstr ""
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "Please enter your PIN to"
-msgstr "Lütfen PIN'i girin"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -660,17 +644,11 @@ msgstr "Çıkış"
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_filter_inherit_hr_attendance
 msgid "Signed In"
-msgstr "Giriş"
+msgstr ""
 
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.view_employee_filter_inherit_hr_attendance
 msgid "Signed Out"
-msgstr "Çıkış"
-
-#. module: hr_attendance
-#: code:addons/hr_attendance/models/hr_employee.py:155
-#, python-format
-msgid "Such grouping is not allowed."
 msgstr ""
 
 #. module: hr_attendance
@@ -737,7 +715,7 @@ msgstr "Kiosk Modu'nda giriş için PIN kodu kullanın"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:71
 #, python-format
 msgid "Want to check out?"
-msgstr "Çıkış yapmak mı istiyorsunuz?"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -747,8 +725,6 @@ msgid ""
 "Warning : Your user should be linked to an employee to use attendance. "
 "Please contact your administrator."
 msgstr ""
-"Uyarı : Kullanıcı, katılımı kullanmak için bir personel ile bağlı olmalı. "
-"Lütfen yöneticiniz ile irtibata geçin."
 
 #. module: hr_attendance
 #. openerp-web
@@ -770,7 +746,7 @@ msgstr "Hoşgeldiniz"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:71
 #, python-format
 msgid "Welcome!"
-msgstr "Hoşgeldiniz!"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,field_description:hr_attendance.field_hr_attendance__worked_hours
@@ -792,7 +768,7 @@ msgstr "Bir katılımı çoğaltamazsınız."
 #. module: hr_attendance
 #: model_terms:ir.ui.view,arch_db:hr_attendance.print_employee_badge
 msgid "barcode"
-msgstr "barkod"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -801,7 +777,7 @@ msgstr "barkod"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "check in"
-msgstr "giriş"
+msgstr ""
 
 #. module: hr_attendance
 #. openerp-web
@@ -810,7 +786,7 @@ msgstr "giriş"
 #: code:addons/hr_attendance/static/src/xml/attendance.xml:78
 #, python-format
 msgid "check out"
-msgstr "çıkış"
+msgstr ""
 
 #. module: hr_attendance
 #: model:ir.model.fields,help:hr_attendance.field_hr_employee__attendance_ids

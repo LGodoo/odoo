@@ -6,15 +6,13 @@
 # Martin Trigaux, 2018
 # ExcaliberX <excaliberx@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
-# ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
-"PO-Revision-Date: 2018-08-24 09:22+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019\n"
+"PO-Revision-Date: 2018-09-18 09:49+0000\n"
+"Last-Translator: Yihya Hugirat <hugirat@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,28 +24,28 @@ msgstr ""
 #: code:addons/payment_sips/models/payment.py:164
 #, python-format
 msgid "; multiple order found"
-msgstr "נמצאו הזמנות מרובות; "
+msgstr ""
 
 #. module: payment_sips
 #: code:addons/payment_sips/models/payment.py:162
 #, python-format
 msgid "; no order found"
-msgstr "לא נמצאה הזמנה; "
+msgstr ""
 
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Adyen"
-msgstr "Adyen"
+msgstr ""
 
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Authorize.Net"
-msgstr "Authorize.Net"
+msgstr ""
 
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Buckaroo"
-msgstr "Buckaroo"
+msgstr ""
 
 #. module: payment_sips
 #: code:addons/payment_sips/models/payment.py:75
@@ -69,7 +67,7 @@ msgstr ""
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Manual Configuration"
-msgstr "תצורה ידנית"
+msgstr ""
 
 #. module: payment_sips
 #: model:ir.model.fields,field_description:payment_sips.field_payment_acquirer__sips_merchant_id
@@ -79,12 +77,12 @@ msgstr "זיהוי סוחר"
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Ogone"
-msgstr "Ogone"
+msgstr ""
 
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "PayUmoney"
-msgstr "PayUmoney"
+msgstr ""
 
 #. module: payment_sips
 #: model:ir.model,name:payment_sips.model_payment_acquirer
@@ -99,7 +97,7 @@ msgstr "עסקת תשלום"
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Paypal"
-msgstr "Paypal"
+msgstr ""
 
 #. module: payment_sips
 #: model:ir.model.fields,field_description:payment_sips.field_payment_acquirer__sips_prod_url
@@ -119,7 +117,7 @@ msgstr ""
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Sips"
-msgstr "Sips"
+msgstr ""
 
 #. module: payment_sips
 #: code:addons/payment_sips/models/payment.py:160
@@ -130,7 +128,7 @@ msgstr ""
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Stripe"
-msgstr "Stripe"
+msgstr ""
 
 #. module: payment_sips
 #: model:ir.model.fields,field_description:payment_sips.field_payment_acquirer__sips_test_url
@@ -145,4 +143,4 @@ msgstr ""
 #. module: payment_sips
 #: selection:payment.acquirer,provider:0
 msgid "Wire Transfer"
-msgstr "העברה בנקאית"
+msgstr ""

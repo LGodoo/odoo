@@ -313,7 +313,7 @@ msgstr ""
 
 #. module: im_livechat
 #: model:ir.model,name:im_livechat.model_mail_channel
-msgid "Discussion Channel"
+msgid "Discussion channel"
 msgstr ""
 
 #. module: im_livechat

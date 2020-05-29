@@ -45,8 +45,8 @@ class SendSMS(models.TransientModel):
                 return number
             if not phonenumbers.is_possible_number(phone_nbr) or not phonenumbers.is_valid_number(phone_nbr):
                 return number
-            phone_fmt = phonenumbers.PhoneNumberFormat.E164
-            return phonenumbers.format_number(phone_nbr, phone_fmt)
+            phone_fmt = phonenumbers.PhoneNumberFormat.INTERNATIONAL
+            return phonenumbers.format_number(phone_nbr, phone_fmt).replace(' ', '')
         else:
             return number
 
@@ -62,11 +62,12 @@ class SendSMS(models.TransientModel):
     @api.model
     def default_get(self, fields):
         result = super(SendSMS, self).default_get(fields)
-        active_model = self.env.context.get('active_model')
 
-        if not self.env.context.get('default_recipients') and active_model and hasattr(self.env[active_model], '_get_default_sms_recipients'):
-            model = self.env[active_model]
-            records = self._get_records(model)
+        active_model = self.env.context.get('active_model')
+        model = self.env[active_model]
+
+        records = self._get_records(model)
+        if getattr(records, '_get_default_sms_recipients'):
             partners = records._get_default_sms_recipients()
             phone_numbers = []
             no_phone_partners = []
@@ -83,12 +84,12 @@ class SendSMS(models.TransientModel):
         return result
 
     def action_send_sms(self):
-        numbers = [number.strip() for number in self.recipients.split(',') if number.strip()]
+        numbers = self.recipients.split(',')
 
         active_model = self.env.context.get('active_model')
-        if active_model and hasattr(self.env[active_model], 'message_post_send_sms'):
-            model = self.env[active_model]
-            records = self._get_records(model)
+        model = self.env[active_model]
+        records = self._get_records(model)
+        if getattr(records, 'message_post_send_sms'):
             records.message_post_send_sms(self.message, numbers=numbers)
         else:
             self.env['sms.api']._send_sms(numbers, self.message)

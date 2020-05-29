@@ -30,18 +30,12 @@ def geo_find(addr, apikey=False):
     if result['status'] != 'OK':
         if result.get('error_message'):
             _logger.error(result['error_message'])
-            error_msg = _('Unable to geolocate, received the error:\n%s'
-                          '\n\nGoogle made this a paid feature.\n'
-                          'You should first enable billing on your Google account.\n'
-                          'Then, go to Developer Console, and enable the APIs:\n'
-                          'Geocoding, Maps Static, Maps Javascript.\n'
-                          % result['error_message'])
-            raise UserError(error_msg)
+        return None
 
     try:
         geo = result['results'][0]['geometry']['location']
         return float(geo['lat']), float(geo['lng'])
-    except (KeyError, ValueError, IndexError):
+    except (KeyError, ValueError):
         return None
 
 

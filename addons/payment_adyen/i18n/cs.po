@@ -76,7 +76,7 @@ msgstr "Buckaroo"
 #. module: payment_adyen
 #: model_terms:ir.ui.view,arch_db:payment_adyen.acquirer_form_adyen
 msgid "How to configure your Adyen account?"
-msgstr "Jak nakonfigurovat účet Adyen?"
+msgstr ""
 
 #. module: payment_adyen
 #: selection:payment.acquirer,provider:0
@@ -91,12 +91,12 @@ msgstr ""
 #. module: payment_adyen
 #: selection:payment.acquirer,provider:0
 msgid "Ogone"
-msgstr "Ogone"
+msgstr ""
 
 #. module: payment_adyen
 #: selection:payment.acquirer,provider:0
 msgid "PayUmoney"
-msgstr "PayUmoney"
+msgstr ""
 
 #. module: payment_adyen
 #: model:ir.model,name:payment_adyen.model_payment_acquirer
@@ -141,4 +141,4 @@ msgstr ""
 #. module: payment_adyen
 #: selection:payment.acquirer,provider:0
 msgid "Wire Transfer"
-msgstr "bankovní převod"
+msgstr ""

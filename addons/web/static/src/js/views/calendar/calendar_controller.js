@@ -19,10 +19,6 @@ var QuickCreate = require('web.CalendarQuickCreate');
 var _t = core._t;
 var QWeb = core.qweb;
 
-function dateToServer (date) {
-    return date.clone().utc().locale('en').format('YYYY-MM-DD HH:mm:ss');
-}
-
 var CalendarController = AbstractController.extend({
     custom_events: _.extend({}, AbstractController.prototype.custom_events, {
         changeDate: '_onChangeDate',
@@ -160,7 +156,7 @@ var CalendarController = AbstractController.extend({
      * @returns {Deferred}
      */
     _updateRecord: function (record) {
-        return this.model.updateRecord(record).always(this.reload.bind(this));
+        return this.model.updateRecord(record).then(this.reload.bind(this));
     },
 
     //--------------------------------------------------------------------------
@@ -204,9 +200,7 @@ var CalendarController = AbstractController.extend({
      * @param {OdooEvent} event
      */
     _onDropRecord: function (event) {
-        this._updateRecord(_.extend({}, event.data, {
-            'drop': true,
-        }));
+        this._updateRecord(event.data);
     },
     /**
      * @private
@@ -242,7 +236,7 @@ var CalendarController = AbstractController.extend({
 
         for (var k in context) {
             if (context[k] && context[k]._isAMomentObject) {
-                context[k] = dateToServer(context[k]);
+                context[k] = context[k].clone().utc().format('YYYY-MM-DD HH:mm:ss');
             }
         }
 
@@ -274,7 +268,6 @@ var CalendarController = AbstractController.extend({
                 res_model: this.modelName,
                 context: context,
                 title: title,
-                view_id: this.formViewId || false,
                 disable_multiple_selection: true,
                 on_saved: function () {
                     if (event.data.on_save) {

@@ -8,21 +8,20 @@
 # Muhammad Herdiansyah <herdiansyah@openmailbox.org>, 2019
 # Gusti Rini <gustirini@gmail.com>, 2019
 # Martin Trigaux, 2019
-# oon arfiandwi <oon.arfiandwi@gmail.com>, 2019
+# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2019
+# oon arfiandwi (OonID) <oon.arfiandwi@gmail.com>, 2019
 # Ngalim Siregar <ngalim.siregar@gmail.com>, 2019
 # Bonny Useful <bonny.useful@gmail.com>, 2019
 # Febrasari Almania <febrasari.almania@gmail.com>, 2019
-# Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2019
 # Ryanto The <ry.the77@gmail.com>, 2019
-# PAS IRVANUS <ipankbiz@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-12 12:19+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
-"Last-Translator: PAS IRVANUS <ipankbiz@gmail.com>, 2019\n"
+"Last-Translator: Ryanto The <ry.the77@gmail.com>, 2019\n"
 "Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -204,10 +203,7 @@ msgid "Additional Note"
 msgstr ""
 
 #. module: hr
-#: model:ir.model.fields,field_description:hr.field_crm_team__alias_contact
 #: model:ir.model.fields,field_description:hr.field_mail_alias__alias_contact
-#: model:ir.model.fields,field_description:hr.field_mail_alias_mixin__alias_contact
-#: model:ir.model.fields,field_description:hr.field_mail_channel__alias_contact
 msgid "Alias Contact Security"
 msgstr "Alias Kontak Keamanan"
 
@@ -227,7 +223,7 @@ msgstr "Diarsipkan"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__message_attachment_count
 #: model:ir.model.fields,field_description:hr.field_hr_job__message_attachment_count
 msgid "Attachment Count"
-msgstr "Attachment Count"
+msgstr ""
 
 #. module: hr
 #: selection:mail.alias,alias_contact:0
@@ -382,7 +378,7 @@ msgstr "Nama Lengkap"
 #. module: hr
 #: model:ir.model,name:hr.model_res_config_settings
 msgid "Config Settings"
-msgstr "Config Settings"
+msgstr ""
 
 #. module: hr
 #: model:ir.ui.menu,name:hr.menu_human_resources_configuration
@@ -487,8 +483,8 @@ msgstr "Departemen"
 
 #. module: hr
 #: model:ir.model,name:hr.model_mail_channel
-msgid "Discussion Channel"
-msgstr ""
+msgid "Discussion channel"
+msgstr "Saluran diskusi"
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__display_name
@@ -665,11 +661,6 @@ msgid "Followers only"
 msgstr "Hanya untuk pengikut"
 
 #. module: hr
-#: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
-msgid "Future Activities"
-msgstr "Aktivitas Akan Datang"
-
-#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_employee__gender
 msgid "Gender"
 msgstr "Jenis kelamin"
@@ -802,7 +793,7 @@ msgstr "Jika dicentang pesan-pesan baru membutuhkan penanganan lebih lanjut."
 #: model:ir.model.fields,help:hr.field_hr_employee__message_has_error
 #: model:ir.model.fields,help:hr.field_hr_job__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "If checked, some messages have a delivery error."
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_employee__active
@@ -923,11 +914,6 @@ msgid "Last Updated on"
 msgstr "Terakhir Diperbarui pada"
 
 #. module: hr
-#: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
-msgid "Late Activities"
-msgstr "Aktivitas Terlambat"
-
-#. module: hr
 #: model_terms:hr.job,website_description:hr.job_marketing
 msgid "Launch new marketing campaigns and offers"
 msgstr "Meluncurkan kampanye pemasaran baru dan menawarkan"
@@ -957,7 +943,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr.field_hr_employee__message_main_attachment_id
 #: model:ir.model.fields,field_description:hr.field_hr_job__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Main Attachment"
+msgstr ""
 
 #. module: hr
 #: selection:hr.employee,gender:0
@@ -1025,7 +1011,7 @@ msgstr "Anggota"
 #: model:ir.model.fields,field_description:hr.field_hr_employee__message_has_error
 #: model:ir.model.fields,field_description:hr.field_hr_job__message_has_error
 msgid "Message Delivery error"
-msgstr "Message Delivery error"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_department__message_ids
@@ -1139,7 +1125,7 @@ msgstr "Jumlah pesan yang butuh tindakan"
 #: model:ir.model.fields,help:hr.field_hr_employee__message_has_error_counter
 #: model:ir.model.fields,help:hr.field_hr_job__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Number of messages with delivery error"
+msgstr ""
 
 #. module: hr
 #: model:ir.model.fields,help:hr.field_hr_job__no_of_recruitment
@@ -1237,10 +1223,7 @@ msgid "Planned"
 msgstr "Sudah Direncanakan"
 
 #. module: hr
-#: model:ir.model.fields,help:hr.field_crm_team__alias_contact
 #: model:ir.model.fields,help:hr.field_mail_alias__alias_contact
-#: model:ir.model.fields,help:hr.field_mail_alias_mixin__alias_contact
-#: model:ir.model.fields,help:hr.field_mail_channel__alias_contact
 msgid ""
 "Policy to post a message on the document using the mailgateway.\n"
 "- everyone: everyone can post\n"
@@ -1566,11 +1549,6 @@ msgid "Today"
 msgstr "Hari Ini"
 
 #. module: hr
-#: model_terms:ir.ui.view,arch_db:hr.view_employee_filter
-msgid "Today Activities"
-msgstr "Aktivitas Hari Ini"
-
-#. module: hr
 #: model:ir.model.fields,field_description:hr.field_hr_job__expected_employees
 msgid "Total Forecasted Employees"
 msgstr "Total Perkiraan Karyawan"
@@ -1691,20 +1669,6 @@ msgstr ""
 " membuat produk yang orang-orang suka menggunakan. Kami membutuhkan "
 "seseorang yang ambisius, passionated, dan... tidak takut untuk memulai hal-"
 "hal baru, banyak hal-hal baru dan skala mereka."
-
-#. module: hr
-#: model:ir.model.fields,field_description:hr.field_hr_department__website_message_ids
-#: model:ir.model.fields,field_description:hr.field_hr_employee__website_message_ids
-#: model:ir.model.fields,field_description:hr.field_hr_job__website_message_ids
-msgid "Website Messages"
-msgstr "Pesan situs"
-
-#. module: hr
-#: model:ir.model.fields,help:hr.field_hr_department__website_message_ids
-#: model:ir.model.fields,help:hr.field_hr_employee__website_message_ids
-#: model:ir.model.fields,help:hr.field_hr_job__website_message_ids
-msgid "Website communication history"
-msgstr "Sejarah komunikasi situs"
 
 #. module: hr
 #: model_terms:hr.job,website_description:hr.job_ceo

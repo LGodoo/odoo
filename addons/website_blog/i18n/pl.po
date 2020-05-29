@@ -3,7 +3,7 @@
 # * website_blog
 # 
 # Translators:
-# Dariusz Żbikowski <darek@krokus.com.pl>, 2018
+# zbik2607 <darek@krokus.com.pl>, 2018
 # Grzegorz Grzelak <grzegorz.grzelak@openglobe.pl>, 2018
 # Grażyna Grzelak <grazyna.grzelak@openglobe.pl>, 2018
 # Judyta Kaźmierczak <judyta.kazmierczak@openglobe.pl>, 2018
@@ -16,7 +16,6 @@
 # Martin Trigaux, 2018
 # Piotr Szlązak <szlazakpiotr@gmail.com>, 2018
 # Paweł Wodyński <pw@myodoo.pl>, 2018
-# Grzegorz Krukar <grzegorzgk1@gmail.com>, 2019
 # Piotr Cierkosz <piotr.w.cierkosz@gmail.com>, 2019
 # 
 msgid ""
@@ -774,7 +773,7 @@ msgstr "Jest obserwatorem"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__is_published
 msgid "Is published"
-msgstr "Opublikowane"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_1
@@ -1029,7 +1028,7 @@ msgstr "Po sprawdzeniu treści na urządzeniach mobilnych zamknij podgląd."
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_tags
 msgid "Others"
-msgstr "Inne"
+msgstr ""
 
 #. module: website_blog
 #: model:blog.blog,name:website_blog.blog_blog_1
@@ -1146,14 +1145,14 @@ msgstr "Czerwony"
 #: model:ir.model.fields,help:website_blog.field_blog_blog__website_id
 #: model:ir.model.fields,help:website_blog.field_blog_post__website_id
 msgid "Restrict publishing to this website."
-msgstr "Ogranicz publikowanie do tej strony."
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__is_seo_optimized
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__is_seo_optimized
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag__is_seo_optimized
 msgid "SEO optimized"
-msgstr "Zoptymalizowane SEO"
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
@@ -1401,7 +1400,7 @@ msgstr "Zastosowane w:"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_published
 msgid "Visible on current website"
-msgstr "Widoczne na obecnej stronie"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_website
@@ -1458,7 +1457,7 @@ msgstr "Tytuł strony - meta"
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_meta_og_img
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag__website_meta_og_img
 msgid "Website opengraph image"
-msgstr "Obrazek typu opengraph dla strony"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog

@@ -7,18 +7,13 @@
 # Fishfur A Banter <fishfurbanter@gmail.com>, 2018
 # ExcaliberX <excaliberx@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
-# דודי מלכה <Dudimalka6@gmail.com>, 2019
-# hed shefetr <hed@laylinetech.com>, 2019
-# Amit Spilman <amit@laylinetech.com>, 2019
-# ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
-"PO-Revision-Date: 2018-08-24 09:33+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2020\n"
+"PO-Revision-Date: 2018-09-18 09:49+0000\n"
+"Last-Translator: Yihya Hugirat <hugirat@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +26,7 @@ msgstr ""
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:113
 #, python-format
 msgid "(Community Edition)"
-msgstr "(מהדורת קהילה)"
+msgstr ""
 
 #. module: web_settings_dashboard
 #: code:addons/web_settings_dashboard/controllers/main.py:16
@@ -58,21 +53,21 @@ msgstr "הפעלת מצב פיתוח"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:128
 #, python-format
 msgid "Activate the developer mode (with assets)"
-msgstr "הפעל את מצב המפתח (עם נכסים)"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:64
 #, python-format
 msgid "Active User"
-msgstr "משתמש פעיל"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:65
 #, python-format
 msgid "Active Users"
-msgstr "משתמשים פעילים"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -101,7 +96,7 @@ msgstr "חברה"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:120
 #, python-format
 msgid "Copyright © 2004"
-msgstr "זכויות יוצרים © 2004"
+msgstr ""
 
 #. module: web_settings_dashboard
 #: model:ir.actions.client,name:web_settings_dashboard.web_settings_dashboard_action
@@ -114,7 +109,7 @@ msgstr "לוח בקרה"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:130
 #, python-format
 msgid "Deactivate the developer mode"
-msgstr "בטל את מצב המפתח"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -135,7 +130,7 @@ msgstr ""
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:120
 #, python-format
 msgid "GNU LGPL Licensed"
-msgstr "מורשה ברישיון הציבורי הכללי המוקטן של גנו (LGPL)"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -170,7 +165,7 @@ msgstr ""
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:75
 #, python-format
 msgid "Invite"
-msgstr "הזמן"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -198,7 +193,7 @@ msgstr "טען תרגום"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:132
 #, python-format
 msgid "Load demo data"
-msgstr "טען נתוני הדגמה"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -233,7 +228,7 @@ msgstr "Odoo אנטרפרייז"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:120
 #, python-format
 msgid "Odoo S.A."
-msgstr "יישומי Odoo"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -277,7 +272,7 @@ msgstr ""
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:94
 #, python-format
 msgid "Share"
-msgstr "שתף"
+msgstr "שיתוף"
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -291,14 +286,14 @@ msgstr ""
 #: code:addons/web_settings_dashboard/static/src/js/dashboard.js:116
 #, python-format
 msgid "The following email addresses already exist: %s."
-msgstr "כתובות הדוא\"ל הבאות כבר קיימות: %s."
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/js/dashboard.js:105
 #, python-format
 msgid "The following email addresses are invalid: %s."
-msgstr "כתובות הדוא\"ל שלהלן אינן חוקיות: %s."
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
@@ -320,14 +315,14 @@ msgstr "תרגומים"
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:102
 #, python-format
 msgid "Twitter"
-msgstr "טוויטר"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web
 #: code:addons/web_settings_dashboard/static/src/xml/dashboard.xml:143
 #, python-format
 msgid "Upgrade Now"
-msgstr "שדרג עכשיו"
+msgstr ""
 
 #. module: web_settings_dashboard
 #. openerp-web

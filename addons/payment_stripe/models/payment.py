@@ -257,7 +257,7 @@ class PaymentTokenStripe(models.Model):
             description = 'Partner: %s (id: %s)' % (partner_id.name, partner_id.id)
 
         if not token:
-            raise UserError(_("Stripe: no payment token was provided or the token creation failed."))
+            raise Exception('stripe_create: No token provided!')
 
         res = self._stripe_create_customer(token, description, payment_acquirer.id)
 

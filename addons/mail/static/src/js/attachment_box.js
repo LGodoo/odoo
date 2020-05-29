@@ -7,7 +7,6 @@ var Widget = require('web.Widget');
 var DocumentViewer = require('mail.DocumentViewer');
 
 var QWeb = core.qweb;
-var _t = core._t;
 
 var AttachmentBox = Widget.extend({
     template: 'mail.chatter.AttachmentBox',
@@ -37,7 +36,7 @@ var AttachmentBox = Widget.extend({
         _.each(attachments, function (attachment) {
             // required for compatibility with the chatter templates.
             attachment.url = '/web/content/' + attachment.id + '?download=true';
-            attachment.filename = attachment.datas_fname || _t('unnamed');
+            attachment.filename = attachment.datas_fname || 'unnamed';
         });
         var sortedAttachments = _.partition(attachments, function (att) {
             return att.mimetype && att.mimetype.split('/')[0] === 'image';

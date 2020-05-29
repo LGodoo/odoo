@@ -15,9 +15,8 @@
 # Johannes Croe <jcr@odoo.com>, 2018
 # e2f <projects@e2f.com>, 2018
 # Martin Trigaux, 2018
+# Ermin Trevisan <trevi@twanda.com>, 2018
 # Katharina Moritz <kmo@e2f.com>, 2018
-# Chris Egal <sodaswed@web.de>, 2019
-# Ermin Trevisan <trevi@twanda.com>, 2020
 # 
 msgid ""
 msgstr ""
@@ -25,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 09:33+0000\n"
-"Last-Translator: Ermin Trevisan <trevi@twanda.com>, 2020\n"
+"Last-Translator: Katharina Moritz <kmo@e2f.com>, 2018\n"
 "Language-Team: German (https://www.transifex.com/odoo/teams/41243/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -345,7 +344,7 @@ msgstr "Atom Feed"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_attachment_count
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_attachment_count
 msgid "Attachment Count"
-msgstr "Anzahl Anhänge"
+msgstr "# Anhänge"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__author_id
@@ -385,7 +384,7 @@ msgstr "Blogbezeichnung"
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_search
 #, python-format
 msgid "Blog Post"
-msgstr "Blog-Beitrag"
+msgstr "Blogeintrag"
 
 #. module: website_blog
 #: code:addons/website_blog/models/website.py:53
@@ -404,7 +403,7 @@ msgstr "Blog-Beitrag <b>%s</b> scheint einen Link zu dieser Seite zu haben !"
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_post_complete_read_next
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_form
 msgid "Blog Post Title"
-msgstr "Blog-Beitrag Überschrift"
+msgstr "Blognachricht Überschrift"
 
 #. module: website_blog
 #: code:addons/website_blog/models/website.py:24
@@ -413,7 +412,7 @@ msgstr "Blog-Beitrag Überschrift"
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_list
 #, python-format
 msgid "Blog Posts"
-msgstr "Blog-Beiträge"
+msgstr "Blog-Nachrichten"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__subtitle
@@ -424,17 +423,17 @@ msgstr "Blog Untertitel"
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_blog_tag
 msgid "Blog Tag"
-msgstr "Blog-Stichwort"
+msgstr "Blog Tag"
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_blog_tag_category
 msgid "Blog Tag Category"
-msgstr "Blog-Stichwortkategorie"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_tags
 msgid "Blog Tags"
-msgstr "Blog-Stichwörter"
+msgstr "Blogschlagwort"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_blog_blog
@@ -468,12 +467,12 @@ msgstr "Kategorie"
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
 #, python-format
 msgid "Change Cover"
-msgstr "Titelbild ändern"
+msgstr "Ändere das Titelbild"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "Choose a blog"
-msgstr "Blog auswählen"
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
@@ -619,19 +618,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_follower_ids
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_follower_ids
 msgid "Followers"
-msgstr "Followers"
+msgstr "Abonnenten"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_channel_ids
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_channel_ids
 msgid "Followers (Channels)"
-msgstr "Followers (Kanäle)"
+msgstr "Abonnenten (Kanäle)"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_partner_ids
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Followers (Partner)"
+msgstr "Abonnenten (Partner)"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -665,7 +664,7 @@ msgstr "GitHub"
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Google Plus"
-msgstr "Google Plus"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -752,12 +751,12 @@ msgstr "Integration Ihres CMS und E-Commerce"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_is_follower
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_is_follower
 msgid "Is Follower"
-msgstr "Ist ein Follower"
+msgstr "Ist ein Abonnent"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__is_published
 msgid "Is published"
-msgstr "Ist veröffentlicht"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_1
@@ -775,7 +774,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__write_uid
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_search
 msgid "Last Contributor"
-msgstr "Letzter Beitragender"
+msgstr "Letzer Beitragender"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog____last_update
@@ -833,7 +832,7 @@ msgstr "Niedrig"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_main_attachment_id
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Hauptanhang"
+msgstr "Hauptanhänge"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -844,7 +843,7 @@ msgstr "Mittel"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_has_error
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_has_error
 msgid "Message Delivery error"
-msgstr "Fehler beim Senden der Nachricht"
+msgstr "Error beim senden der Nachricht"
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_ids
@@ -900,7 +899,7 @@ msgstr "Verschmälern"
 #: code:addons/website_blog/static/src/js/website_blog.editor.js:37
 #, python-format
 msgid "New Blog Post"
-msgstr "Neuer Blog-Beitrag"
+msgstr "Neue Blognachricht"
 
 #. module: website_blog
 #: model_terms:blog.post,content:website_blog.blog_post_2
@@ -910,7 +909,7 @@ msgstr "Neue Funktionen gestartet"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_history
 msgid "Next year"
-msgstr "Nächstes Jahr"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -927,7 +926,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "No blog post yet."
-msgstr "Bislang wurde noch kein Blog-Beitrag erstellt."
+msgstr "Bislang wurde noch keine Blognachricht geschrieben."
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__visits
@@ -937,7 +936,7 @@ msgstr "Anzahl der Anzeigen"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.latest_blogs
 msgid "No tags defined!"
-msgstr "Keine Stichwörter definiert!"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -971,7 +970,7 @@ msgstr "Anzahl der Nachrichten mit einem Fehler beim Senden."
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_options
 msgid "Number of posts"
-msgstr "Anzahl Beiträge"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,help:website_blog.field_blog_blog__message_unread_counter
@@ -1056,7 +1055,7 @@ msgstr "Veröffentlichungsdatum"
 #: model:mail.message.subtype,description:website_blog.mt_blog_blog_published
 #: model:mail.message.subtype,name:website_blog.mt_blog_blog_published
 msgid "Published Post"
-msgstr "Veröffentlichter Beitrag"
+msgstr "Veröffentlichte Beiträge"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.view_blog_post_form
@@ -1076,12 +1075,12 @@ msgstr "Lila"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "RSS"
-msgstr "RSS"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__ranking
 msgid "Ranking"
-msgstr "Rangordnung"
+msgstr "Rangliste"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.s_latest_posts_big_picture_template
@@ -1123,21 +1122,21 @@ msgstr "Rot"
 #: model:ir.model.fields,help:website_blog.field_blog_blog__website_id
 #: model:ir.model.fields,help:website_blog.field_blog_post__website_id
 msgid "Restrict publishing to this website."
-msgstr "Beschränken Sie die Veröffentlichung auf dieser Website."
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__is_seo_optimized
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__is_seo_optimized
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag__is_seo_optimized
 msgid "SEO optimized"
-msgstr "SEO optimiert"
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
 #: code:addons/website_blog/static/src/js/website_blog.editor.js:38
 #, python-format
 msgid "Select Blog"
-msgstr "Blog wählen"
+msgstr ""
 
 #. module: website_blog
 #. openerp-web
@@ -1185,7 +1184,7 @@ msgstr "Status"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Stay updated :"
-msgstr "Bleiben Sie auf dem Laufenden :"
+msgstr "Bleiben Sie auf dem Laufenden."
 
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__subtitle
@@ -1202,12 +1201,12 @@ msgstr "Untertitel"
 #: model:ir.ui.menu,name:website_blog.menu_website_blog_tag_category_global
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_category_tree
 msgid "Tag Categories"
-msgstr "Stichwortkategorien"
+msgstr "Stichwortkategorie"
 
 #. module: website_blog
 #: model:ir.actions.act_window,name:website_blog.action_tag_category
 msgid "Tag Category"
-msgstr "Stichwortkategorie"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_category_form
@@ -1217,12 +1216,12 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_form
 msgid "Tag Form"
-msgstr "Stichwortformular"
+msgstr "Schlagwortformular"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_tag_tree
 msgid "Tag List"
-msgstr "Stichwortliste"
+msgstr "Schlagwortliste"
 
 #. module: website_blog
 #: sql_constraint:blog.tag.category:0
@@ -1354,7 +1353,7 @@ msgstr "Ungelesene Nachrichten"
 #: model:ir.model.fields,field_description:website_blog.field_blog_blog__message_unread_counter
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr "Zähler der ungelesenen Nachrichten"
+msgstr "Anzahl der ungelesenen Nachrichten"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
@@ -1378,7 +1377,7 @@ msgstr "Verwendet in:"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_published
 msgid "Visible on current website"
-msgstr "Auf der aktuellen Website sichtbar"
+msgstr ""
 
 #. module: website_blog
 #: model:ir.model,name:website_blog.model_website
@@ -1401,7 +1400,7 @@ msgstr "Website-Nachrichten"
 #. module: website_blog
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_url
 msgid "Website URL"
-msgstr "Website-URL"
+msgstr "Website URL"
 
 #. module: website_blog
 #: model:ir.model.fields,help:website_blog.field_blog_blog__website_message_ids
@@ -1435,7 +1434,7 @@ msgstr "Website Meta-Titel"
 #: model:ir.model.fields,field_description:website_blog.field_blog_post__website_meta_og_img
 #: model:ir.model.fields,field_description:website_blog.field_blog_tag__website_meta_og_img
 msgid "Website opengraph image"
-msgstr "Offenes Grafikbild der Website"
+msgstr ""
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.website_blog
@@ -1477,7 +1476,7 @@ msgstr ""
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.opt_blog_rc_follow_us
 msgid "Youtube"
-msgstr "Youtube"
+msgstr "YouTube"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_template_new_post
@@ -1520,7 +1519,7 @@ msgstr "unveröffentlicht"
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short
 msgid "view"
-msgstr "Ansicht"
+msgstr "Aufruf"
 
 #. module: website_blog
 #: model_terms:ir.ui.view,arch_db:website_blog.blog_post_short

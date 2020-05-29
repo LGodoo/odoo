@@ -17,23 +17,20 @@
 # Levent Karakaş <levent@mektup.at>, 2018
 # Saban Yildiz <sabany@projetgrup.com>, 2018
 # Buket Şeker <buket_skr@hotmail.com>, 2018
+# Ediz Duman <neps1192@gmail.com>, 2018
 # Martin Trigaux, 2018
 # Ahmet Altinisik <aaltinisik@altinkaya.com.tr>, 2018
 # Ramiz Deniz Öner <deniz@denizoner.com>, 2018
 # Murat Kaplan <muratk@projetgrup.com>, 2018
-# Osman Karagöz <osmank3@gmail.com>, 2019
 # Umur Akın <umura@projetgrup.com>, 2019
-# Cécile Collart <cco@odoo.com>, 2019
-# Yedigen, 2019
-# Ediz Duman <neps1192@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:33+0000\n"
-"Last-Translator: Ediz Duman <neps1192@gmail.com>, 2019\n"
+"Last-Translator: Umur Akın <umura@projetgrup.com>, 2019\n"
 "Language-Team: Turkish (https://www.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,11 +94,6 @@ msgid "' did not match any pages."
 msgstr "' hiçbir sayfa ile eşleşmedi."
 
 #. module: website
-#: model_terms:ir.ui.view,arch_db:website.500
-msgid "(!!! This view will be removed )"
-msgstr ""
-
-#. module: website
 #. openerp-web
 #: code:addons/website/static/src/xml/website.pageProperties.xml:33
 #, python-format
@@ -151,7 +143,7 @@ msgstr "1/5"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "100%"
-msgstr "%100"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -187,7 +179,7 @@ msgstr "24x7 ücretsiz destek"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "25%"
-msgstr "%25"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -227,7 +219,7 @@ msgstr "5/5"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "50%"
-msgstr "%50"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -237,12 +229,12 @@ msgstr "5s"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "75%"
-msgstr "%75"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
 msgid "<b>50,000+ companies</b> run Odoo to grow their businesses."
-msgstr "<b>50.000+ şirket</b> işlerini büyütmek için Odoo kullanıyor"
+msgstr ""
 
 #. module: website
 #. openerp-web
@@ -314,13 +306,11 @@ msgid ""
 "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">Edit "
 "this title</font>"
 msgstr ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">Bu "
-"başlığı düzenle</font>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_banner
 msgid "<font style=\"font-size: 62px;\"><b>Sell Online.</b> Easily.</font>"
-msgstr "<font style=\"font-size: 62px;\"><b>Çevrimiçi Sat.</b> Kolayca.</font>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_picture
@@ -330,12 +320,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_faq_collapse
 msgid "<font style=\"font-size: 62px;\">FAQ</font>"
-msgstr "<font style=\"font-size: 62px;\">SSS</font>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
 msgid "<font style=\"font-size: 62px;\">Our offers</font>"
-msgstr "<font style=\"font-size: 62px;\">Tekliflerimiz</font>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -346,12 +336,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_parallax
 #: model_terms:ir.ui.view,arch_db:website.s_title
 msgid "<font style=\"font-size: 62px;\">Your Site Title</font>"
-msgstr "<font style=\"font-size: 62px;\">Site Başlığınız</font>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_card
 msgid "<i class=\"fa fa-1x fa-clock-o mr8\"/><small>2 days ago</small>"
-msgstr "<i class=\"fa fa-1x fa-clock-o mr8\"/><small>2 gün önce</small>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_picture
@@ -371,8 +361,6 @@ msgid ""
 "<i class=\"fa fa-arrow-right\"/>\n"
 "                                            Create a Google Project and Get a Key"
 msgstr ""
-"<i class=\"fa fa-arrow-right\"/>\n"
-"                                            Google Projesi Oluştur ve bir Anahtar Al"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -396,7 +384,7 @@ msgstr "<i class=\"fa fa-arrows\"/>Arka Plan Görüntü Boyutlandırma"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-arrows\"/>Size"
-msgstr "<i class=\"fa fa-arrows\"/>Boyut"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -406,7 +394,7 @@ msgstr "<i class=\"fa fa-arrows-h\"/>Görüntü aralıkları"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-arrows-h\"/>Width"
-msgstr "<i class=\"fa fa-arrows-h\"/>Genişlik"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -426,7 +414,7 @@ msgstr "<i class=\"fa fa-clock-o\"/>Slideshow hızı"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-clock-o\"/>Speed"
-msgstr "<i class=\"fa fa-clock-o\"/>Hız"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -436,7 +424,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-columns\"/>Number of columns"
-msgstr "<i class=\"fa fa-columns\"/>Sütun sayısı"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -446,7 +434,7 @@ msgstr "<i class=\"fa fa-diamond\"/> Özellik"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-eye-slash\"/>Transparent"
-msgstr "<i class=\"fa fa-eye-slash\"/>Şeffaf"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -456,17 +444,17 @@ msgstr "<i class=\"fa fa-eyedropper\"/>Arka Plan Rengi"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-eyedropper\"/>Color"
-msgstr "<i class=\"fa fa-eyedropper\"/>Renk"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-eyedropper\"/>Filter"
-msgstr "<i class=\"fa fa-eyedropper\"/>Filtre"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-facebook\"/>Options"
-msgstr "<i class=\"fa fa-facebook\"/>Seçeneler"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -512,7 +500,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-minus\"/>Remove Tab"
-msgstr "<i class=\"fa fa-minus\"/>Sekmeyi Sil"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -537,7 +525,7 @@ msgstr "<i class=\"fa fa-picture-o\"/>Arkaplan Resmi"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-plus\"/>Add Tab"
-msgstr "<i class=\"fa fa-plus\"/>Sekme Ekle"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.language_selector
@@ -571,12 +559,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-star\"/>Stars"
-msgstr "<i class=\"fa fa-star\"/>Yıldızlar"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "<i class=\"fa fa-tasks\"/>Progress Bar"
-msgstr "<i class=\"fa fa-tasks\"/>İlerleme Çubuğu"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -606,7 +594,7 @@ msgstr "<i class=\"fa fa-trash-o\"/>Slaytı Kaldırın"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "<i title=\"Is the page SEO optimized?\" class=\"fa fa-search\"/>"
-msgstr "<i title=\"Is the page SEO optimized?\" class=\"fa fa-search\"/>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
@@ -614,18 +602,16 @@ msgid ""
 "<i title=\"Is the page included in the main menu?\" class=\"fa fa-thumb-"
 "tack\"/>"
 msgstr ""
-"<i title=\"Is the page included in the main menu?\" class=\"fa fa-thumb-"
-"tack\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "<i title=\"Is the page indexed by search engines?\" class=\"fa fa-globe\"/>"
-msgstr "<i title=\"Is the page indexed by search engines?\" class=\"fa fa-globe\"/>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "<i title=\"Is the page published?\" class=\"fa fa-eye\"/>"
-msgstr "<i title=\"Is the page published?\" class=\"fa fa-eye\"/>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -655,7 +641,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
 msgid "<small>/ month</small>"
-msgstr "<small>/ ay</small>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -664,8 +650,6 @@ msgid ""
 "<span class=\"carousel-control-next-icon\"/>\n"
 "            <span class=\"sr-only\">Next</span>"
 msgstr ""
-"<span class=\"carousel-control-next-icon\"/>\n"
-"            <span class=\"sr-only\">Sonraki</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_carousel
@@ -674,8 +658,6 @@ msgid ""
 "<span class=\"carousel-control-prev-icon\"/>\n"
 "            <span class=\"sr-only\">Previous</span>"
 msgstr ""
-"<span class=\"carousel-control-prev-icon\"/>\n"
-"            <span class=\"sr-only\">Önceki</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -683,8 +665,6 @@ msgid ""
 "<span class=\"fa fa-lg fa-globe\" title=\"Values set here are website-"
 "specific.\" groups=\"website.group_multi_website\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-globe\" title=\"Values set here are website-"
-"specific.\" groups=\"website.group_multi_website\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.company_description
@@ -692,8 +672,6 @@ msgid ""
 "<span class=\"fa fa-map-marker fa-fw mt16\" role=\"img\" aria-"
 "label=\"Address\" title=\"Address\"/>"
 msgstr ""
-"<span class=\"fa fa-map-marker fa-fw mt16\" role=\"img\" aria-"
-"label=\"Address\" title=\"Address\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -708,7 +686,7 @@ msgstr "<span class=\"fa fa-plus\"/>Yeni"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.list_website_pages
 msgid "<span class=\"fa fa-sort fa-lg\" role=\"img\" aria-label=\"Sort\" title=\"Sort\"/>"
-msgstr "<span class=\"fa fa-sort fa-lg\" role=\"img\" aria-label=\"Sort\" title=\"Sort\"/>"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_facebook_page
@@ -717,9 +695,6 @@ msgid ""
 "                <i class=\"fa fa-plus-circle\"/> Add Facebook Page\n"
 "            </span>"
 msgstr ""
-"<span class=\"o_add_facebook_page\">\n"
-"                <i class=\"fa fa-plus-circle\"/> Facebook Sayfası Ekle\n"
-"            </span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery
@@ -765,8 +740,6 @@ msgid ""
 "<span title=\"Mobile preview\" role=\"img\" aria-label=\"Mobile preview\" "
 "class=\"fa fa-mobile\"/>"
 msgstr ""
-"<span title=\"Mobile preview\" role=\"img\" aria-label=\"Mobile preview\" "
-"class=\"fa fa-mobile\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.user_navbar
@@ -775,9 +748,6 @@ msgid ""
 "                            <span class=\"css_publish\">Unpublished</span>\n"
 "                            <span class=\"css_unpublish\">Published</span>"
 msgstr ""
-"<span/>\n"
-"                            <span class=\"css_publish\">Yayınlanmayan</span>\n"
-"                            <span class=\"css_unpublish\">Yayınlanan</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_call_to_action
@@ -1155,19 +1125,13 @@ msgstr "CDN Filtreler"
 
 #. module: website
 #. openerp-web
-#: code:addons/website/static/src/js/backend/dashboard.js:106
-#: code:addons/website/static/src/js/menu/new_content.js:286
+#: code:addons/website/static/src/js/backend/dashboard.js:103
+#: code:addons/website/static/src/js/menu/new_content.js:271
 #: code:addons/website/static/src/xml/website.xml:27
 #: model_terms:ir.ui.view,arch_db:website.500
 #, python-format
 msgid "Cancel"
 msgstr "İptal"
-
-#. module: website
-#: code:addons/website/models/res_lang.py:15
-#, python-format
-msgid "Cannot deactivate a language that is currently used on a website."
-msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -1309,7 +1273,7 @@ msgstr "Kapat"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
 msgid "Colors"
-msgstr "Renk"
+msgstr ""
 
 #. module: website
 #: model:ir.model,name:website.model_res_company
@@ -1442,7 +1406,7 @@ msgstr "Oluşturun"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Create a New Website"
-msgstr "Yeni Bir Websitesi Oluştur"
+msgstr ""
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__create_uid
@@ -1506,7 +1470,7 @@ msgstr ""
 #: code:addons/website/static/src/js/menu/edit.js:81
 #, python-format
 msgid "DRAG BUILDING BLOCKS HERE"
-msgstr "YAPI BLOKLARINI BURYA SÜRÜKLEYİN"
+msgstr ""
 
 #. module: website
 #: model:ir.ui.menu,name:website.menu_dashboard
@@ -2009,7 +1973,7 @@ msgstr "Tümünü takip et"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Follow your website traffic in Odoo."
-msgstr "Suivez le trafic de votre site Web sur Odoo."
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
@@ -2228,7 +2192,7 @@ msgstr "HTML/CSS Editörü"
 #. module: website
 #: model:ir.model,name:website.model_ir_http
 msgid "HTTP Routing"
-msgstr "HTTP Yönlendirme"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_page_ir_ui_view
@@ -2590,7 +2554,6 @@ msgid "Keywords"
 msgstr ""
 
 #. module: website
-#: model:ir.model,name:website.model_res_lang
 #: model:ir.model.fields,field_description:website.field_res_config_settings__language_ids
 #: model:ir.model.fields,field_description:website.field_website__language_ids
 msgid "Languages"
@@ -2660,7 +2623,7 @@ msgstr "Geçen Yıl"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_customize
 msgid "Layout"
-msgstr "Düzen"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_text_image
@@ -3153,7 +3116,7 @@ msgstr "Web Sitesinde"
 #. module: website
 #: selection:website,auth_signup_uninvited:0
 msgid "On invitation"
-msgstr "Davetiye ile"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -3772,7 +3735,7 @@ msgstr "Slayt"
 #: code:addons/website/static/src/xml/website.gallery.xml:17
 #, python-format
 msgid "Slide image"
-msgstr "Slayt görseli"
+msgstr ""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -4388,6 +4351,15 @@ msgstr ""
 #: model:ir.model.fields,help:website.field_website__country_group_ids
 msgid "Used when multiple websites have the same domain."
 msgstr ""
+
+#. module: website
+#: model_terms:ir.ui.view,arch_db:website.robots
+msgid ""
+"User-agent: *\n"
+"Sitemap:"
+msgstr ""
+"Kullanıcı aracı:*\n"
+"Site haritası:"
 
 #. module: website
 #: model:ir.model,name:website.model_res_users

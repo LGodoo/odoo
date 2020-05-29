@@ -56,7 +56,7 @@ class AccountInvoice(models.Model):
                     payment_token.acquirer_id.name, acquirer.name))
                 if payment_token and payment_token.partner_id != partner:
                     raise ValidationError(_('Invalid token found! Token partner %s != %s') % (
-                    payment_token.partner.name, partner.name))
+                    payment_token.partner.name, partner.name))  
             else:
                 acquirer = payment_token.acquirer_id
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:16+0000\n"
 "Last-Translator: Alagappan Karthikeyan <me@karthik.sg>, 2019\n"
 "Language-Team: Tamil (https://www.transifex.com/odoo/teams/41243/ta/)\n"
@@ -20,11 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. module: base_automation
-#: model:mail.template,body_html:base_automation.test_mail_template_automation
-msgid "<div>Email automation</div>"
-msgstr ""
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__help
@@ -151,12 +146,6 @@ msgstr "அடிப்படை தன்னியக்கவாக்கம�
 #: model:ir.actions.server,name:base_automation.test_rule_on_write_check_context_ir_actions_server
 msgid "Base Automation: test rule on write check context"
 msgstr "பேஸ் ஆட்டோமேஷன்: சோதனை காசோலை சூழலில் சோதனை விதி"
-
-#. module: base_automation
-#: model:base.automation,name:base_automation.test_rule_on_write_recompute_send_email
-#: model:ir.actions.server,name:base_automation.test_rule_on_write_recompute_send_email_ir_actions_server
-msgid "Base Automation: test send an email"
-msgstr ""
 
 #. module: base_automation
 #: selection:base.automation,trigger:0
@@ -400,6 +389,11 @@ msgid "Model"
 msgstr "மாதிரி"
 
 #. module: base_automation
+#: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
+msgid "Model Description"
+msgstr "மாதிரி விளக்கம்"
+
+#. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__model_name
 msgid "Model Name"
 msgstr "மாதிரி பெயர்"
@@ -502,6 +496,16 @@ msgid "Python Code"
 msgstr "பைதான் குறியீடு"
 
 #. module: base_automation
+#: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_form
+msgid "Remove Action"
+msgstr "அதிரவை நீக்கவும்"
+
+#. module: base_automation
+#: model_terms:ir.ui.view,arch_db:base_automation.view_base_automation_form
+msgid "Remove the contextual action related to this server action"
+msgstr "இந்த சேவையக நடவடிக்கை தொடர்பான சூழ்நிலை நடவடிக்கைகளை அகற்றுக"
+
+#. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__activity_user_id
 #: model:ir.model.fields,field_description:base_automation.field_base_automation_lead_test__user_id
 msgid "Responsible"
@@ -558,11 +562,6 @@ msgid "Summary"
 msgstr "சுருக்கம்"
 
 #. module: base_automation
-#: model:ir.model.fields,field_description:base_automation.field_base_automation__crud_model_name
-msgid "Target Model"
-msgstr ""
-
-#. module: base_automation
 #: model:ir.model.fields,help:base_automation.field_base_automation__activity_user_field_name
 msgid "Technical name of the user on the record"
 msgstr "பதிவின் பயனரின் தொழில்நுட்ப பெயர்"
@@ -590,13 +589,19 @@ msgstr "தூண்டல் தேதி"
 msgid ""
 "Type of server action. The following values are available:\n"
 "- 'Execute Python Code': a block of python code that will be executed\n"
-"- 'Create': create a new record with new values\n"
-"- 'Update a Record': update the values of a record\n"
+"- 'Create or Copy a new Record': create a new record with new values, or copy an existing record in your database\n"
+"- 'Write on a Record': update the values of a record\n"
 "- 'Execute several actions': define an action that triggers several other server actions\n"
-"- 'Send Email': automatically send an email (Discuss)\n"
-"- 'Add Followers': add followers to a record (Discuss)\n"
-"- 'Create Next Activity': create an activity (Discuss)"
+"- 'Add Followers': add followers to a record (available in Discuss)\n"
+"- 'Send Email': automatically send an email (available in email_template)"
 msgstr ""
+"சர்வர் செயலின் வகை. பின்வரும் மதிப்புகள் உள்ளன:\n"
+"- 'பைதான் குறியீடு செயல்படுத்து': இயக்கப்படும் பைதான் குறியீடு ஒரு தொகுதி\n"
+"- 'புதிய பதிவு உருவாக்கவும் அல்லது நகலெடுக்கவும்': புதிய மதிப்புகளுடன் ஒரு புதிய பதிப்பை உருவாக்கவும் அல்லது உங்கள் தரவுத்தளத்தில் உள்ள ஒரு பதிவுகளை நகலெடுக்கவும்\n"
+"- 'ஒரு பதிவு எழுதவும்': பதிவின் மதிப்புகளை புதுப்பிக்கவும்\n"
+"- 'பல செயல்களை இயக்கவும்': பல சர்வர் செயல்களை தூண்டுகிறது ஒரு செயலை வரையறுக்க\n"
+"- 'பின்தொடர்பவர்களை சேர்': ஒரு பதிவிற்கு பின்பற்றுபவர்களை சேர்க்க (விவாதத்தில் கிடைக்கும்)\n"
+"- 'மின்னஞ்சல் அனுப்பு': தானாக ஒரு மின்னஞ்சலை அனுப்ப (மின்னஞ்சல் _template கிடைக்கும்)"
 
 #. module: base_automation
 #: model:ir.model.fields,field_description:base_automation.field_base_automation__usage

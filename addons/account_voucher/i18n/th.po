@@ -5,19 +5,18 @@
 # Translators:
 # Martin Trigaux, 2018
 # Seksan Poltree <seksan.poltree@gmail.com>, 2018
+# Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2018
 # LAO <sumonchai@gmail.com>, 2018
 # Ekasit Saichompu <ekasitb@gmail.com>, 2018
 # gsong <gsong2014@foxmail.com>, 2018
-# Pornvibool Tippayawat <pornvibool.t@gmail.com>, 2019
-# Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2019
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2018-09-21 13:17+0000\n"
 "PO-Revision-Date: 2018-08-24 09:15+0000\n"
-"Last-Translator: Khwunchai Jaengsawang <khwunchai.j@ku.th>, 2019\n"
+"Last-Translator: gsong <gsong2014@foxmail.com>, 2018\n"
 "Language-Team: Thai (https://www.transifex.com/odoo/teams/41243/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +47,7 @@ msgstr "วันที่บัญชี"
 #. module: account_voucher
 #: model:ir.model.fields,field_description:account_voucher.field_account_voucher__account_date
 msgid "Accounting Date"
-msgstr "วันที่ทางบัญชี"
+msgstr ""
 
 #. module: account_voucher
 #: model:ir.model,name:account_voucher.model_account_voucher
@@ -418,18 +417,13 @@ msgid "Payment Method"
 msgstr "วิธีการจ่ายเงิน"
 
 #. module: account_voucher
-#: model:ir.model,name:account_voucher.model_account_payment
-msgid "Payments"
-msgstr "การชำระ"
-
-#. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:226
+#: code:addons/account_voucher/models/account_voucher.py:208
 #, python-format
 msgid "Please activate the sequence of selected journal !"
 msgstr ""
 
 #. module: account_voucher
-#: code:addons/account_voucher/models/account_voucher.py:229
+#: code:addons/account_voucher/models/account_voucher.py:211
 #, python-format
 msgid "Please define a sequence on the journal."
 msgstr ""
@@ -500,7 +494,7 @@ msgstr "ขาย"
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form
 msgid "Sales Information"
-msgstr "ข้อมูลการขาย"
+msgstr "ข้องมูลการขาย"
 
 #. module: account_voucher
 #: model_terms:ir.ui.view,arch_db:account_voucher.view_sale_receipt_form

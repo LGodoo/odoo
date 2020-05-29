@@ -76,16 +76,14 @@ class PaypalController(http.Controller):
         if resp in ['VERIFIED', 'SUCCESS']:
             _logger.info('Paypal: validated data')
             res = request.env['payment.transaction'].sudo().form_feedback(post, 'paypal')
-            if not res and tx:
+            if not res:
                 tx.sudo()._set_transaction_error('Validation error occured. Please contact your administrator.')
         elif resp in ['INVALID', 'FAIL']:
             _logger.warning('Paypal: answered INVALID/FAIL on data verification')
-            if tx:
-                tx.sudo()._set_transaction_error('Invalid response from Paypal. Please contact your administrator.')
+            tx.sudo()._set_transaction_error('Invalid response from Paypal. Please contact your administrator.')
         else:
             _logger.warning('Paypal: unrecognized paypal answer, received %s instead of VERIFIED/SUCCESS or INVALID/FAIL (validation: %s)' % (resp, 'PDT' if pdt_request else 'IPN/DPN'))
-            if tx:
-                tx.sudo()._set_transaction_error('Unrecognized error from Paypal. Please contact your administrator.')
+            tx.sudo()._set_transaction_error('Unrecognized error from Paypal. Please contact your administrator.')
         return res
 
     @http.route('/payment/paypal/ipn/', type='http', auth='none', methods=['POST'], csrf=False)

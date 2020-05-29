@@ -2,8 +2,6 @@ odoo.define('website_sale.validate', function(require) {
 'use strict';
 
 var sAnimations = require('website.content.snippets.animation');
-var core = require('web.core');
-var _t = core._t;
 
 sAnimations.registry.websiteSaleValidate = sAnimations.Class.extend({
     selector: 'div.oe_website_sale_tx_status[data-order-id]',
@@ -43,9 +41,9 @@ sAnimations.registry.websiteSaleValidate = sAnimations.Class.extend({
                     }, Math.ceil(self._poll_nbr / 3) * 1000);
                 } else {
                     var $message = $(result.message);
-                    var $warning =  $("<i class='fa fa-warning' style='margin-right:10px;'>");
-                    $warning.attr("title", _t("We are waiting the confirmation of the bank or payment provider"));
-                    $message.find('span:first').prepend($warning);
+                    $message.find('span:first').prepend(
+                        $("<i title='We are waiting the confirmation of the bank or payment provider' class='fa fa-warning' style='margin-right:10px;'>")
+                    );
                     result.message = $message.html();
                 }
             }

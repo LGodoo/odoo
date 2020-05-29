@@ -676,9 +676,6 @@ var FilterGroup = Input.extend(/** @lends instance.web.search.FilterGroup# */{
             .without('[]')
             .reject(_.isEmpty)
             .map(function (domain) {
-                if (typeof domain !== 'string') {
-                    domain = JSON.stringify(domain);
-                }
                 domain = domain.replace(/%%/g, '%');
                 return domain;
             })

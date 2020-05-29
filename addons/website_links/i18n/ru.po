@@ -8,7 +8,6 @@
 # Collex100, 2018
 # Sergey Vilizhanin, 2018
 # Anishchuk Sergei <anishukserg@l-profit.ru>, 2018
-# Ivan Yelizariev <yelizariev@it-projects.info>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:34+0000\n"
-"Last-Translator: Ivan Yelizariev <yelizariev@it-projects.info>, 2019\n"
+"Last-Translator: Anishchuk Sergei <anishukserg@l-profit.ru>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,7 +93,7 @@ msgid ""
 "placement=\"top\" role=\"img\" aria-label=\"Tooltip info\" title=\"Defines "
 "the context of your link. It might be an event you want to promote or a "
 "special promotion.\"/>"
-msgstr "кампания"
+msgstr ""
 
 #. module: website_links
 #. openerp-web
@@ -109,7 +108,7 @@ msgstr "Копировать"
 #: model_terms:ir.ui.view,arch_db:website_links.graphs
 #, python-format
 msgid "Edit code"
-msgstr "редактировать код"
+msgstr ""
 
 #. module: website_links
 #. openerp-web
@@ -153,7 +152,7 @@ msgid ""
 "placement=\"top\" role=\"img\" aria-label=\"Tooltip info\" title=\"Defines "
 "the medium used to share your link. It might be an email, or a Facebook Ads "
 "for instance.\"/>"
-msgstr "средний"
+msgstr ""
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.create_shorten_url
@@ -186,7 +185,7 @@ msgid ""
 "placement=\"top\" role=\"img\" aria-label=\"Tooltip info\" title=\"Defines "
 "the source from which your traffic will come from, Facebook or Twitter for "
 "instance.\"/>"
-msgstr "источник"
+msgstr ""
 
 #. module: website_links
 #: model_terms:ir.ui.view,arch_db:website_links.graphs

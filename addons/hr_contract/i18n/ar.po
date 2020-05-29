@@ -3,26 +3,27 @@
 # * hr_contract
 # 
 # Translators:
+# Mustafa Rawi <mustafa@cubexco.com>, 2018
 # Sadig Adam <sadig41@gmail.com>, 2018
 # Akram Alfusayal <akram_ma@hotmail.com>, 2018
 # amrnegm <amrnegm.01@gmail.com>, 2018
 # Martin Trigaux, 2018
 # Mohammed Ibrahim <m.ibrahim@mussder.com>, 2018
+# Ghaith Gammar <g.gammar@saharaifs.net>, 2018
 # Osama Ahmaro <osamaahmaro@gmail.com>, 2018
 # amal ahmed <amalalhashemy88@hotmail.com>, 2018
 # Zuhair Hammadi <zuhair12@gmail.com>, 2018
 # Shaima Safar <shaima.safar@open-inside.com>, 2018
+# Walid Baruni <baruni@osoul.ly>, 2018
 # Mostafa Hanafy <mostafa.s.hanafy@gmail.com>, 2018
-# Osoul <baruni@osoul.ly>, 2019
-# Mustafa Rawi <mustafa@cubexco.com>, 2019
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
-"Last-Translator: Mustafa Rawi <mustafa@cubexco.com>, 2019\n"
+"Last-Translator: Mostafa Hanafy <mostafa.s.hanafy@gmail.com>, 2018\n"
 "Language-Team: Arabic (https://www.transifex.com/odoo/teams/41243/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,17 +34,17 @@ msgstr ""
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "<span class=\"text-muted\">(If fixed-term contract)</span>"
-msgstr "<span class=\"text-muted\">(إذا كان عقدًا محدد المدة)</span>"
+msgstr "(إذا كان عقدًا محدد المدة)."
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "<span>/ month</span>"
-msgstr "<span>/ شهر</span>"
+msgstr "/ شهر"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_needaction
 msgid "Action Needed"
-msgstr "إجراء مطلوب"
+msgstr "الإجراء المطلوب"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__active
@@ -68,7 +69,7 @@ msgstr "المزايا"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Advantages..."
-msgstr "المزايا..."
+msgstr "المزايا ..."
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -93,7 +94,7 @@ msgstr "المؤسسة"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__vehicle
 msgid "Company Vehicle"
-msgstr "سيارة المؤسسة"
+msgstr "سيارة الشركة"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__contracts_count
@@ -141,18 +142,18 @@ msgstr "العقد قريباً ستنتهي صلاحيته"
 #. module: hr_contract
 #: model:mail.message.subtype,description:hr_contract.mt_contract_close
 msgid "Contract expired"
-msgstr "انتهت صلاحية العقد"
+msgstr "العقد انتهت صلاحيته"
 
 #. module: hr_contract
 #: code:addons/hr_contract/models/hr_contract.py:99
 #, python-format
 msgid "Contract start date must be earlier than contract end date."
-msgstr "يجب أن يكون تاريخ بدء العقد قبل تاريخ نهايته."
+msgstr "يجب أن يكون تاريخ بدء العقد قبل تاريخ نهاية العقد."
 
 #. module: hr_contract
 #: model:mail.message.subtype,name:hr_contract.mt_department_contract_pending
 msgid "Contract to Renew"
-msgstr "عقود مراد تجديدها"
+msgstr "عقود للتجديد"
 
 #. module: hr_contract
 #: model:ir.actions.act_window,name:hr_contract.act_hr_employee_2_hr_contract
@@ -212,7 +213,7 @@ msgstr "القسم"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__display_name
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_type__display_name
 msgid "Display Name"
-msgstr "الاسم المعروض"
+msgstr "اسم العرض"
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
@@ -225,7 +226,6 @@ msgid "Edit Contract"
 msgstr "تعديل العقد"
 
 #. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_emp
 #: model:ir.model,name:hr_contract.model_hr_employee
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__employee_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -250,7 +250,7 @@ msgstr "عقود الموظفين"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__wage
 msgid "Employee's monthly gross wage."
-msgstr "إجمالي المرتب الشهري للموظف."
+msgstr "إجمالي المرتب الشهري للموظف"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__resource_calendar_id
@@ -270,7 +270,7 @@ msgstr "تاريخ انتهاء العقد (إذا كان عقدًا محدد ا
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__trial_date_end
 msgid "End date of the trial period (if there is one)."
-msgstr "تاريخ انتهاء الفترة التجريبية (إذا وجدت)."
+msgstr "تاريخ انتهاء الفترة التجريبية (إذا كان هناك واحد)."
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__trial_date_end
@@ -301,15 +301,14 @@ msgstr "المتابعون (الشركاء)"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract_type__sequence
 msgid "Gives the sequence when displaying a list of Contract."
-msgstr "إظهار المسلسل عند عرض لائحة العقود."
+msgstr "اظهار التسلسل عند عرض لائحة العقود"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__reported_to_secretariat
 msgid ""
 "Green this button when the contract information has been transfered to the "
 "social secretariat."
-msgstr ""
-"اجعل هذا الزر أخضر عندما يتم نقل معلومات العقد إلى الأمانة الاجتماعية."
+msgstr "اخضر هذا الزر عندما تم نقل معلومات العقد إلى الأمانة الاجتماعية."
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -327,22 +326,22 @@ msgstr "عقد الموارد البشرية: تحديث الحالة"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__id
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_type__id
 msgid "ID"
-msgstr "المُعرف"
+msgstr "المعرف"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_unread
 msgid "If checked new messages require your attention."
-msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "إذا كان محددًا، فهناك رسائل جديدة تحتاج لرؤيتها."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "إذا كان محددًا، فقد حدث خطأ في تسليم بعض الرسائل."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -461,17 +460,17 @@ msgstr "عدد الإجراءات"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_has_error_counter
 msgid "Number of error"
-msgstr "عدد الأخطاء"
+msgstr "عدد الاخطاء"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr "عدد الرسائل التي تتطلب إجراء"
+msgstr "عدد الرسائل التي تتطلب اجراء"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "عدد الرسائل الحادث بها خطأ في التسليم"
+msgstr "عدد الرسائل مع خطأ في التسليم"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__message_unread_counter
@@ -481,7 +480,7 @@ msgstr "عدد الرسائل الجديدة"
 #. module: hr_contract
 #: selection:hr.contract,activity_state:0
 msgid "Overdue"
-msgstr "متأخر"
+msgstr "متاخر"
 
 #. module: hr_contract
 #: selection:hr.contract,activity_state:0
@@ -517,7 +516,7 @@ msgstr "البحث في انواع العقود"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract_type__sequence
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_type_view_search
 msgid "Sequence"
-msgstr "المسلسل"
+msgstr "التسلسل"
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__reported_to_secretariat
@@ -555,7 +554,7 @@ msgstr ""
 "الحالة على أساس الأنشطة\n"
 "المتأخرة: تاريخ الاستحقاق مر\n"
 "اليوم: تاريخ النشاط هو اليوم\n"
-"المخطط: الأنشطة المستقبلية."
+"المخطط: الأنشطة المستقبلية"
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__state
@@ -563,16 +562,11 @@ msgid "Status of the contract"
 msgstr "حالة العقد"
 
 #. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_sub
-msgid "Subcontractor"
-msgstr "المقاول الفرعي"
-
-#. module: hr_contract
 #: selection:hr.contract,state:0
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 #: model:mail.message.subtype,name:hr_contract.mt_contract_pending
 msgid "To Renew"
-msgstr "للتجديد"
+msgstr "للتجديد "
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -623,11 +617,6 @@ msgstr "سجل تواصل الموقع"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__permit_no
 msgid "Work Permit No"
 msgstr "رقم تصريح العمل"
-
-#. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_wrkr
-msgid "Worker"
-msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__resource_calendar_id

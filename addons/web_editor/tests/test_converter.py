@@ -2,16 +2,17 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 import textwrap
+import unittest
 
 from lxml import etree, html
 from lxml.builder import E
 
 from odoo.tests import common
-from odoo.tests.common import BaseCase
 from odoo.addons.web_editor.models.ir_qweb import html_to_text
 
 
-class TestHTMLToText(BaseCase):
+@common.tagged('standard', 'at_install')
+class TestHTMLToText(unittest.TestCase):
     def test_rawstring(self):
         self.assertEqual(
             "foobar",

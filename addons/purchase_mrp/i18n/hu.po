@@ -4,7 +4,6 @@
 # 
 # Translators:
 # krnkris, 2018
-# gezza <geza.nagy@oregional.hu>, 2019
 # 
 msgid ""
 msgstr ""
@@ -12,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:24+0000\n"
-"Last-Translator: gezza <geza.nagy@oregional.hu>, 2019\n"
+"Last-Translator: krnkris, 2018\n"
 "Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +22,12 @@ msgstr ""
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_mrp_production
 msgid "Production"
-msgstr "Gyártás"
+msgstr "Éles"
 
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr "Beszerzési rendelés sor"
+msgstr "Beszállítói megrendelés sor"
 
 #. module: purchase_mrp
 #: model:ir.model,name:purchase_mrp.model_stock_move

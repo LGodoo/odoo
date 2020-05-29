@@ -6,8 +6,6 @@
 # Otgonbayar.A <gobi.mn@gmail.com>, 2018
 # Martin Trigaux, 2018
 # Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
-# Baasansuren Sharavsuren <baasansuren@bumanit.mn>, 2019
-# tserendavaa tsogtoo <tseegii011929@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -15,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-21 13:16+0000\n"
 "PO-Revision-Date: 2018-08-24 09:23+0000\n"
-"Last-Translator: tserendavaa tsogtoo <tseegii011929@gmail.com>, 2019\n"
+"Last-Translator: Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019\n"
 "Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,7 +55,7 @@ msgstr "Бүлэглэх"
 #. module: pos_sale
 #: model:ir.model.fields,help:pos_sale.field_crm_team__dashboard_graph_group_pos
 msgid "How this channel's dashboard graph will group the results."
-msgstr "Энэ сувгийн хяналтын самбарын график нь үр дүнг бүлэглэх болно."
+msgstr ""
 
 #. module: pos_sale
 #: selection:sale.report,state:0
@@ -77,17 +75,17 @@ msgstr "Шинэ"
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_crm_team__pos_sessions_open_count
 msgid "Open POS Sessions"
-msgstr "ПОС сэшнүүд нээх"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.actions.act_window,name:pos_sale.pos_session_action_from_crm_team
 msgid "Open Sessions"
-msgstr "Шинэ Сэшн"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_crm_team__dashboard_graph_group_pos
 msgid "POS Grouping"
-msgstr "ПОС бүлэглэлт"
+msgstr ""
 
 #. module: pos_sale
 #: selection:sale.report,state:0
@@ -118,7 +116,7 @@ msgstr "Борлуулалтын Цэгийн Сэшн"
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_crm_team__pos_config_ids
 msgid "Point of Sales"
-msgstr "Борлуулалтын цэг"
+msgstr ""
 
 #. module: pos_sale
 #: selection:sale.report,state:0
@@ -166,7 +164,7 @@ msgstr "Борлуулалтын баг"
 #: code:addons/pos_sale/models/crm_team.py:119
 #, python-format
 msgid "Sales: Untaxed Amount"
-msgstr "Борлуулалт: Татваргүй дүн"
+msgstr ""
 
 #. module: pos_sale
 #: selection:crm.team,dashboard_graph_group_pos:0
@@ -176,17 +174,17 @@ msgstr "Борлуулагч"
 #. module: pos_sale
 #: model_terms:ir.ui.view,arch_db:pos_sale.crm_team_salesteams_view_kanban_inherit_pos_sale
 msgid "Session Running"
-msgstr "Явагдаж буй"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_crm_team__pos_order_amount_total
 msgid "Session Sale Amount"
-msgstr "Сэшний борлуулалтын нийт дүн"
+msgstr ""
 
 #. module: pos_sale
 #: model_terms:ir.ui.view,arch_db:pos_sale.crm_team_salesteams_view_kanban_inherit_pos_sale
 msgid "Sessions Running"
-msgstr "Ажиллаж байгаа сэшнүүд"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_sale_report__state
@@ -196,14 +194,14 @@ msgstr "Төлөв"
 #. module: pos_sale
 #: model:ir.model.fields,field_description:pos_sale.field_crm_team__team_type
 msgid "Team Type"
-msgstr "Багийн төрөл"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.model.fields,help:pos_sale.field_pos_order__currency_rate
 msgid ""
 "The rate of the currency to the currency of rate applicable at the date of "
 "the order"
-msgstr "Захиалга хийгдсэн өдөр тухайн валютын ханштай харьцах ханш"
+msgstr ""
 
 #. module: pos_sale
 #: model:ir.model.fields,help:pos_sale.field_crm_team__team_type
@@ -215,7 +213,7 @@ msgstr "Сувгийн төрөл, энэ сувгийг хаана хэрхэн
 #: model:ir.model.fields,help:pos_sale.field_pos_config__crm_team_id
 #: model:ir.model.fields,help:pos_sale.field_pos_session__crm_team_id
 msgid "This Point of sale's sales will be related to this Sales Team."
-msgstr "Борлуулалтын цэг нь борлуулалтын багтай холбоотой байх болно."
+msgstr ""
 
 #. module: pos_sale
 #: selection:crm.team,team_type:0

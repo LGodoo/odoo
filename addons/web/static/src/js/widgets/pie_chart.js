@@ -34,13 +34,8 @@ var PieChart = Widget.extend({
             title: node.attrs.title || modifiers.title || modifiers.measure,
         });
 
-        var pieChartContext = JSON.parse(JSON.stringify(record.context));
-        delete pieChartContext.graph_mode;
-        delete pieChartContext.graph_measure;
-        delete pieChartContext.graph_groupbys;
-
         this.subViewParams = {
-            context: pieChartContext,
+            context: record.context,
             domain: domain,
             groupBy: [],
             modelName: record.model,

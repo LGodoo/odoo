@@ -368,19 +368,6 @@ var FormController = BasicController.extend({
         this._super(state);
     },
     /**
-     * Overrides to reload the form when saving failed in readonly (e.g. after
-     * a change on a widget like priority or statusbar).
-     *
-     * @override
-     * @private
-     */
-    _rejectSave: function () {
-        if (this.mode === 'readonly') {
-            return this.reload();
-        }
-        return this._super.apply(this, arguments);
-    },
-    /**
      * Calls unfreezeOrder when changing the mode.
      * Also, when there is a change of mode, the tracking of last activated
      * field is reset, so that the following field activation process starts
@@ -561,9 +548,7 @@ var FormController = BasicController.extend({
      * @private
      */
     _onEdit: function () {
-        // wait for potential pending changes to be saved (done with widgets
-        // allowing to edit in readonly)
-        this.mutex.getUnlockedDef().then(this._setMode.bind(this, 'edit'));
+        this._setMode('edit');
     },
     /**
      * This method is called when someone tries to freeze the order, most likely
@@ -598,12 +583,9 @@ var FormController = BasicController.extend({
      * @private
      * @param {OdooEvent} event
      */
-    _onFormDialogDiscarded: function(ev) {
-        ev.stopPropagation();
-        var isFocused = this.renderer.focusLastActivatedWidget();
-        if (ev.data.callback) {
-            ev.data.callback(_.str.toBool(isFocused));
-        }
+    _onFormDialogDiscarded: function(e) {
+        e.stopPropagation();
+        this.renderer.focusLastActivatedWidget();
     },
     /**
      * Opens a one2many record (potentially new) in a dialog. This handler is

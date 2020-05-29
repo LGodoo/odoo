@@ -183,14 +183,13 @@ class EscposDriver(Thread):
             except NoStatusError as e:
                 print("Impossible to get the status of the printer %s" % e)
             except Exception as e:
-                self.set_status('error')
-                _logger.exception(e)
+                self.set_status('error', e)
+                _logger.exception()
             finally:
                 if error:
                     self.queue.put((timestamp, task, data))
                 if printer:
                     printer.close()
-                    printer = None
 
     def push_task(self,task, data = None):
         self.lockedstart()

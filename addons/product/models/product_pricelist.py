@@ -5,7 +5,6 @@ from itertools import chain
 
 from odoo import api, fields, models, tools, _
 from odoo.exceptions import UserError, ValidationError
-from odoo.tools import float_repr
 
 from odoo.addons import decimal_precision as dp
 
@@ -101,7 +100,7 @@ class Pricelist(models.Model):
         """ Low-level method - Mono pricelist, multi products
         Returns: dict{product_id: (price, suitable_rule) for the given pricelist}
 
-        Date in context can be a date, datetime, ...
+        If date in context: Date of the pricelist (%Y-%m-%d)
 
             :param products_qty_partner: list of typles products, quantity, partner
             :param datetime date: validity date
@@ -109,8 +108,7 @@ class Pricelist(models.Model):
         """
         self.ensure_one()
         if not date:
-            date = self._context.get('date') or fields.Date.today()
-        date = fields.Date.to_date(date)  # boundary conditions differ if we have a datetime
+            date = self._context.get('date') or fields.Date.context_today(self)
         if not uom_id and self._context.get('uom'):
             uom_id = self._context['uom']
         if uom_id:
@@ -209,7 +207,7 @@ class Pricelist(models.Model):
                         continue
 
                 if rule.base == 'pricelist' and rule.base_pricelist_id:
-                    price_tmp = rule.base_pricelist_id._compute_price_rule([(product, qty, partner)], date, uom_id)[product.id][0]  # TDE: 0 = price, 1 = rule
+                    price_tmp = rule.base_pricelist_id._compute_price_rule([(product, qty, partner)])[product.id][0]  # TDE: 0 = price, 1 = rule
                     price = rule.base_pricelist_id.currency_id._convert(price_tmp, self.currency_id, self.env.user.company_id, date, round=False)
                 else:
                     # if base option is public price take sale price else cost price of product
@@ -307,7 +305,6 @@ class Pricelist(models.Model):
         return pricelist.get_products_price(
             list(pycompat.izip(**products_by_qty_by_partner)))
 
-    # DEPRECATED (Not used anymore, see d39d583b2) -> Remove me in master (saas12.3)
     def _get_partner_pricelist(self, partner_id, company_id=None):
         """ Retrieve the applicable pricelist for a given partner in a given company.
 
@@ -317,53 +314,34 @@ class Pricelist(models.Model):
         res = self._get_partner_pricelist_multi([partner_id], company_id)
         return res[partner_id].id
 
-    def _get_partner_pricelist_multi_search_domain_hook(self):
-        return []
-
-    def _get_partner_pricelist_multi_filter_hook(self):
-        return self
-
     def _get_partner_pricelist_multi(self, partner_ids, company_id=None):
         """ Retrieve the applicable pricelist for given partners in a given company.
-
-            It will return the first found pricelist in this order:
-            First, the pricelist of the specific property (res_id set), this one
-                   is created when saving a pricelist on the partner form view.
-            Else, it will return the pricelist of the partner country group
-            Else, it will return the generic property (res_id not set), this one
-                  is created on the company creation.
-            Else, it will return the first available pricelist
 
             :param company_id: if passed, used for looking up properties,
                 instead of current user's company
             :return: a dict {partner_id: pricelist}
         """
-        # `partner_ids` might be ID from inactive uers. We should use active_test
-        # as we will do a search() later (real case for website public user).
-        Partner = self.env['res.partner'].with_context(active_test=False)
-
+        Partner = self.env['res.partner']
         Property = self.env['ir.property'].with_context(force_company=company_id or self.env.user.company_id.id)
         Pricelist = self.env['product.pricelist']
-        pl_domain = self._get_partner_pricelist_multi_search_domain_hook()
 
-        # if no specific property, try to find a fitting pricelist
+        # retrieve values of property
         result = Property.get_multi('property_product_pricelist', Partner._name, partner_ids)
 
-        remaining_partner_ids = [pid for pid, val in result.items() if not val or
-                                 not val._get_partner_pricelist_multi_filter_hook()]
+        remaining_partner_ids = [pid for pid, val in result.items() if not val]
         if remaining_partner_ids:
             # get fallback pricelist when no pricelist for a given country
             pl_fallback = (
-                Pricelist.search(pl_domain + [('country_group_ids', '=', False)], limit=1) or
+                Pricelist.search([('country_group_ids', '=', False)], limit=1) or
                 Property.get('property_product_pricelist', 'res.partner') or
-                Pricelist.search(pl_domain, limit=1)
+                Pricelist.search([], limit=1)
             )
             # group partners by country, and find a pricelist for each country
             domain = [('id', 'in', remaining_partner_ids)]
             groups = Partner.read_group(domain, ['country_id'], ['country_id'])
             for group in groups:
                 country_id = group['country_id'] and group['country_id'][0]
-                pl = Pricelist.search(pl_domain + [('country_group_ids.country_ids', '=', country_id)], limit=1)
+                pl = Pricelist.search([('country_group_ids.country_ids', '=', country_id)], limit=1)
                 pl = pl or pl_fallback
                 for pid in Partner.search(group['__domain']).ids:
                     result[pid] = pl
@@ -488,13 +466,7 @@ class PricelistItem(models.Model):
             self.name = _("All Products")
 
         if self.compute_price == 'fixed':
-            self.price = ("%s %s") % (
-                float_repr(
-                    self.fixed_price,
-                    self.pricelist_id.currency_id.decimal_places,
-                ),
-                self.pricelist_id.currency_id.name
-            )
+            self.price = ("%s %s") % (self.fixed_price, self.pricelist_id.currency_id.name)
         elif self.compute_price == 'percentage':
             self.price = _("%s %% discount") % (self.percent_price)
         else:

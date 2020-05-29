@@ -8,7 +8,6 @@
 # yacov mosbacher (‫יעקב מוסבכר‬‎) <ymosba@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
 # שהאב חוסיין <shhab89@gmail.com>, 2018
-# ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:31+0000\n"
 "PO-Revision-Date: 2018-08-24 09:23+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019\n"
+"Last-Translator: שהאב חוסיין <shhab89@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,22 +26,22 @@ msgstr ""
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 3.12"
-msgstr "$ 3.12"
+msgstr "₪ 3.12"
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.40"
-msgstr "$ 4.40"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 4.50"
-msgstr "$ 4.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "$ 8.50"
-msgstr "$ 8.50"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
@@ -50,55 +49,53 @@ msgid ""
 "<span class=\"fa fa-lg fa-cutlery\" title=\"For bars and restaurants\" "
 "role=\"img\" aria-label=\"For bars and restaurants\"/>"
 msgstr ""
-"<span class=\"fa fa-lg fa-cutlery\" title=\"For bars and restaurants\" "
-"role=\"img\" aria-label=\"For bars and restaurants\"/>"
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_amount\">$ 0.86</span>"
-msgstr "<span class=\"pos-change_amount\">$ 0.86</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"pos-change_title\">Change</span>"
-msgstr "<span class=\"pos-change_title\">עודף</span>"
+msgstr "עודף"
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span class=\"total-amount-formatting\">TOTAL</span>"
-msgstr "<span class=\"total-amount-formatting\">סה\"כ</span>"
+msgstr "<span class=\"total-amount-formatting\">סכ\"ה</span>"
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
-msgstr "<span id=\"total-amount\" class=\"pos_total-amount\">$ 469.14</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>$ 470.00</span>"
-msgstr "<span>$ 470.00</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "<span>Cash (USD):</span>"
-msgstr "<span>מזומן  (דולר אמריקאי):</span>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Floor Name: </strong>"
-msgstr "<strong>שם קומה: </strong>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_kanban
 msgid "<strong>Point of Sale: </strong>"
-msgstr "<strong>נקודת מכירה: </strong>"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__background_image
 msgid ""
 "A background image used to display a floor layout in the point of sale "
 "interface"
-msgstr "תמונת רקע המשמשת להצגת פריסת קומה בממשק נקודת המכירה"
+msgstr "תמונת רקע המשמשת להצגת ממשק בפריסת ריצפה בנקודת המכירה "
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
@@ -106,13 +103,13 @@ msgid ""
 "A restaurant floor represents the place where customers are served, this is where you can\n"
 "                define and position the tables."
 msgstr ""
-"קומה במסעדה מציינת את המקום בו משרתים לקוחות, כאן ניתן\n"
+"קומה במסעדה מציינת את המקום בו לקוחות מטופלים, כאן ניתן\n"
 "להגדיר ולמקם שולחנות."
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Accept customer tips or convert their change to a tip"
-msgstr "קבל טיפים של לקוחות או המר את העודף שלהם לטיפ"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__active
@@ -136,59 +133,59 @@ msgstr "הוסף הערה"
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_floor_form
 msgid "Add a new restaurant floor"
-msgstr "הוסף קומת מסעדה חדשה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.actions.act_window,help:pos_restaurant.action_restaurant_printer_form
 msgid "Add a new restaurant order printer"
-msgstr "הוסף מדפסת הזמנות מסעדה חדשה"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:107
 #, python-format
 msgid "Add button"
-msgstr "הוסף כפתור"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Add notes to orderlines"
-msgstr "הוסף הערות לשורות ההזמנה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_orderline_notes
 msgid "Allow custom notes on Orderlines."
-msgstr "אפשר הערות בהתאמה אישית בשורות ההזמנה."
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Allow to print bill before payment"
-msgstr "אפשר להדפיס חשבון לפני התשלום"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_printbill
 msgid "Allows to print the Bill before payment."
-msgstr "מאפשר להדפיס חשבון לפני התשלום"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__name
 msgid "An internal identification of a table"
-msgstr "מזהה פנימי של שולחן"
+msgstr "זיהוי פנימי של שולחן"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_printer__name
 msgid "An internal identification of the printer"
-msgstr "מזהה פנימי של המדפסת"
+msgstr "זיהוי פנימי של המדפסת"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__name
 msgid "An internal identification of the restaurant floor"
-msgstr "מזהה פנימי של קומה במסעדה"
+msgstr "זיהוי פנימי של קומה במסעדה"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_table_form
 msgid "Appearance"
-msgstr "מראה"
+msgstr "תצוגה"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -203,14 +200,14 @@ msgstr "האם אתה בטוח?"
 #: code:addons/pos_restaurant/static/src/xml/splitbill.xml:61
 #, python-format
 msgid "Back"
-msgstr "חזור"
+msgstr "חזרה"
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:82
 #, python-format
 msgid "Back to floor"
-msgstr "חזור לקומה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__background_color
@@ -227,7 +224,7 @@ msgstr "תמונת רקע"
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:31
 #, python-format
 msgid "Bill"
-msgstr "חשבון"
+msgstr "חוב"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -251,7 +248,7 @@ msgstr "פיצול חשבון"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:150
 #, python-format
 msgid "Blue"
-msgstr "כחול"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -293,7 +290,7 @@ msgstr "צבע"
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__create_uid
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__create_uid
 msgid "Created by"
-msgstr "נוצר ע\"י"
+msgstr "נוצר על ידי"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__create_date
@@ -312,7 +309,7 @@ msgstr "מחק"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Desk Organizer"
-msgstr "מארגן שולחן"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -338,7 +335,7 @@ msgstr "השם המוצג"
 #. module: pos_restaurant
 #: model:pos.category,name:pos_restaurant.drinks
 msgid "Drinks"
-msgstr "משקאות"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -355,10 +352,6 @@ msgid ""
 "                An Order Printer will only print updates for products belonging to one of\n"
 "                its categories."
 msgstr ""
-"לכל מדפסת הזמנה יש כתובת IP המגדירה את קופסת ה-  IoT / פרוקסי\n"
-"                החומרה בו ניתן למצוא את המדפסת ורשימה של קטגוריות מוצרים.\n"
-"                מדפסת הזמנה תדפיס עדכונים רק עבור מוצרים השייכים לאחת מהקטגוריות שלה.\n"
-"          "
 
 #. module: pos_restaurant
 #. openerp-web
@@ -370,7 +363,7 @@ msgstr "ערוך"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__iface_splitbill
 msgid "Enables Bill Splitting in the Point of Sale."
-msgstr "מאפשר פיצול חשבונות בנקודת מכירה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__floor_id
@@ -391,7 +384,7 @@ msgstr "תכנון קומות"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Floors"
-msgstr "קומות"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -407,7 +400,7 @@ msgstr "ירוק"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:154
 #, python-format
 msgid "Grey"
-msgstr "אפור"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -454,12 +447,12 @@ msgstr "מזהה"
 msgid ""
 "If false, the table is deactivated and will not be available in the point of"
 " sale"
-msgstr "אם מסומן כ \"לא\" השולחן לא פעיל ולא יהיה זמין בעמדת המכירה"
+msgstr "אם מסומן כ \"לא\" השולחן לא מופעל ולא יופיע בעמדת המכירה"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__module_pos_restaurant
 msgid "Is a Bar/Restaurant"
-msgstr "בר/ מסעדה"
+msgstr "בר או מסעדה"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor____last_update
@@ -473,7 +466,7 @@ msgstr "תאריך שינוי אחרון"
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__write_uid
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__write_uid
 msgid "Last Updated by"
-msgstr "עודכן לאחרונה ע\"י"
+msgstr "עודכן לאחרונה על ידי"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__write_date
@@ -485,7 +478,7 @@ msgstr "תאריך עדכון אחרון"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Led Lamp"
-msgstr "מנורת לד"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -493,7 +486,7 @@ msgstr "מנורת לד"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:155
 #, python-format
 msgid "Light grey"
-msgstr "אפור בהיר"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -505,7 +498,7 @@ msgstr "לוגו"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Manage table orders"
-msgstr "נהל הזמנות שולחן"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,name:pos_restaurant.minute_maid
@@ -516,7 +509,7 @@ msgstr "Minute Maid"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Monitor Stand"
-msgstr "עמדת צג"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -551,14 +544,14 @@ msgstr "מספר כסאות ?"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Odoo Logo"
-msgstr "לוגו של Odoo"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:13
 #, python-format
 msgid "Ok"
-msgstr "בסדר"
+msgstr "אישור"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -566,7 +559,7 @@ msgstr "בסדר"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:151
 #, python-format
 msgid "Orange"
-msgstr "כתום"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -578,7 +571,7 @@ msgstr "הזמנה"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__is_order_printer
 msgid "Order Printer"
-msgstr "מדפסת הזמנה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.actions.act_window,name:pos_restaurant.action_restaurant_printer_form
@@ -594,7 +587,7 @@ msgid ""
 "                order updates in the kitchen/bar when the waiter updates the order."
 msgstr ""
 "מדפסות הזמנה נמצאות בשימוש על ידי המסעדות והברים\n"
-"על מנת להדפיס את ההזמנה במטבח או בבר כאשר המלצר מבצע הזמנה."
+"על מנת להדפיס את ההזמנה במטבח\\בר כאשר המלצר מבצע הזמנה."
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__iface_orderline_notes
@@ -604,7 +597,7 @@ msgstr "הערות שורת הזמנה"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer_form
 msgid "POS Printer"
-msgstr "מדפסת נקודת מכירה"
+msgstr "מדפסת POS"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -616,7 +609,7 @@ msgstr "תשלום"
 #. module: pos_restaurant
 #: model:product.category,name:pos_restaurant.product_category_pos
 msgid "PoS"
-msgstr "נקודת מכירה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__pos_config_id
@@ -626,7 +619,7 @@ msgstr "נקודת מכירה"
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_config
 msgid "Point of Sale Configuration"
-msgstr "תצורת נקודת מכירה"
+msgstr "הגדרות קופה רושמת"
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_pos_order
@@ -648,7 +641,7 @@ msgstr "הדפס"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Print orders at the kitchen, at the bar, etc."
-msgstr "הדפס הזמנות במטבח, בבר וכו '."
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__product_categories_ids
@@ -663,12 +656,12 @@ msgstr "שם מדפסת"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Printers"
-msgstr "מדפסות"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_printer__proxy_ip
 msgid "Proxy IP Address"
-msgstr "כתובת IP של פרוקסי"
+msgstr "כתובת פרוקסי"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -696,26 +689,26 @@ msgstr "אדום"
 #: code:addons/pos_restaurant/static/src/js/floors.js:563
 #, python-format
 msgid "Removing a table cannot be undone"
-msgstr "לא ניתן לבטל את הסרת השולחן"
+msgstr "מחיקת שולחן הינה בלתי הפיכה"
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:119
 #, python-format
 msgid "Rename"
-msgstr "שנה שם"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_floor
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Restaurant Floor"
-msgstr "קומת מסעדה"
+msgstr "קומה במסעדה"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__floor_ids
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_tree
 msgid "Restaurant Floors"
-msgstr "קומות מסעדה"
+msgstr "קומות במסעדה"
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_printer
@@ -725,7 +718,7 @@ msgstr "מדפסות הזמנה של המסעדה"
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_printer
 msgid "Restaurant Printer"
-msgstr "מדפסת מסעדה"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model,name:pos_restaurant.model_restaurant_table
@@ -743,7 +736,7 @@ msgstr "עגול"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:126
 #, python-format
 msgid "Round Shape"
-msgstr "צורה עגולה"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -763,7 +756,7 @@ msgstr "רצף"
 #: code:addons/pos_restaurant/static/src/xml/printbill.xml:71
 #, python-format
 msgid "Served by"
-msgstr "מוגש ע\"י"
+msgstr "מוגש על ידי "
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__shape
@@ -780,7 +773,7 @@ msgstr "פיצול"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Split total or order lines"
-msgstr "פיצול סה\"כ או שורות הזמנה"
+msgstr ""
 
 #. module: pos_restaurant
 #: selection:restaurant.table,shape:0
@@ -792,7 +785,7 @@ msgstr "מרובע"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:125
 #, python-format
 msgid "Square Shape"
-msgstr "צורת ריבוע"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -816,7 +809,7 @@ msgstr "שולחן"
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_pos_config__is_table_management
 msgid "Table Management"
-msgstr "ניהול שולחן"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__name
@@ -834,7 +827,7 @@ msgstr "שם שולחן ?"
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_floor__table_ids
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.view_restaurant_floor_form
 msgid "Tables"
-msgstr "שולחנות"
+msgstr "טבלאות"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -858,7 +851,7 @@ msgstr "כמות הלקוחות שטופלו בהזמנה זאת."
 msgid ""
 "The background color of the floor layout, (must be specified in a html-"
 "compatible format)"
-msgstr "צבע הרקע של פריסת הקומה (חייב להיות בפורמט תואם HTML)"
+msgstr "צבע הרקע של מבנה הקומה (חייב להיות בפורמט תואם HTML)"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__seats
@@ -873,7 +866,7 @@ msgstr "רשימת השולחנות בקומה זו"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_config__floor_ids
 msgid "The restaurant floors served by this point of sale."
-msgstr "קומות המסעדה שמקבלות שירות מנקודת מכירה זו."
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_pos_order__table_id
@@ -896,13 +889,13 @@ msgstr "גובה השולחן בפיקסלים."
 msgid ""
 "The table's horizontal position from the left side to the table's center, in"
 " pixels"
-msgstr "המיקום האופקי מהצד השמאלי אל מרכז השולחן, בפיקסלים"
+msgstr "המיקום האופקי משמאל אל המרכז, בפיקסלים"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__position_v
 msgid ""
 "The table's vertical position from the top to the table's center, in pixels"
-msgstr "המיקום האנכי מראש השולחן אל המרכז, בפיקסלים"
+msgstr "המיקום האנכי מלמעלמה אל המרכז, בפיקסלים"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_table__width
@@ -919,24 +912,24 @@ msgstr "בקומה זו עדיין אין שולחנות, השתמש ב"
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "This product is used as reference on customer receipts."
-msgstr "מוצר זה משמש כמזהה בחשבונית לקוח."
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:129
 #, python-format
 msgid "Tint"
-msgstr "גוון"
+msgstr ""
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Tip Product"
-msgstr "מוצר טיפ"
+msgstr "רמז למוצר "
 
 #. module: pos_restaurant
 #: model_terms:ir.ui.view,arch_db:pos_restaurant.pos_config_view_form_inherit_restaurant
 msgid "Tips"
-msgstr "טיפים"
+msgstr "טיפ"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -951,7 +944,7 @@ msgstr "העברה"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:156
 #, python-format
 msgid "Turquoise"
-msgstr "טורקיז"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:product.product,uom_name:pos_restaurant.coke
@@ -966,7 +959,7 @@ msgstr "יחידות"
 #. module: pos_restaurant
 #: model:ir.model.fields,help:pos_restaurant.field_restaurant_floor__sequence
 msgid "Used to sort Floors"
-msgstr "משמש למיין קומות"
+msgstr "על מנת למיין קומות"
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__position_v
@@ -982,7 +975,7 @@ msgstr "מים"
 #. module: pos_restaurant
 #: model_terms:pos.config,customer_facing_display_html:pos_restaurant.pos_config_restaurant
 msgid "Whiteboard Pen"
-msgstr "טוש מחיק"
+msgstr ""
 
 #. module: pos_restaurant
 #: model:ir.model.fields,field_description:pos_restaurant.field_restaurant_table__width
@@ -1002,7 +995,7 @@ msgstr "עם "
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:152
 #, python-format
 msgid "Yellow"
-msgstr "צהוב"
+msgstr ""
 
 #. module: pos_restaurant
 #. openerp-web
@@ -1011,7 +1004,7 @@ msgstr "צהוב"
 #: code:addons/pos_restaurant/static/src/js/floors.js:426
 #, python-format
 msgid "You must be connected to the internet to save your changes."
-msgstr "עליך להיות מחובר לאינטרנט על מנת לשמור את השינויים"
+msgstr "עליך להיות מחובר לאינטרנט על מנות לשמור את השינויים"
 
 #. module: pos_restaurant
 #. openerp-web
@@ -1033,7 +1026,7 @@ msgstr "בשולחן"
 #: code:addons/pos_restaurant/static/src/xml/floors.xml:107
 #, python-format
 msgid "button in the editing toolbar to create new tables."
-msgstr "כפתור בסרגל העריכה ליצירת שולחנות חדשים"
+msgstr "כפתור בסרגל העריכה על מנת ליצור שולחנות חדשים"
 
 #. module: pos_restaurant
 #. openerp-web

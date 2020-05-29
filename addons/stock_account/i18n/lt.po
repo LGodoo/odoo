@@ -12,9 +12,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:33+0000\n"
+"POT-Creation-Date: 2018-09-21 13:17+0000\n"
 "PO-Revision-Date: 2018-08-24 09:25+0000\n"
 "Last-Translator: Linas Versada <linaskrisiukenas@gmail.com>, 2019\n"
 "Language-Team: Lithuanian (https://www.transifex.com/odoo/teams/41243/lt/)\n"
@@ -40,11 +40,6 @@ msgstr "Sąskaitų plano šablonas"
 #: model:ir.model.fields,field_description:stock_account.field_stock_move__account_move_ids
 msgid "Account Move"
 msgstr "DK įrašai"
-
-#. module: stock_account
-#: model:ir.model,name:stock_account.model_account_reconciliation_widget
-msgid "Account Reconciliation widget"
-msgstr "Sąskaitos sudengimo valdiklis"
 
 #. module: stock_account
 #: model_terms:ir.ui.view,arch_db:stock_account.view_category_property_form
@@ -85,6 +80,11 @@ msgstr "Archyvuotas"
 #: selection:product.category,property_valuation:0
 msgid "Automated"
 msgstr "Automatizuota"
+
+#. module: stock_account
+#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
+msgid "Available Products"
+msgstr "Pasiekiami produktai"
 
 #. module: stock_account
 #: selection:product.category,property_cost_method:0
@@ -202,7 +202,7 @@ msgstr "Būtina partnerinė sąskaita"
 #. module: stock_account
 #: model_terms:ir.actions.act_window,help:stock_account.product_valuation_action
 msgid "Create a new product valuation"
-msgstr "Sukurkite naują produkto vertinimą"
+msgstr "Sukurti naują produkto vertinimą"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price__create_uid
@@ -227,6 +227,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_account.field_stock_change_standard_price__display_name
 msgid "Display Name"
 msgstr "Rodomas pavadinimas"
+
+#. module: stock_account
+#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
+msgid "Exhausted Stock"
+msgstr "Pasibaigusios atsargos"
 
 #. module: stock_account
 #: selection:product.category,property_cost_method:0
@@ -269,6 +274,7 @@ msgid "Inventory Locations"
 msgstr "Inventoriaus vietos"
 
 #. module: stock_account
+#: code:addons/stock_account/wizard/stock_quantity_history.py:25
 #: model:ir.actions.act_window,name:stock_account.action_stock_inventory_valuation
 #: model:ir.actions.act_window,name:stock_account.product_valuation_action
 #: model:ir.model.fields,field_description:stock_account.field_product_category__property_valuation
@@ -277,6 +283,7 @@ msgstr "Inventoriaus vietos"
 #: model:ir.ui.menu,name:stock_account.menu_valuation
 #: model_terms:ir.ui.view,arch_db:stock_account.view_category_property_form
 #: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
+#, python-format
 msgid "Inventory Valuation"
 msgstr "Inventoriaus įvertinimas"
 
@@ -341,19 +348,22 @@ msgstr ""
 "Automatinis: Apskaitos įrašas yra automatiškai pridedamas inventoriaus vertinimui, kai produktas įeina ar išeina iš įmonės."
 
 #. module: stock_account
-#: code:addons/stock_account/models/product.py:139
+#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
+msgid "Negative Stock"
+msgstr "Neigiamas likutis"
+
+#. module: stock_account
+#: code:addons/stock_account/models/product.py:128
 #, python-format
 msgid "No difference between the standard price and the new price."
 msgstr "Nėra skirtumo tarp standartinės ir naujos kainos"
 
 #. module: stock_account
-#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
 #: selection:product.template,property_valuation:0
 msgid "Periodic (manual)"
 msgstr "Periodinis (rankinis)"
 
 #. module: stock_account
-#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
 #: selection:product.template,property_valuation:0
 msgid "Perpetual (automated)"
 msgstr "Nepertraukiamas (automatizuotas)"
@@ -370,7 +380,6 @@ msgstr "Planinio užsakymo grupė"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_product_product
-#: model_terms:ir.ui.view,arch_db:stock_account.view_inventory_valuation_search
 msgid "Product"
 msgstr "Produktas"
 
@@ -522,12 +531,7 @@ msgid "Stock Valuation Account (Outgoing)"
 msgstr "Atsargų įvertinimo sąskaita (sumažėjimas)"
 
 #. module: stock_account
-#: model:ir.model.fields,field_description:stock_account.field_product_product__stock_value_currency_id
-msgid "Stock Value Currency"
-msgstr ""
-
-#. module: stock_account
-#: code:addons/stock_account/models/stock.py:540
+#: code:addons/stock_account/models/stock.py:536
 #, python-format
 msgid ""
 "The cost of %s is currently equal to 0. Change the cost or the configuration"
@@ -537,7 +541,7 @@ msgstr ""
 "konfigūracijoje, kad išvengtumėte neteisingo vertinimo."
 
 #. module: stock_account
-#: code:addons/stock_account/models/stock.py:364
+#: code:addons/stock_account/models/stock.py:358
 #, python-format
 msgid ""
 "The move lines are not in a consistent state: some are entering and other "
@@ -547,7 +551,7 @@ msgstr ""
 "įmonę."
 
 #. module: stock_account
-#: code:addons/stock_account/models/stock.py:375
+#: code:addons/stock_account/models/stock.py:369
 #, python-format
 msgid ""
 "The move lines are not in a consistent states: they are doing an "
@@ -558,7 +562,7 @@ msgstr ""
 "žingsniu, kai turėtų eiti per kompanijų tranzito lokaciją."
 
 #. module: stock_account
-#: code:addons/stock_account/models/stock.py:373
+#: code:addons/stock_account/models/stock.py:367
 #, python-format
 msgid ""
 "The move lines are not in a consistent states: they do not share the same "

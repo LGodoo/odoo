@@ -497,8 +497,8 @@ options.registry.layout_column = options.Class.extend({
 
         if (count > 0) {
             var $lastColumn = this.$target.children().last();
-            for (var i = 0; i < count; i++) {
-                this.trigger_up('clone_snippet', {$snippet: $lastColumn});
+            for (var i = 0 ; i < count ; i++) {
+                $lastColumn.clone().insertAfter($lastColumn);
             }
         } else {
             var self = this;
@@ -642,11 +642,11 @@ var FacebookPageDialog = weWidgets.Dialog.extend({
      */
     _renderPreview: function () {
         var self = this;
-        var match = this.fbData.href.match(/^(?:https?:\/\/)?(?:www\.)?(?:fb|facebook)\.com\/(?:([\w.]+)|[^/?#]+-([0-9]{15,16}))(?:$|[\/?# ])/);
+        var match = this.fbData.href.match(/^(?:https?:\/\/)?(?:www\.)?(?:fb|facebook)\.com\/(\w+)/);
         if (match) {
             // Check if the page exists on Facebook or not
             $.ajax({
-                url: 'https://graph.facebook.com/' + (match[2] || match[1]) + '/picture',
+                url: 'https://graph.facebook.com/' + match[1] + '/picture',
                 statusCode: {
                     200: function () {
                         self._toggleWarning(true);

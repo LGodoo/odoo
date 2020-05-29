@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
+import unittest
 from odoo.addons.http_routing.models.ir_http import slugify, unslug
-from odoo.tests.common import BaseCase
+from odoo.tests.common import tagged
 
 
-class TestUnslug(BaseCase):
+@tagged('standard', 'at_install')
+class TestUnslug(unittest.TestCase):
 
     def test_unslug(self):
         tests = {
@@ -26,7 +28,9 @@ class TestUnslug(BaseCase):
         for slug, expected in tests.items():
             self.assertEqual(unslug(slug), expected)
 
-class TestTitleToSlug(BaseCase):
+
+@tagged('standard', 'at_install')
+class TestTitleToSlug(unittest.TestCase):
     """
     Those tests should pass with or without python-slugify
     See website/models/website.py slugify method

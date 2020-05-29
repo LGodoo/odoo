@@ -319,7 +319,7 @@ var BasicActivity = AbstractField.extend({
                 container: $markDoneBtn,
                 title : _t("Feedback"),
                 html: true,
-                trigger: 'manual',
+                trigger:'click',
                 placement: 'right', // FIXME: this should work, maybe a bug in the popper lib
                 content : function () {
                     var $popover = $(QWeb.render('mail.activity_feedback_form', { previous_activity_type_id: previousActivityTypeID, force_next: forceNextActivity}));
@@ -333,11 +333,6 @@ var BasicActivity = AbstractField.extend({
                 $popover.find('#activity_feedback').focus();
                 self._bindPopoverFocusout($(this));
             }).popover('show');
-        } else {
-            var popover = $markDoneBtn.data('bs.popover');
-            if ($('#' + popover.tip.id).length === 0) {
-               popover.show();
-            }
         }
     },
     /**

@@ -7,17 +7,13 @@
 # Moshe Flam <pashute@gmail.com>, 2018
 # ExcaliberX <excaliberx@gmail.com>, 2018
 # Yihya Hugirat <hugirat@gmail.com>, 2018
-# דודי מלכה <Dudimalka6@gmail.com>, 2019
-# Amit Spilman <amit@laylinetech.com>, 2019
-# ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:05+0000\n"
-"PO-Revision-Date: 2018-08-24 09:16+0000\n"
-"Last-Translator: ZVI BLONDER <ZVIBLONDER@gmail.com>, 2019\n"
+"PO-Revision-Date: 2018-10-02 10:05+0000\n"
+"Last-Translator: Yihya Hugirat <hugirat@gmail.com>, 2018\n"
 "Language-Team: Hebrew (https://www.transifex.com/odoo/teams/41243/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +26,7 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:612
 #, python-format
 msgid "%d records were successfully imported"
-msgstr "%d הרשומות יובאו בהצלחה"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -46,7 +42,7 @@ msgstr "(%d יותר)"
 msgid ""
 "A single column was found in the file, this often means the file separator "
 "is incorrect"
-msgstr "נמצא עמודה אחת בקובץ, פירוש הדבר לעתים קרובות שמפריד הקבצים שגוי"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -58,9 +54,6 @@ msgid ""
 " transient. If the issue still occurs, try to split the file rather than "
 "import it at once."
 msgstr ""
-"אירעה בעיה לא ידועה במהלך הייבוא (ייתכן שאיבד חיבור, חריגה ממגבלת הנתונים או"
-" חריגה ממגבלות הזיכרון). נסה שוב אם הבעיה היא זמנית. אם הבעיה עדיין מתרחשת, "
-"נסה לפצל את הקובץ במקום לייבא אותו בו-זמנית."
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base
@@ -70,12 +63,12 @@ msgstr "בסיס"
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_import
 msgid "Base Import"
-msgstr "ייבוא בסיס"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_mapping
 msgid "Base Import Mapping"
-msgstr "מיפוי ייבוא בסיסי"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -88,18 +81,18 @@ msgstr "בטל"
 #: code:addons/base_import/models/base_import.py:693
 #, python-format
 msgid "Column %s contains incorrect values (value: %s)"
-msgstr "עמודה %s מכיל ערכים שגויים (ערך: %s)"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:788
 #, python-format
 msgid "Column %s contains incorrect values. Error in line %d: %s"
-msgstr "עמודה %s מכיל ערכים שגויים. שגיאה בשורה %d: %s"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__column_name
 msgid "Column Name"
-msgstr "שם עמודה "
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -107,7 +100,7 @@ msgstr "שם עמודה "
 #: code:addons/base_import/static/src/js/import_action.js:228
 #, python-format
 msgid "Comma"
-msgstr "פסיק"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:825
@@ -116,15 +109,13 @@ msgid ""
 "Could not retrieve URL: %(url)s [%(field_name)s: L%(line_number)d]: "
 "%(error)s"
 msgstr ""
-"לא ניתן היה לאחזר את כתובת האתר: %(url)s [%(field_name)s: L%(line_number)d]:"
-" %(error)s"
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:108
 #, python-format
 msgid "Create if doesn't exist"
-msgstr "צור אם אינו קיים"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__create_uid
@@ -177,9 +168,6 @@ msgid ""
 "Note that the value in the column will be used as the new record's 'name', "
 "and assumes this is sufficient to create the record."
 msgstr ""
-"יוצר רשומות חדשות אם לא ניתן למצוא אותן (במקום להיכשל ביבוא). שים לב שהערך "
-"בעמודה ישמש כ\"שם \"של הרשומה החדשה, ויש להניח שזה מספיק כדי ליצור את "
-"הרשומה."
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__currency_id
@@ -192,28 +180,28 @@ msgstr "מטבע"
 #: code:addons/base_import/models/base_import.py:212
 #, python-format
 msgid "Database ID"
-msgstr "מזהה מסד נתונים"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:83
 #, python-format
 msgid "Date Format:"
-msgstr "פורמט תאריך:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:84
 #, python-format
 msgid "Datetime Format:"
-msgstr "פורמט תאריך ושעה:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:88
 #, python-format
 msgid "Decimal Separator:"
-msgstr "מפריד עשרוני:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -248,14 +236,14 @@ msgstr "השם המוצג"
 #: code:addons/base_import/static/src/js/import_action.js:445
 #, python-format
 msgid "Don't import"
-msgstr "שלא לייבוא"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:229
 #, python-format
 msgid "Dot"
-msgstr "נקודה"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -267,7 +255,7 @@ msgstr "הורדה"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_complex__dt
 msgid "Dt"
-msgstr "Dt"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -280,7 +268,7 @@ msgstr "קידוד:"
 #: code:addons/base_import/models/base_import.py:790
 #, python-format
 msgid "Error Parsing Date [%s:L%d]: %s"
-msgstr "שגיאת ניתוח תאריך [%s:L%d]: %s"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:289
@@ -293,21 +281,21 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:624
 #, python-format
 msgid "Everything seems valid."
-msgstr "הכל נראה תקף."
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:82
 #, python-format
 msgid "Excel files are recommended as fields formatting is automatic."
-msgstr "קבצי אקסל המומלצים כשדות העיצוב הוא אוטומטי."
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:169
 #: code:addons/base_import/models/base_import.py:206
 #, python-format
 msgid "External ID"
-msgstr "מזהה חיצוני"
+msgstr "ID חיצוני"
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__field_name
@@ -327,54 +315,54 @@ msgstr "שם קובץ"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__file_type
 msgid "File Type"
-msgstr "סוג קובץ"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:808
 #: code:addons/base_import/models/base_import.py:814
 #, python-format
 msgid "File size exceeds configured maximum (%s bytes)"
-msgstr "גודל הקובץ חורג מהמקסימום המוגדר (%s ביתים)"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,help:base_import.field_base_import_import__file
 msgid "File to check and/or import, raw binary (not base64)"
-msgstr "קובץ כדי לבדוק ו / או לייבא, בינארי גולמי (לא base64)"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:137
 #, python-format
 msgid "For CSV files, you may need to select the correct separator."
-msgstr "עבור קבצי CSV, ייתכן שתצטרך לבחור במפריד הנכון."
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:13
 #, python-format
 msgid "Formatting Options…"
-msgstr "אפשרויות עיצוב ..."
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:671
 #, python-format
 msgid "Get all possible values"
-msgstr "קבל את כל הערכים האפשריים"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:658
 #, python-format
 msgid "Here are the possible values:"
-msgstr "אלה הערכים האפשריים:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:138
 #, python-format
 msgid "Here is the start of the file we could not import:"
-msgstr "הנה תחילת הקובץ שאיננו יכולים לייבא:"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__id
@@ -407,10 +395,6 @@ msgid ""
 "                field corresponding to the column. This makes imports\n"
 "                simpler especially when the file has many columns."
 msgstr ""
-"אם הקובץ מכיל\n"
-"                שמות העמודות, Odoo יכול לנסות לזהות אוטומטית\n"
-"                שדה המתאים לעמודה. זה גורם לייבוא\n"
-"                להיות פשוט יותר, במיוחד כאשר יש לקובץ עמודות רבות."
 
 #. module: base_import
 #. openerp-web
@@ -445,28 +429,28 @@ msgstr "יבוא"
 #: code:addons/base_import/static/src/xml/base_import.xml:91
 #, python-format
 msgid "Import FAQ"
-msgstr "ייבא שאלות נפוצות"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:140
 #, python-format
 msgid "Import a File"
-msgstr "ייבוא קובץ"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:612
 #, python-format
 msgid "Import completed"
-msgstr "הייבוא הושלם"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:136
 #, python-format
 msgid "Import preview failed due to:"
-msgstr "התצוגה המקדימה של הייבוא נכשלה בשל:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -477,8 +461,6 @@ msgid ""
 "may be too big for the system's configuration, try to split it (import less "
 "records per file)."
 msgstr ""
-"תם הזמן הקצוב לייבוא. נסה שוב. אם אתה עדיין נתקל בבעיה זו, הקובץ עשוי להיות "
-"גדול מדי עבור תצורת המערכת, נסה לפצל אותה (ייבא פחות רשומות לקובץ)."
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import____last_update
@@ -548,21 +530,21 @@ msgstr "תאריך עדכון אחרון"
 #: code:addons/base_import/static/src/xml/base_import.xml:101
 #, python-format
 msgid "Load File"
-msgstr "טען קובץ"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:364
 #, python-format
 msgid "Load New File"
-msgstr "טען קובץ חדש"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:41
 #, python-format
 msgid "Map your columns to import"
-msgstr "למפות את העמודות לייבוא"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_import__res_model
@@ -579,26 +561,26 @@ msgstr "שם"
 #: code:addons/base_import/static/src/xml/base_import.xml:85
 #, python-format
 msgid "Need Help?"
-msgstr "צריך עזרה?"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:231
 #, python-format
 msgid "No Separator"
-msgstr "אין מפריד"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:513
 #, python-format
 msgid "Normal Fields"
-msgstr "שדות רגילים"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__othervalue
 msgid "Other Variable"
-msgstr "משתנה אחר"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_o2m_child__parent_id
@@ -610,33 +592,33 @@ msgstr "אב"
 #: code:addons/base_import/static/src/js/import_action.js:514
 #, python-format
 msgid "Relation Fields"
-msgstr "שדות מקושרים"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:100
 #, python-format
 msgid "Reload File"
-msgstr "טען מחדש את הקובץ"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
 msgid "Res Model"
-msgstr "מודל Res"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:79
 #, python-format
 msgid "Select a CSV or Excel file to import."
-msgstr "ייבא מקובץ csv או excel"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:212
 #, python-format
 msgid "Semicolon"
-msgstr ";"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -650,26 +632,26 @@ msgstr "מפריד:"
 #: code:addons/base_import/static/src/xml/base_import.xml:66
 #, python-format
 msgid "Show fields of relation fields (advanced)"
-msgstr "הצג שדות של שדות יחסים (מתקדם)"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__somevalue
 msgid "Some Value"
-msgstr "ערך מסוים"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:214
 #, python-format
 msgid "Space"
-msgstr "רווח"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:213
 #, python-format
 msgid "Tab"
-msgstr "טאב"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -681,84 +663,84 @@ msgstr ""
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_preview
 msgid "Tests : Base Import Model Preview"
-msgstr "בדיקות: תצוגה מקדימה של ייבוא ​​בסיסי"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char
 msgid "Tests : Base Import Model, Character"
-msgstr "בדיקות: מודל ייבוא בסיסי, תו"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_noreadonly
 msgid "Tests : Base Import Model, Character No readonly"
-msgstr "בדיקות: מודל ייבוא בסיסי, תו לא לקריאה בלבד"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_readonly
 msgid "Tests : Base Import Model, Character readonly"
-msgstr "בדיקות: מודל ייבוא בסיסי, תו לקריאה בלבד"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_required
 msgid "Tests : Base Import Model, Character required"
-msgstr "בדיקות: מודל ייבוא בסיסי, תו דרוש"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_states
 msgid "Tests : Base Import Model, Character states"
-msgstr "בדיקות: מודל ייבוא בסיסי,מצבי תו"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_char_stillreadonly
 msgid "Tests : Base Import Model, Character still readonly"
-msgstr "בדיקות: מודל ייבוא בסיסי, תו דעדיין לקריאה בלבד"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o
 msgid "Tests : Base Import Model, Many to One"
-msgstr "בדיקות: מודל ייבוא בסיסי, רבים ליחיד"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_related
 msgid "Tests : Base Import Model, Many to One related"
-msgstr "בדיקות: מודל ייבוא בסיסי, רבים ליחיד מקושר"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required
 msgid "Tests : Base Import Model, Many to One required"
-msgstr "בדיקות: מודל ייבוא בסיסי, רבים ליחיד דרוש"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_m2o_required_related
 msgid "Tests : Base Import Model, Many to One required related"
-msgstr "בדיקות: מודל ייבוא בסיסי, רבים ליחיד דרוש מקושר"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m
 msgid "Tests : Base Import Model, One to Many"
-msgstr "בדיקות: מודל ייבוא בסיסי, יחיד לרבים"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_o2m_child
 msgid "Tests : Base Import Model, One to Many child"
-msgstr "בדיקות: מודל ייבוא בסיסי, יחיד לרבים צאצא"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_complex
 msgid "Tests: Base Import Model Complex"
-msgstr "בדיקות: מודל ייבוא בסיסי מורכב"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_base_import_tests_models_float
 msgid "Tests: Base Import Model Float"
-msgstr "בדיקות: מודל ייבוא בסיסי מספר עשרוני"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/js/import_action.js:80
 #, python-format
 msgid "Text Delimiter:"
-msgstr "מפריד טקסט:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -774,27 +756,27 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:87
 #, python-format
 msgid "Thousands Separator:"
-msgstr "מפריד אלפים:"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
 #: code:addons/base_import/static/src/xml/base_import.xml:47
 #, python-format
 msgid "Track history during import"
-msgstr "עקוב אחר ההיסטוריה במהלך הייבוא"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:254
 #, python-format
 msgid "Unable to load \"{extension}\" file: requires Python module \"{modname}\""
-msgstr "לא ניתן לטעון את הקובץ \"{extension}\": דרוש מודול פייתון \"{modname}\""
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:255
 #, python-format
 msgid ""
 "Unsupported file format \"{}\", import only supports CSV, ODS, XLS and XLSX"
-msgstr "פורמט קובץ לא נתמך \"{}\", ייבוא תומך רק ב- CSV, ODS, XLS ו- XLSX"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model,name:base_import.model_res_users
@@ -821,7 +803,7 @@ msgstr "ערך"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_float__value2
 msgid "Value2"
-msgstr "ערך2"
+msgstr ""
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:760
@@ -830,14 +812,12 @@ msgid ""
 "You can not import images via URL, check with your administrator or support "
 "for the reason."
 msgstr ""
-"אינך יכול לייבא תמונות דרך כתובת אתר האינטרנט, פנה למנהל המערכת שלך או "
-"לתמיכה כדי להבין את הסיבה."
 
 #. module: base_import
 #: code:addons/base_import/models/base_import.py:631
 #, python-format
 msgid "You must configure at least one field to import"
-msgstr "עליך להגדיר שדה אחד לפחות לייבוא"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -851,4 +831,4 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:643
 #, python-format
 msgid "between rows %d and %d"
-msgstr "בין שורות %d ו%d"
+msgstr ""

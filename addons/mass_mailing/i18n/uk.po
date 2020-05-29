@@ -5,15 +5,15 @@
 # Translators:
 # Taras Kovaliuk <tratatuta123@gmail.com>, 2018
 # ТАрас <tratatuta@i.ua>, 2018
+# Martin Trigaux, 2018
 # Bohdan Lisnenko, 2019
-# Martin Trigaux, 2019
 # Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:35+0000\n"
+"POT-Creation-Date: 2019-01-15 10:48+0000\n"
 "PO-Revision-Date: 2018-08-24 09:20+0000\n"
 "Last-Translator: Alina Lisnenko <alinasemeniuk1@gmail.com>, 2019\n"
 "Language-Team: Ukrainian (https://www.transifex.com/odoo/teams/41243/uk/)\n"
@@ -376,17 +376,17 @@ msgstr "Заархівовано"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
 msgid "Attach a file"
-msgstr "Прикріпити файл"
+msgstr "Долучити файл"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing_contact__message_attachment_count
 msgid "Attachment Count"
-msgstr "Підрахунок прикріплень"
+msgstr "Підрахунок прикріплення"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing__attachment_ids
 msgid "Attachments"
-msgstr "Прикріплення"
+msgstr "Долучення"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_comparison_table
@@ -861,11 +861,6 @@ msgid "Email Statistics"
 msgstr "Статистика електронної пошти"
 
 #. module: mass_mailing
-#: model:ir.model,name:mass_mailing.model_mail_template
-msgid "Email Templates"
-msgstr "Шаблони електронних листів"
-
-#. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_mail_thread
 msgid "Email Thread"
 msgstr "Ланцюжки повідомлень"
@@ -913,7 +908,7 @@ msgstr "Виключити чорний список"
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mail_mass_mailing_list_contact_view_search
 #: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_contact_search
 msgid "Exclude Bounced"
-msgstr "Виключити відмову"
+msgstr "Виключити зіткнення"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mail_mass_mailing_list_contact_view_search
@@ -1343,7 +1338,7 @@ msgstr "Керування кампаніями масової розсилки"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 msgid "Manage campaigns of mass emails with process stages"
-msgstr "Керування кампаніями масових розсилок з етапами процесу"
+msgstr "Керування кампаніями масових розсилок із етапами процесу"
 
 #. module: mass_mailing
 #: model:mail.mass_mailing.tag,name:mass_mailing.mass_mail_tag_1
@@ -1663,7 +1658,7 @@ msgstr "Odoo допоможе вам легко відстежувати дії,
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_image_text
 msgid "Omnichannel sales"
-msgstr "Багатоканальні продажі"
+msgstr "Багато-канальні продажі"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mail_mass_mailing_list_contact_rel_list_contact_view_tree
@@ -1936,16 +1931,6 @@ msgstr "Запланований період"
 #: model:ir.model.fields,field_description:mass_mailing.field_mail_mass_mailing__next_departure
 msgid "Scheduled date"
 msgstr "Запланована дата"
-
-#. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:255
-#, python-format
-msgid ""
-"Search opt out cannot be executed without a unique and valid active mailing "
-"list context."
-msgstr ""
-"Пошук відключення неможливо виконати без унікального та дійсного контексту "
-"активного списку розсилки."
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
@@ -2344,15 +2329,10 @@ msgid "Unsubscription Date"
 msgstr "Дата відмови на підписку"
 
 #. module: mass_mailing
-#: code:addons/mass_mailing/models/mass_mailing.py:880
+#: code:addons/mass_mailing/models/mass_mailing.py:806
 #, python-format
-msgid "Unsupported mass mailing model %s"
-msgstr "Непідтримувана модель масової розсилки %s"
-
-#. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
-msgid "Update my subscriptions"
-msgstr "Оновити мої підписки"
+msgid "Unsupported mass mailing model %r"
+msgstr "Непідтримувана модель масової розсилки %r"
 
 #. module: mass_mailing
 #. openerp-web
@@ -2502,10 +2482,10 @@ msgstr "Ви не підписані на наш список розсилки."
 
 #. module: mass_mailing
 #. openerp-web
-#: code:addons/mass_mailing/static/src/js/unsubscribe.js:50
+#: code:addons/mass_mailing/static/src/js/unsubscribe.js:49
 #, python-format
-msgid "You have been <strong>successfully unsubscribed from %s</strong>."
-msgstr "Ви <strong>успішно відписалися від %s</strong>."
+msgid "You have been <strong>successfully unsubscribed from </strong>."
+msgstr "Ви <strong>успішно відписалися від </strong>."
 
 #. module: mass_mailing
 #. openerp-web

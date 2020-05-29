@@ -5,10 +5,6 @@
 # Translators:
 # Martin Trigaux, 2018
 # Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2018
-# Baskhuu Lodoikhuu <baskhuujacara@gmail.com>, 2019
-# nurbahyt baha <nurbahyt.kh@gmail.com>, 2019
-# Minj P <pminj322@gmail.com>, 2019
-# baaska sh <sh.baaskash@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-09 10:32+0000\n"
 "PO-Revision-Date: 2018-08-24 09:19+0000\n"
-"Last-Translator: baaska sh <sh.baaskash@gmail.com>, 2019\n"
+"Last-Translator: Khishigbat Ganbold <khishigbat@asterisk-tech.mn>, 2018\n"
 "Language-Team: Mongolian (https://www.transifex.com/odoo/teams/41243/mn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +23,7 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.mail_channel_view_tree
 msgid "# Messages"
-msgstr "# Зурвасууд"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_im_livechat_report_operator__nbr_channel
@@ -59,7 +55,7 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "<i class=\"fa fa-user\" role=\"img\" aria-label=\"User\" title=\"User\"/>"
-msgstr "<i class=\"fa fa-user\" role=\"img\" aria-label=\"User\" title=\"User\"/>"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
@@ -70,11 +66,6 @@ msgid ""
 "country, GeoIP must be installed on your server, otherwise, the countries of"
 " the rule will not be taken into account.</span>"
 msgstr ""
-"<span>Шууд дэмжлэгийн сувагт дүрэм тодорхойлоно уу.  Та өгөгдсөн холбоос "
-"болон улс тус бүрээр үйлдэл (дэмжлэг идэвхгүй болгох, дэмлэгийг автоматаар "
-"нээх, эсвэл товчлуур боломжтой болгох) хийх боломжтой.<br/>Улсыг "
-"тодорхойлохын тулд таны сервет Geo IP суулгагдсан байх ёстой, үгүй бол "
-"дүрмийн улсууд харгалзагдахгүй.</span>"
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel_rule__action
@@ -122,7 +113,7 @@ msgstr "Авто попап цаг хэмжигч"
 #. module: im_livechat
 #: model:ir.model,name:im_livechat.model_ir_autovacuum
 msgid "Automatic Vacuum"
-msgstr "Автомат вакум"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
@@ -262,7 +253,7 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.im_livechat_canned_response_action
 msgid "Create a new canned response"
-msgstr "Урьдчилан бэлдсэн хариулт шинээр үүсгэх"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel__create_uid
@@ -286,7 +277,7 @@ msgstr "Үүсгэсэн Огноо"
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_report_operator_view_search
 msgid "Creation date"
-msgstr "Үүсгэсэн огноо"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_report_channel_view_search
@@ -307,7 +298,7 @@ msgstr "Шууд чат Дэмжлэгийн Товчлуур дээр гара�
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.im_livechat_channel_action
 msgid "Define a new website live chat channel"
-msgstr "Шинэ вэбсайт шууд чатын суваг тодорхойлох"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule__auto_popup_timer
@@ -329,7 +320,7 @@ msgstr "Бид таны асуултанд зөв хариулсан уу ?"
 
 #. module: im_livechat
 #: model:ir.model,name:im_livechat.model_mail_channel
-msgid "Discussion Channel"
+msgid "Discussion channel"
 msgstr "Хөөрөлдөөний суваг"
 
 #. module: im_livechat
@@ -363,7 +354,7 @@ msgstr ""
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
 msgid "Empty Sessions"
-msgstr "Хоосон Сэшнүүд"
+msgstr ""
 
 #. module: im_livechat
 #. openerp-web
@@ -406,7 +397,7 @@ msgstr "Бүлэглэх..."
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Happy face"
-msgstr "Сэтгэл ханамжтай"
+msgstr ""
 
 #. module: im_livechat
 #: selection:im_livechat.channel.rule,action:0
@@ -535,7 +526,7 @@ msgstr "Шууд чат Суваг"
 #. module: im_livechat
 #: model:ir.model,name:im_livechat.model_im_livechat_channel_rule
 msgid "Livechat Channel Rules"
-msgstr "Шууд чат сувгийн дүрмүүд"
+msgstr ""
 
 #. module: im_livechat
 #: selection:mail.channel,channel_type:0
@@ -617,7 +608,7 @@ msgstr "Нэр"
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Neutral face"
-msgstr "Хэвийн "
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.rating_rating_action_livechat_report
@@ -628,7 +619,7 @@ msgstr ""
 #: code:addons/im_livechat/models/mail_channel.py:119
 #, python-format
 msgid "No history found"
-msgstr "Түүх олдсонгүй"
+msgstr ""
 
 #. module: im_livechat
 #. openerp-web
@@ -720,27 +711,27 @@ msgstr "Үнэлгээ"
 #: code:addons/im_livechat/static/src/js/im_livechat.js:420
 #, python-format
 msgid "Rating: %s"
-msgstr "Үнэлгээ: %s"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Rating: Bad"
-msgstr "Үнэлгээ: Муу"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Rating: Great"
-msgstr "Үнэлгээ: Маш сайн"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Rating: Okay"
-msgstr "Үнэлгээ: Зүгээр"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.actions.act_window,name:im_livechat.rating_rating_action_view_livechat_rating
 msgid "Ratings for livechat channel"
-msgstr "Шууд чатын үнэлгээнүүд"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,help:im_livechat.field_im_livechat_channel_rule__regex_url
@@ -762,7 +753,7 @@ msgstr "Дүрэмүүд"
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_kanban
 msgid "Sad face"
-msgstr "Сэтгэл ханамжгүй"
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,field_description:im_livechat.field_im_livechat_channel__script_external
@@ -784,7 +775,7 @@ msgstr "Хайлтын тайлан"
 #: code:addons/im_livechat/models/mail_channel.py:107
 #, python-format
 msgid "See 15 last visited pages"
-msgstr "Сүүлд зочилсон 15 хуудсыг харах"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.mail_channel_view_form
@@ -890,7 +881,7 @@ msgstr "Хэрэглэгч нь дэмжлэгийн сувгуудад нэгд
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.rating_rating_action_view_livechat_rating
 msgid "There is no rating for this channel at the moment"
-msgstr "Энэ сувагт одоогоор үнэлгээ хийгдээгүй байна."
+msgstr ""
 
 #. module: im_livechat
 #: model:ir.model.fields,help:im_livechat.field_im_livechat_channel__image
@@ -975,12 +966,12 @@ msgstr "Угтах Зурвас"
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.im_livechat_channel_view_form
 msgid "Widget"
-msgstr "Харилцах цонх"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.ui.view,arch_db:im_livechat.mail_channel_view_search
 msgid "With Messages"
-msgstr "Зурвастай"
+msgstr ""
 
 #. module: im_livechat
 #: model_terms:ir.actions.act_window,help:im_livechat.im_livechat_channel_action

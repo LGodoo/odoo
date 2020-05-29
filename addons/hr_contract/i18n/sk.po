@@ -11,9 +11,9 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0\n"
+"Project-Id-Version: Odoo Server saas~11.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 07:34+0000\n"
+"POT-Creation-Date: 2018-09-18 09:49+0000\n"
 "PO-Revision-Date: 2018-08-24 09:18+0000\n"
 "Last-Translator: Jan Prokop, 2019\n"
 "Language-Team: Slovak (https://www.transifex.com/odoo/teams/41243/sk/)\n"
@@ -26,12 +26,12 @@ msgstr ""
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "<span class=\"text-muted\">(If fixed-term contract)</span>"
-msgstr "<span class=\"text-muted\">(ak je na dobu určitú)</span>"
+msgstr ""
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "<span>/ month</span>"
-msgstr "<span>/ mesačne</span>"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__message_needaction
@@ -91,7 +91,7 @@ msgstr "Služobné vozidlo"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_employee__contracts_count
 msgid "Contract Count"
-msgstr "Počet zmlúv"
+msgstr ""
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
@@ -107,7 +107,7 @@ msgstr "Odkaz zmluvy"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Contract Terms"
-msgstr "Podmienky pracovnej zmluvy"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model,name:hr_contract.model_hr_contract_type
@@ -140,7 +140,7 @@ msgstr "Zmluva vypršala"
 #: code:addons/hr_contract/models/hr_contract.py:99
 #, python-format
 msgid "Contract start date must be earlier than contract end date."
-msgstr "Dátum začiatku pracovnej zmluvy musí byť skôr ako dátum ukončenia-"
+msgstr ""
 
 #. module: hr_contract
 #: model:mail.message.subtype,name:hr_contract.mt_department_contract_pending
@@ -160,7 +160,7 @@ msgstr "Zmluvy"
 #. module: hr_contract
 #: model_terms:ir.actions.act_window,help:hr_contract.action_hr_contract
 msgid "Create a new contract"
-msgstr "Vytvoriť novú pracovnú zmluvu"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__create_uid
@@ -215,10 +215,9 @@ msgstr "Rozbaľovacie menu"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_kanban
 msgid "Edit Contract"
-msgstr "Upraviť zmluvu"
+msgstr ""
 
 #. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_emp
 #: model:ir.model,name:hr_contract.model_hr_employee
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__employee_id
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -243,12 +242,12 @@ msgstr "Kontrakty Zamestnanca"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__wage
 msgid "Employee's monthly gross wage."
-msgstr "Hrubý mesačný príjem"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__resource_calendar_id
 msgid "Employee's working schedule."
-msgstr "Pracovný rozvrh"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__date_end
@@ -259,17 +258,16 @@ msgstr "Dátum ukončenia"
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__date_end
 msgid "End date of the contract (if it's a fixed-term contract)."
 msgstr ""
-"Dátum ukončenia pracovnej zmluvy (ak sa jedná o zmluvu na dobu určitú)."
 
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__trial_date_end
 msgid "End date of the trial period (if there is one)."
-msgstr "Koniec skúšobnej lehoty (ak je dohodnutá)."
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__trial_date_end
 msgid "End of Trial Period"
-msgstr "Koniec skúšobnej lehoty"
+msgstr ""
 
 #. module: hr_contract
 #: selection:hr.contract,state:0
@@ -303,8 +301,6 @@ msgid ""
 "Green this button when the contract information has been transfered to the "
 "social secretariat."
 msgstr ""
-"Nastavte na zeleno toto tlačidlo ak boli údaje zmluvy doručené na sociálnu "
-"poisťovňu."
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -316,7 +312,7 @@ msgstr "Zoskupiť podľa"
 #: model:ir.cron,cron_name:hr_contract.ir_cron_data_contract_update_state
 #: model:ir.cron,name:hr_contract.ir_cron_data_contract_update_state
 msgid "HR Contract: update state"
-msgstr "Pracovná zmluva: zmena stavu"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__id
@@ -420,7 +416,7 @@ msgstr "Správy"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Monthly Advantages in Cash"
-msgstr "Mesačné benefity v hotovosti"
+msgstr ""
 
 #. module: hr_contract
 #: selection:hr.contract,state:0
@@ -496,7 +492,7 @@ msgstr "Spustené"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_form
 msgid "Salary Information"
-msgstr "Informácie o príjme"
+msgstr ""
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -517,7 +513,7 @@ msgstr "Postupnosť"
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__reported_to_secretariat
 msgid "Social Secretariat"
-msgstr "Sociálna poisťovňa"
+msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__date_start
@@ -527,7 +523,7 @@ msgstr "Počiatočný dátum"
 #. module: hr_contract
 #: model:ir.model.fields,help:hr_contract.field_hr_contract__date_start
 msgid "Start date of the contract."
-msgstr "Dátum začiatku pracovnej zmluvy."
+msgstr ""
 
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
@@ -558,11 +554,6 @@ msgid "Status of the contract"
 msgstr "Status zmluvy"
 
 #. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_sub
-msgid "Subcontractor"
-msgstr ""
-
-#. module: hr_contract
 #: selection:hr.contract,state:0
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 #: model:mail.message.subtype,name:hr_contract.mt_contract_pending
@@ -572,7 +563,7 @@ msgstr "Na obnovenie"
 #. module: hr_contract
 #: model_terms:ir.ui.view,arch_db:hr_contract.hr_contract_view_search
 msgid "To Report to Social Secretariat"
-msgstr "Hlásenie na sociálnu poisťovňu"
+msgstr ""
 
 #. module: hr_contract
 #: selection:hr.contract,activity_state:0
@@ -618,11 +609,6 @@ msgstr "História komunikácie webových stránok"
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__permit_no
 msgid "Work Permit No"
 msgstr "Pracovné povolenie číslo"
-
-#. module: hr_contract
-#: model:hr.contract.type,name:hr_contract.hr_contract_type_wrkr
-msgid "Worker"
-msgstr ""
 
 #. module: hr_contract
 #: model:ir.model.fields,field_description:hr_contract.field_hr_contract__resource_calendar_id

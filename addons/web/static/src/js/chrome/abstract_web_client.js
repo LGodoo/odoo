@@ -31,9 +31,7 @@ var qweb = core.qweb;
 
 var AbstractWebClient = Widget.extend(ServiceProviderMixin, KeyboardNavigationMixin, {
     dependencies: ['notification'],
-    events: _.extend({}, KeyboardNavigationMixin.events, {
-        'click .o_search_options .dropdown-menu': '_onClickDropDownMenu',
-    }),
+    events: _.extend(KeyboardNavigationMixin.events, {}),
     custom_events: {
         clear_uncommitted_changes: function (e) {
             this.clear_uncommitted_changes().then(e.data.callback);
@@ -334,16 +332,6 @@ var AbstractWebClient = Widget.extend(ServiceProviderMixin, KeyboardNavigationMi
     //--------------------------------------------------------------------------
 
     /**
-     * When clicking inside a dropdown to modify search options
-     * prevents the bootstrap dropdown to close on itself
-     *
-     * @private
-     * @param {Event} ev
-     */
-    _onClickDropDownMenu: function (ev) {
-        ev.stopPropagation();
-    },
-    /**
      * Whenever the connection is lost, we need to notify the user.
      *
      * @private
@@ -478,11 +466,7 @@ var AbstractWebClient = Widget.extend(ServiceProviderMixin, KeyboardNavigationMi
                 new RainbowMan(data).appendTo(this.$el);
             } else {
                 // For instance keep title blank, as we don't have title in data
-                this.call('notification', 'notify', {
-                    title: "",
-                    message: data.message,
-                    sticky: false
-                });
+                this.notification_manager.notify('', data.message, true);
             }
         } else {
             throw new Error('Unknown effect type: ' + type);

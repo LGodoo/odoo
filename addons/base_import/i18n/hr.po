@@ -8,7 +8,6 @@
 # Đurđica Žarković <durdica.zarkovic@storm.hr>, 2019
 # Tina Milas, 2019
 # Bole <bole@dajmi5.com>, 2019
-# Igor Krizanovic <krizanovic.igor@gmail.com>, 2019
 # 
 msgid ""
 msgstr ""
@@ -16,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-02 10:05+0000\n"
 "PO-Revision-Date: 2018-08-24 09:16+0000\n"
-"Last-Translator: Igor Krizanovic <krizanovic.igor@gmail.com>, 2019\n"
+"Last-Translator: Bole <bole@dajmi5.com>, 2019\n"
 "Language-Team: Croatian (https://www.transifex.com/odoo/teams/41243/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,7 +28,7 @@ msgstr ""
 #: code:addons/base_import/static/src/js/import_action.js:612
 #, python-format
 msgid "%d records were successfully imported"
-msgstr "%d zapisa uspješno uvezeno"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -97,7 +96,7 @@ msgstr "Kolona %s sadrži neispravne vrijednosti. Pogreška u redu %d: %s"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__column_name
 msgid "Column Name"
-msgstr "Naziv kolone"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -346,7 +345,7 @@ msgstr ""
 #: code:addons/base_import/static/src/xml/base_import.xml:13
 #, python-format
 msgid "Formatting Options…"
-msgstr "Opcije formatiranja..."
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -434,7 +433,7 @@ msgstr "Uvoz"
 #: code:addons/base_import/static/src/xml/base_import.xml:91
 #, python-format
 msgid "Import FAQ"
-msgstr "Uvoz FAQ"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -448,7 +447,7 @@ msgstr "Import datoteke"
 #: code:addons/base_import/static/src/js/import_action.js:612
 #, python-format
 msgid "Import completed"
-msgstr "Uvoz dovršen"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -542,7 +541,7 @@ msgstr "Učitaj datoteku"
 #: code:addons/base_import/static/src/js/import_action.js:364
 #, python-format
 msgid "Load New File"
-msgstr "Učitaj novu datoteku"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -566,7 +565,7 @@ msgstr "Naziv"
 #: code:addons/base_import/static/src/xml/base_import.xml:85
 #, python-format
 msgid "Need Help?"
-msgstr "Trebate pomoć?"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -609,7 +608,7 @@ msgstr "Ponovno učitaj datoteku"
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_mapping__res_model
 msgid "Res Model"
-msgstr "Model"
+msgstr ""
 
 #. module: base_import
 #. openerp-web
@@ -637,7 +636,7 @@ msgstr "Razdjelnik:"
 #: code:addons/base_import/static/src/xml/base_import.xml:66
 #, python-format
 msgid "Show fields of relation fields (advanced)"
-msgstr "Prikazuje relacijska polja (napredno)"
+msgstr ""
 
 #. module: base_import
 #: model:ir.model.fields,field_description:base_import.field_base_import_tests_models_preview__somevalue

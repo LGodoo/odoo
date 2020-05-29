@@ -127,7 +127,7 @@ var SnippetOption = Widget.extend({
      * @param {jQuery} $opt - the related DOMElement option
      */
     selectClass: function (previewMode, value, $opt) {
-        var $group = $opt && $opt.parents('.dropdown-submenu').last();
+        var $group = $opt && $opt.closest('.dropdown-submenu');
         if (!$group || !$group.length) {
             $group = this.$el;
         }
@@ -289,29 +289,13 @@ var SnippetOption = Widget.extend({
             })
             .addClass('active');
 
-        // Get submenus which are not inside submenus
-        var $submenus = this.$el.find('.dropdown-submenu')
-            .addBack('.dropdown-submenu')
-            .not('.dropdown-submenu .dropdown-submenu');
+        _processSelectClassElements(this.$el);
 
-        // Add unique active class for each submenu active item
-        _.each($submenus, function (submenu) {
-            var $elements = _getSelectClassElements($(submenu));
-            _processSelectClassElements($elements);
-        });
-
-        // Add unique active class for out-of-submenu active item
-        var $externalElements = _getSelectClassElements(this.$el)
-            .not('.dropdown-submenu *, .dropdown-submenu');
-        _processSelectClassElements($externalElements);
-
-        function _getSelectClassElements($el) {
-            return $el.find('[data-select-class]')
-                .addBack('[data-select-class]');
-        }
-        function _processSelectClassElements($elements) {
+        function _processSelectClassElements($el) {
             var maxNbClasses = -1;
-            $elements.removeClass('active')
+            $el.find('[data-select-class]')
+                .addBack('[data-select-class]')
+                .removeClass('active')
                 .filter(function () {
                     var className = $(this).data('selectClass');
                     var nbClasses = className ? className.split(' ').length : 0;
@@ -679,10 +663,9 @@ registry.colorpicker = SnippetOption.extend({
                 $pt.find('.note-palette-title').text(this.data.paletteTitle);
             }
 
-            // Remove excluded palettes (note: only hide them to still be able
-            // to remove their related colors on the DOM target)
+            // Remove excluded palettes
             _.each(excluded, function (exc) {
-                $clpicker.find('[data-name="' + exc + '"]').addClass('d-none');
+                $clpicker.find('[data-name="' + exc + '"]').remove();
             });
 
             // Add common colors to palettes if not excluded
@@ -704,8 +687,6 @@ registry.colorpicker = SnippetOption.extend({
             this.$el.find('.dropdown-menu').append($pt);
         }
 
-        this._addCompatibilityColors(['primary', 'secondary', 'success', 'info', 'warning', 'danger']);
-
         var classes = [];
         this.$el.find('.colorpicker button').each(function () {
             var $color = $(this);
@@ -724,30 +705,6 @@ registry.colorpicker = SnippetOption.extend({
         this.classes = classes.join(' ');
 
         return res;
-    },
-
-    //--------------------------------------------------------------------------
-    // Private
-    //--------------------------------------------------------------------------
-
-    /**
-     * Hardcode some existing colors (but make them hidden in the colorpicker)
-     * so they can be removed from snippets when selecting another color.
-     * Normally, the chosable colors do not contain them, which prevents them to
-     * be removed. For example, normally, the 'alpha' and 'beta' color (which
-     * are the same as primary and secondary) are displayed instead of their
-     * duplicates... but not for all themes.
-     *
-     * @private
-     * @param {string[]} colorNames
-     */
-    _addCompatibilityColors: function (colorNames) {
-        var $colorpicker = this.$el.find('.colorpicker');
-        _.each(colorNames, function (colorName) {
-            if (!$colorpicker.find('button[data-color="' + colorName + '"]').length) {
-                $colorpicker.append($('<button/>', {'class': 'd-none', 'data-color': colorName}));
-            }
-        });
     },
 
     //--------------------------------------------------------------------------
@@ -797,7 +754,7 @@ registry.colorpicker = SnippetOption.extend({
         if ($selected.length) {
             if ($selected.data('color')) {
                 this.$target.addClass(this.colorPrefix + $selected.data('color'));
-            } else if ($selected.hasClass('o_custom_color')) {
+            } else {
                 this.$target.css('background-color', $selected.css('background-color'));
             }
         }

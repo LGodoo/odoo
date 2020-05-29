@@ -30,7 +30,7 @@ msgstr "<span class=\"o_stat_text\"> Objednávky</span>"
 #. module: sale_crm
 #: model_terms:ir.ui.view,arch_db:sale_crm.crm_case_form_view_oppor
 msgid "<span class=\"o_stat_text\"> Quotation(s) </span>"
-msgstr "<span class=\"o_stat_text\"> Ponuky </span>"
+msgstr ""
 
 #. module: sale_crm
 #: model:ir.model.fields,field_description:sale_crm.field_account_invoice__campaign_id
@@ -118,7 +118,7 @@ msgstr "Objednávka predaja"
 #. module: sale_crm
 #: model:ir.actions.act_window,name:sale_crm.sale_action_orders
 msgid "Sale orders"
-msgstr "Objednávky predaja"
+msgstr ""
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_crm_team
@@ -148,15 +148,12 @@ msgid ""
 "This is a name that helps you keep track of your different campaign efforts,"
 " e.g. Fall_Drive, Christmas_Special"
 msgstr ""
-"Toto je názov, ktorý vám pomáha sledovať vaše rôzne kampane, napr. "
-"Fall_Drive, Christmas_Special"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_account_invoice__medium_id
 #: model:ir.model.fields,help:sale_crm.field_sale_order__medium_id
 msgid "This is the method of delivery, e.g. Postcard, Email, or Banner Ad"
 msgstr ""
-"Toto je spôsob dodávania, napr. pohľadnica, e-mail alebo bannerová reklama"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_account_invoice__source_id
@@ -165,13 +162,11 @@ msgid ""
 "This is the source of the link, e.g. Search Engine, another domain, or name "
 "of email list"
 msgstr ""
-"Toto je zdroj odkazu, napr. vyhľadávací prostriedok, iná doména, alebo názov"
-" emailového zoznamu"
 
 #. module: sale_crm
 #: model:ir.model.fields,help:sale_crm.field_crm_lead__sale_amount_total
 msgid "Untaxed Total of Confirmed Orders"
-msgstr "Celková suma potvrdených objednávok bez dane"
+msgstr ""
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_res_users

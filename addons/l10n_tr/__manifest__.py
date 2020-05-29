@@ -13,8 +13,8 @@ Bu modül kurulduktan sonra, Muhasebe yapılandırma sihirbazı çalışır
     * Sihirbaz sizden hesap planı şablonu, planın kurulacağı şirket, banka hesap
       bilgileriniz, ilgili para birimi gibi bilgiler isteyecek.
     """,
-    'author': 'Ahmet Altınışık, Can Tecim',
-    'maintainer':'https://launchpad.net/~openerp-turkey, http://www.cantecim.com',
+    'author': 'Ahmet Altınışık',
+    'maintainer':'https://launchpad.net/~openerp-turkey',
     'depends': [
         'account',
     ],
@@ -25,6 +25,5 @@ Bu modül kurulduktan sonra, Muhasebe yapılandırma sihirbazı çalışır
         'data/account_data.xml',
         'data/account_tax_template_data.xml',
         'data/account_chart_template_data.xml',
-        'data/res.country.state.csv'
     ],
 }
